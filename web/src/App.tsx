@@ -1,23 +1,13 @@
-interface ButtonProps {
-  title: string;
-}
-
-function Button(props: ButtonProps){
-  return (
-    <button>
-      {props.title}
-    </button>
-  )
-}
+import { Flex } from '@chakra-ui/react'
+import MenuSideBar from './components/MenuSideBar/MenuSideBar'
 
 function App() {
   return (
-    <div>
-      <Button title="Send 1"/>
-      <Button title="Send 2"/>
-      <Button title="Send 3"/>
-      <Button title="Hello World"/>
-    </div>
+    <Flex flexDirection="column" bg="#fff">
+      <Flex>
+        <MenuSideBar />
+      </Flex>
+    </Flex>
   )
 }
 
