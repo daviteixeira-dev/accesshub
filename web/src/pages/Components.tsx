@@ -1,9 +1,18 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { 
+  Flex, 
+  Text, 
+  Container, 
+} from '@chakra-ui/react'
+
+import MenuSideBar from '../components/MenuSideBar/MenuSideBar'
 
 const Components = () => {
   return (
     <Flex>
-      <Text>Components</Text>
+      <MenuSideBar />
+      <Container maxW='container.xl'>
+        <Text>Componentes</Text>
+      </Container>
     </Flex>
   )
 }
