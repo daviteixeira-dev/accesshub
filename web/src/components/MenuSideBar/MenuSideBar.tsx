@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 
 import { FiMenu } from 'react-icons/fi'
+
+import { NavLink } from 'react-router-dom'
 
 import {
     Flex,
@@ -28,28 +29,83 @@ import {
     FaRegWindowRestore
 } from 'react-icons/fa'
 
-import NavItem from './NavItem'
-import ComponentNavItem from './ComponentNavItem'
+import MenuSideBarItem from './MenuSideBarItem'
 
-const MenuSideBar = ({ children }: any) => {
+const MenuSideBar = () => {
 
     const [navSize, setNavSize] = useState('large')
 
     const sideBarItem = [
         {
             path: '/',
-            name: 'HomePage',
+            name: 'Página Inicial',
             icon: <FaHome />
         },
         {
-            path: '/introduction',
-            name: 'Introduction',
+            path: '/introducao',
+            name: 'Introdução',
             icon: <FaRegCompass />
         },
         {
-            path: '/components',
-            name: 'Components',
+            path: '/componentes',
+            name: 'Componentes',
             icon: <FaThLarge />
+        },
+    ]
+
+    const menuWCAG = [
+        {
+            path: '/perceptivel',
+            name: 'Perceptível',
+            icon: <FaEye />
+        },
+        {
+            path: '/operavel',
+            name: 'Operável',
+            icon: <FaKeyboard />
+        },
+        {
+            path: '/compressivel',
+            name: 'Compressível',
+            icon: <FaBrain />
+        },
+        {
+            path: '/robusto',
+            name: 'Robusto',
+            icon: <FaRegWindowRestore />
+        }
+    ]
+
+    const menuEmag = [
+        {
+            path: '/marcacao',
+            name: 'Marcação',
+            icon: <FaCode />
+        },
+        {
+            path: '/comportamento',
+            name: 'Comportamento',
+            icon: <FaPuzzlePiece />
+        },
+        {
+            path: '/conteudo-Informacao',
+            name: 'Conteúdo/Informação',
+            icon: <FaInfo />
+        },
+        {
+            path: '/apresentacao-design',
+            name: 'Apresentação/Design',
+            icon: <FaPenSquare />
+        },
+        {
+            path: '/multimidia',
+            name: 'Multimídia',
+            icon: <FaPlayCircle />
+        },
+        {
+            path: '/formulario',
+            name: 'Formulário',
+            icon: <FaClipboardList />
         },
     ]
 
@@ -57,7 +113,7 @@ const MenuSideBar = ({ children }: any) => {
         <Flex>
             <Flex
                 as='nav'
-                bg='#f2f2f2'
+                bg='gray.200'
                 height='100vh'
                 overflow='1rem'
                 overflowY='auto'
@@ -70,13 +126,13 @@ const MenuSideBar = ({ children }: any) => {
             >
 
                 <Flex
-                    bg='black'
+                    bg='blue.500'
                     p={navSize === 'small' ? '1rem' : '.5rem 1rem'}
                     justifyContent={navSize == 'small' ? 'center' : 'center'}
                 >
                     <Text
-                        color='white'
                         fontWeight='bold'
+                        color='whiteAlpha.900'
                         fontSize={navSize == 'small' ? '1.1rem' : '2rem'}
                     >
                         AcessHub
@@ -88,8 +144,11 @@ const MenuSideBar = ({ children }: any) => {
                     justifyContent={navSize == 'small' ? 'center' : 'start'}
                 >
                     <IconButton
+                        bg='blue.400'
                         icon={<FiMenu />}
+                        color='whiteAlpha.900'
                         aria-label='Menu Icon'
+                        _hover={{ background: 'blue.500' }}
                         onClick={() => {
                             if (navSize === 'small')
                                 setNavSize('large')
@@ -114,16 +173,16 @@ const MenuSideBar = ({ children }: any) => {
                                     m='.5rem 0'
                                     alignItems='center'
                                     borderRadius='.5rem'
-                                    _hover={{ background: '#d2d2d2' }}
+                                    _hover={{ background: 'gray.300' }}
                                     justifyContent={navSize == 'small' ? 'center' : 'start'}
                                 >
                                     <Icon
-                                        color='gray.500'
+                                        color='blue.500'
                                         fontSize='1.5rem'
                                     >
                                         {item.icon}
                                     </Icon>
-                                    <NavItem title={item.name} navSize={navSize} />
+                                    <MenuSideBarItem title={item.name} navSize={navSize} />
                                 </Flex>
                             </NavLink>
                         ))
@@ -137,11 +196,30 @@ const MenuSideBar = ({ children }: any) => {
                     p='1rem'
                     flexDirection='column'
                 >
-                    <Heading fontSize='1rem'>WCAG</Heading>
-                    <ComponentNavItem navSize={navSize} icon={FaEye} text='Perceptível' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaKeyboard} text='Operável' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaBrain} text='Compressível' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaRegWindowRestore} text='Robusto' link='https://chakra-ui.com' active={false} />
+                    <Heading fontSize='1rem' color='gray.900'>WCAG</Heading>
+                    {
+                        menuWCAG.map((item, index) => (
+                            <NavLink to={item.path} key={index}>
+                                <Flex
+                                    as='li'
+                                    p='.5rem'
+                                    m='.5rem 0'
+                                    alignItems='center'
+                                    borderRadius='.5rem'
+                                    _hover={{ background: 'gray.300' }}
+                                    justifyContent={navSize == 'small' ? 'center' : 'start'}
+                                >
+                                    <Icon
+                                        color='blue.500'
+                                        fontSize='1.5rem'
+                                    >
+                                        {item.icon}
+                                    </Icon>
+                                    <MenuSideBarItem title={item.name} navSize={navSize} />
+                                </Flex>
+                            </NavLink>
+                        ))
+                    }
                 </Flex>
 
                 <Divider />
@@ -151,18 +229,31 @@ const MenuSideBar = ({ children }: any) => {
                     p='1rem'
                     flexDirection='column'
                 >
-                    <Heading fontSize='1rem'>eMAG</Heading>
-                    <ComponentNavItem navSize={navSize} icon={FaCode} text='Marcação' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaPuzzlePiece} text='Comportamento (DOM)' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaInfo} text='Conteúdo/Informação' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaPenSquare} text='Apresentação/Design' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaPlayCircle} text='Multimídia' link='https://chakra-ui.com' active={false} />
-                    <ComponentNavItem navSize={navSize} icon={FaClipboardList} text='Formulário' link='https://chakra-ui.com' active={false} />
+                    <Heading fontSize='1rem' color='gray.900'>eMAG</Heading>
+                    {
+                        menuEmag.map((item, index) => (
+                            <NavLink to={item.path} key={index}>
+                                <Flex
+                                    as='li'
+                                    p='.5rem'
+                                    m='.5rem 0'
+                                    alignItems='center'
+                                    borderRadius='.5rem'
+                                    _hover={{ background: 'gray.300' }}
+                                    justifyContent={navSize == 'small' ? 'center' : 'start'}
+                                >
+                                    <Icon
+                                        color='blue.500'
+                                        fontSize='1.5rem'
+                                    >
+                                        {item.icon}
+                                    </Icon>
+                                    <MenuSideBarItem title={item.name} navSize={navSize} />
+                                </Flex>
+                            </NavLink>
+                        ))
+                    }
                 </Flex>
-            </Flex>
-
-            <Flex as='main'>
-                {children}
             </Flex>
         </Flex>
     )
