@@ -1,21 +1,35 @@
-import { Flex } from '@chakra-ui/react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import MenuSideBar from './components/MenuSideBar/MenuSideBar'
-import Components from './pages/Components'
+import { 
+  Route, 
+  Routes, 
+  BrowserRouter 
+} from 'react-router-dom'
+
 import HomePage from './pages/HomePage'
+import Components from './pages/Components'
 import Introduction from './pages/Introduction'
 
 function App() {
   return (
     <BrowserRouter>
-      <MenuSideBar>
-
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/introduction" element={<Introduction />} />
-        <Route path="/components" element={<Components />} />
+
+        <Route path='/' element={<HomePage />} />
+        <Route path='/componentes' element={<Components />} />
+        <Route path='/introducao' element={<Introduction />} />
+        
+        <Route path='/robusto' element={<Components />} />
+        <Route path='/operavel' element={<Components />} />
+        <Route path='/perceptivel' element={<Components />} />
+        <Route path='/compressivel' element={<Components />} />
+        
+        <Route path='/marcacao' element={<Components />} />
+        <Route path='/multimidia' element={<Components />} />
+        <Route path='/formulario' element={<Components />} />
+        <Route path='/comportamento' element={<Components />} />
+        <Route path='/conteudo-Informacao' element={<Components />} />
+        <Route path='/apresentacao-design' element={<Components />} />
+      
       </Routes>
-      </MenuSideBar>
     </BrowserRouter>
   )
 }
