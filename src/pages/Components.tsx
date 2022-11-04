@@ -44,8 +44,8 @@ const Components = () => {
 
         <Flex justifyContent='space-evenly' mb='2rem'>
           <ComponentCardItem 
-            cardTitle='Botão' 
-            pagLink='/button' 
+            cardTitle='Títulos' 
+            pagLink='/titulos' 
             altImage='teste 1'
             imgLink='https://via.placeholder.com/150' 
           />

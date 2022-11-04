@@ -7,6 +7,7 @@ import {
 import HomePage from './pages/HomePage'
 import Components from './pages/Components'
 import Introduction from './pages/Introduction'
+import Titulos from './pages/Titulos'
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path='/comportamento' element={<Components />} />
         <Route path='/conteudo-Informacao' element={<Components />} />
         <Route path='/apresentacao-design' element={<Components />} />
+
+        <Route path='/titulos' element={<Titulos />} />
       
       </Routes>
     </BrowserRouter>
