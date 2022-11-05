@@ -26,7 +26,6 @@ const PostComponent = (props: PostProps) => {
 
     return (
         <Container 
-            padding={0}
             as='article' 
             maxW='container.xl'
             fontWeight='semibold'
