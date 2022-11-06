@@ -44,27 +44,27 @@ const Components = () => {
 
         <Flex justifyContent='space-evenly' mb='2rem'>
           <ComponentCardItem 
-            cardTitle='Títulos' 
-            pagLink='/titulos' 
-            altImage='teste 1'
+            cardTitle='Cabeçalhos' 
+            pagLink='/componentes/cabecalhos' 
+            altImage='Componente de Cabeçalhos'
             imgLink='https://via.placeholder.com/150' 
           />
           <ComponentCardItem 
-            cardTitle='Botão' 
-            pagLink='/button' 
-            altImage='teste 2'
+            cardTitle='Pular navegação' 
+            pagLink='/componentes/pular-navegacao' 
+            altImage='Componente de Pular Navegação'
             imgLink='https://via.placeholder.com/150' 
           />
           <ComponentCardItem 
-            cardTitle='Botão' 
-            pagLink='/button' 
-            altImage='teste 3'
+            cardTitle='Breadcrumb'
+            pagLink='/componentes/breadcrumb' 
+            altImage='Componente de Breadcrumb'
             imgLink='https://via.placeholder.com/150' 
           />
           <ComponentCardItem 
-            cardTitle='Botão' 
-            pagLink='/button' 
-            altImage='teste 4'
+            cardTitle='Tabela' 
+            pagLink='/componentes/tabela' 
+            altImage='Componente de Tabela'
             imgLink='https://via.placeholder.com/150' 
           />
         </Flex>
