@@ -7,7 +7,11 @@ import {
 import HomePage from './pages/HomePage'
 import Components from './pages/Components'
 import Introduction from './pages/Introduction'
-import Titulos from './pages/Titulos'
+
+import PageAboutTable from './pages/PageAboutTable'
+import PageAboutHeaders from './pages/PageAboutHeaders'
+import PageAboutBreadcrumb from './pages/PageAboutBreadcrumb'
+import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation'
 
 function App() {
   return (
@@ -30,7 +34,10 @@ function App() {
         <Route path='/conteudo-Informacao' element={<Components />} />
         <Route path='/apresentacao-design' element={<Components />} />
 
-        <Route path='/titulos' element={<Titulos />} />
+        <Route path='/componentes/tabela' element={<PageAboutTable />} />
+        <Route path='/componentes/cabecalhos' element={<PageAboutHeaders />} />
+        <Route path='/componentes/breadcrumb' element={<PageAboutBreadcrumb />} />
+        <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
       
       </Routes>
     </BrowserRouter>
