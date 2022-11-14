@@ -78,25 +78,48 @@ const Components = () => {
         
         <Flex justifyContent='space-evenly' mb='2rem'>
           <ComponentCardItem 
-            cardTitle='Botão' 
-            pagLink='/button' 
-            altImage='teste 1'
+            cardTitle='Formulario' 
+            pagLink='/componentes/formulario' 
+            altImage='Componente de Formulario'
             imgLink='https://via.placeholder.com/150' 
           />
           <ComponentCardItem 
-            cardTitle='Botão' 
-            pagLink='/button' 
-            altImage='teste 2'
+            cardTitle='HTML Inicial' 
+            pagLink='/componentes/html-estrutura-inicial' 
+            altImage='Componente de Estrutura Inicial HTML'
+            imgLink='https://via.placeholder.com/150'
+          />
+          <ComponentCardItem 
+            cardTitle='Links' 
+            pagLink='/componentes/links' 
+            altImage='Componente de Links'
             imgLink='https://via.placeholder.com/150' 
           />
           <ComponentCardItem 
-            cardTitle='Botão' 
+            cardTitle='Imagens' 
             pagLink='/button' 
-            altImage='teste 3'
+            altImage='teste 4'
             imgLink='https://via.placeholder.com/150' 
           />
+        </Flex>
+
+        <Heading 
+          my='2rem'
+          fontSize='1.5rem' 
+        >
+          Exemplo de botões
+        </Heading>
+        
+        <Flex justifyContent='space-evenly' mb='2rem'>
           <ComponentCardItem 
-            cardTitle='Botão' 
+            cardTitle='Áudio e Vídeo' 
+            pagLink='/button' 
+            altImage='teste 4'
+            imgLink='https://via.placeholder.com/150' 
+          />
+
+          <ComponentCardItem 
+            cardTitle='Recomendações Gerais' 
             pagLink='/button' 
             altImage='teste 4'
             imgLink='https://via.placeholder.com/150' 
