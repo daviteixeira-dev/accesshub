@@ -12,6 +12,9 @@ import PageAboutTable from './pages/PageAboutTable'
 import PageAboutHeaders from './pages/PageAboutHeaders'
 import PageAboutBreadcrumb from './pages/PageAboutBreadcrumb'
 import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation'
+import PageAboutForm from './pages/PageAboutForm'
+import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure'
+import PageAboutLinks from './pages/PageAboutLinks'
 
 function App() {
   return (
@@ -34,10 +37,13 @@ function App() {
         <Route path='/conteudo-Informacao' element={<Components />} />
         <Route path='/apresentacao-design' element={<Components />} />
 
+        <Route path='/componentes/links' element={<PageAboutLinks />} />
         <Route path='/componentes/tabela' element={<PageAboutTable />} />
+        <Route path='/componentes/formulario' element={<PageAboutForm />} />
         <Route path='/componentes/cabecalhos' element={<PageAboutHeaders />} />
         <Route path='/componentes/breadcrumb' element={<PageAboutBreadcrumb />} />
         <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
+        <Route path='/componentes/html-estrutura-inicial' element={<PageAboutHTMLInitialStructure />} />
       
       </Routes>
     </BrowserRouter>
