@@ -15,6 +15,9 @@ import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation'
 import PageAboutForm from './pages/PageAboutForm'
 import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure'
 import PageAboutLinks from './pages/PageAboutLinks'
+import PageAboutImages from './pages/PageAboutImages'
+import PageAboutVideos from './pages/PageAboutVideos'
+import PageAboutAudios from './pages/PageAboutAudios'
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
 
         <Route path='/componentes/links' element={<PageAboutLinks />} />
         <Route path='/componentes/tabela' element={<PageAboutTable />} />
+        <Route path='/componentes/audios' element={<PageAboutAudios />} />
+        <Route path='/componentes/videos' element={<PageAboutVideos />} />
+        <Route path='/componentes/imagens' element={<PageAboutImages />} />
         <Route path='/componentes/formulario' element={<PageAboutForm />} />
         <Route path='/componentes/cabecalhos' element={<PageAboutHeaders />} />
         <Route path='/componentes/breadcrumb' element={<PageAboutBreadcrumb />} />
