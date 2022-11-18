@@ -2,11 +2,10 @@ import {
   Flex,
   Text,
   Heading,
-  Container,
+  Container
 } from '@chakra-ui/react'
 
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar'
-
 import ComponentCardItem from '../components/ComponentCardItem/ComponentCardItem'
 
 const Components = () => {
@@ -97,8 +96,8 @@ const Components = () => {
           />
           <ComponentCardItem 
             cardTitle='Imagens' 
-            pagLink='/button' 
-            altImage='teste 4'
+            pagLink='/componentes/imagens' 
+            altImage='Componente de Imagens'
             imgLink='https://via.placeholder.com/150' 
           />
         </Flex>
@@ -112,14 +111,19 @@ const Components = () => {
         
         <Flex justifyContent='space-evenly' mb='2rem'>
           <ComponentCardItem 
-            cardTitle='Áudio e Vídeo' 
-            pagLink='/button' 
-            altImage='teste 4'
+            cardTitle='Vídeos' 
+            pagLink='/componentes/videos' 
+            altImage='Componente de Vídeo'
             imgLink='https://via.placeholder.com/150' 
           />
-
           <ComponentCardItem 
-            cardTitle='Recomendações Gerais' 
+            cardTitle='Áudios' 
+            pagLink='/componentes/audios' 
+            altImage='Componente de Áudio'
+            imgLink='https://via.placeholder.com/150' 
+          />
+          <ComponentCardItem 
+            cardTitle='Recomendações' 
             pagLink='/button' 
             altImage='teste 4'
             imgLink='https://via.placeholder.com/150' 
