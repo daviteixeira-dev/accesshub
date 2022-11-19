@@ -18,6 +18,7 @@ import PageAboutLinks from './pages/PageAboutLinks'
 import PageAboutImages from './pages/PageAboutImages'
 import PageAboutVideos from './pages/PageAboutVideos'
 import PageAboutAudios from './pages/PageAboutAudios'
+import PageAboutRecommendations from './pages/PageAboutRecommendations'
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path='/componentes/formulario' element={<PageAboutForm />} />
         <Route path='/componentes/cabecalhos' element={<PageAboutHeaders />} />
         <Route path='/componentes/breadcrumb' element={<PageAboutBreadcrumb />} />
+        <Route path='/componentes/recomendacoes' element={<PageAboutRecommendations />} />
         <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
         <Route path='/componentes/html-estrutura-inicial' element={<PageAboutHTMLInitialStructure />} />
       
