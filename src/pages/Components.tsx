@@ -124,8 +124,8 @@ const Components = () => {
           />
           <ComponentCardItem 
             cardTitle='Recomendações' 
-            pagLink='/button' 
-            altImage='teste 4'
+            pagLink='/componentes/recomendacoes' 
+            altImage='Componente de Recomendações'
             imgLink='https://via.placeholder.com/150' 
           />
         </Flex>
