@@ -7,6 +7,7 @@ import {
 
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar'
 import ComponentCardItem from '../components/ComponentCardItem/ComponentCardItem'
+import Footer from '../components/Footer/Footer'
 
 const Components = () => {
   return (
@@ -129,6 +130,8 @@ const Components = () => {
             imgLink='https://via.placeholder.com/150' 
           />
         </Flex>
+
+        <Footer />
 
       </Container>
     </Flex>
