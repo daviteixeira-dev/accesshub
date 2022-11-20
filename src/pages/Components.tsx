@@ -31,7 +31,7 @@ const Components = () => {
           fontSize='1rem' 
           fontWeight='normal'
         >
-          O AcessHub fornece um guia de implementação dos componentes para ajudá-lo a construir 
+          O AccessHub fornece um guia de implementação dos componentes para ajudá-lo a construir 
           seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
         </Text>
 
