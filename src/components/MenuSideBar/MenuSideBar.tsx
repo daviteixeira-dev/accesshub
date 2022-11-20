@@ -126,7 +126,7 @@ const MenuSideBar = () => {
             >
 
                 <Flex
-                    bg='blue.500'
+                    bg='blue.600'
                     p={navSize === 'small' ? '1rem' : '.5rem 1rem'}
                     justifyContent={navSize == 'small' ? 'center' : 'center'}
                 >
@@ -135,7 +135,7 @@ const MenuSideBar = () => {
                         color='whiteAlpha.900'
                         fontSize={navSize == 'small' ? '1.1rem' : '2rem'}
                     >
-                        AcessHub
+                        AccessHub
                     </Text>
                 </Flex>
 
