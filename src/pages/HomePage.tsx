@@ -10,6 +10,8 @@ import {
 import { NavLink } from 'react-router-dom'
 
 import { FaGithub, FaArrowRight } from 'react-icons/fa'
+import TopMenu from '../components/TopMenu/TopMenu'
+import Footer from '../components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -22,33 +24,66 @@ const HomePage = () => {
       justifyContent='center'
       height={['100%', '100%', '100vh', '100vh']}
     >
+      <TopMenu />
+
       <Flex
+        height='100%'
         padding='1rem'
         flexDirection='column'
+        pt={['6rem', 0, 0, 0 ]}
+        mt={[0, 0, '6rem', '6rem']}
         width={['100%', '100%', '50%', '50%']}
       >
         <Heading
           as='h1'
           color='gray.900'
-          fontSize='2.5rem'
           textTransform='uppercase'
+          fontSize={['2.5rem', '2.5rem', '3rem', '3rem']}
         >
-          Desenvolva e deixe o seu site mais <Text as='span' color='blue.400'>acessível</Text>
+          Desenvolva e deixe o seu site mais <Text as='span' color='blue.500'>acessível</Text>
         </Heading>
         <Text
           color='gray.800'
           marginTop='1rem'
           fontSize='1.1rem'
         >
-          AcessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web,
+          AccessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web,
           possibilitando a apresentação de padrões e materiais de suporte para ajudar na
           construção de páginas Web acessíveis.
         </Text>
+
+        <Flex 
+          mt='1rem' 
+          bg='gray.500'
+          padding='.5rem' 
+          alignItems='center' 
+          borderRadius='.5rem'
+          justifyContent='center'
+          _hover={{ bg: 'gray.400', cursor: 'pointer' }} 
+        >
+          <Flex 
+            as='span' 
+            mr='.5rem' 
+            width='1rem' 
+            height='1rem' 
+            rounded='full' 
+            bg='yellow.500'
+            border='1px solid gray' 
+          ></Flex>
+          
+          <Heading 
+            fontSize='1.2rem' 
+            color='whiteAlpha.900'
+          >
+            Este site está em construção
+          </Heading>
+        </Flex>
       </Flex>
 
       <Flex
+        mb='1rem'
         display='flex'
-        marginTop='2rem'
+        
         justifyContent='space-evenly'
         width={['100%', '100%', '50%', '40%']}
         flexDirection={['column', 'column', 'row', 'row']}
@@ -56,7 +91,7 @@ const HomePage = () => {
 
         <NavLink to='/introducao'>
           <Button
-            bg='blue.500'
+            bg='blue.600'
             fontSize='1.2rem'
             fontWeight='bold'
             color='whiteAlpha.900'
@@ -93,6 +128,8 @@ const HomePage = () => {
         </Link>
 
       </Flex>
+      
+      <Footer />
     </Flex>
   )
 }
