@@ -118,6 +118,7 @@ const Footer = () => {
                 padding={['0','0','1rem', '1rem']}
             >
                 <Link 
+                    href='https://vercel.com/'
                     bg='blackAlpha.900' 
                     padding='.3rem 1rem' 
                     borderRadius='.5rem'
