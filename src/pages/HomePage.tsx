@@ -3,7 +3,6 @@ import {
   Text,
   Link,
   Icon,
-  Button,
   Heading
 } from '@chakra-ui/react'
 
@@ -14,6 +13,7 @@ import TopMenu from '../components/TopMenu/TopMenu'
 import Footer from '../components/Footer/Footer'
 
 const HomePage = () => {
+
   return (
     <Flex
       width='100%'
@@ -82,19 +82,21 @@ const HomePage = () => {
 
       <Flex
         mb='1rem'
-        display='flex'
-        
+        display='flex'        
         justifyContent='space-evenly'
         width={['100%', '100%', '50%', '40%']}
         flexDirection={['column', 'column', 'row', 'row']}
       >
 
         <NavLink to='/introducao'>
-          <Button
+          <Flex
             bg='blue.600'
             fontSize='1.2rem'
             fontWeight='bold'
+            alignItems='center'
+            borderRadius='.5rem'
             color='whiteAlpha.900'
+            justifyContent='space-around'
             mb={['1rem', '1rem', '0', '0']}
             _hover={{ backgroundColor: 'blue.400' }}
             height={['4rem', '4rem', 'auto', 'auto']}
@@ -103,7 +105,7 @@ const HomePage = () => {
           >
             Introdução
             <Icon as={FaArrowRight} ml='.5rem'/>
-          </Button>
+          </Flex>
         </NavLink>
 
         <Link
@@ -111,11 +113,14 @@ const HomePage = () => {
           _hover={{ textDecor: 'none' }}
           href='https://github.com/daviteixeira-btm/acesshub'
         >
-          <Button
+          <Flex
             bg='gray.300'
             color='gray.800'
             fontSize='1.2rem'
             fontWeight='bold'
+            alignItems='center'
+            borderRadius='.5rem'
+            justifyContent='space-around'
             mb={['1rem', '1rem', '0', '0']}
             _hover={{ backgroundColor: 'gray.400' }}
             height={['4rem', '4rem', 'auto', 'auto']}
@@ -124,7 +129,7 @@ const HomePage = () => {
           >
             <Icon as={FaGithub} mr='.5rem' />
             GitHub
-          </Button>
+          </Flex>
         </Link>
 
       </Flex>
