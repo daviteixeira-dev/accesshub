@@ -120,7 +120,7 @@ const MenuSideBar = () => {
             overflowX='hidden'
             flexDirection='column'
             boxShadow='0 4px 12px 0 rgba(0, 0, 0, 0.05)'
-            width={navSize == 'small' ? '7rem' : '19rem'}
+            width={navSize == 'small' ? '8rem' : '22rem'}
             textAlign={navSize == 'small' ? 'center' : 'start'}
         >
 
@@ -164,11 +164,19 @@ const MenuSideBar = () => {
             >
                 {
                     sideBarItem.map((item, index) => (
-                        <NavLink to={item.path} key={index}>
+                        <NavLink 
+                            key={index} 
+                            to={item.path} 
+                            style={({ isActive }) => 
+                                isActive 
+                                ? { 
+                                    background: '#cbd5e0', borderRadius: '.5rem', margin: '.5rem 0'
+                                } : {background: 'none', margin: '.5rem 0'}
+                            }
+                        >
                             <Flex
                                 as='li'
                                 p='.5rem'
-                                m='.5rem 0'
                                 alignItems='center'
                                 borderRadius='.5rem'
                                 _hover={{ background: 'gray.300' }}
@@ -180,7 +188,8 @@ const MenuSideBar = () => {
                                 >
                                     {item.icon}
                                 </Icon>
-                                <MenuSideBarItem title={item.name} navSize={navSize} />
+
+                                <MenuSideBarItem menuOption={item.name} navSize={navSize} />
                             </Flex>
                         </NavLink>
                     ))
@@ -197,11 +206,19 @@ const MenuSideBar = () => {
                 <Heading fontSize='1rem' color='gray.900'>WCAG</Heading>
                 {
                     menuWCAG.map((item, index) => (
-                        <NavLink to={item.path} key={index}>
+                        <NavLink 
+                            to={item.path} 
+                            key={index}
+                            style={({ isActive }) => 
+                                isActive 
+                                ? { 
+                                    background: '#cbd5e0', borderRadius: '.5rem', margin: '.5rem 0'
+                                } : {background: 'none', margin: '.5rem 0'}
+                            }
+                        >
                             <Flex
                                 as='li'
                                 p='.5rem'
-                                m='.5rem 0'
                                 alignItems='center'
                                 borderRadius='.5rem'
                                 _hover={{ background: 'gray.300' }}
@@ -213,7 +230,7 @@ const MenuSideBar = () => {
                                 >
                                     {item.icon}
                                 </Icon>
-                                <MenuSideBarItem title={item.name} navSize={navSize} />
+                                <MenuSideBarItem menuOption={item.name} navSize={navSize} />
                             </Flex>
                         </NavLink>
                     ))
@@ -230,11 +247,19 @@ const MenuSideBar = () => {
                 <Heading fontSize='1rem' color='gray.900'>eMAG</Heading>
                 {
                     menuEmag.map((item, index) => (
-                        <NavLink to={item.path} key={index}>
+                        <NavLink 
+                            to={item.path} 
+                            key={index}
+                            style={({ isActive }) => 
+                                isActive 
+                                ? { 
+                                    background: '#cbd5e0', borderRadius: '.5rem', margin: '.5rem 0'
+                                } : {background: 'none', margin: '.5rem 0'}
+                            }
+                        >
                             <Flex
                                 as='li'
                                 p='.5rem'
-                                m='.5rem 0'
                                 alignItems='center'
                                 borderRadius='.5rem'
                                 _hover={{ background: 'gray.300' }}
@@ -246,7 +271,7 @@ const MenuSideBar = () => {
                                 >
                                     {item.icon}
                                 </Icon>
-                                <MenuSideBarItem title={item.name} navSize={navSize} />
+                                <MenuSideBarItem menuOption={item.name} navSize={navSize} />
                             </Flex>
                         </NavLink>
                     ))
