@@ -14,23 +14,21 @@ interface MenuSideBarItemProps {
 const MenuSideBarItem = (props: MenuSideBarItemProps) => {
 
     return (
-        <Flex>
-            <Menu>
-                <Link _hover={{ textDecor: 'none' }}>
-                    <MenuButton>
-                        <Text
-                            ml='1rem'
-                            fontSize='1rem'
-                            color='gray.800'
-                            fontWeight='500'
-                            display={props.navSize == 'small' ? 'none' : 'flex'}
-                        >
-                            {props.title}
-                        </Text>
-                    </MenuButton>
-                </Link>
-            </Menu>
-        </Flex>
+        <Menu>
+            <Link _hover={{ textDecor: 'none' }}>
+                <MenuButton>
+                    <Text
+                        ml='1rem'
+                        fontSize='1rem'
+                        color='gray.800'
+                        fontWeight='500'
+                        display={props.navSize == 'small' ? 'none' : 'flex'}
+                    >
+                        {props.title}
+                    </Text>
+                </MenuButton>
+            </Link>
+        </Menu>
     )
 }
 
