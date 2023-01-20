@@ -1,18 +1,22 @@
 import { 
     Flex, 
-    Heading, 
     Link, 
-    Text 
-} from '@chakra-ui/react'
+    Text, 
+    Heading, 
+    useColorModeValue
+} from '@chakra-ui/react';
 
 const Footer = () => {
+
+  const footerColor = useColorModeValue('blue.600', 'gray.800');
+
   return (
     <Flex 
         h='auto' 
         w='100%' 
         as='footer' 
-        bg='blue.600'
         padding='1rem' 
+        bg={footerColor}
         flexDirection='column'
         justifyContent='space-between'
     >
