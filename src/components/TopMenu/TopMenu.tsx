@@ -3,8 +3,11 @@ import {
     Flex, 
     Text, 
     Link, 
-    Stack 
+    Stack, 
+    useColorModeValue
 } from '@chakra-ui/react';
+
+import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
 import TopMenuLogo from './TopMenuLogo';
 
@@ -22,20 +25,23 @@ const MenuLinks = () => {
     return (
         <Box>
             <Stack 
+                m={0}
+                pt={0}
                 spacing={8}
                 align='center'
-                pt={[0, 0, 0, 0]}
-                m={[0, 0, 0, 0]}
                 direction={['row', 'row', 'row', 'row']}
                 justify={['space-between', 'space-between', 'flex-end', 'flex-end']}
             >
-                <MenuItem to='/'>Início</MenuItem>
+                <ToogleColorMode />
             </Stack>
         </Box>
     );
 };
 
 const NavBarContainer = ({ children, ...props }: any) => {
+
+    const menuColor = useColorModeValue('blue.600', 'gray.800');
+    
     return (
         <Flex
             top='0'
@@ -46,11 +52,11 @@ const NavBarContainer = ({ children, ...props }: any) => {
             zIndex={2}
             wrap='wrap'
             align='center'
+            bg={menuColor}
             position='fixed'
+            color='whiteAlpha.900'
             justify='space-between'
             fontFamily='Inter, sans-serif'
-            bg={['blue.600', 'blue.600', 'blue.600', 'blue.600']}
-            color={['whiteAlpha.900', 'whiteAlpha.900', 'whiteAlpha.900', 'whiteAlpha.900']}
             {...props}
         >
             {children}
@@ -60,11 +66,9 @@ const NavBarContainer = ({ children, ...props }: any) => {
 
 const TopMenu = (props: any) => {
 
-    return(
+    return (
         <NavBarContainer {...props }>
-            <TopMenuLogo 
-                color={['whiteAlpha.900', 'whiteAlpha.900', 'whiteAlpha.900', 'whiteAlpha.900']}
-            />
+            <TopMenuLogo color='whiteAlpha.900'/>
             <MenuLinks />
         </NavBarContainer>
     );
