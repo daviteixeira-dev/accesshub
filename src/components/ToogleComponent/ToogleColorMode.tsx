@@ -11,9 +11,15 @@ const ToogleColorMode = () => {
     const { colorMode, toggleColorMode } = useColorMode();
 
     const bgButton = useColorModeValue('blue.400', 'gray.700');
+    const bgButtonHover = useColorModeValue('blue.500', 'gray.600');
     
     return (
-        <Button onClick={() => toggleColorMode()} bg={bgButton}>
+        <Button 
+            w='3rem' 
+            bg={bgButton} 
+            _hover={{bg: bgButtonHover }}
+            onClick={() => toggleColorMode()} 
+        >
             {colorMode === 'dark' ? <FaSun /> : <FaMoon />}
         </ Button>
     );

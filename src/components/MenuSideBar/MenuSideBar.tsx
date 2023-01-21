@@ -155,6 +155,7 @@ const MenuSideBar = () => {
                 justifyContent={navSize == 'small' ? 'space-around' : 'space-evenly'}
             >
                 <IconButton
+                    width='3rem'
                     bg='blue.400'
                     icon={<FiMenu />}
                     color='whiteAlpha.900'
