@@ -2,140 +2,154 @@ import {
   Flex,
   Text,
   Heading,
-  Container
-} from '@chakra-ui/react'
+  Container,
+  useColorModeValue
+} from '@chakra-ui/react';
 
-import MenuSideBar from '../components/MenuSideBar/MenuSideBar'
-import ComponentCardItem from '../components/ComponentCardItem/ComponentCardItem'
-import Footer from '../components/Footer/Footer'
+import Footer from '../components/Footer/Footer';
+import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
+import ComponentCardItem from '../components/ComponentCardItem/ComponentCardItem';
 
 const Components = () => {
+
+  const bodyColor = useColorModeValue('blackAlpha.50', 'gray.800');
+  const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
+
   return (
-    <Flex bg='blackAlpha.50'>
+    <Flex bg={bodyColor}>
       
       <MenuSideBar />
       
-      <Container maxW='container.xl' height='100vh' overflowY='auto'>
+      <Container 
+        p='0'
+        height='100vh' 
+        overflowY='auto' 
+        maxW='container.xl' 
+      >
 
-        <Heading 
-          as='h1' 
-          my='1rem'
-          fontSize='2rem' 
-          color='gray.900' 
-        >
-          Componentes
-        </Heading>
+        <Flex flexDirection='column' pl='1rem'>
+          
+          <Heading 
+            as='h1' 
+            my='1rem'
+            fontSize='2rem' 
+            color={headingsColor} 
+          >
+            Componentes
+          </Heading>
 
-        <Text 
-          my='2rem' 
-          fontSize='1rem' 
-          fontWeight='normal'
-        >
-          O AccessHub fornece um guia de implementação dos componentes para ajudá-lo a construir 
-          seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
-        </Text>
+          <Text 
+            my='2rem' 
+            fontSize='1rem' 
+            fontWeight='normal'
+          >
+            O AccessHub fornece um guia de implementação dos componentes para ajudá-lo a construir 
+            seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
+          </Text>
 
-        <Heading 
-          my='2rem'
-          fontSize='1.5rem' 
-        >
-          Exemplo de botões
-        </Heading>
+          <Heading 
+            my='2rem'
+            fontSize='1.5rem' 
+          >
+            Exemplo de botões
+          </Heading>
 
-        <Flex justifyContent='space-evenly' mb='2rem'>
-          <ComponentCardItem 
-            cardTitle='Cabeçalhos' 
-            pagLink='/componentes/cabecalhos' 
-            altImage='Componente de Cabeçalhos'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='Pular navegação' 
-            pagLink='/componentes/pular-navegacao' 
-            altImage='Componente de Pular Navegação'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='Breadcrumb'
-            pagLink='/componentes/breadcrumb' 
-            altImage='Componente de Breadcrumb'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='Tabela' 
-            pagLink='/componentes/tabela' 
-            altImage='Componente de Tabela'
-            imgLink='https://via.placeholder.com/150' 
-          />
+          <Flex justifyContent='space-evenly' mb='2rem'>
+            <ComponentCardItem 
+              cardTitle='Cabeçalhos' 
+              pagLink='/componentes/cabecalhos' 
+              altImage='Componente de Cabeçalhos'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='Pular navegação' 
+              pagLink='/componentes/pular-navegacao' 
+              altImage='Componente de Pular Navegação'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='Breadcrumb'
+              pagLink='/componentes/breadcrumb' 
+              altImage='Componente de Breadcrumb'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='Tabela' 
+              pagLink='/componentes/tabela' 
+              altImage='Componente de Tabela'
+              imgLink='https://via.placeholder.com/150' 
+            />
+          </Flex>
+
+          <Heading 
+            my='2rem'
+            fontSize='1.5rem' 
+          >
+            Exemplo de botões
+          </Heading>
+
+          <Flex justifyContent='space-evenly' mb='2rem'>
+            <ComponentCardItem 
+              cardTitle='Formulario' 
+              pagLink='/componentes/formulario' 
+              altImage='Componente de Formulario'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='HTML Inicial' 
+              pagLink='/componentes/html-estrutura-inicial' 
+              altImage='Componente de Estrutura Inicial HTML'
+              imgLink='https://via.placeholder.com/150'
+            />
+            <ComponentCardItem 
+              cardTitle='Links' 
+              pagLink='/componentes/links' 
+              altImage='Componente de Links'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='Imagens' 
+              pagLink='/componentes/imagens' 
+              altImage='Componente de Imagens'
+              imgLink='https://via.placeholder.com/150' 
+            />
+          </Flex>
+
+          <Heading 
+            my='2rem'
+            fontSize='1.5rem' 
+          >
+            Exemplo de botões
+          </Heading>
+
+          <Flex justifyContent='space-evenly' mb='2rem'>
+            <ComponentCardItem 
+              cardTitle='Vídeos' 
+              pagLink='/componentes/videos' 
+              altImage='Componente de Vídeo'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='Áudios' 
+              pagLink='/componentes/audios' 
+              altImage='Componente de Áudio'
+              imgLink='https://via.placeholder.com/150' 
+            />
+            <ComponentCardItem 
+              cardTitle='Recomendações' 
+              pagLink='/componentes/recomendacoes' 
+              altImage='Componente de Recomendações'
+              imgLink='https://via.placeholder.com/150' 
+            />
+          </Flex>
+
         </Flex>
-
-        <Heading 
-          my='2rem'
-          fontSize='1.5rem' 
-        >
-          Exemplo de botões
-        </Heading>
         
-        <Flex justifyContent='space-evenly' mb='2rem'>
-          <ComponentCardItem 
-            cardTitle='Formulario' 
-            pagLink='/componentes/formulario' 
-            altImage='Componente de Formulario'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='HTML Inicial' 
-            pagLink='/componentes/html-estrutura-inicial' 
-            altImage='Componente de Estrutura Inicial HTML'
-            imgLink='https://via.placeholder.com/150'
-          />
-          <ComponentCardItem 
-            cardTitle='Links' 
-            pagLink='/componentes/links' 
-            altImage='Componente de Links'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='Imagens' 
-            pagLink='/componentes/imagens' 
-            altImage='Componente de Imagens'
-            imgLink='https://via.placeholder.com/150' 
-          />
-        </Flex>
-
-        <Heading 
-          my='2rem'
-          fontSize='1.5rem' 
-        >
-          Exemplo de botões
-        </Heading>
-        
-        <Flex justifyContent='space-evenly' mb='2rem'>
-          <ComponentCardItem 
-            cardTitle='Vídeos' 
-            pagLink='/componentes/videos' 
-            altImage='Componente de Vídeo'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='Áudios' 
-            pagLink='/componentes/audios' 
-            altImage='Componente de Áudio'
-            imgLink='https://via.placeholder.com/150' 
-          />
-          <ComponentCardItem 
-            cardTitle='Recomendações' 
-            pagLink='/componentes/recomendacoes' 
-            altImage='Componente de Recomendações'
-            imgLink='https://via.placeholder.com/150' 
-          />
-        </Flex>
-
         <Footer />
 
       </Container>
     </Flex>
-  )
-}
+  );
+};
 
-export default Components
+export default Components;
