@@ -1,24 +1,26 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, useColorModeValue } from '@chakra-ui/react';
 
 interface MenuSideBarItemProps {
     navSize: string,
     menuOption: string
-}
+};
 
 const MenuSideBarItem = (props: MenuSideBarItemProps) => {
+
+    const menuIconsTextColor = useColorModeValue('gray.800', 'blue.300');
 
     return (
         <Flex
             ml='1rem' 
             fontSize='1rem' 
-            color='gray.800' 
             fontWeight='500' 
+            color={menuIconsTextColor} 
             _hover={{ textDecor: 'none' }} 
             display={props.navSize == 'small' ? 'none' : 'flex'}
         >
             {props.menuOption}
         </Flex>
-    )
-}
+    );
+};
 
-export default MenuSideBarItem
+export default MenuSideBarItem;

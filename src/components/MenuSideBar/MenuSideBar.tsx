@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import { FiMenu } from 'react-icons/fi'
+import { FiMenu } from 'react-icons/fi';
 
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 import {
     Flex,
@@ -11,7 +11,8 @@ import {
     Heading,
     Divider,
     IconButton,
-} from '@chakra-ui/react'
+    useColorModeValue
+} from '@chakra-ui/react';
 
 import {
     FaEye,
@@ -27,13 +28,14 @@ import {
     FaPuzzlePiece,
     FaClipboardList,
     FaRegWindowRestore
-} from 'react-icons/fa'
+} from 'react-icons/fa';
 
-import MenuSideBarItem from './MenuSideBarItem'
+import MenuSideBarItem from './MenuSideBarItem';
+import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
 const MenuSideBar = () => {
 
-    const [navSize, setNavSize] = useState('large')
+    const [navSize, setNavSize] = useState('large');
 
     const sideBarItem = [
         {
@@ -109,23 +111,31 @@ const MenuSideBar = () => {
         },
     ]
 
+    const boxColor = useColorModeValue('blue.600', 'gray.800');
+    const menuIconsColor = useColorModeValue('blue.500', 'blue.300');
+    const colorToogle = useColorModeValue('yellow.300', 'orange.300');
+    const menuSideBarColor = useColorModeValue('gray.200', 'gray.800');
+    const menuSideBarColorBg = useColorModeValue('#cbd5e0', '#bee3f8');
+    const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
+
     return (
         <Flex
             as='nav'
-            bg='gray.200'
             height='100vh'
             overflow='1rem'
             overflowY='auto'
             position='sticky'
             overflowX='hidden'
+            color={colorToogle}
+            bg={menuSideBarColor}
             flexDirection='column'
             boxShadow='0 4px 12px 0 rgba(0, 0, 0, 0.05)'
-            width={navSize == 'small' ? '8rem' : '22rem'}
+            width={navSize == 'small' ? '10rem' : '22rem'}
             textAlign={navSize == 'small' ? 'center' : 'start'}
         >
 
             <Flex
-                bg='blue.600'
+                bg={boxColor}
                 p={navSize === 'small' ? '1rem' : '.5rem 1rem'}
                 justifyContent={navSize == 'small' ? 'center' : 'center'}
             >
@@ -139,8 +149,10 @@ const MenuSideBar = () => {
             </Flex>
 
             <Flex
-                p='.5rem 1rem'
-                justifyContent={navSize == 'small' ? 'center' : 'start'}
+                w='100%'
+                p='.5rem'
+                alignSelf='center'
+                justifyContent={navSize == 'small' ? 'space-around' : 'space-evenly'}
             >
                 <IconButton
                     bg='blue.400'
@@ -155,6 +167,7 @@ const MenuSideBar = () => {
                             setNavSize('small')
                     }}
                 />
+                <ToogleColorMode />
             </Flex>
                 
             <Flex
@@ -170,7 +183,7 @@ const MenuSideBar = () => {
                             style={({ isActive }) => 
                                 isActive 
                                 ? { 
-                                    background: '#cbd5e0', borderRadius: '.5rem', margin: '.5rem 0'
+                                    background: menuSideBarColorBg, borderRadius: '.5rem', margin: '.5rem 0'
                                 } : {background: 'none', margin: '.5rem 0'}
                             }
                         >
@@ -179,12 +192,12 @@ const MenuSideBar = () => {
                                 p='.5rem'
                                 alignItems='center'
                                 borderRadius='.5rem'
-                                _hover={{ background: 'gray.300' }}
+                                _hover={{ background: menuSideBarColorBg }}
                                 justifyContent={navSize == 'small' ? 'center' : 'start'}
                             >
                                 <Icon
-                                    color='blue.500'
                                     fontSize='1.5rem'
+                                    color={menuIconsColor}
                                 >
                                     {item.icon}
                                 </Icon>
@@ -203,16 +216,16 @@ const MenuSideBar = () => {
                 p='1rem'
                 flexDirection='column'
             >
-                <Heading fontSize='1rem' color='gray.900'>WCAG</Heading>
+                <Heading fontSize='1rem' color={headingsColor}>WCAG</Heading>
                 {
                     menuWCAG.map((item, index) => (
                         <NavLink 
-                            to={item.path} 
                             key={index}
+                            to={item.path} 
                             style={({ isActive }) => 
                                 isActive 
                                 ? { 
-                                    background: '#cbd5e0', borderRadius: '.5rem', margin: '.5rem 0'
+                                    background: menuSideBarColorBg, borderRadius: '.5rem', margin: '.5rem 0'
                                 } : {background: 'none', margin: '.5rem 0'}
                             }
                         >
@@ -221,12 +234,12 @@ const MenuSideBar = () => {
                                 p='.5rem'
                                 alignItems='center'
                                 borderRadius='.5rem'
-                                _hover={{ background: 'gray.300' }}
+                                _hover={{ background: menuSideBarColorBg }}
                                 justifyContent={navSize == 'small' ? 'center' : 'start'}
                             >
                                 <Icon
-                                    color='blue.500'
                                     fontSize='1.5rem'
+                                    color={menuIconsColor}
                                 >
                                     {item.icon}
                                 </Icon>
@@ -244,7 +257,7 @@ const MenuSideBar = () => {
                 p='1rem'
                 flexDirection='column'
             >
-                <Heading fontSize='1rem' color='gray.900'>eMAG</Heading>
+                <Heading fontSize='1rem' color={headingsColor}>eMAG</Heading>
                 {
                     menuEmag.map((item, index) => (
                         <NavLink 
@@ -253,7 +266,7 @@ const MenuSideBar = () => {
                             style={({ isActive }) => 
                                 isActive 
                                 ? { 
-                                    background: '#cbd5e0', borderRadius: '.5rem', margin: '.5rem 0'
+                                    background: menuSideBarColorBg, borderRadius: '.5rem', margin: '.5rem 0'
                                 } : {background: 'none', margin: '.5rem 0'}
                             }
                         >
@@ -262,12 +275,12 @@ const MenuSideBar = () => {
                                 p='.5rem'
                                 alignItems='center'
                                 borderRadius='.5rem'
-                                _hover={{ background: 'gray.300' }}
+                                _hover={{ background: menuSideBarColorBg }}
                                 justifyContent={navSize == 'small' ? 'center' : 'start'}
                             >
                                 <Icon
-                                    color='blue.500'
                                     fontSize='1.5rem'
+                                    color={menuIconsColor}
                                 >
                                     {item.icon}
                                 </Icon>
@@ -278,7 +291,7 @@ const MenuSideBar = () => {
                 }
             </Flex>
         </Flex>
-    )
-}
+    );
+};
 
-export default MenuSideBar
+export default MenuSideBar;
