@@ -7,7 +7,8 @@ import {
   Stack,
   Avatar,
   Heading,
-  CardBody
+  CardBody,
+  useColorModeValue
 } from '@chakra-ui/react';
 
 import { NavLink } from 'react-router-dom';
@@ -19,15 +20,44 @@ import { FaGithub, FaArrowRight } from 'react-icons/fa';
 
 const HomePage = () => {
   
+  const bodyColor = useColorModeValue('gray.100', 'gray.800');
+  const textSpanBlue = useColorModeValue('blue.600', 'blue.400');
+  const bgBottonGithub = useColorModeValue('gray.200', 'gray.600');
+  const textColor = useColorModeValue('gray.800', 'whiteAlpha.800');
+  const cardsColor = useColorModeValue('whiteAlpha.900', 'gray.800');
+  const bodySection2Color = useColorModeValue('gray.200', 'gray.700');
+  const bgBottonGithubHover = useColorModeValue('gray.300', 'gray.500');
+  const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
+  const bgBottonIntroduction = useColorModeValue('blue.600', 'blue.400');
+  const bgBottonIntroductionHover = useColorModeValue('blue.400', 'blue.600');
+
+  const cardItem = [
+    {
+      avatarIMG: 'https://via.placeholder.com/50',
+      cardTitle: 'Padrões de Referências',
+      cardText: 'Desenvolver material de referência para o suporte na implementação das funcionalidades de acessibilidade Web por desenvolvedores.'
+    },
+    {
+      avatarIMG: 'https://via.placeholder.com/50',
+      cardTitle: 'Conjunto de Recomendações',
+      cardText: 'Sugerir um conjunto de recomendações para apoiar a implementação das funcionalidades de acessibilidade Web.'
+    },
+    {
+      avatarIMG: 'https://via.placeholder.com/50',
+      cardTitle: 'Exemplos Open Source',
+      cardText: 'Disponibilizar exemplos de código open source para apoiar a implementação das funcionalidades de acessibilidade Web.'
+    }
+  ]
+
   return (
     <Flex
       width='100%'
-      bg='gray.100'
+      height='100%'
+      bg={bodyColor}
       textAlign='center'
       alignItems='center'
       flexDirection='column'
       justifyContent='center'
-      height={['100%', '100%', '100%', '100%']}
     >
       <TopMenu />
 
@@ -42,16 +72,16 @@ const HomePage = () => {
       >
         <Heading
           as='h1'
-          color='gray.900'
+          color={headingsColor}
           textTransform='uppercase'
           fontSize={['2.5rem', '2.5rem', '3rem', '3.5rem']}
         >
-          Desenvolva e deixe o seu site mais <Text as='span' color='blue.500'>acessível</Text>
+          Desenvolva e deixe o seu site mais <Text as='span' color={textSpanBlue}>acessível</Text>
         </Heading>
         <Text
-          color='gray.800'
           marginTop='1rem'
           fontSize='1.5rem'
+          color={textColor}
         >
           AccessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web,
           possibilitando a apresentação de padrões e materiais de suporte para ajudar na
@@ -87,7 +117,7 @@ const HomePage = () => {
       </Flex>
 
       <Flex
-        mb='1rem'
+        mb='2rem'
         display='flex'
         alignItems='center'        
         justifyContent='space-evenly'
@@ -97,18 +127,18 @@ const HomePage = () => {
 
         <NavLink to='/introducao'>
           <Flex
-            bg='blue.600'
             fontSize='1.2rem'
             fontWeight='bold'
             alignItems='center'
             borderRadius='.5rem'
             color='whiteAlpha.900'
+            bg={bgBottonIntroduction}
             justifyContent='space-around'
             mb={['1rem', '1rem', '0', '0']}
-            _hover={{ backgroundColor: 'blue.400' }}
             height={['4rem', '4rem', 'auto', 'auto']}
             width={['12rem', '12rem', '10rem', '10rem']}
             padding={['1rem', '1rem', '1rem', '1.5rem 2rem']}
+            _hover={{ backgroundColor: bgBottonIntroductionHover }}
           >
             Introdução
             <Icon as={FaArrowRight} ml='.5rem'/>
@@ -121,17 +151,17 @@ const HomePage = () => {
           href='https://github.com/daviteixeira-btm/acesshub'
         >
           <Flex
-            bg='gray.300'
-            color='gray.800'
+            color={textColor}
             fontSize='1.2rem'
             fontWeight='bold'
             alignItems='center'
+            bg={bgBottonGithub}
             borderRadius='.5rem'
             justifyContent='space-around'
             mb={['1rem', '1rem', '0', '0']}
-            _hover={{ backgroundColor: 'gray.400' }}
             height={['4rem', '4rem', 'auto', 'auto']}
             width={['12rem', '12rem', '10rem', '10rem']}
+            _hover={{ backgroundColor: bgBottonGithubHover }}
             padding={['1rem', '1rem', '1rem', '1.5rem 2rem']}
           >
             <Icon as={FaGithub} mr='.5rem' />
@@ -144,23 +174,23 @@ const HomePage = () => {
       <Flex
         mt='2rem'
         width='100%'
-        bg='gray.200'
         height='100%'
         padding='1rem'
         alignItems='center'
         flexDirection='column'
+        bg={bodySection2Color}
       >
         <Flex 
           width={['100%', '100%', '60%', '60%']}
         >
           <Heading
-            as='h1'
-            color='gray.900'
+            as='h2'
+            color={headingsColor}
             fontSize={['1.5rem', '1.5rem', '1.8rem', '1.8rem']}
           >
             Nosso objetivo, é fornecer exemplos de implementações, 
-            auxiliando no processo de programação de 
-            <Text as='span' color='blue.500'>funcionalidades</Text> de acessibilidade 
+            auxiliando no processo de programação 
+            de <Text as='span' color={textSpanBlue}>funcionalidades</Text> de acessibilidade 
           </Heading>
         </Flex>
 
@@ -170,44 +200,22 @@ const HomePage = () => {
           justifyContent='space-evenly'
           flexDirection={['column', 'column', 'row', 'row']}
         >
-          <Card maxW='sm' mt='1rem'>
-            <CardBody>
-              <Avatar name='Segun Adebayo' src='https://via.placeholder.com/50' />
-              <Stack mt='6' spacing='3'>
-                <Heading size='md'>Padrões de Referências</Heading>
-                <Text>
-                  Desenvolver material de referência para o suporte na implementação das 
-                  funcionalidades de acessibilidade Web por desenvolvedores.
-                </Text>
-              </Stack>
-            </CardBody>
-          </Card>
 
-          <Card maxW='sm' mt='1rem'>
-            <CardBody>
-              <Avatar name='Segun Adebayo' src='https://via.placeholder.com/50' />
-              <Stack mt='6' spacing='3'>
-                <Heading size='md'>Conjunto de Recomendações</Heading>
-                <Text>
-                  Sugerir um conjunto de recomendações para apoiar a implementação das 
-                  funcionalidades de acessibilidade Web.
-                </Text>
-              </Stack>
-            </CardBody>
-          </Card>
-
-          <Card maxW='sm' mt='1rem'>
-            <CardBody>
-              <Avatar name='Segun Adebayo' src='https://via.placeholder.com/50' />
-              <Stack mt='6' spacing='3'>
-                <Heading size='md'>Exemplos Open Source</Heading>
-                <Text>
-                  Disponibilizar exemplos de código open source para apoiar a 
-                  implementação das funcionalidades de acessibilidade Web.
-                </Text>
-              </Stack>
-            </CardBody>
-          </Card>
+          {
+            cardItem.map((item, index) => (
+              <Card maxW='sm' mt='1rem' bg={cardsColor} key={index}> 
+                <CardBody>
+                  <Avatar name='Card Info' src={item.avatarIMG} />
+                  <Stack mt='6' spacing='3'>
+                    <Heading size='md'>{item.cardTitle}</Heading>
+                    <Text>
+                      {item.cardText}
+                    </Text>
+                  </Stack>
+                </CardBody>
+              </Card>
+            ))
+          }
           
         </Flex>
       
