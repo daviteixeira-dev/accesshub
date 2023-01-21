@@ -22,6 +22,9 @@ const MenuItem = ({ children, isLast, to = '/', ...rest }: any) => {
 };
 
 const MenuLinks = () => {
+
+    const colorToogle = useColorModeValue('yellow.300', 'orange.300');
+
     return (
         <Box>
             <Stack 
@@ -29,7 +32,8 @@ const MenuLinks = () => {
                 pt={0}
                 spacing={8}
                 align='center'
-                direction={['row', 'row', 'row', 'row']}
+                direction='row'
+                color={colorToogle}
                 justify={['space-between', 'space-between', 'flex-end', 'flex-end']}
             >
                 <ToogleColorMode />
@@ -52,6 +56,7 @@ const NavBarContainer = ({ children, ...props }: any) => {
             zIndex={2}
             wrap='wrap'
             align='center'
+            boxShadow='sm'
             bg={menuColor}
             position='fixed'
             color='whiteAlpha.900'
@@ -68,7 +73,7 @@ const TopMenu = (props: any) => {
 
     return (
         <NavBarContainer {...props }>
-            <TopMenuLogo color='whiteAlpha.900'/>
+            <TopMenuLogo />
             <MenuLinks />
         </NavBarContainer>
     );
