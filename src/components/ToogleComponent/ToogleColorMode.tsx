@@ -1,13 +1,20 @@
-import { Button, useColorMode } from '@chakra-ui/react';
+import { 
+    Button, 
+    useColorMode, 
+    useColorModeValue 
+} from '@chakra-ui/react';
+
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ToogleColorMode = () => {
     
     const { colorMode, toggleColorMode } = useColorMode();
+
+    const bgButton = useColorModeValue('blue.400', 'gray.700');
     
     return (
-        <Button onClick={() => toggleColorMode()}>
-            {colorMode === 'dark' ? <FaSun  color='orange.200'/> : <FaMoon color='blue.700'/>}
+        <Button onClick={() => toggleColorMode()} bg={bgButton}>
+            {colorMode === 'dark' ? <FaSun /> : <FaMoon />}
         </ Button>
     );
 };
