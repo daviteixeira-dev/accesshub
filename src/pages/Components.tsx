@@ -99,7 +99,7 @@ const Components = () => {
 
           <Flex justifyContent='space-evenly' mb='2rem'>
             <ComponentCardItem 
-              cardTitle='Formulario' 
+              cardTitle='Formulário' 
               pagLink='/componentes/formulario' 
               altImage='Componente de Formulario'
               imgLink='https://via.placeholder.com/150' 
