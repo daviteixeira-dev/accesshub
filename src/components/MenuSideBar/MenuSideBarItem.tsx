@@ -1,7 +1,7 @@
 import { Flex, useColorModeValue } from '@chakra-ui/react';
 
 interface MenuSideBarItemProps {
-    navSize: string,
+    navSize?: string,
     menuOption: string
 };
 
