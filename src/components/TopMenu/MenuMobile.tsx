@@ -26,7 +26,7 @@ interface MenuItemsProps {
     marginBottom: string
 }
 
-const Menu = (props: MenuItemsProps) => {
+const MenuMobile = (props: MenuItemsProps) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const menuColor = useColorModeValue('blue.600', 'gray.800');
@@ -142,4 +142,4 @@ const Menu = (props: MenuItemsProps) => {
   );
 };
 
-export default Menu;
+export default MenuMobile;
