@@ -48,7 +48,7 @@ const Components = () => {
           </Heading>
 
           <Text 
-            my='2rem' 
+            my='1rem' 
             fontSize='1rem' 
             fontWeight='normal'
           >
@@ -57,13 +57,17 @@ const Components = () => {
           </Text>
 
           <Heading 
-            my='2rem'
+            my='1rem'
             fontSize='1.5rem' 
           >
             Exemplo de botões
           </Heading>
 
-          <Flex justifyContent='space-evenly' mb='2rem'>
+          <Flex 
+            mb='2rem'
+            justifyContent='space-evenly'
+            flexDirection={['column', 'column', 'row', 'row']} 
+          >
             <ComponentCardItem 
               cardTitle='Cabeçalhos' 
               pagLink='/componentes/cabecalhos' 
@@ -91,13 +95,17 @@ const Components = () => {
           </Flex>
 
           <Heading 
-            my='2rem'
+            my='1rem'
             fontSize='1.5rem' 
           >
             Exemplo de botões
           </Heading>
 
-          <Flex justifyContent='space-evenly' mb='2rem'>
+          <Flex
+            mb='2rem'
+            justifyContent='space-evenly'
+            flexDirection={['column', 'column', 'row', 'row']}
+          >
             <ComponentCardItem 
               cardTitle='Formulário' 
               pagLink='/componentes/formulario' 
@@ -125,13 +133,17 @@ const Components = () => {
           </Flex>
 
           <Heading 
-            my='2rem'
+            my='1rem'
             fontSize='1.5rem' 
           >
             Exemplo de botões
           </Heading>
 
-          <Flex justifyContent='space-evenly' mb='2rem'>
+          <Flex
+            mb='2rem'
+            justifyContent='space-evenly'
+            flexDirection={['column', 'column', 'row', 'row']}
+          >
             <ComponentCardItem 
               cardTitle='Vídeos' 
               pagLink='/componentes/videos' 

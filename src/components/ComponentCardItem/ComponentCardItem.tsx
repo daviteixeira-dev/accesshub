@@ -2,7 +2,7 @@ import {
     Flex, 
     Image, 
     Heading,
-    useColorModeValue, 
+    useColorModeValue 
 } from '@chakra-ui/react';
 
 import { NavLink } from 'react-router-dom';
@@ -16,30 +16,31 @@ interface ComponentCardItem {
 
 const ComponentCardItem = (props: ComponentCardItem) => {
 
-    const cardBgColor = useColorModeValue('gray.100', 'gray.700');
-    const cardBgColorHover = useColorModeValue('gray.200', 'gray.600');
+    const cardBgColor = useColorModeValue('blue.500', 'gray.700');
+    const cardBgColorHover = useColorModeValue('blue.400', 'gray.600');
     const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
 
     return (
         <Flex
+            mb='1rem'
             as='article'
-            width='12rem'
             padding='1rem'
             bg={cardBgColor}
-            borderRadius='.5rem'
+            borderRadius='.3rem'
             flexDirection='column'
             _hover={{ bg: cardBgColorHover }}
             transition='box-shadow 0.1s ease-out 0s'
+            width={['100%', '100%', '10.5rem', '15rem']}
             boxShadow='0 .5rem .5rem 0 rgba(0, 0, 0, 0.05)'
         >
             <NavLink to={props.pagLink}>
 
                 <Image 
-                    w='12rem' 
                     h='10rem' 
                     src='gibbresh.png' 
                     alt={props.altImage} 
                     fallbackSrc={props.imgLink} 
+                    w={['100%', '100%', '100%', '15rem']} 
                 />
 
                 <Heading
@@ -47,7 +48,10 @@ const ComponentCardItem = (props: ComponentCardItem) => {
                     mt='1rem'
                     display='flex'
                     fontSize='1.2rem'
+                    textAlign='center'
+                    fontWeight='medium'
                     color={headingsColor}
+                    justifyContent='center'
                 >
                     {props.cardTitle}
                 </Heading>
