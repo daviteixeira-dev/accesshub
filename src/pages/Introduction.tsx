@@ -7,25 +7,25 @@ import {
   Heading,
   ListItem,
   Container, 
-  UnorderedList,
-} from '@chakra-ui/react'
+  UnorderedList
+} from '@chakra-ui/react';
 
-import Menu from '../components/TopMenu/MenuMobile';
+import Footer from '../components/Footer/Footer';
+import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 
 const Introduction = () => {
-
   return (
     <Flex>
-
+      
       <Hide below='md'>
         <MenuSideBar />
       </Hide>
 
       <Container maxW='container.xl' height='100vh' overflowY='auto' p='0'>
         
-        <Show below='md' >
-          <Menu marginBottom='0'/>
+        <Show below='md'>
+          <MenuMobile marginBottom='0'/>
         </Show>
 
         <Flex p='1rem' flexDirection='column'>
@@ -112,6 +112,8 @@ const Introduction = () => {
           </Text>
 
         </Flex>
+
+        <Footer />
 
       </Container>
     </Flex>
