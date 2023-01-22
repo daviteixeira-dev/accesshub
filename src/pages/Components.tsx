@@ -1,12 +1,15 @@
 import {
   Flex,
   Text,
+  Hide,
+  Show,
   Heading,
   Container,
   useColorModeValue
 } from '@chakra-ui/react';
 
 import Footer from '../components/Footer/Footer';
+import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import ComponentCardItem from '../components/ComponentCardItem/ComponentCardItem';
 
@@ -18,7 +21,9 @@ const Components = () => {
   return (
     <Flex bg={bodyColor}>
       
-      <MenuSideBar />
+      <Hide below='md'>
+        <MenuSideBar />
+      </Hide>
       
       <Container 
         p='0'
@@ -27,7 +32,11 @@ const Components = () => {
         maxW='container.xl' 
       >
 
-        <Flex flexDirection='column' pl='1rem'>
+        <Show below='md'>
+          <MenuMobile marginBottom='0'/>
+        </Show>
+
+        <Flex flexDirection='column' p='1rem'>
           
           <Heading 
             as='h1' 
