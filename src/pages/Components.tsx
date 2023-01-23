@@ -162,6 +162,12 @@ const Components = () => {
               altImage='Componente de Recomendações'
               imgLink='https://via.placeholder.com/150' 
             />
+            <ComponentCardItem 
+              cardTitle='Função para alterar o Tamanho da Fonte' 
+              pagLink='/componentes/alterar-tamanho-da-fonte' 
+              altImage='Componente para alterar o tamanho da fonte'
+              imgLink='https://via.placeholder.com/150' 
+            />
           </Flex>
 
         </Flex>

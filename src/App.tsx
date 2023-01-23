@@ -2,25 +2,26 @@ import {
   Route, 
   Routes, 
   BrowserRouter 
-} from 'react-router-dom'
+} from 'react-router-dom';
 
-import HomePage from './pages/HomePage'
-import Components from './pages/Components'
-import Introduction from './pages/Introduction'
+import HomePage from './pages/HomePage';
+import Components from './pages/Components';
+import Introduction from './pages/Introduction';
 
-import PageAboutTable from './pages/PageAboutTable'
-import PageAboutHeaders from './pages/PageAboutHeaders'
-import PageAboutBreadcrumb from './pages/PageAboutBreadcrumb'
-import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation'
-import PageAboutForm from './pages/PageAboutForm'
-import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure'
-import PageAboutLinks from './pages/PageAboutLinks'
-import PageAboutImages from './pages/PageAboutImages'
-import PageAboutVideos from './pages/PageAboutVideos'
-import PageAboutAudios from './pages/PageAboutAudios'
-import PageAboutRecommendations from './pages/PageAboutRecommendations'
+import PageAboutForm from './pages/PageAboutForm';
+import PageAboutTable from './pages/PageAboutTable';
+import PageAboutLinks from './pages/PageAboutLinks';
+import PageAboutImages from './pages/PageAboutImages';
+import PageAboutVideos from './pages/PageAboutVideos';
+import PageAboutAudios from './pages/PageAboutAudios';
+import PageAboutHeaders from './pages/PageAboutHeaders';
+import PageAboutBreadcrumb from './pages/PageAboutBreadcrumb';
+import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation';
+import PageAboutRecommendations from './pages/PageAboutRecommendations';
+import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure';
+import PageAboutFunctionChangeFontSize from './pages/PageAboutFunctionChangeFontSize';
 
-function App() {
+function App(){
   return (
     <BrowserRouter>
       <Routes>
@@ -52,10 +53,11 @@ function App() {
         <Route path='/componentes/recomendacoes' element={<PageAboutRecommendations />} />
         <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
         <Route path='/componentes/html-estrutura-inicial' element={<PageAboutHTMLInitialStructure />} />
+        <Route path='/componentes/alterar-tamanho-da-fonte' element={<PageAboutFunctionChangeFontSize />} />
       
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
