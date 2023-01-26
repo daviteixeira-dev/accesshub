@@ -34,6 +34,10 @@ const PageAboutSkipNavigation = () => {
                     <Heading as='h2' mb='1rem' fontSize='1.1rem'>
                         Ver WCAG 2.0 Critério de Sucesso 2.4.1
                     </Heading>
+
+                    <Heading as='h3' mb='1rem' fontSize='1.1rem'>
+                        Fornecer âncoras para ir direto a um bloco de conteúdo (2.4.1)
+                    </Heading>
                     
                     <Text mb='1rem'>
                         Devem ser fornecidas âncoras, disponíveis na barra de acessibilidade, que apontem 

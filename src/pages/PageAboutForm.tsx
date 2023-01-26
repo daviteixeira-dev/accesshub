@@ -39,7 +39,7 @@ const PageAboutForm = () => {
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Fornecer alternativa em texto para os botões de imagem de formulários
+                        Fornecer alternativa em texto para os botões de imagem de formulários (1.1.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -59,7 +59,7 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_02'} />
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Fornecer alternativa em texto para os botões de imagem de formulários
+                        Associar etiquetas aos seus campos (1.3.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -72,7 +72,7 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_03'} />
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Estabelecer uma ordem lógica de navegação
+                        Estabelecer uma ordem lógica de navegação (2.4.3)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -83,7 +83,7 @@ const PageAboutForm = () => {
                     </Text>
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Não provocar automaticamente alteração no contexto
+                        Não provocar automaticamente alteração no contexto (3.2.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -93,7 +93,7 @@ const PageAboutForm = () => {
                     </Text>
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Fornecer instruções para entrada de dados
+                        Fornecer instruções para entrada de dados (3.2.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -179,7 +179,8 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_04'} />
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Identificar e descrever erros de entrada de dados e confirmar o envio das informações
+                        Identificar e descrever erros de entrada de dados e confirmar o envio 
+                        das informações (3.1.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -223,7 +224,7 @@ const PageAboutForm = () => {
                     </UnorderedList>
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Agrupar campos de formulário
+                        Agrupar campos de formulário (1.3.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -241,7 +242,7 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_05'} />
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Fornecer estratégias de segurança específicas ao invés de CAPTCHA
+                        Fornecer estratégias de segurança específicas ao invés de CAPTCHA (1.3.1)
                     </Heading>
 
                     <Text mb='1rem'>

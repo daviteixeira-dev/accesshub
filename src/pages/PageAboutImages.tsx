@@ -47,7 +47,7 @@ const PageAboutImages = () => {
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Fornecer alternativa em texto para as imagens de um site
+                        Fornecer alternativa em texto para as imagens de um site (1.1.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -153,7 +153,7 @@ const PageAboutImages = () => {
                     </Text>
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Utilizar mapas de imagem de forma acessível
+                        Utilizar mapas de imagem de forma acessível (1.1.1)
                     </Heading>
 
                     <Text my='1rem'>

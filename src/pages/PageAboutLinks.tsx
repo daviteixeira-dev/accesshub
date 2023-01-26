@@ -46,7 +46,7 @@ const PageAboutLinks = () => {
                     <PostComponent article_name={'links_01'} />
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Separar links adjacentes 
+                        Separar links adjacentes (1.3.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -77,7 +77,7 @@ const PageAboutLinks = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Não abrir novas instâncias sem a solicitação do usuário 
+                        Não abrir novas instâncias sem a solicitação do usuário (3.2.5)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -118,7 +118,7 @@ const PageAboutLinks = () => {
                     <PostComponent article_name={'links_03'} />
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Descrever links clara e sucintamente 
+                        Descrever links clara e sucintamente (2.4.4 e 2.4.9)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -160,7 +160,7 @@ const PageAboutLinks = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Possibilitar que o elemento com foco seja visualmente evidente
+                        Possibilitar que o elemento com foco seja visualmente evidente (2.4.7)
                     </Heading>
 
                     <Text mb='1rem'>

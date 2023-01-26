@@ -39,7 +39,7 @@ const PageAboutRecommendations = () => {
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Respeitar os Padrões Web
+                        Respeitar os Padrões Web (4.1.1 e 4.1.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -70,7 +70,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Ordenar de forma lógica e intuitiva a leitura e tabulação
+                        Ordenar de forma lógica e intuitiva a leitura e tabulação (1.3.2 e 2.4.3)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -97,7 +97,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Não incluir situações com intermitência de tela
+                        Não incluir situações com intermitência de tela (2.3.1)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -108,7 +108,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Assegurar o controle do usuário sobre as alterações temporais do conteúdo
+                        Assegurar o controle do usuário sobre as alterações temporais do conteúdo (2.2.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -122,7 +122,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Disponibilizar documentos em formatos acessíveis
+                        Disponibilizar documentos em formatos acessíveis (Sem Critério)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -141,7 +141,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Garantir a leitura e compreensão das informações
+                        Garantir a leitura e compreensão das informações (3.1.5)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -188,7 +188,7 @@ const PageAboutRecommendations = () => {
                     </UnorderedList>
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Disponibilizar uma explicação para siglas, abreviaturas e palavras incomuns
+                        Disponibilizar uma explicação para siglas, abreviaturas e palavras incomuns (3.1.3 e 3.1.4)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -207,7 +207,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Fornecer controle de animação
+                        Fornecer controle de animação (2.2.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -216,7 +216,7 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Garantir que os objetos programáveis sejam acessíveis 
+                        Garantir que os objetos programáveis sejam acessíveis (2.1.1 e 2.1.2) 
                     </Heading>
 
                     <Text mb='1rem'>

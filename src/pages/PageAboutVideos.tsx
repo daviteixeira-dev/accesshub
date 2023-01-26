@@ -36,7 +36,7 @@ const PageAboutVideos = () => {
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Elemento VIDEO em HTML5
+                        Fornecer alternativa para vídeo (1.2.1, 1.2.2, 1.2.6 e 1.2.8)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -48,11 +48,7 @@ const PageAboutVideos = () => {
 
                     <PostComponent article_name={'videos_01'} />
 
-                    <Heading as='h3' my='1rem' fontSize='1rem'>
-                        Fornecer alternativa para vídeo
-                    </Heading>
-
-                    <Text mb='1rem'>
+                    <Text my='1rem'>
                         Deve haver uma alternativa sonora ou textual para vídeos que não incluem faixas 
                         de áudio. Para vídeos que contêm áudio falado e no idioma natural da página, 
                         devem ser fornecidas legendas. Além de essencial para pessoas com deficiência 
@@ -81,7 +77,7 @@ const PageAboutVideos = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Oferecer audiodescrição para vídeo pré-gravado
+                        Oferecer audiodescrição para vídeo pré-gravado (1.2.3, 1.2.5 e 1.2.7)
                     </Heading>
 
                     <Text mb='1rem'>

@@ -37,24 +37,21 @@ const PageAboutHTMLInitialStructure = () => {
                         Ver WCAG 2.0 Critério de Sucesso 1.3.1, 2.2.1, 2.4.2, 3.1.1, 3.1.2, 3.2.3 e 3.2.5.
                     </Heading>
 
+                    <Heading as='h3' my='1rem' fontSize='1rem'>
+                        Abaixo um exemplo de estrutura inicial HTML5:
+                    </Heading>
+
+                    <PostComponent article_name={'html_01'} />
+
+                    <Heading as='h3' my='1rem' fontSize='1rem'>
+                        Organizar o código HTML de forma lógica e semântica (1.3.1)
+                    </Heading>
+
                     <Text mb='1rem'>
                         O código HTML deve ser organizado de forma lógica e semântica, ou seja, apresentando 
                         os elementos em uma ordem compreensível e correspondendo ao conteúdo desejado. Cada 
                         elemento HTML deve ser utilizado para o fim que ele foi criado.
                     </Text>
-
-                    <Text mb='1rem'>
-                        Deve-se identificar o principal idioma utilizado nos documentos. A identificação é 
-                        feita por meio do atributo lang do HTML e, para documentos XHTML, é utilizado o 
-                        xml:lang. Ele deve ser declarado em todas as páginas, pois além de auxiliar na 
-                        acessibilidade do conteúdo, também permite melhor indexação pelos motores de busca.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Abaixo um exemplo de estrutura inicial HTML5:
-                    </Text>
-
-                    <PostComponent article_name={'html_01'} />
 
                     <Text mb='1rem'>
                         Assim, marcação semântica adequada deve ser utilizada para designar os cabeçalhos 
@@ -67,8 +64,26 @@ const PageAboutHTMLInitialStructure = () => {
                         que está dentro desse elemento.
                     </Text>
 
+                    <Text mb='1rem'>
+                        Abaixo um exemplo correto de como utilizar corretamente a semântica HTML5 e utilizando 
+                        ARIA:
+                    </Text>
+
+                    <PostComponent article_name={'html_02'} />
+
+                    <Heading as='h3' my='1rem' fontSize='1rem'>
+                        Identificar o idioma principal da página (3.1.1)
+                    </Heading>
+
+                    <Text mb='1rem'>
+                        Deve-se identificar o principal idioma utilizado nos documentos. A identificação é 
+                        feita por meio do atributo lang do HTML e, para documentos XHTML, é utilizado o 
+                        xml:lang. Ele deve ser declarado em todas as páginas, pois além de auxiliar na 
+                        acessibilidade do conteúdo, também permite melhor indexação pelos motores de busca.
+                    </Text>
+
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Informar mudança de idioma no conteúdo
+                        Informar mudança de idioma no conteúdo (3.1.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -78,7 +93,7 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Oferecer um título descritivo e informativo à página
+                        Oferecer um título descritivo e informativo à página (2.4.2)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -89,15 +104,8 @@ const PageAboutHTMLInitialStructure = () => {
                         da página] – [nome do sítio ou sistema] sem palavras extras, ou recursos estilísticos.
                     </Text>
 
-                    <Text mb='1rem'>
-                        Abaixo um exemplo correto de como utilizar corretamente a semântica HTML5 e utilizando 
-                        ARIA:
-                    </Text>
-
-                    <PostComponent article_name={'html_02'} />
-
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Dividir as áreas de informação
+                        Dividir as áreas de informação (3.2.3)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -248,7 +256,7 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Não criar páginas com atualização automática periódica
+                        Não criar páginas com atualização automática periódica (3.2.5)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -269,7 +277,7 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Não utilizar redirecionamento automático de páginas
+                        Não utilizar redirecionamento automático de páginas (3.2.5)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -279,7 +287,7 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Fornecer alternativa para modificar limite de tempo
+                        Fornecer alternativa para modificar limite de tempo (2.2.1)
                     </Heading>
 
                     <Text mb='1rem'>

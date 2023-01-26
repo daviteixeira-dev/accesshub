@@ -35,6 +35,11 @@ const PageAboutBreadcrumb = () => {
                         Ver WCAG 2.0 Critério de Sucesso 2.4.8
                     </Heading>
 
+                    <Heading as='h3' mb='1rem' fontSize='1.1rem'>
+                        Informar o usuário sobre sua localização na página (2.4.8)
+                    </Heading>
+
+
                     <Text mb='1rem'>
                         Deverá ser fornecido um mecanismo que permita ao usuário orientar-se dentro de um 
                         conjunto de páginas, permitindo que ele saiba onde está no momento. Assim, poderá 

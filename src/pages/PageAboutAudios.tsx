@@ -36,7 +36,7 @@ const PageAboutAudios = () => {
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Fornecer alternativa para áudio
+                        Fornecer alternativa para áudio (1.2.1, 1.2.2 e 1.2.6)
                     </Heading>
 
                     <Text mb='1rem'>
@@ -55,7 +55,7 @@ const PageAboutAudios = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Fornecer controle de áudio para som
+                        Fornecer controle de áudio para som (1.4.2)
                     </Heading>
 
                     <Text mb='1rem'>

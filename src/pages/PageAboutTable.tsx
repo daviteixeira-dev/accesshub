@@ -50,7 +50,7 @@ const PageAboutTable = () => {
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Em tabelas, utilizar títulos e resumos de forma apropriada
+                        Em tabelas, utilizar títulos e resumos de forma apropriada (1.3.1)
                     </Heading>
 
                     <Text mb='1rem'>

@@ -34,6 +34,10 @@ const PageAboutHeaders = () => {
                     <Heading as='h2' mb='1rem' fontSize='1.1rem'>
                         Ver WCAG 2.0 Critérios de Sucesso 1.3.1 e 2.4.10
                     </Heading>
+
+                    <Heading as='h3' mb='1rem' fontSize='1.1rem'>
+                        Utilizar corretamente os níveis de cabeçalho (1.3.1 e 2.4.10)
+                    </Heading>
                     
                     <Text mb='1rem'>
                         Os níveis de cabeçalho (elementos HTML H1 a H6) devem ser utilizados de forma 
