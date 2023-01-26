@@ -32,10 +32,27 @@ const PageAboutFunctionChangeFontSize = () => {
                     </Heading>
 
                     <Heading as='h2' mb='1rem' fontSize='1.1rem'>
-                        Ver WCAG 2.0 Critério de Sucesso ???
+                        Ver WCAG 2.0 Critério de Sucesso 1.4.4, 2.4.4, 3.2.2 e 3.2.4
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
+                        Permitir redimensionamento sem perda de funcionalidade (1.4.4)
+                    </Heading>
+
+                    <Text mb='1rem'>
+                        A página deve continuar legível e funcional mesmo quando redimensionada para 
+                        até 200%. Assim, é preciso garantir que, quando a página for redimensionada, 
+                        não ocorram sobreposições nem o aparecimento de uma barra horizontal.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Além de permitir o redimensionamento sem perda de funcionalidade, o leiaute do sítio 
+                        deve adequar-se à resolução de tela do dispositivo pelo qual está sendo acessado, 
+                        já que, atualmente, não existe mais um padrão de resolução de tela para os 
+                        computadores e há uma crescente utilização de dispositivos móveis.
+                    </Text>
+
+                    <Heading as='h4' mb='1rem' fontSize='1rem'>
                         Aqui está um exemplo de código que pode ser usado para 
                         aumentar, diminuir e resetar o tamanho da fonte em um site:
                     </Heading>
@@ -107,6 +124,33 @@ const PageAboutFunctionChangeFontSize = () => {
                         Lembrando que é importante testar o site com usuários e verificar se o 
                         limite de aumento e diminuição, além da funcionalidade de resetar o 
                         tamanho da fonte, atende a necessidade de todos os usuários.
+                    </Text>
+
+                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                        Critérios da WCAG que foram atendidos
+                    </Heading>
+
+                    <Text mb='1rem'>
+                        1.4.4 Resizable Text (Texto redimensionável): O código permite que os usuários 
+                        aumentem e diminuam o tamanho da fonte, garantindo que eles possam 
+                        ajustar a legibilidade do texto de acordo com suas necessidades.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        2.4.4 Link Purpose (Objetivo do Link): Com as funções de aumentar e 
+                        diminuir fonte, os usuários sabem claramente qual é a finalidade do botão.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        3.2.2 On Input (Em Entrada): O código utiliza eventos de click para 
+                        aumentar e diminuir a fonte, permitindo que os usuários realizem 
+                        essas ações facilmente sem precisar de teclado ou outros dispositivos de entrada.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        3.2.4 Consistent Navigation (Navegação Consistente): O código utiliza a 
+                        mesma estrutura de botões para aumentar e diminuir a fonte, garantindo 
+                        que os usuários possam facilmente encontrar e usar essas funções.
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>

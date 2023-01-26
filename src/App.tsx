@@ -19,6 +19,7 @@ import PageAboutBreadcrumb from './pages/PageAboutBreadcrumb';
 import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation';
 import PageAboutRecommendations from './pages/PageAboutRecommendations';
 import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure';
+import PageAboutChangeWebsiteContrast from './pages/PageAboutChangeWebsiteContrast';
 import PageAboutFunctionChangeFontSize from './pages/PageAboutFunctionChangeFontSize';
 
 function App(){
@@ -54,7 +55,8 @@ function App(){
         <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
         <Route path='/componentes/html-estrutura-inicial' element={<PageAboutHTMLInitialStructure />} />
         <Route path='/componentes/alterar-tamanho-da-fonte' element={<PageAboutFunctionChangeFontSize />} />
-      
+        <Route path='/componentes/alterar-contraste-do-site' element={<PageAboutChangeWebsiteContrast />} />
+
       </Routes>
     </BrowserRouter>
   );
