@@ -60,7 +60,7 @@ const Components = () => {
             my='1rem'
             fontSize='1.5rem' 
           >
-            Exemplo de botões
+            Exemplos 01
           </Heading>
 
           <Flex 
@@ -75,7 +75,7 @@ const Components = () => {
               imgLink='https://via.placeholder.com/150' 
             />
             <ComponentCardItem 
-              cardTitle='Pular navegação' 
+              cardTitle='Pular Navegação' 
               pagLink='/componentes/pular-navegacao' 
               altImage='Componente de Pular Navegação'
               imgLink='https://via.placeholder.com/150' 
@@ -98,7 +98,7 @@ const Components = () => {
             my='1rem'
             fontSize='1.5rem' 
           >
-            Exemplo de botões
+            Exemplos 02
           </Heading>
 
           <Flex
@@ -136,7 +136,7 @@ const Components = () => {
             my='1rem'
             fontSize='1.5rem' 
           >
-            Exemplo de botões
+            Exemplo 03
           </Heading>
 
           <Flex
@@ -166,6 +166,26 @@ const Components = () => {
               cardTitle='Função para alterar o Tamanho da Fonte' 
               pagLink='/componentes/alterar-tamanho-da-fonte' 
               altImage='Componente para alterar o tamanho da fonte'
+              imgLink='https://via.placeholder.com/150' 
+            />
+          </Flex>
+
+          <Heading 
+            my='1rem'
+            fontSize='1.5rem' 
+          >
+            Exemplo 04
+          </Heading>
+
+          <Flex
+            mb='2rem'
+            justifyContent='space-evenly'
+            flexDirection={['column', 'column', 'row', 'row']}
+          >
+            <ComponentCardItem 
+              cardTitle='Função para alterar o contraste do site' 
+              pagLink='/componentes/alterar-contraste-do-site' 
+              altImage='Componente para alterar o contraste do site'
               imgLink='https://via.placeholder.com/150' 
             />
           </Flex>
