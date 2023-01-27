@@ -188,6 +188,12 @@ const Components = () => {
               altImage='Componente para alterar o contraste do site'
               imgLink='https://via.placeholder.com/150' 
             />
+            <ComponentCardItem 
+              cardTitle='Função para ouvir a descrição da imagem' 
+              pagLink='/componentes/ouvir-descricao-da-imagem' 
+              altImage='Componente para ouvir a descrição da imagem'
+              imgLink='https://via.placeholder.com/150' 
+            />
           </Flex>
 
         </Flex>

@@ -21,6 +21,7 @@ import PageAboutRecommendations from './pages/PageAboutRecommendations';
 import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure';
 import PageAboutChangeWebsiteContrast from './pages/PageAboutChangeWebsiteContrast';
 import PageAboutFunctionChangeFontSize from './pages/PageAboutFunctionChangeFontSize';
+import PageAboutListenImageDescription from './pages/PageAboutListenImageDescription';
 
 function App(){
   return (
@@ -56,6 +57,7 @@ function App(){
         <Route path='/componentes/html-estrutura-inicial' element={<PageAboutHTMLInitialStructure />} />
         <Route path='/componentes/alterar-tamanho-da-fonte' element={<PageAboutFunctionChangeFontSize />} />
         <Route path='/componentes/alterar-contraste-do-site' element={<PageAboutChangeWebsiteContrast />} />
+        <Route path='/componentes/ouvir-descricao-da-imagem' element={<PageAboutListenImageDescription />} />
 
       </Routes>
     </BrowserRouter>
