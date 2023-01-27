@@ -4,6 +4,7 @@ import {
     Link,
     Hide,
     Show,
+    Image,
     Heading,
     ListItem, 
     Container,
@@ -14,6 +15,8 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+
+import figura08 from '../assets/figura-08.png';
 
 const PageAboutRecommendations = () => {
     return (
@@ -35,7 +38,7 @@ const PageAboutRecommendations = () => {
                     </Heading>
 
                     <Heading as='h2' mb='1rem' fontSize='1.1rem'>
-                        Ver WCAG 2.0 Critério de Sucesso 1.3.2, 2.1.1, 2.1.2, 2.2.2, 2.3.1, 2.4.3, 3.1.3, 3.1.4, 3.1.5, 4.1.1 e 4.1.2
+                        Ver WCAG 2.0 Critério de Sucesso 1.3.2, 1.3.3, 1.4.1, 2.1.1, 2.1.2, 2.2.2, 2.3.1, 2.4.3, 3.1.3, 3.1.4, 3.1.5, 4.1.1 e 4.1.2
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
@@ -94,6 +97,30 @@ const PageAboutRecommendations = () => {
                         houver a necessidade de utilizar o tabindex, o mesmo deverá ser utilizado com a 
                         semântica correta e ser verificado manualmente se o fluxo fornecido é realmente o 
                         desejado. O uso do tabindex pode resultar em uma ordem e tabulação inconsistente. 
+                    </Text>
+
+                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                        Não utilizar apenas cor ou outras características sensoriais 
+                        para diferenciar elementos (1.3.3 e 1.4.1)
+                    </Heading>
+
+                    <Text mb='1rem'>
+                        A cor ou outras características sensoriais, como forma, tamanho, localização 
+                        visual, orientação ou som não devem ser utilizadas como o único meio para 
+                        transmitir informações, indicar uma ação, pedir uma resposta ao usuário ou 
+                        distinguir um elemento visual.
+                    </Text>
+
+                    <Flex justifyContent='center' my='1rem'>
+                        <Image 
+                            src={figura08} 
+                            alt='A esquerda sinais com a visão normal, à direita os mesmo sinais vistos por quem tem daltonismo.' 
+                        />
+                    </Flex>
+
+                    <Text mb='1rem'>
+                        Assim, a cor não deve ser o unico elemento de diferenciação. A esquerda sinais 
+                        com a visão normal, à direita os mesmo sinais vistos por quem tem daltonismo. 
                     </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
