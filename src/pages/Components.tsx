@@ -194,6 +194,12 @@ const Components = () => {
               altImage='Componente para ouvir a descrição da imagem'
               imgLink='https://via.placeholder.com/150' 
             />
+            <ComponentCardItem 
+              cardTitle='Navegação pelo Teclado' 
+              pagLink='/componentes/navegacao-pelo-teclado' 
+              altImage='Componente para navegação via teclado'
+              imgLink='https://via.placeholder.com/150' 
+            />
           </Flex>
 
         </Flex>
