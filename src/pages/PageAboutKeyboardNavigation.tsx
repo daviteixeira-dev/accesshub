@@ -157,7 +157,7 @@ const PageAboutKeyboardNavigation = () => {
                         entenda qual é o contexto dos dados que estão sendo exibidos.
                     </Text>
 
-                    <PostComponent article_name={''} />
+                    <PostComponent article_name={'keyboard-navigation_01'} />
 
                     <Text my='1rem'>
                         Essa funcionalidade é importante porque permite que pessoas com dificuldades 
