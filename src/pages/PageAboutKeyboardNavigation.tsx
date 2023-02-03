@@ -44,17 +44,17 @@ const PageAboutKeyboardNavigation = () => {
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
+                        
+                    </Heading>
+
+                    <Heading as='h3' mb='1rem' fontSize='1rem'>
                         Disponibilizar todas as funções da página via teclado (2.1.1 e 2.1.2)
                     </Heading>
 
                     <Text mb='1rem'>
                         Todas as funções da página desenvolvidas utilizando-se linguagens de 
                         script (javascript) devem ser programadas, primeiramente, para o uso 
-                        com teclado.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        O foco não deverá estar bloqueado ou fixado em um elemento da página, 
+                        com teclado. O foco não deverá estar bloqueado ou fixado em um elemento da página, 
                         para que o usuário possa mover-se pelo teclado por todos os elementos.
                     </Text>
 
@@ -97,7 +97,7 @@ const PageAboutKeyboardNavigation = () => {
                         </Table>
                     </TableContainer>
 
-                    <Text mb='1rem' fontWeight='bold'>
+                    <Text my='1rem' fontWeight='semibold'>
                         OBS: * Alguns manipuladores de eventos são dispositivos-independentes, ou 
                         seja, se aplicam a qualquer dispositivo (mouse, teclado ou outro), como é 
                         o caso de: onFocus, onBlur, onSelect, onChange, e onClick (quando o 
@@ -116,7 +116,9 @@ const PageAboutKeyboardNavigation = () => {
                         Dê preferência por utilizar o 
                         <Text as='span' fontWeight='semibold'> onclick/onkeypress</Text> em vez 
                         de <Text as='span' fontWeight='semibold'>onmousedown/onkeydown e onmouseup/onkeyup</Text>, 
-                        pois estes últimos fazem com que o evento seja disparado automaticamente através do teclado. Se houver real necessidade de utilização destes eventos, deverá ser feito um controle sobre qual tecla deverá ser acionada para que o evento ocorra
+                        pois estes últimos fazem com que o evento seja disparado automaticamente através do teclado. 
+                        Se houver real necessidade de utilização destes eventos, deverá ser feito um controle sobre 
+                        qual tecla deverá ser acionada para que o evento ocorra.
                     </Text>
 
                     <Text mb='1rem'>
@@ -132,9 +134,7 @@ const PageAboutKeyboardNavigation = () => {
                         devem ser acessíveis pelo teclado. 
                     </Text>
 
-                    <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        Exemplo
-                    </Heading>
+
 
                     <Text mb='1rem'>
                         Um exemplo de funcionalidade de um site em javascript seria uma página com uma 
