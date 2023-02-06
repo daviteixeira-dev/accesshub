@@ -40,12 +40,66 @@ const PageAboutKeyboardNavigation = () => {
                     </Heading>
 
                     <Heading as='h2' mb='1rem' fontSize='1.1rem'>
-                        Ver WCAG 2.0 Critério de Sucesso ???
+                        Ver WCAG 2.0 Critério de Sucesso 2.1.1, 2.1.2 e 2.1.3
                     </Heading>
 
-                    <Heading as='h3' mb='1rem' fontSize='1rem'>
-                        
-                    </Heading>
+                    <Text mb='1rem'>
+                        Mas percebendo que há momentos em que você está construindo algo e único e talvez 
+                        não tenha um analógo nativo no navegador. Portanto, você precisa sair da estrada 
+                        e criar o seu proprio controle personalizado e talvez adicionar seu próprio suporte 
+                        de teclado.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Agora, para fazer algo assim, a primeira coisa que você precisa fazer é garantir que 
+                        esse elemento seja focalizável. E para fazer isso, vamos usar o atributo tabindex.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Para inserir um elemento na ordem de tabulação natural para que o usuário possa acessá-lo 
+                        usando as teclas Tab ou Shift + Tab. Para isso, damos o atributo tabindex ao elemento com 
+                        o valor igual a zero. Assim, quando o usuario apertar a tecla Tab ele verá que o foco passa 
+                        a ir para aquele elemento, e quando ele começar a apertar outros botões no teclado, os eventos 
+                        de teclado serão direcionados para esse elemento. Observe o exemplo a seguir:
+                    </Text>
+
+                    <PostComponent article_name={'keyboard-navigation_01'} />
+
+                    <Text my='1rem'>
+                        Outra coisa para se saber sobre o tabindex zero é que isso significa que o elemento também pode 
+                        ser focalizado programaticamente. Então, podemos chamar seu método de foco em JavaScript e 
+                        direcionar o foco para ele. Isso é últil se você precisar enviar um usuário para um controle 
+                        específico, talvez depois que ele concluir alguma ação ou algum evento que ocorre em sua página.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Para que um elemento não esteja na ordem de tabulação mas que ele ainda sejá focalizável adicionamos 
+                        o tabindex com o valor de -1 onde não consegumos mais focaliza-lo apertando a tecla Tab. Porém com 
+                        um pequeno código javascript podemos selecionar o elemento, como mostrado no exemplo abaixo.
+                    </Text>
+
+                    <PostComponent article_name={'keyboard-navigation_02'} />
+
+                    <Text my='1rem'>
+                        Assim, o tabindex -1 pode ser últil para soluções em que talvez você precise gerenciar o foco, 
+                        movendo o foco para outro lugar na página para que o suário tenha uma experiência de tabulação mais 
+                        fácil e eficiente. Ou você pode usá-lo para desabilitar temporariamente um controle interativo 
+                        personalizavel.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Para elementos com tabindex maiores que zero, significa que esse elemento será saltado à frente de 
+                        todo o resto na ordem de tabulação natural. A maneira como funciona é que começa no valor mais baixo, 
+                        maior que zero, e vai subindo. Em geral, não é aconcelhado usar o tabindex com um valor maior que zero, 
+                        pois é considerado um antipadrão. E a razão é porque os leitores de tela navegam pela DOM de maneira 
+                        linear, desta forma, não se tem garantia que os usuários irão necessariamente acessar os controles 
+                        tabindex mais altos antes de qualquer coisa no documento.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Portanto, a melhor prática geral, se você deseja que algo seja mais alto na ordem de tabulação, basta 
+                        movê-lo anteriormente no DOM.
+                    </Text>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
                         Disponibilizar todas as funções da página via teclado (2.1.1 e 2.1.2)
@@ -134,10 +188,12 @@ const PageAboutKeyboardNavigation = () => {
                         devem ser acessíveis pelo teclado. 
                     </Text>
 
-
+                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                        Teclado - sem exceção (2.1.3) 
+                    </Heading>
 
                     <Text mb='1rem'>
-                        Um exemplo de funcionalidade de um site em javascript seria uma página com uma 
+                        Um exemplo de funcionalidade para um site em javascript seria uma página com uma 
                         tabela de dados. A tabela contém cabeçalhos de coluna e linha, e cada célula 
                         contém um valor. A funcionalidade permite que o usuário navegue pela tabela 
                         usando apenas o teclado, sem precisar usar o mouse.
@@ -157,7 +213,13 @@ const PageAboutKeyboardNavigation = () => {
                         entenda qual é o contexto dos dados que estão sendo exibidos.
                     </Text>
 
-                    <PostComponent article_name={'keyboard-navigation_01'} />
+                    <Text mb='1rem'>
+                        Desta forma, apresentamos a seguir como essa funcionalidade poderia ser 
+                        implementada utilizando o exemplo de tabela apresentado anteriormente, adicionando 
+                        assim o código javascript nesse contexto: 
+                    </Text>
+
+                    <PostComponent article_name={'keyboard-navigation_03'} />
 
                     <Text my='1rem'>
                         Essa funcionalidade é importante porque permite que pessoas com dificuldades 
@@ -166,62 +228,6 @@ const PageAboutKeyboardNavigation = () => {
                         disso, ela também beneficia usuários que preferem usar o teclado em vez do 
                         mouse, como pessoas com dificuldades de visão, que podem encontrar dificuldades 
                         para rastrear o cursor do mouse na tela.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Mas percebendo que há momentos em que você está construindo algo e único e talvez 
-                        não tenha um analógo nativo no navegador. Portanto, você precisa sair da estrada 
-                        e criar o seu proprio controle personalizado e talvez adicionar seu próprio suporte 
-                        de teclado.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Agora, para fazer algo assim, a primeira coisa que você precisa fazer é garantir que 
-                        esse elemento seja focalizável. E para fazer isso, vamos usar o atributo tabindex.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Para inserir um elemento na ordem de tabulação natural para que o usuário possa acessá-lo 
-                        usando as teclas Tab ou Shift + Tab. Para isso, damos o atributo tabindex ao elemento com 
-                        o valor igual a zero. Assim, quando o usuario apertar a tecla Tab ele verá que o foco passa 
-                        a ir para aquele elemento, e quando ele começar a apertar outros botões no teclado, os eventos 
-                        de teclado serão direcionados para esse elemento.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Outra coisa para se saber sobre o tabindex zero é que isso significa que o elemento também pode 
-                        ser focalizado programaticamente. Então, podemos chamar seu método de foco em JavaScript e 
-                        direcionar o foco para ele. Isso é últil se você precisar enviar um usuário para um controle 
-                        específico, talvez depois que ele concluir alguma ação ou algum evento que ocorre em sua página.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Para que um elemento não esteja na ordem de tabulação mas que ele ainda sejá focalizável adicionamos 
-                        o tabindex com o valor de -1 onde não consegumos mais focaliza-lo apertando a tecla Tab. Porém com 
-                        um pequeno código javascript podemos selecionar o elemento, como mostrado no exemplo abaixo.
-                    </Text>
-
-                    <PostComponent article_name={''} />
-
-                    <Text my='1rem'>
-                        Assim, o tabindex -1 pode ser últil para soluções em que talvez voc~e precise gerenciar o foco, 
-                        movendo o foco para outro lugar na página para que o suário tenha uma experiência de tabulação mais 
-                        fácil e eficiente. Ou você pode usá-lo para desabilitar temporariamente um controle interativo 
-                        personalizavel.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Para elementos com tabindex maiores que zero, significa que esse elemento será saltado à frente de 
-                        todo o resto na ordem de tabulação natural. A maneira como funciona é que começa no valor mais baixo, 
-                        maior que zero, e vai subindo. Em geral, não é aconcelhado usar o tabindex com um valor maior que zero, 
-                        pois é considerado um antipadrão. E a razão é porque os leitores de tela navegam pela DOM de maneira 
-                        linear, desta forma, não se tem garantia que os usuários irão necessariamente acessar os controles 
-                        tabindex mais altos antes de qualquer coisa no documento.
-                    </Text>
-
-                    <Text mb='1rem'>
-                        Portanto, a melhor prática geral, se você deseja que algo seja mais alto na ordem de tabulação, basta 
-                        movê-lo anteriormente no DOM.
                     </Text>
 
                 </Flex>
