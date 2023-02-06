@@ -222,6 +222,20 @@ const PageAboutKeyboardNavigation = () => {
                     <PostComponent article_name={'keyboard-navigation_03'} />
 
                     <Text my='1rem'>
+                        Você pode adicionar o atributo tabindex em elementos que deseja permitir a 
+                        navegação pelo teclado, e usar JavaScript para detectar a pressão das setas e 
+                        mover o foco para o elemento tabindex anterior ou posterior.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Esse código usa o método addEventListener para detectar o evento keydown, ou seja, 
+                        quando uma tecla é pressionada. Em seguida, ele cria um array de elementos que 
+                        possuem o atributo tabindex e usa o método indexOf para descobrir qual elemento tem 
+                        o foco atual (document.activeElement). Finalmente, ele usa um switch para detectar 
+                        as setas de navegação e mover o foco para o elemento tabindex anterior ou posterior.
+                    </Text>
+
+                    <Text mb='1rem'>
                         Essa funcionalidade é importante porque permite que pessoas com dificuldades 
                         de movimento, como pessoas com problemas de mobilidade física, possam acessar 
                         e interagir com o conteúdo da tabela de forma eficiente e independente. Além 
