@@ -72,6 +72,40 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_03'} />
 
                     <Heading as='h3' my='1rem' fontSize='1rem'>
+                        Identificar o objeto (1.3.6)
+                    </Heading>
+
+                    <Text mb='1rem'>
+                        Um exemplo de funcionalidade que atende ao critério 1.3.6 da WCAG é o uso de 
+                        rótulos claros e descritivos para os campos de formulário em um site.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Por exemplo, ao criar um formulário de cadastro em um site, é importante 
+                        utilizar rótulos descritivos para cada campo de entrada, para que os usuários 
+                        saibam o que é esperado deles e possam preencher o formulário corretamente. Além 
+                        disso, é importante que esses rótulos sejam associados aos campos de entrada 
+                        por meio do atributo "for" no HTML, ou que sejam inseridos dentro do 
+                        elemento "label" para facilitar a navegação e interação dos usuários 
+                        com o teclado.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Um exemplo de código HTML que utiliza rótulos descritivos para um campo de 
+                        formulário seria:
+                    </Text>
+
+                    <PostComponent article_name={'form_06'} />
+
+                    <Text my='1rem'>
+                        Nesse exemplo, o rótulo "Nome" está claramente descrito e associado ao campo 
+                        de entrada de texto por meio do atributo "for" no rótulo e do atributo "id" 
+                        no campo de entrada. Isso ajuda a identificar claramente o objetivo do campo 
+                        para os usuários que navegam por meio de leitores de tela ou que utilizam o 
+                        teclado para navegar no site.
+                    </Text>
+
+                    <Heading as='h3' my='1rem' fontSize='1rem'>
                         Estabelecer uma ordem lógica de navegação (2.4.3)
                     </Heading>
 
