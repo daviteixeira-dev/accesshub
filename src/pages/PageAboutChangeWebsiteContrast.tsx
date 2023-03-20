@@ -32,7 +32,7 @@ const PageAboutChangeWebsiteContrast = () => {
                     </Heading>
 
                     <Heading as='h2' mb='1rem' fontSize='1.1rem'>
-                        Ver WCAG 2.0 Critério de Sucesso 1.4.3
+                        Ver WCAG 2.0 Critério de Sucesso 1.4.3 e 1.4.6
                     </Heading>
 
                     <Heading as='h3' mb='1rem' fontSize='1rem'>
@@ -63,6 +63,39 @@ const PageAboutChangeWebsiteContrast = () => {
                         resultante da baixa acuidade visual, cromodeficiência ou perda de 
                         sensibilidade ao contraste devido ao envelhecimento, é recomendada 
                         aqui uma maior relação de contraste, de, no mínimo, 4,5:1.
+                    </Text>
+
+                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                        Contraste - melhorado (1.4.6)
+                    </Heading>
+
+                    <Text mb='1rem'>
+                        O critério 1.4.6 da WCAG estabelece que os elementos visuais de uma página 
+                        web devem apresentar um contraste adequado para facilitar a leitura e a 
+                        compreensão por pessoas com deficiência visual ou dificuldades de leitura.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        O contraste adequado é definido pela relação entre a luminosidade do texto e 
+                        a do fundo em que ele se encontra. Para atender ao critério 1.4.6, o 
+                        contraste deve ser suficientemente alto para permitir que o conteúdo seja 
+                        visualmente acessível. No entanto, para atender plenamente ao critério 1.4.6, 
+                        é importante que o contraste padrão do site já esteja em conformidade com as 
+                        normas de acessibilidade.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        O contraste adequado é medido pelo índice de contraste (IC), que varia de 
+                        1:1 (sem contraste) a 21:1 (alto contraste). Para o texto normal, o índice 
+                        de contraste mínimo recomendado é de 4,5:1, enquanto que para texto 
+                        grande (18 pontos ou mais) e texto em negrito, o índice mínimo recomendado 
+                        é de 3:1.
+                    </Text>
+
+                    <Text mb='1rem'>
+                        Portanto, é importante que os desenvolvedores de sites se atentem para o 
+                        contraste adequado dos elementos visuais, de forma a garantir a acessibilidade 
+                        para todas as pessoas.
                     </Text>
 
                     <Text mb='1rem'>
