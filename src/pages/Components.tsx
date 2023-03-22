@@ -39,32 +39,38 @@ const Components = () => {
         <Flex flexDirection='column' p='1rem'>
           
           <Heading 
-            as='h1' 
+            as='h1'
             my='1rem'
-            fontSize='2rem' 
+            fontSize='2rem'
+            fontWeight='700'
+            fontFamily='Inter' 
             color={headingsColor} 
           >
             Componentes
           </Heading>
 
           <Text 
-            my='1rem' 
-            fontSize='1rem' 
-            fontWeight='normal'
+            mb='1rem'
+            fontWeight='400'
+            fontSize='1.2rem'
+            fontFamily='Inter'
           >
             O AccessHub fornece um guia de implementação dos componentes para ajudá-lo a construir 
             seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
           </Text>
 
           <Heading 
-            my='1rem'
-            fontSize='1.5rem' 
+            as='h2'
+            mb='1rem'
+            fontWeight='600'
+            fontSize='1.5rem'
+            fontFamily='Inter' 
           >
             Exemplos 01
           </Heading>
 
           <Flex 
-            mb='2rem'
+            mb='1rem'
             justifyContent='space-evenly'
             flexDirection={['column', 'column', 'row', 'row']} 
           >
@@ -95,14 +101,17 @@ const Components = () => {
           </Flex>
 
           <Heading 
-            my='1rem'
-            fontSize='1.5rem' 
+            as='h3'
+            mb='1rem'
+            fontWeight='600'
+            fontSize='1.5rem'
+            fontFamily='Inter'
           >
             Exemplos 02
           </Heading>
 
           <Flex
-            mb='2rem'
+            mb='1rem'
             justifyContent='space-evenly'
             flexDirection={['column', 'column', 'row', 'row']}
           >
@@ -133,14 +142,17 @@ const Components = () => {
           </Flex>
 
           <Heading 
-            my='1rem'
-            fontSize='1.5rem' 
+            as='h4'
+            mb='1rem'
+            fontWeight='600'
+            fontSize='1.5rem'
+            fontFamily='Inter' 
           >
             Exemplo 03
           </Heading>
 
           <Flex
-            mb='2rem'
+            mb='1rem'
             justifyContent='space-evenly'
             flexDirection={['column', 'column', 'row', 'row']}
           >
@@ -171,14 +183,17 @@ const Components = () => {
           </Flex>
 
           <Heading 
-            my='1rem'
-            fontSize='1.5rem' 
+            as='h5'
+            mb='1rem'
+            fontWeight='600'
+            fontSize='1.5rem'
+            fontFamily='Inter' 
           >
             Exemplo 04
           </Heading>
 
           <Flex
-            mb='2rem'
+            mb='1rem'
             justifyContent='space-evenly'
             flexDirection={['column', 'column', 'row', 'row']}
           >
