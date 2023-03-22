@@ -24,7 +24,7 @@ const ComponentCardItem = (props: ComponentCardItem) => {
         <Flex
             mb='1rem'
             as='article'
-            padding='1rem'
+            padding='.5rem'
             bg={cardBgColor}
             borderRadius='.3rem'
             flexDirection='column'
@@ -34,27 +34,36 @@ const ComponentCardItem = (props: ComponentCardItem) => {
             boxShadow='0 .5rem .5rem 0 rgba(0, 0, 0, 0.05)'
         >
             <NavLink to={props.pagLink}>
-
-                <Image 
-                    h='10rem' 
-                    src='gibbresh.png' 
-                    alt={props.altImage} 
-                    fallbackSrc={props.imgLink} 
-                    w={['100%', '100%', '100%', '15rem']} 
-                />
-
-                <Heading
-                    as='h2'
-                    mt='1rem'
-                    display='flex'
-                    fontSize='1.2rem'
-                    textAlign='center'
-                    fontWeight='medium'
-                    color={headingsColor}
-                    justifyContent='center'
+                
+                <Flex m='.5rem'>
+                    <Image 
+                        h='10rem'
+                        src='gibbresh.png' 
+                        alt={props.altImage} 
+                        fallbackSrc={props.imgLink} 
+                        w={['100%', '100%', '100%', '15rem']} 
+                    />
+                </Flex>
+                
+                <Flex
+                    p='.5rem'
+                    m='.5rem' 
+                    textAlign='center' 
+                    justifyContent='center' 
                 >
-                    {props.cardTitle}
-                </Heading>
+                    <Heading
+                        as='h2'
+                        display='flex'
+                        fontSize='1.2rem'
+                        textAlign='center'
+                        fontWeight='medium'
+                        color={headingsColor}
+                        justifyContent='center'
+                    >
+                        {props.cardTitle}
+                    </Heading>
+                </Flex>
+                
             </NavLink>
         </Flex>
     );
