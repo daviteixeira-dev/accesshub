@@ -6,7 +6,7 @@ import {
 function Logo(props: any){
   return(
     <Flex {...props} alignItems='center'>
-      <Text fontSize='lg' fontWeight='bold'>
+      <Text fontSize='1.5rem' fontWeight='700' fontFamily='Inter'>
         AccessHub
       </Text>
     </Flex>
