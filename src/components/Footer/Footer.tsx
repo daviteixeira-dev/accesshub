@@ -1,8 +1,7 @@
 import { 
-    Flex, 
-    Link, 
-    Text, 
-    Heading, 
+    Flex,
+    Link,
+    Text,
     useColorModeValue
 } from '@chakra-ui/react';
 
@@ -34,13 +33,14 @@ const Footer = () => {
                 flexDirection='column'
                 justifyContent='space-evenly' 
             >
-                <Heading 
-                    as='h2' 
-                    fontSize='1.5rem' 
+                <Text
+                    fontWeight='600' 
+                    fontSize='1.3rem'
+                    fontFamily='Inter'
                     color='whiteAlpha.900'
                 >
                     AccessHub
-                </Heading>
+                </Text>
             </Flex>
 
             <Flex 
@@ -55,9 +55,10 @@ const Footer = () => {
                     textAlign='start'
                     flexDirection='column'
                 >
-                    <Text 
-                        fontWeight='bold' 
+                    <Text
+                        fontWeight='600' 
                         fontSize='1.1rem'
+                        fontFamily='Inter' 
                         color='whiteAlpha.900' 
                     >
                         Documentação
@@ -68,6 +69,7 @@ const Footer = () => {
                     >
                         <Flex as='li'>
                             <Link 
+                                mt='.5rem'
                                 href='/componentes' 
                                 color='whiteAlpha.900'
                             >
@@ -84,8 +86,9 @@ const Footer = () => {
                     flexDirection='column'
                 >
                     <Text 
-                        fontWeight='bold' 
+                        fontWeight='600' 
                         fontSize='1.1rem'
+                        fontFamily='Inter' 
                         color='whiteAlpha.900' 
                     >
                         Comunidade
@@ -95,7 +98,8 @@ const Footer = () => {
                         flexDirection='column'
                     >
                         <Flex as='li'>
-                            <Link 
+                            <Link
+                                mt='.5rem' 
                                 color='whiteAlpha.900' 
                                 href='https://github.com/daviteixeira-btm/acesshub'
                             >
@@ -122,11 +126,11 @@ const Footer = () => {
                 padding={['0','0','1rem', '1rem']}
             >
                 <Link 
-                    href='https://vercel.com/'
                     bg='blackAlpha.900' 
-                    padding='.3rem 1rem' 
+                    padding='.3rem 1rem'
                     borderRadius='.5rem'
                     color='whiteAlpha.900'
+                    href='https://vercel.com/'
                     _hover={{ textDecoration: 'none' }}
                 >
                     Deployed by ▲ Vercel 
@@ -138,11 +142,14 @@ const Footer = () => {
                 w={['100%','100%','59%','59%']}
                 flexDirection={['column', 'column', 'row', 'row']}
             >
-                <Text 
+                <Text
+                    fontWeight='400' 
+                    fontSize='1.1rem'
+                    fontFamily='Inter' 
                     color='whiteAlpha.900' 
                     textAlign={['start', 'start', 'start', 'start']}
                 >
-                    © 2022-2023 Davi Teixeira. This site, library and examples 
+                    © 2023 Davi Teixeira. This site, library and examples 
                     are licensed under <Link 
                         fontWeight='bold' 
                         href='https://choosealicense.com/licenses/mit/'
@@ -154,7 +161,7 @@ const Footer = () => {
         </Flex>
 
     </Flex>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
