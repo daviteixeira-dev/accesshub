@@ -72,21 +72,27 @@ const HomePage = () => {
       >
         <Heading
           as='h1'
+          fontWeight='700'
+          fontFamily='Inter'
           color={headingsColor}
           textTransform='uppercase'
           fontSize={['2.5rem', '2.5rem', '3rem', '3.5rem']}
         >
           Desenvolva e deixe o seu site mais <Text as='span' color={textSpanBlue}>acessível</Text>
         </Heading>
-        <Text
+
+        <Heading
+          as='h2'
           marginTop='1rem'
-          fontSize='1.5rem'
+          fontWeight='400'
+          fontSize='1.3rem'
+          fontFamily='Inter'
           color={textColor}
         >
           AccessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web,
           possibilitando a apresentação de padrões e materiais de suporte para ajudar na
           construção de páginas Web acessíveis.
-        </Text>
+        </Heading>
 
         <Flex 
           mt='1rem' 
@@ -107,12 +113,12 @@ const HomePage = () => {
             border='1px solid gray' 
           ></Flex>
           
-          <Heading 
-            fontSize='1.2rem' 
+          <Text 
+            fontSize='1rem' 
             color='whiteAlpha.900'
           >
             Este site está em construção
-          </Heading>
+          </Text>
         </Flex>
       </Flex>
 
@@ -128,7 +134,8 @@ const HomePage = () => {
         <NavLink to='/introducao'>
           <Flex
             fontSize='1.2rem'
-            fontWeight='bold'
+            fontWeight='700'
+            fontFamily='Inter'
             alignItems='center'
             borderRadius='.5rem'
             color='whiteAlpha.900'
@@ -153,7 +160,8 @@ const HomePage = () => {
           <Flex
             color={textColor}
             fontSize='1.2rem'
-            fontWeight='bold'
+            fontWeight='700'
+            fontFamily='Inter'
             alignItems='center'
             bg={bgBottonGithub}
             borderRadius='.5rem'
@@ -184,13 +192,15 @@ const HomePage = () => {
           width={['100%', '100%', '60%', '60%']}
         >
           <Heading
-            as='h2'
+            as='h3'
+            fontWeight='500'
+            fontFamily='Inter'
             color={headingsColor}
             fontSize={['1.5rem', '1.5rem', '1.8rem', '1.8rem']}
           >
             Nosso objetivo, é fornecer exemplos de implementações, 
             auxiliando no processo de programação 
-            de <Text as='span' color={textSpanBlue}>funcionalidades</Text> de acessibilidade 
+            de <Text as='span' color={textSpanBlue}>funcionalidades</Text> de acessibilidade.
           </Heading>
         </Flex>
 
@@ -207,8 +217,10 @@ const HomePage = () => {
                 <CardBody>
                   <Avatar name='Card Info' src={item.avatarIMG} />
                   <Stack mt='6' spacing='3'>
-                    <Heading size='md'>{item.cardTitle}</Heading>
-                    <Text>
+                    <Heading as='h4' fontFamily='Inter' fontWeight='700' size='md'>
+                      {item.cardTitle}
+                    </Heading>
+                    <Text fontFamily='Inter' fontWeight='400' size='md'>
                       {item.cardText}
                     </Text>
                   </Stack>
