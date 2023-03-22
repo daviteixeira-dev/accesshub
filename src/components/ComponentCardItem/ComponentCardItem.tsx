@@ -54,9 +54,10 @@ const ComponentCardItem = (props: ComponentCardItem) => {
                     <Heading
                         as='h2'
                         display='flex'
-                        fontSize='1.2rem'
+                        fontSize='1rem'
+                        fontWeight='500'
                         textAlign='center'
-                        fontWeight='medium'
+                        fontFamily='Inter' 
                         color={headingsColor}
                         justifyContent='center'
                     >
