@@ -19,27 +19,58 @@ const PageAboutHeaders = () => {
                 <MenuSideBar />
             </Hide>
 
-            <Container maxW='container.xl' height='100vh' overflowY='auto' p='0'>
+            <Container
+                p='0'
+                height='100vh'
+                overflowY='auto'
+                maxW='container.xl'
+            >
 
                 <Show below='md'>
                     <MenuMobile marginBottom='0'/>
                 </Show>
 
-                <Flex flexDirection='column' p='1rem'>
+                <Flex
+                    p='1rem'
+                    flexDirection='column'
+                >
 
-                    <Heading as='h1' my='1rem'>
+                    <Heading
+                        as='h1'
+                        my='1rem'
+                        fontSize='2rem'
+                        fontWeight='700'
+                        fontFamily='Inter'
+                    >
                         Cabeçalhos
                     </Heading>
 
-                    <Heading as='h2' mb='1rem' fontSize='1.1rem'>
+                    <Heading
+                        as='h2'
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1rem'
+                        fontFamily='Inter'
+                    >
                         Ver WCAG 2.0 Critérios de Sucesso 1.3.1 e 2.4.10
                     </Heading>
 
-                    <Heading as='h3' mb='1rem' fontSize='1.1rem'>
+                    <Heading
+                        as='h3'
+                        mb='1rem'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                    >
                         Utilizar corretamente os níveis de cabeçalho (1.3.1 e 2.4.10)
                     </Heading>
                     
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Os níveis de cabeçalho (elementos HTML H1 a H6) devem ser utilizados de forma 
                         hierárquica, pois organizam a ordem de importância e subordinação dos conteúdos, 
                         facilitando a leitura e compreensão. Além disso, muitos leitores de tela utilizam 
@@ -47,7 +78,12 @@ const PageAboutHeaders = () => {
                         para outro, agilizando, assim, a navegação.
                     </Text>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Conceitualmente, existem seis níveis de títulos, sendo o H1 o mais alto, ou seja, 
                         deverá corresponder ao conteúdo principal da página, assim é recomendável que toda 
                         página tenha apenas um H1. Já os níveis do H2 ao H6 poderão ser utilizados mais de 
@@ -56,7 +92,12 @@ const PageAboutHeaders = () => {
                     
                     <PostComponent article_name={'headers_01'} />
 
-                    <Text mb='1rem'>
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Para compreender melhor os níveis de título pode-se tomar como exemplo um sítio de 
                         um livro, onde o nome do livro é o H1, os capítulos são H2, os subcapítulos são H3 
                         e assim por diante.
