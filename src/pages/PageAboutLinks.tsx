@@ -21,23 +21,48 @@ const PageAboutLinks = () => {
                 <MenuSideBar />
             </Hide>
 
-            <Container maxW='container.xl' height='100vh' overflowY='auto' p='0'>
+            <Container
+                p='0'
+                height='100vh'
+                overflowY='auto'
+                maxW='container.xl'
+            >
 
                 <Show below='md'>
                     <MenuMobile marginBottom='0'/>
                 </Show>
 
-                <Flex flexDirection='column' p='1rem'>
+                <Flex
+                    p='1rem'
+                    flexDirection='column'
+                >
 
-                    <Heading as='h1' my='1rem'>
+                    <Heading
+                        as='h1'
+                        my='1rem'
+                        fontSize='2rem'
+                        fontWeight='700'
+                        fontFamily='Inter'
+                    >
                         Links
                     </Heading>
 
-                    <Heading as='h2' mb='1rem' fontSize='1.1rem'>
+                    <Heading
+                        as='h2'
+                        mb='1rem'
+                        fontSize='1rem'
+                        fontWeight='400'
+                        fontFamily='Inter'
+                    >
                         Ver WCAG 2.0 Critério de Sucesso 1.3.1, 2.4.4, 2.4.7, 2.4.9 e 3.2.5
                     </Heading>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         A tag de eçemento de âncora, {`<a>`} em HTML, com o atributo href cria-se um link entre 
                         páginas web, na mesma página ou em endereços de outras URL. O conteúdo dentro de cada {`<a>`} 
                         deverá indicar o destino do link. Abaixo um exemplo de sua implementação:
@@ -45,11 +70,22 @@ const PageAboutLinks = () => {
 
                     <PostComponent article_name={'links_01'} />
 
-                    <Heading as='h3' my='1rem' fontSize='1rem'>
+                    <Heading
+                        as='h3'
+                        my='1rem'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                    >
                         Separar links adjacentes (1.3.1)
                     </Heading>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Links adjacentes devem ser separados por mais do que simples espaços, para que não 
                         fiquem confusos, em especial para usuários que utilizam leitor de tela. Para isso, 
                         é recomendado o uso de listas, onde cada elemento dentro da lista é um link. As 
@@ -57,14 +93,24 @@ const PageAboutLinks = () => {
                         da maneira desejada, como um ao lado do outro.
                     </Text>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Caso os links estejam no meio de um parágrafo de conteúdo texto, pode-se utilizar 
                         vírgulas, parênteses, colchetes, pipe, entre outros, para fazer a separação.
                     </Text>
 
                     <PostComponent article_name={'links_02'} />
 
-                    <Text my='1rem'>
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Existem três roles da especificação ARIA que podem ser utilizados para as listas: 
                         o role navigation, que indica o menu principal do site (esse role possui a mesma 
                         função que a elemento NAV do HTML5). O segundo e o terceiro roles são muito semelhantes, 
@@ -76,35 +122,71 @@ const PageAboutLinks = () => {
                         um item daquele menu.
                     </Text>
 
-                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                    <Heading
+                        as='h3'
+                        mb='1rem'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                    >
                         Não abrir novas instâncias sem a solicitação do usuário (3.2.5)
                     </Heading>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         A decisão de utilizar-se de novas instâncias – por exemplo abas ou janelas - para 
                         acesso a páginas e serviços ou qualquer informação deve ser de escolha do usuário. 
                         Assim, não devem ser utilizados:
                     </Text>
 
                     <UnorderedList>
-                        <ListItem>
+                        <ListItem
+                            fontSize='1rem'
+                            fontWeight='600'
+                            fontFamily='Inter'
+                        >
                             Pop-ups;
                         </ListItem>
-                        <ListItem>
+                        <ListItem
+                            fontSize='1rem'
+                            fontWeight='600'
+                            fontFamily='Inter'
+                        >
                             A abertura de novas abas ou janelas;
                         </ListItem>
-                        <ListItem>
+                        <ListItem
+                            fontSize='1rem'
+                            fontWeight='600'
+                            fontFamily='Inter'
+                        >
                             O uso do atributo target=“_blank”;
                         </ListItem>
-                        <ListItem>
+                        <ListItem
+                            fontSize='1rem'
+                            fontWeight='600'
+                            fontFamily='Inter'
+                        >
                             Mudanças no controle do foco do teclado;
                         </ListItem>
-                        <ListItem>
+                        <ListItem
+                            fontSize='1rem'
+                            fontWeight='600'
+                            fontFamily='Inter'
+                        >
                             Entre outros elementos, que não tenham sido solicitadas pelo usuário.
                         </ListItem>
                     </UnorderedList>
 
-                    <Text my='1rem'>
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         É muito importante que os links abram na guia ou janela atual de navegação, pois os 
                         usuários com deficiência visual podem ter dificuldade em identificar que uma nova 
                         janela foi aberta. Além disso, estando em uma nova janela, não conseguirão retornar 
@@ -117,23 +199,44 @@ const PageAboutLinks = () => {
 
                     <PostComponent article_name={'links_03'} />
 
-                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                    <Heading
+                        as='h3'
+                        my='1rem'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                    >
                         Descrever links clara e sucintamente (2.4.4 e 2.4.9)
                     </Heading>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Deve-se identificar claramente o destino de cada link, informando, inclusive, se o link 
                         remete a outro site. Além disso, é preciso que o texto do link faça sentido mesmo 
                         quando isolado do contexto da página.
                     </Text>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         É preciso tomar cuidado para não utilizar a mesma descrição para dois ou mais links que 
                         apontem para destinos diferentes. Da mesma forma, links que remetem ao mesmo destino 
                         devem ter a mesma descrição.
                     </Text>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Não há necessidade de utilizar o atributo title em links, já que esse atributo não é 
                         bem suportado por recursos de tecnologia assistiva, como leitores de tela, não tem 
                         utilidade para quem navega apenas pelo teclado e não tem bom suporte em dispositivos 
@@ -144,14 +247,24 @@ const PageAboutLinks = () => {
 
                     <PostComponent article_name={'links_04'} />
 
-                    <Text mb='1rem'>
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Em links de arquivos para download, é necessário informar a extensão e o tamanho 
                         do arquivo no próprio texto do link, conforme exemplo a seguir.
                     </Text>
 
                     <PostComponent article_name={'links_05'} />
 
-                    <Text mb='1rem'>
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         OBS: Não se deve fazer a utilização de links do tipo “clique aqui”, “leia mais”, “mais”, 
                         “saiba mais”, “veja mais”, “acesse a lista”, pois estas expressões não fazem sentido 
                         fora do contexto. Muitos usuários de leitores de tela navegam por links, tornando 
@@ -159,16 +272,32 @@ const PageAboutLinks = () => {
                         destino do link, ou localizá-lo na página.
                     </Text>
 
-                    <Heading as='h3' mb='1rem' fontSize='1rem'>
+                    <Heading
+                        as='h3'
+                        mb='1rem'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                    >
                         Possibilitar que o elemento com foco seja visualmente evidente (2.4.7)
                     </Heading>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         A área que recebe o foco pelo teclado deve ser claramente marcada, devendo a área 
                         de seleção ser passível de ser clicada.
                     </Text>
 
-                    <Text mb='1rem'>
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Por padrão, links e elementos de formulário já apresentam a borda destacada ao 
                         receberem o foco do teclado. Essa borda pode ser modificada via CSS para melhorar 
                         o destaque, mas não deverá ser removida. Recomenda-se que a espessura mínima da borda 
@@ -177,7 +306,12 @@ const PageAboutLinks = () => {
 
                     <PostComponent article_name={'links_06'} />
 
-                    <Text my='1rem'>
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         A pseudo-classe :focus é utilizada para definir o estilo de qualquer elemento HTML 
                         que receber o foco do teclado, como links e elementos de formulário. A 
                         pseudo-classe :hover é utilizada para definir o estilo de um elemento quando 
