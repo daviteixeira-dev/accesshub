@@ -13,6 +13,22 @@ import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import ComponentCardItem from '../components/ComponentCardItem/ComponentCardItem';
 
+import form from '../../public/form.png';
+import link from '../../public/link.png';
+import table from '../../public/table.png';
+import audio from '../../public/audio.png';
+import video from '../../public/video.png';
+import images from '../../public/images.png';
+import skipNav from '../../public/skipNav.png';
+import headers from '../../public/headers.png';
+import fontSize from '../../public/fontSize.png';
+import contrast from '../../public/contrast.png';
+import breadcrumb from '../../public/breadcrumb.png';
+import inicialHTML from '../../public/inicialHTML.png';
+import recommendations from '../../public/recommendations.png';
+import imageDescription from '../../public/imageDescription.png';
+import keyboardNavigation from '../../public/keyboardNavigation.png';
+
 const Components = () => {
 
   const bodyColor = useColorModeValue('blackAlpha.50', 'gray.800');
@@ -78,25 +94,25 @@ const Components = () => {
               cardTitle='Cabeçalhos' 
               pagLink='/componentes/cabecalhos' 
               altImage='Componente de Cabeçalhos'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={headers} 
             />
             <ComponentCardItem 
               cardTitle='Pular Navegação' 
               pagLink='/componentes/pular-navegacao' 
               altImage='Componente de Pular Navegação'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={skipNav} 
             />
             <ComponentCardItem 
               cardTitle='Breadcrumb'
               pagLink='/componentes/breadcrumb' 
               altImage='Componente de Breadcrumb'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={breadcrumb}
             />
             <ComponentCardItem 
               cardTitle='Tabela' 
               pagLink='/componentes/tabela' 
               altImage='Componente de Tabela'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={table}
             />
           </Flex>
 
@@ -119,25 +135,25 @@ const Components = () => {
               cardTitle='Formulário' 
               pagLink='/componentes/formulario' 
               altImage='Componente de Formulario'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={form} 
             />
             <ComponentCardItem 
               cardTitle='HTML Inicial' 
               pagLink='/componentes/html-estrutura-inicial' 
               altImage='Componente de Estrutura Inicial HTML'
-              imgLink='https://via.placeholder.com/150'
+              imgLink={inicialHTML}
             />
             <ComponentCardItem 
               cardTitle='Links' 
               pagLink='/componentes/links' 
               altImage='Componente de Links'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={link}
             />
             <ComponentCardItem 
               cardTitle='Imagens' 
               pagLink='/componentes/imagens' 
               altImage='Componente de Imagens'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={images}
             />
           </Flex>
 
@@ -160,25 +176,25 @@ const Components = () => {
               cardTitle='Vídeos' 
               pagLink='/componentes/videos' 
               altImage='Componente de Vídeo'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={video}
             />
             <ComponentCardItem 
               cardTitle='Áudios' 
               pagLink='/componentes/audios' 
               altImage='Componente de Áudio'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={audio}
             />
             <ComponentCardItem 
               cardTitle='Recomendações' 
               pagLink='/componentes/recomendacoes' 
               altImage='Componente de Recomendações'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={recommendations}
             />
             <ComponentCardItem 
               cardTitle='Função para alterar o Tamanho da Fonte' 
               pagLink='/componentes/alterar-tamanho-da-fonte' 
               altImage='Componente para alterar o tamanho da fonte'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={fontSize}
             />
           </Flex>
 
@@ -201,19 +217,19 @@ const Components = () => {
               cardTitle='Função para alterar o contraste do site' 
               pagLink='/componentes/alterar-contraste-do-site' 
               altImage='Componente para alterar o contraste do site'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={contrast}
             />
             <ComponentCardItem 
               cardTitle='Função para ouvir a descrição da imagem' 
               pagLink='/componentes/ouvir-descricao-da-imagem' 
               altImage='Componente para ouvir a descrição da imagem'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={imageDescription}
             />
             <ComponentCardItem 
               cardTitle='Navegação pelo Teclado' 
               pagLink='/componentes/navegacao-pelo-teclado' 
               altImage='Componente para navegação via teclado'
-              imgLink='https://via.placeholder.com/150' 
+              imgLink={keyboardNavigation}
             />
           </Flex>
 
