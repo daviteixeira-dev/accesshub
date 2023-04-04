@@ -40,7 +40,7 @@ const Introduction = () => {
 
           <Heading
             as='h1'
-            my='1rem'
+            my='1.5rem'
             fontSize='2rem'
             fontWeight='700'
             fontFamily='Inter'
