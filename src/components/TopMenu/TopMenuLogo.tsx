@@ -1,26 +1,27 @@
 import { 
   Text,
   Flex,
-  Link,
   Image
 } from '@chakra-ui/react';
 
+import { NavLink } from 'react-router-dom';
+
 import logo from '../../assets/logo-accesshub.png'
 
-function Logo(props: any, to = '/'){
+function Logo(props: any){
   return(
     <Flex
       {...props}
       alignItems='center'
     >
-      <Link href="/">
+      <NavLink to="/">
         <Image
           src={logo}
           boxSize='50px'
           borderRadius='full'
           alt='Logomarca do AccessHub.'
         />
-      </Link>
+      </NavLink>
       
       <Text
         fontWeight='700'
