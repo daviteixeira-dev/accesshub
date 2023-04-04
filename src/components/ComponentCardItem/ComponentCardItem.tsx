@@ -22,9 +22,9 @@ const ComponentCardItem = (props: ComponentCardItem) => {
 
     return (
         <Flex
+            p='0'
             mb='1rem'
             as='article'
-            padding='.5rem'
             bg={cardBgColor}
             borderRadius='.3rem'
             flexDirection='column'
@@ -35,13 +35,17 @@ const ComponentCardItem = (props: ComponentCardItem) => {
         >
             <NavLink to={props.pagLink}>
                 
-                <Flex m='.5rem'>
+                <Flex
+                    my={['1rem', '1rem', 0, 0]}
+                    mx={['3.5rem', '3.5rem', 0, 0]}
+                >
                     <Image 
                         h='10rem'
                         src='gibbresh.png' 
-                        alt={props.altImage} 
+                        alt={props.altImage}
+                        borderRadius={['.5rem', '.5rem', 0, 0]}
                         fallbackSrc={props.imgLink} 
-                        w={['100%', '100%', '100%', '15rem']} 
+                        w={['100%', '100%', '100%', '100%']} 
                     />
                 </Flex>
                 
