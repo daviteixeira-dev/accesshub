@@ -23,7 +23,7 @@ import MenuSideBarItem from '../MenuSideBar/MenuSideBarItem';
 
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
-import logo from '../../assets/logo-accesshub.png'
+import logoMobile from '../../assets/logo-accesshub.png'
 
 interface MenuItemsProps {
     marginBottom: string
@@ -80,8 +80,8 @@ const MenuMobile = (props: MenuItemsProps) => {
 
         <NavLink to="/">
           <Image
-            src={logo}
             boxSize='50px'
+            src={logoMobile}
             borderRadius='full'
             alt='Logomarca do AccessHub.'
           />
