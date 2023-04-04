@@ -6,7 +6,7 @@ import {
 
 import { NavLink } from 'react-router-dom';
 
-import logo from '../../assets/logo-accesshub.png'
+import logo from '../../../public/logo-accesshub.png'
 
 function Logo(props: any){
   return(

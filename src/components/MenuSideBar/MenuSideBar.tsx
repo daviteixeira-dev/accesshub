@@ -34,7 +34,7 @@ import {
 import MenuSideBarItem from './MenuSideBarItem';
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
-import logo from '../../assets/logo-accesshub.png'
+import logo from '../../../public/logo-accesshub.png'
 
 const MenuSideBar = () => {
 

@@ -23,7 +23,7 @@ import MenuSideBarItem from '../MenuSideBar/MenuSideBarItem';
 
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
-import logoMobile from '../../assets/logo-accesshub.png'
+import logoMobile from '../../../public/logo-accesshub.png'
 
 interface MenuItemsProps {
     marginBottom: string
