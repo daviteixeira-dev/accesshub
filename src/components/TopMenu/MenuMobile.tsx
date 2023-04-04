@@ -1,8 +1,9 @@
 import { 
   Icon, 
   Flex, 
+  Image,
   Button, 
-  Drawer, 
+  Drawer,
   DrawerBody, 
   IconButton, 
   DrawerFooter, 
@@ -21,6 +22,8 @@ import { NavLink } from 'react-router-dom';
 import MenuSideBarItem from '../MenuSideBar/MenuSideBarItem';
 
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
+
+import logo from '../../assets/logo-accesshub.png'
 
 interface MenuItemsProps {
     marginBottom: string
@@ -61,9 +64,9 @@ const MenuMobile = (props: MenuItemsProps) => {
       px='1.5rem'
       bg={menuColor}
       boxShadow='sm'
+      position='fixed'
       color={colorToogle}
       alignItems='center'
-      position='relative'
       mb={props.marginBottom}
       justifyContent='space-between' 
     >
@@ -74,6 +77,15 @@ const MenuMobile = (props: MenuItemsProps) => {
           color='whiteAlpha.900' 
           aria-label='Menu Icon' 
         />
+
+        <NavLink to="/">
+          <Image
+            src={logo}
+            boxSize='50px'
+            borderRadius='full'
+            alt='Logomarca do AccessHub.'
+          />
+        </NavLink>
         
         <Drawer
           isOpen={isOpen}
