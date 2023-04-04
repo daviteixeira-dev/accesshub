@@ -8,6 +8,7 @@ import {
     Flex,
     Text,
     Icon,
+    Image,
     Heading,
     Divider,
     IconButton,
@@ -32,6 +33,8 @@ import {
 
 import MenuSideBarItem from './MenuSideBarItem';
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
+
+import logo from '../../assets/logo-accesshub.png'
 
 const MenuSideBar = () => {
 
@@ -136,13 +139,25 @@ const MenuSideBar = () => {
 
             <Flex
                 bg={boxColor}
+                alignItems='center'
                 p={navSize === 'small' ? '1rem' : '.5rem 1rem'}
                 justifyContent={navSize == 'small' ? 'center' : 'center'}
             >
+                <NavLink to="/">
+                    <Image
+                        src={logo}
+                        boxSize='50px'
+                        borderRadius='full'
+                        alt='Logomarca do AccessHub.'
+                    />
+                </NavLink>
+
                 <Text
                     fontWeight='bold'
+                    fontSize='1.5rem'
                     color='whiteAlpha.900'
-                    fontSize={navSize == 'small' ? '1.1rem' : '2rem'}
+                    ml={navSize == 'small' ? '0' : '.5rem'}
+                    display={navSize == 'small' ? 'none' : 'flex'}
                 >
                     AccessHub
                 </Text>
