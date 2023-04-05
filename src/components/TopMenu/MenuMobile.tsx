@@ -61,14 +61,15 @@ const MenuMobile = (props: MenuItemsProps) => {
       as='nav'
       h='5rem'
       w='100%'
+      zIndex={2}
       px='1.5rem'
       bg={menuColor}
       boxShadow='sm'
-      position='fixed'
       color={colorToogle}
       alignItems='center'
       mb={props.marginBottom}
       justifyContent='space-between' 
+      position={['fixed', 'relative']}
     >
         <IconButton 
           onClick={onOpen} 
