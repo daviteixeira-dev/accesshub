@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutHeaders = () => {
     return (
@@ -48,21 +49,22 @@ const PageAboutHeaders = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontWeight='400'
-                        fontSize='1rem'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critérios de Sucesso 1.3.1 e 2.4.10
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
                     >
-                        Utilizar corretamente os níveis de cabeçalho (1.3.1 e 2.4.10)
+                        Utilizar corretamente os níveis de cabeçalho
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='WCAG 1.3.1'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)' 
+                        />
+                        <BadgeWCAGInfoNumber
+                            textWCAG='WCAG 2.4.10'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/section-headings'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)' 
+                        />
                     </Heading>
                     
                     <Text
