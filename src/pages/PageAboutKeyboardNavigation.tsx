@@ -55,16 +55,6 @@ const PageAboutKeyboardNavigation = () => {
                         Navegação pelo Teclado
                     </Heading>
 
-                    <Heading
-                        as='h2'
-                        mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 2.1.1, 2.1.2 e 2.1.3
-                    </Heading>
-
                     <Text
                         mb='1rem'
                         fontWeight='400'
