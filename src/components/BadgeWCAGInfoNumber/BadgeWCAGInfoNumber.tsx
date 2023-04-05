@@ -18,11 +18,12 @@ const BadgeWCAGInfoNumber = (props: BadgeProps) => {
         >
             <Badge
                 p='.3rem'
-                ml='.5rem'
                 variant='solid'
                 fontSize='.8rem'
                 colorScheme='green'
                 borderRadius='.3rem'
+                ml={[0, 0, '.5rem', '.5rem']}
+                mt={['.5rem', '.5rem', 0, 0]}
             >
                 <Link
                     isExternal
