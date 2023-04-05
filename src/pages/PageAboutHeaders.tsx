@@ -38,10 +38,11 @@ const PageAboutHeaders = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Cabeçalhos
                     </Heading>
@@ -52,6 +53,9 @@ const PageAboutHeaders = () => {
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        display='flex'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
                         Utilizar corretamente os níveis de cabeçalho
 
