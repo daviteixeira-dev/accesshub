@@ -18,6 +18,10 @@ import TopMenu from '../components/TopMenu/TopMenu';
 
 import { FaGithub, FaArrowRight } from 'react-icons/fa';
 
+import article from '../../public/article.png';
+import openSource from '../../public/openSource.png';
+import recommendations from '../../public/userLike.png';
+
 const HomePage = () => {
   
   const bodyColor = useColorModeValue('gray.100', 'gray.800');
@@ -33,17 +37,17 @@ const HomePage = () => {
 
   const cardItem = [
     {
-      avatarIMG: 'https://via.placeholder.com/50',
+      avatarIMG: article,
       cardTitle: 'Padrões de Referências',
       cardText: 'Desenvolver material de referência para o suporte na implementação das funcionalidades de acessibilidade Web por desenvolvedores.'
     },
     {
-      avatarIMG: 'https://via.placeholder.com/50',
+      avatarIMG: recommendations,
       cardTitle: 'Conjunto de Recomendações',
       cardText: 'Sugerir um conjunto de recomendações para apoiar a implementação das funcionalidades de acessibilidade Web.'
     },
     {
-      avatarIMG: 'https://via.placeholder.com/50',
+      avatarIMG: openSource,
       cardTitle: 'Exemplos Open Source',
       cardText: 'Disponibilizar exemplos de código open source para apoiar a implementação das funcionalidades de acessibilidade Web.'
     }
@@ -215,7 +219,7 @@ const HomePage = () => {
             cardItem.map((item, index) => (
               <Card maxW='sm' mt='1rem' bg={cardsColor} key={index}> 
                 <CardBody>
-                  <Avatar name='Card Info' src={item.avatarIMG} />
+                  <Avatar size='lg' name='Card Info' src={item.avatarIMG} />
                   <Stack mt='6' spacing='3'>
                     <Heading as='h4' fontFamily='Inter' fontWeight='700' size='md'>
                       {item.cardTitle}
