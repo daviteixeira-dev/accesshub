@@ -6,7 +6,7 @@ import {
 
 interface BadgeProps {
     textWCAG: string,
-    linkWCAG: string,
+    linkWCAG?: string,
     tooltipText: string
 }
 

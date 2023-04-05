@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutAudios = () => {
     return (
@@ -37,10 +38,11 @@ const PageAboutAudios = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Áudios
                     </Heading>
@@ -48,21 +50,32 @@ const PageAboutAudios = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.2.1, 1.2.2, 1.2.6 e 1.4.2.
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa para áudio (1.2.1, 1.2.2 e 1.2.6)
+                        Fornecer alternativa para áudio
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.6'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.6 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
+                        />
                     </Heading>
 
                     <Text
@@ -91,13 +104,22 @@ const PageAboutAudios = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer controle de áudio para som (1.4.2)
+                        Fornecer controle de áudio para som
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.4.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.4.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-control'
+                        />
                     </Heading>
 
                     <Text

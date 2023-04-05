@@ -19,6 +19,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutKeyboardNavigation = () => {
     return (
@@ -45,10 +46,11 @@ const PageAboutKeyboardNavigation = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Navegação pelo Teclado
                     </Heading>
@@ -162,13 +164,28 @@ const PageAboutKeyboardNavigation = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Disponibilizar todas as funções da página via teclado (2.1.1 e 2.1.2)
+                        Disponibilizar todas as funções da página via teclado
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard'
+                        />
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.1.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap'
+                        />
                     </Heading>
 
                     <Text
@@ -290,13 +307,22 @@ const PageAboutKeyboardNavigation = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Teclado - sem exceção (2.1.3) 
+                        Teclado - sem exceção
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.1.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.1.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception'
+                        />
                     </Heading>
 
                     <Text

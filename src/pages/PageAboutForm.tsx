@@ -14,6 +14,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutForm = () => {
     return (
@@ -40,10 +41,11 @@ const PageAboutForm = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Formulário
                     </Heading>
@@ -51,21 +53,20 @@ const PageAboutForm = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.1.1, 1.3.1, 2.4.3, 3.2.2, 3.3.1 e 3.3.2
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa em texto para os botões de imagem de formulários (1.1.1)
+                        Fornecer alternativa em texto para os botões de imagem de formulários
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
+                        />
                     </Heading>
 
                     <Text
@@ -95,13 +96,22 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_02'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Associar etiquetas aos seus campos (1.3.1)
+                        Associar etiquetas aos seus campos
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                        />
                     </Heading>
 
                     <Text
@@ -119,13 +129,22 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_03'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Identificar o objeto (1.3.6)
+                        Identificar o objeto
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.3.6'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.6 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose'
+                        />
                     </Heading>
 
                     <Text
@@ -179,13 +198,22 @@ const PageAboutForm = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Estabelecer uma ordem lógica de navegação (2.4.3)
+                        Estabelecer uma ordem lógica de navegação
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.4.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-order'
+                        />
                     </Heading>
 
                     <Text
@@ -201,13 +229,22 @@ const PageAboutForm = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não provocar automaticamente alteração no contexto (3.2.2)
+                        Não provocar automaticamente alteração no contexto
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.2.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-input'
+                        />
                     </Heading>
 
                     <Text
@@ -222,13 +259,22 @@ const PageAboutForm = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer instruções para entrada de dados (3.2.2)
+                        Fornecer instruções para entrada de dados
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.3.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.3.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions'
+                        />
                     </Heading>
 
                     <Text
@@ -384,14 +430,23 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_04'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Identificar e descrever erros de entrada de dados e confirmar o envio 
-                        das informações (3.1.1)
+                        Identificar erros de entrada de dados e confirmar o envio 
+                        das informações
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-focus'
+                        />
                     </Heading>
 
                     <Text
@@ -533,13 +588,22 @@ const PageAboutForm = () => {
                     </UnorderedList>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Agrupar campos de formulário (1.3.1)
+                        Agrupar campos de formulário
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                        />
                     </Heading>
 
                     <Text
@@ -567,13 +631,22 @@ const PageAboutForm = () => {
                     <PostComponent article_name={'form_05'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer estratégias de segurança específicas ao invés de CAPTCHA (1.3.1)
+                        Fornecer estratégias de segurança específicas ao invés de CAPTCHA
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                        />
                     </Heading>
 
                     <Text

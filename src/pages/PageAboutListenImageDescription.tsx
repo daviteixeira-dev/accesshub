@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutListenImageDescription = () => {
 
@@ -38,10 +39,11 @@ const PageAboutListenImageDescription = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Funcionalidade para ouvir a descrição de uma imagem
                     </Heading>
@@ -49,11 +51,20 @@ const PageAboutListenImageDescription = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
+                        display='flex'
+                        fontWeight='600'
+                        fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Ver WCAG 2.0 Critério de Sucesso 1.3.3
+                        Características sensoriais
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'
+                        />
                     </Heading>
 
                     <Text

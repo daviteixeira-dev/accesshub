@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutVideos = () => {
     return (
@@ -37,10 +38,11 @@ const PageAboutVideos = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Vídeos
                     </Heading>
@@ -48,21 +50,38 @@ const PageAboutVideos = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.2.1, 1.2.2, 1.2.3, 1.2.5, 1.2.6, 1.2.7 e 1.2.8.
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa para vídeo (1.2.1, 1.2.2, 1.2.6 e 1.2.8)
+                        Fornecer alternativa para vídeo
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.6'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.6 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.8'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.8 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded'
+                        />
                     </Heading>
 
                     <Text
@@ -128,13 +147,34 @@ const PageAboutVideos = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Oferecer audiodescrição para vídeo pré-gravado (1.2.3, 1.2.5 e 1.2.7)
+                        Oferecer audiodescrição para vídeo pré-gravado
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.5'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.5 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.7'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.7 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded'
+                        />
                     </Heading>
 
                     <Text

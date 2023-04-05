@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutBreadcrumb = () => {
     return (
@@ -37,10 +38,11 @@ const PageAboutBreadcrumb = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Breadcrumb
                     </Heading>
@@ -48,21 +50,20 @@ const PageAboutBreadcrumb = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 2.4.8
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Informar o usuário sobre sua localização na página (2.4.8)
+                        Informar o usuário sobre sua localização na página
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.4.8'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.8 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/location'
+                        />
                     </Heading>
 
                     <Text

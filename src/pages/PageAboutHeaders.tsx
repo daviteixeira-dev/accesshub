@@ -50,24 +50,24 @@ const PageAboutHeaders = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
-                        display='flex'
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
                         Utilizar corretamente os níveis de cabeçalho
 
                         <BadgeWCAGInfoNumber
-                            textWCAG='WCAG 1.3.1'
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)' 
                         />
                         <BadgeWCAGInfoNumber
-                            textWCAG='WCAG 2.4.10'
-                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/section-headings'
+                            textWCAG='Critério 2.4.10'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)' 
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/section-headings'
                         />
                     </Heading>
                     

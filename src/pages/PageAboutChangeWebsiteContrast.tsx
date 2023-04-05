@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutChangeWebsiteContrast = () => {
     return (
@@ -37,10 +38,11 @@ const PageAboutChangeWebsiteContrast = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Funcionalidade para mudar o contraste de um site
                     </Heading>
@@ -48,21 +50,20 @@ const PageAboutChangeWebsiteContrast = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.4.3 e 1.4.6
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Oferecer contraste mínimo entre plano de fundo e primeiro plano (1.4.3)
+                        Oferecer contraste mínimo entre plano de fundo e primeiro plano
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.4.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.4.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum'
+                        />
                     </Heading>
 
                     <Text
@@ -112,13 +113,22 @@ const PageAboutChangeWebsiteContrast = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Contraste - melhorado (1.4.6)
+                        Contraste - melhorado
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.4.6'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.4.6 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced'
+                        />
                     </Heading>
 
                     <Text

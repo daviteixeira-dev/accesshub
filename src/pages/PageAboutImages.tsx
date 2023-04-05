@@ -22,6 +22,7 @@ import figura04 from '../assets/figura-04.png';
 import figura05 from '../assets/figura-05.jpg';
 import figura06 from '../assets/figura-06.png';
 import figura07 from '../assets/figura-07.png';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutImages = () => {
     return (
@@ -48,10 +49,11 @@ const PageAboutImages = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Imagens
                     </Heading>
@@ -59,21 +61,20 @@ const PageAboutImages = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.1.1
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa em texto para as imagens de um site (1.1.1)
+                        Fornecer alternativa em texto para as imagens de um site
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
+                        />
                     </Heading>
 
                     <Text
@@ -262,13 +263,22 @@ const PageAboutImages = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Utilizar mapas de imagem de forma acessível (1.1.1)
+                        Utilizar mapas de imagem de forma acessível
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
+                        />
                     </Heading>
 
                     <Text

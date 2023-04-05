@@ -13,6 +13,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutLinks = () => {
     return (
@@ -39,22 +40,13 @@ const PageAboutLinks = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Links
-                    </Heading>
-
-                    <Heading
-                        as='h2'
-                        mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.3.1, 2.4.4, 2.4.7, 2.4.9 e 3.2.5
                     </Heading>
 
                     <Text
@@ -71,13 +63,22 @@ const PageAboutLinks = () => {
                     <PostComponent article_name={'links_01'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Separar links adjacentes (1.3.1)
+                        Separar links adjacentes
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                        />
                     </Heading>
 
                     <Text
@@ -123,13 +124,22 @@ const PageAboutLinks = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não abrir novas instâncias sem a solicitação do usuário (3.2.5)
+                        Não abrir novas instâncias sem a solicitação do usuário
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.2.5'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
+                        />
                     </Heading>
 
                     <Text
@@ -200,13 +210,28 @@ const PageAboutLinks = () => {
                     <PostComponent article_name={'links_03'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Descrever links clara e sucintamente (2.4.4 e 2.4.9)
+                        Descrever links clara e sucintamente
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.4.4'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.4 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context'
+                        />
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.4.9'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.9 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only'
+                        />
                     </Heading>
 
                     <Text
@@ -273,13 +298,22 @@ const PageAboutLinks = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Possibilitar que o elemento com foco seja visualmente evidente (2.4.7)
+                        Possibilitar que o elemento com foco seja visualmente evidente
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.4.7'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.7 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-visible'
+                        />
                     </Heading>
 
                     <Text

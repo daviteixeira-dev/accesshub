@@ -17,6 +17,7 @@ import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
 
 import figura08 from '../assets/figura-08.png';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutRecommendations = () => {
     return (
@@ -43,10 +44,11 @@ const PageAboutRecommendations = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Recomendações
                     </Heading>
@@ -54,21 +56,26 @@ const PageAboutRecommendations = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.3.2, 1.3.3, 1.4.1, 2.1.1, 2.1.2, 2.2.2, 2.3.1, 2.4.3, 3.1.3, 3.1.4, 3.1.5, 4.1.1 e 4.1.2
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Respeitar os Padrões Web (4.1.1 e 4.1.2)
+                        Respeitar os Padrões Web
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 4.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 4.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/parsing'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 4.1.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 4.1.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value'
+                        />
                     </Heading>
 
                     <Text
@@ -114,13 +121,28 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Ordenar de forma lógica e intuitiva a leitura e tabulação (1.3.2 e 2.4.3)
+                        Ordenar de forma lógica e intuitiva a leitura e tabulação
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.4.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-order'
+                        />
                     </Heading>
 
                     <Text
@@ -162,14 +184,28 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não utilizar apenas cor ou outras características sensoriais 
-                        para diferenciar elementos (1.3.3 e 1.4.1)
+                        Não utilizar apenas a cor para diferenciar elementos
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.4.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.4.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/use-of-color'
+                        />
                     </Heading>
 
                     <Text
@@ -205,13 +241,22 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não incluir situações com intermitência de tela (2.3.1)
+                        Não incluir situações com intermitência de tela
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold'
+                        />
                     </Heading>
 
                     <Text
@@ -227,13 +272,22 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Assegurar o controle do usuário sobre as alterações temporais do conteúdo (2.2.2)
+                        Assegurar o controle do usuário sobre as alterações temporais do conteúdo
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.2.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
+                        />
                     </Heading>
 
                     <Text
@@ -252,13 +306,21 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Disponibilizar documentos em formatos acessíveis (Sem Critério)
+                        Disponibilizar documentos em formatos acessíveis
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Sem Critério'
+                            tooltipText='É uma recomendação do eMAG'
+                        />
                     </Heading>
 
                     <Text
@@ -287,13 +349,22 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Garantir a leitura e compreensão das informações (3.1.5)
+                        Garantir a leitura e compreensão das informações
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.1.5'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.1.5 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/reading-level'
+                        />
                     </Heading>
 
                     <Text
@@ -319,7 +390,7 @@ const PageAboutRecommendations = () => {
                         como, por exemplo:
                     </Text>
 
-                    <UnorderedList>
+                    <UnorderedList mb='1rem'>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
@@ -382,13 +453,28 @@ const PageAboutRecommendations = () => {
                     </UnorderedList>
 
                     <Heading
-                        as='h3'
-                        my='1rem'
+                        as='h2'
+                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Disponibilizar uma explicação para siglas, abreviaturas e palavras incomuns (3.1.3 e 3.1.4)
+                        Exibir uma explicação para siglas, abreviaturas e palavras incomuns
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.1.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.1.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/unusual-words'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.1.4'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.1.4 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/abbreviations'
+                        />
                     </Heading>
 
                     <Text
@@ -417,13 +503,22 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer controle de animação (2.2.2)
+                        Fornecer controle de animação
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.2.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
+                        />
                     </Heading>
 
                     <Text
@@ -437,13 +532,28 @@ const PageAboutRecommendations = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Garantir que os objetos programáveis sejam acessíveis (2.1.1 e 2.1.2) 
+                        Garantir que os objetos programáveis sejam acessíveis
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.1.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap'
+                        />
                     </Heading>
 
                     <Text

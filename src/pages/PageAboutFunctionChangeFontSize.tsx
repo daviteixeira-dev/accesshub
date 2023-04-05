@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutFunctionChangeFontSize = () => {
     return (
@@ -37,10 +38,11 @@ const PageAboutFunctionChangeFontSize = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Funcionalidade para alterar o tamanho da fonte
                     </Heading>
@@ -48,21 +50,20 @@ const PageAboutFunctionChangeFontSize = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.4.4, 2.4.4, 3.2.2 e 3.2.4
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Permitir redimensionamento sem perda de funcionalidade (1.4.4)
+                        Permitir redimensionamento sem perda de funcionalidade
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.4.4'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.4.4 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/resize-text'
+                        />
                     </Heading>
 
                     <Text
@@ -214,13 +215,40 @@ const PageAboutFunctionChangeFontSize = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
                         Critérios da WCAG que foram atendidos
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.4.4'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.4.4 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/resize-text'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.4.4'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.4 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.2.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-input'
+                        />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 3.2.4'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.4 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification'
+                        />
                     </Heading>
 
                     <Text
@@ -267,11 +295,14 @@ const PageAboutFunctionChangeFontSize = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
                         Recomendações
                     </Heading>

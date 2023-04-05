@@ -13,6 +13,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutHTMLInitialStructure = () => {
     return (
@@ -39,10 +40,11 @@ const PageAboutHTMLInitialStructure = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Estrutura Inicial HTML
                     </Heading>
@@ -50,19 +52,12 @@ const PageAboutHTMLInitialStructure = () => {
                     <Heading
                         as='h2'
                         mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.3.1, 2.2.1, 2.4.2, 3.1.1, 3.1.2, 3.2.3 e 3.2.5.
-                    </Heading>
-
-                    <Heading
-                        as='h3'
-                        mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
                         Abaixo um exemplo de estrutura inicial HTML5:
                     </Heading>
@@ -70,13 +65,22 @@ const PageAboutHTMLInitialStructure = () => {
                     <PostComponent article_name={'html_01'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Organizar o código HTML de forma lógica e semântica (1.3.1)
+                        Organizar o código HTML de forma lógica e semântica
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                        />
                     </Heading>
 
                     <Text
@@ -119,13 +123,22 @@ const PageAboutHTMLInitialStructure = () => {
                     <PostComponent article_name={'html_02'} />
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         my='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Identificar o idioma principal da página (3.1.1)
+                        Identificar o idioma principal da página
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.1.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.1.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/language-of-page'
+                        />
                     </Heading>
 
                     <Text
@@ -141,13 +154,22 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Informar mudança de idioma no conteúdo (3.1.2)
+                        Informar mudança de idioma no conteúdo
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.1.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.1.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts'
+                        />
                     </Heading>
 
                     <Text
@@ -162,13 +184,22 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Oferecer um título descritivo e informativo à página (2.4.2)
+                        Oferecer um título descritivo e informativo à página
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.4.2'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.2 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/page-titled'
+                        />
                     </Heading>
 
                     <Text
@@ -185,13 +216,22 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Dividir as áreas de informação (3.2.3)
+                        Dividir as áreas de informação
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.2.3'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.3 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation'
+                        />
                     </Heading>
 
                     <Text
@@ -456,13 +496,22 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não criar páginas com atualização automática periódica (3.2.5)
+                        Não criar páginas com atualização automática periódica
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.2.5'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
+                        />
                     </Heading>
 
                     <Text
@@ -493,13 +542,22 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não utilizar redirecionamento automático de páginas (3.2.5)
+                        Não utilizar redirecionamento automático de páginas
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 3.2.5'
+                            tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
+                        />
                     </Heading>
 
                     <Text
@@ -514,13 +572,22 @@ const PageAboutHTMLInitialStructure = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa para modificar limite de tempo (2.2.1)
+                        Fornecer alternativa para modificar limite de tempo
+
+                        <BadgeWCAGInfoNumber
+                            textWCAG='Critério 2.2.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.2.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable'
+                        />
                     </Heading>
 
                     <Text

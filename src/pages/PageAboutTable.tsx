@@ -11,6 +11,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutTable = () => {
     return (
@@ -37,22 +38,13 @@ const PageAboutTable = () => {
 
                     <Heading
                         as='h1'
-                        my='1rem'
+                        mb='1rem'
                         fontSize='2rem'
                         fontWeight='700'
                         fontFamily='Inter'
+                        mt={['5rem', '5rem', '1rem', '1rem']}
                     >
                         Tabela
-                    </Heading>
-
-                    <Heading
-                        as='h2'
-                        mb='1rem'
-                        fontSize='1rem'
-                        fontWeight='400'
-                        fontFamily='Inter'
-                    >
-                        Ver WCAG 2.0 Critério de Sucesso 1.3.1 (Técnicas H43 e H63)
                     </Heading>
 
                     <Text
@@ -80,13 +72,22 @@ const PageAboutTable = () => {
                     </Text>
 
                     <Heading
-                        as='h3'
+                        as='h2'
                         mb='1rem'
+                        display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
                         fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Em tabelas, utilizar títulos e resumos de forma apropriada (1.3.1)
+                        Em tabelas, utilizar títulos e resumos de forma apropriada
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.3.1'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
+                        />
                     </Heading>
 
                     <Text
