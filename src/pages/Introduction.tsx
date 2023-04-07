@@ -40,10 +40,11 @@ const Introduction = () => {
 
           <Heading
             as='h1'
-            my='1.5rem'
+            mb='1.5rem'
             fontSize='2rem'
             fontWeight='700'
             fontFamily='Inter'
+            mt={['6rem', '6rem', '1.5rem', '1.5rem']}
           >
             Sobre o AccessHub
           </Heading>

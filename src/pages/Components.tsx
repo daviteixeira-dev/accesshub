@@ -56,11 +56,12 @@ const Components = () => {
           
           <Heading 
             as='h1'
-            my='1rem'
+            mb='1rem'
             fontSize='2rem'
             fontWeight='700'
             fontFamily='Inter' 
-            color={headingsColor} 
+            color={headingsColor}
+            mt={['6rem', '6rem', '1.5rem', '1.5rem']}
           >
             Componentes
           </Heading>
