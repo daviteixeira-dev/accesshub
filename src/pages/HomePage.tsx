@@ -80,6 +80,7 @@ const HomePage = () => {
           fontFamily='Inter'
           color={headingsColor}
           textTransform='uppercase'
+          mt={['2rem', '2rem', '4rem', '4rem']}
           fontSize={['2.5rem', '2.5rem', '3rem', '3.5rem']}
         >
           Desenvolva e deixe o seu site mais <Text as='span' color={textSpanBlue}>acessível</Text>
@@ -217,7 +218,12 @@ const HomePage = () => {
 
           {
             cardItem.map((item, index) => (
-              <Card maxW='sm' mt='1rem' bg={cardsColor} key={index}> 
+              <Card 
+                mt='1rem' 
+                key={index}
+                bg={cardsColor}
+                maxW={['sm', '1rem', '14rem', '20rem', 'sm']}
+              > 
                 <CardBody>
                   <Avatar size='lg' name='Card Info' src={item.avatarIMG} />
                   <Stack mt='6' spacing='3'>
