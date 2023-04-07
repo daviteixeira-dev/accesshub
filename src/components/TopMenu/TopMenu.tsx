@@ -23,6 +23,7 @@ const MenuItem = ({ children, isLast, to = '/', ...rest }: any) => {
 
 const MenuLinks = () => {
 
+    const bgColor = useColorModeValue('blue.600', 'gray.800');
     const colorToogle = useColorModeValue('yellow.300', 'orange.300');
 
     return (
@@ -33,6 +34,7 @@ const MenuLinks = () => {
                 spacing={8}
                 align='center'
                 direction='row'
+                bgColor={bgColor}
                 color={colorToogle}
                 justify={['space-between', 'space-between', 'flex-end', 'flex-end']}
             >
@@ -49,8 +51,8 @@ const NavBarContainer = ({ children, ...props }: any) => {
     return (
         <Flex
             top='0'
-            py={5}
-            px={8}
+            py={4}
+            px={6}
             as='nav'
             w='100%'
             zIndex={2}

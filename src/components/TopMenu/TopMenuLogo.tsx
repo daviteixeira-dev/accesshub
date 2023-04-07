@@ -1,7 +1,8 @@
 import { 
   Text,
   Flex,
-  Image
+  Image,
+  useColorModeValue
 } from '@chakra-ui/react';
 
 import { NavLink } from 'react-router-dom';
@@ -9,10 +10,14 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../../public/logo-accesshub.png'
 
 function Logo(props: any){
+
+  const bgColor = useColorModeValue('blue.600', 'gray.800');
+
   return(
     <Flex
       {...props}
       alignItems='center'
+      background={bgColor}
     >
       <NavLink to="/">
         <Image
@@ -26,6 +31,7 @@ function Logo(props: any){
       <Text
         fontWeight='700'
         fontFamily='Inter'
+        background={bgColor}
         ml={['.5rem', '.5rem', '1rem', '1rem']}
         fontSize={['1rem', '1rem', '1.5rem,', '1.5rem']}
       >
