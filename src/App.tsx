@@ -9,6 +9,8 @@ import './styles/App.css';
 import HomePage from './pages/HomePage';
 import Components from './pages/Components';
 import Introduction from './pages/Introduction';
+import Error404Page from './pages/Error404Page';
+import CreditsSection from './pages/CreditsSection';
 
 import PageAboutForm from './pages/PageAboutForm';
 import PageAboutTable from './pages/PageAboutTable';
@@ -34,6 +36,8 @@ function App(){
         <Route path='/' element={<HomePage />} />
         <Route path='/componentes' element={<Components />} />
         <Route path='/introducao' element={<Introduction />} />
+        <Route path='/credits' element={<CreditsSection />} />
+        <Route path='/error404page' element={<Error404Page />} />
         
         <Route path='/robusto' element={<Components />} />
         <Route path='/operavel' element={<Components />} />
