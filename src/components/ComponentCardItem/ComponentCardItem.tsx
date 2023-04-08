@@ -59,7 +59,7 @@ const ComponentCardItem = (props: ComponentCardItem) => {
                         as='h2'
                         display='flex'
                         fontSize='1rem'
-                        fontWeight='500'
+                        fontWeight='800'
                         textAlign='center'
                         fontFamily='Inter' 
                         color={headingsColor}

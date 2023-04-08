@@ -52,13 +52,13 @@ function App(){
         <Route path='/apresentacao-design' element={<Components />} />
 
         <Route path='/componentes/links' element={<PageAboutLinks />} />
-        <Route path='/componentes/tabela' element={<PageAboutTable />} />
+        <Route path='/componentes/tabelas' element={<PageAboutTable />} />
         <Route path='/componentes/audios' element={<PageAboutAudios />} />
         <Route path='/componentes/videos' element={<PageAboutVideos />} />
         <Route path='/componentes/imagens' element={<PageAboutImages />} />
-        <Route path='/componentes/formulario' element={<PageAboutForm />} />
+        <Route path='/componentes/formularios' element={<PageAboutForm />} />
         <Route path='/componentes/cabecalhos' element={<PageAboutHeaders />} />
-        <Route path='/componentes/breadcrumb' element={<PageAboutBreadcrumb />} />
+        <Route path='/componentes/breadcrumbs' element={<PageAboutBreadcrumb />} />
         <Route path='/componentes/recomendacoes' element={<PageAboutRecommendations />} />
         <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
         <Route path='/componentes/navegacao-pelo-teclado' element={<PageAboutKeyboardNavigation />} />

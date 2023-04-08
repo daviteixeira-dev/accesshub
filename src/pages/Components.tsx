@@ -76,16 +76,6 @@ const Components = () => {
             seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
           </Text>
 
-          <Heading 
-            as='h2'
-            mb='1rem'
-            fontWeight='600'
-            fontSize='1.5rem'
-            fontFamily='Inter' 
-          >
-            Exemplos 01
-          </Heading>
-
           <Flex 
             mb='1rem'
             justifyContent='space-evenly'
@@ -104,28 +94,18 @@ const Components = () => {
               imgLink={skipNav} 
             />
             <ComponentCardItem 
-              cardTitle='Breadcrumb'
-              pagLink='/componentes/breadcrumb' 
+              cardTitle='Breadcrumbs'
+              pagLink='/componentes/breadcrumbs' 
               altImage='Componente de Breadcrumb'
               imgLink={breadcrumb}
             />
             <ComponentCardItem 
-              cardTitle='Tabela' 
-              pagLink='/componentes/tabela' 
+              cardTitle='Tabelas' 
+              pagLink='/componentes/tabelas' 
               altImage='Componente de Tabela'
               imgLink={table}
             />
           </Flex>
-
-          <Heading 
-            as='h3'
-            mb='1rem'
-            fontWeight='600'
-            fontSize='1.5rem'
-            fontFamily='Inter'
-          >
-            Exemplos 02
-          </Heading>
 
           <Flex
             mb='1rem'
@@ -133,8 +113,8 @@ const Components = () => {
             flexDirection={['column', 'column', 'row', 'row']}
           >
             <ComponentCardItem 
-              cardTitle='Formulário' 
-              pagLink='/componentes/formulario' 
+              cardTitle='Formulários' 
+              pagLink='/componentes/formularios' 
               altImage='Componente de Formulario'
               imgLink={form} 
             />
@@ -157,16 +137,6 @@ const Components = () => {
               imgLink={images}
             />
           </Flex>
-
-          <Heading 
-            as='h4'
-            mb='1rem'
-            fontWeight='600'
-            fontSize='1.5rem'
-            fontFamily='Inter' 
-          >
-            Exemplo 03
-          </Heading>
 
           <Flex
             mb='1rem'
@@ -192,22 +162,12 @@ const Components = () => {
               imgLink={recommendations}
             />
             <ComponentCardItem 
-              cardTitle='Função para alterar o Tamanho da Fonte' 
+              cardTitle='Mudar o tamanho da fonte' 
               pagLink='/componentes/alterar-tamanho-da-fonte' 
               altImage='Componente para alterar o tamanho da fonte'
               imgLink={fontSize}
             />
           </Flex>
-
-          <Heading 
-            as='h5'
-            mb='1rem'
-            fontWeight='600'
-            fontSize='1.5rem'
-            fontFamily='Inter' 
-          >
-            Exemplo 04
-          </Heading>
 
           <Flex
             mb='1rem'
@@ -215,19 +175,19 @@ const Components = () => {
             flexDirection={['column', 'column', 'row', 'row']}
           >
             <ComponentCardItem 
-              cardTitle='Função para alterar o contraste do site' 
+              cardTitle='Alterar o contraste do site' 
               pagLink='/componentes/alterar-contraste-do-site' 
               altImage='Componente para alterar o contraste do site'
               imgLink={contrast}
             />
             <ComponentCardItem 
-              cardTitle='Função para ouvir a descrição da imagem' 
+              cardTitle='Ouvir a descrição da imagem' 
               pagLink='/componentes/ouvir-descricao-da-imagem' 
               altImage='Componente para ouvir a descrição da imagem'
               imgLink={imageDescription}
             />
             <ComponentCardItem 
-              cardTitle='Navegação pelo Teclado' 
+              cardTitle='Navegação pelo teclado' 
               pagLink='/componentes/navegacao-pelo-teclado' 
               altImage='Componente para navegação via teclado'
               imgLink={keyboardNavigation}
