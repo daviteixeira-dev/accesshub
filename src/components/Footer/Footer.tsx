@@ -76,6 +76,16 @@ const Footer = () => {
                                 Componentes
                             </Link>
                         </Flex>
+
+                        <Flex as='li'>
+                            <Link 
+                                mt='.5rem'
+                                href='/credits' 
+                                color='whiteAlpha.900'
+                            >
+                                Créditos
+                            </Link>
+                        </Flex>
                     </Flex>
                 </Flex>
 
