@@ -24,6 +24,71 @@ const linkItems = [
         ListLink: 'https://www.flaticon.com/free-icons/header',
         ListTitle: 'header icons'
     },
+    {
+        ListText: 'Back arrow icons created by Freepik - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/back-arrow',
+        ListTitle: 'back arrow icons'
+    },
+    {
+        ListText: 'Spreadsheet icons created by Creatype - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/spreadsheet',
+        ListTitle: 'spreadsheet icons'
+    },
+    {
+        ListText: 'Survey icons created by Arkinasi - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/survey',
+        ListTitle: 'survey icons'
+    },
+    {
+        ListText: 'Html icons created by Smartline - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/html',
+        ListTitle: 'html icons'
+    },
+    {
+        ListText: 'External link icons created by Bharat Icons - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/external-link',
+        ListTitle: 'external link icons'
+    },
+    {
+        ListText: 'Picture icons created by Pixel perfect - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/picture',
+        ListTitle: 'picture icons'
+    },
+    {
+        ListText: 'Video icons created by Freepik - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/video',
+        ListTitle: 'video icons'
+    },
+    {
+        ListText: 'Speaker icons created by Pixel perfect - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/speaker',
+        ListTitle: 'speaker icons'
+    },
+    {
+        ListText: 'Recommended icons created by Creatype - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/recommended',
+        ListTitle: 'recommended icons'
+    },
+    {
+        ListText: 'Font size icons created by Bharat Icons - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/font-size',
+        ListTitle: 'font size icons'
+    },
+    {
+        ListText: 'Contrast icons created by Smartline - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/contrast',
+        ListTitle: 'contrast icons'
+    },
+    {
+        ListText: 'Metadata icons created by orvipixel - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/metadata',
+        ListTitle: 'metadata icons'
+    },
+    {
+        ListText: 'Keyboard icons created by Good Ware - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/keyboard',
+        ListTitle: 'keyboard icons'
+    }
 ]
 
 const CreditsSection = () => {
