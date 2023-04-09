@@ -88,6 +88,11 @@ const linkItems = [
         ListText: 'Keyboard icons created by Good Ware - Flaticon',
         ListLink: 'https://www.flaticon.com/free-icons/keyboard',
         ListTitle: 'keyboard icons'
+    },
+    {
+        ListText: 'Contribute icons created by Vector Stall - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/contribute',
+        ListTitle: 'contribute icons'
     }
 ]
 
