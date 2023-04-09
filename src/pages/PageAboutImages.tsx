@@ -10,6 +10,8 @@ import {
     Container  
 } from '@chakra-ui/react';
 
+import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
+
 import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
@@ -27,6 +29,11 @@ import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfo
 const PageAboutImages = () => {
     return (
         <Flex>
+
+            <SkipNavLink zIndex={2}>
+                Ir para o conteúdo
+            </SkipNavLink>
+
             <Hide below='md'>
                 <MenuSideBar />
             </Hide>
@@ -46,6 +53,8 @@ const PageAboutImages = () => {
                     p='1rem'
                     flexDirection='column'
                 >
+
+                    <SkipNavContent />
 
                     <Heading
                         as='h1'

@@ -8,10 +8,12 @@ import {
     UnorderedList
 } from '@chakra-ui/react';
 
+import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
+
 import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
-import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import CreditList from '../components/CreditList/CreditList';
+import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 
 const linkItems = [
     {
@@ -100,6 +102,10 @@ const CreditsSection = () => {
     return (
         <Flex>
 
+            <SkipNavLink zIndex={2}>
+                Ir para o conteúdo
+            </SkipNavLink>
+
             <Hide below='md'>
                 <MenuSideBar />
             </Hide>
@@ -118,6 +124,9 @@ const CreditsSection = () => {
                     p='1rem'
                     flexDirection='column'
                 >
+
+                    <SkipNavContent />
+
                     <Heading
                         as='h1'
                         mb='1.5rem'

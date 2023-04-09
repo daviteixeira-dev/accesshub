@@ -8,6 +8,8 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 
+import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
+
 import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
@@ -36,6 +38,10 @@ const Components = () => {
 
   return (
     <Flex bg={bodyColor}>
+
+      <SkipNavLink zIndex={2}>
+        Ir para o conteúdo
+      </SkipNavLink>
       
       <Hide below='md'>
         <MenuSideBar />
@@ -52,7 +58,12 @@ const Components = () => {
           <MenuMobile marginBottom='0'/>
         </Show>
 
-        <Flex flexDirection='column' p='1rem'>
+        <Flex
+          p='1rem'
+          flexDirection='column'
+        >
+
+          <SkipNavContent />
           
           <Heading 
             as='h1'
