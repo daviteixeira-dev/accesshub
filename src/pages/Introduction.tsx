@@ -1,20 +1,27 @@
 import { 
-  Flex, 
+  Flex,
   Link,
-  Text, 
+  Text,
   Hide,
   Show,
+  Image,
   Heading,
   ListItem,
-  Container, 
-  UnorderedList
+  Container,
+  UnorderedList,
+  useColorModeValue
 } from '@chakra-ui/react';
 
 import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 
+import puzzle from '../../public/puzzle.png';
+
 const Introduction = () => {
+
+  const bgColor = useColorModeValue('gray.300', 'gray.700');
+
   return (
     <Flex>
       
@@ -143,26 +150,46 @@ const Introduction = () => {
             </ListItem>
           </UnorderedList>
 
-          <Heading
-            as='h3'
-            my='1rem'
-            fontWeight='600'
-            fontSize='1.5rem'
-            fontFamily='Inter'
+          <Flex
+            p='1rem'
+            my='2rem'
+            textAlign='center'
+            alignItems='center'
+            borderRadius='1rem'
+            // border='1px solid red'
+            flexDirection='column'
+            justifyContent='center'
+            background={bgColor}
           >
-            Como contribuir?
-          </Heading>
+            <Image
+              src={puzzle}
+              boxSize='6rem'
+              borderRadius='full'
+              title='Nessa imagem temos uma mão mostrando uma peça de quebra-cabeça, usada para referenciar a ideia de contribuição com o projeto.'
+            />
 
-          <Text
-            mb='1rem'
-            fontWeight='400'
-            fontSize='1.2rem'
-            fontFamily='Inter'
-          >
-            O desenvolvimento do AccessHub é uma iniciativa para a construção de um projeto open-sourcer 
-            para a comunidade e contribuições são bem vindas. Para contribuir, <Link href='https://github.com/daviteixeira-btm/accesshub'>acesse e use o mecanismo de 
-            contribuição do Github</Link>, você pode encontar o passo a passo disponibilizado na descrição do projeto.
-          </Text>
+            <Heading
+              as='h3'
+              my='1rem'
+              fontWeight='600'
+              fontSize='1.5rem'
+              fontFamily='Inter'
+            >
+              Como contribuir?
+            </Heading>
+
+            <Text
+              mb='1rem'
+              fontWeight='500'
+              fontSize='1.2rem'
+              fontFamily='Inter'
+            >
+              O desenvolvimento do AccessHub é uma iniciativa para a construção de um projeto open-source 
+              para a comunidade e contribuições são bem-vindas. Para contribuir, <Link color='blue.500' textDecor='underline' href='https://github.com/daviteixeira-btm/accesshub/pulls' isExternal >acesse e use o mecanismo de 
+              contribuição do GitHub</Link>, você pode encontar o passo a passo disponibilizado na descrição do projeto.
+            </Text>
+
+          </Flex>
 
           <Heading
             as='h4'
@@ -190,10 +217,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            SILVA, Davi Teixeira; BEZERRA, Carla Ilane Moreira; SOUZA FILHO, José Cezar 
-            Junior de. <Text as='b'>ACCESSHUB: GUIA DE ACESSIBILIDADE PARA DESENVOLVEDORES WEB</Text>. 
-            2022. 55 f. TCC (Graduação) - Curso de Sistemas de Informação, Universidade Federal do 
-            Ceará, Quixadá, 2022.
+            SILVA, Davi Teixeira. <Text as='b'>ACCESSHUB: GUIA DE ACESSIBILIDADE PARA DESENVOLVEDORES WEB</Text>. 2023. 55 f. TCC (Graduação) - Curso de Sistemas de Informação, Universidade Federal do Ceará, Quixadá, 2023.
           </Text>
 
         </Flex>
