@@ -12,21 +12,21 @@ import Introduction from './pages/Introduction';
 import Error404Page from './pages/Error404Page';
 import CreditsSection from './pages/CreditsSection';
 
-import PageAboutForm from './pages/PageAboutForm';
-import PageAboutTable from './pages/PageAboutTable';
-import PageAboutLinks from './pages/PageAboutLinks';
-import PageAboutImages from './pages/PageAboutImages';
-import PageAboutVideos from './pages/PageAboutVideos';
-import PageAboutAudios from './pages/PageAboutAudios';
-import PageAboutHeaders from './pages/PageAboutHeaders';
-import PageAboutBreadcrumb from './pages/PageAboutBreadcrumb';
-import PageAboutSkipNavigation from './pages/PageAboutSkipNavigation';
-import PageAboutRecommendations from './pages/PageAboutRecommendations';
-import PageAboutKeyboardNavigation from './pages/PageAboutKeyboardNavigation';
-import PageAboutHTMLInitialStructure from './pages/PageAboutHTMLInitialStructure';
-import PageAboutChangeWebsiteContrast from './pages/PageAboutChangeWebsiteContrast';
-import PageAboutFunctionChangeFontSize from './pages/PageAboutFunctionChangeFontSize';
-import PageAboutListenImageDescription from './pages/PageAboutListenImageDescription';
+import PageAboutForm from './pages/subpages/PageAboutForm';
+import PageAboutTable from './pages/subpages/PageAboutTable';
+import PageAboutLinks from './pages/subpages/PageAboutLinks';
+import PageAboutImages from './pages/subpages/PageAboutImages';
+import PageAboutVideos from './pages/subpages/PageAboutVideos';
+import PageAboutAudios from './pages/subpages/PageAboutAudios';
+import PageAboutHeaders from './pages/subpages/PageAboutHeaders';
+import PageAboutBreadcrumb from './pages/subpages/PageAboutBreadcrumb';
+import PageAboutSkipNavigation from './pages/subpages/PageAboutSkipNavigation';
+import PageAboutRecommendations from './pages/subpages/PageAboutRecommendations';
+import PageAboutKeyboardNavigation from './pages/subpages/PageAboutKeyboardNavigation';
+import PageAboutHTMLInitialStructure from './pages/subpages/PageAboutHTMLInitialStructure';
+import PageAboutChangeWebsiteContrast from './pages/subpages/PageAboutChangeWebsiteContrast';
+import PageAboutFunctionChangeFontSize from './pages/subpages/PageAboutFunctionChangeFontSize';
+import PageAboutListenImageDescription from './pages/subpages/PageAboutListenImageDescription';
 
 function App(){
   return (
