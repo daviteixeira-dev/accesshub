@@ -9,11 +9,11 @@ import {
 
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
-import Footer from '../components/Footer/Footer';
-import MenuMobile from '../components/TopMenu/MenuMobile';
-import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
-import PostComponent from '../components/PostComponent/PostComponent';
-import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
+import Footer from '../../components/Footer/Footer';
+import MenuMobile from '../../components/TopMenu/MenuMobile';
+import MenuSideBar from '../../components/MenuSideBar/MenuSideBar';
+import PostComponent from '../../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutSkipNavigation = () => {
     return (

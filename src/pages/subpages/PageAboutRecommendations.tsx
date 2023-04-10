@@ -13,13 +13,13 @@ import {
 
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
-import Footer from '../components/Footer/Footer';
-import MenuMobile from '../components/TopMenu/MenuMobile';
-import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
-import PostComponent from '../components/PostComponent/PostComponent';
+import Footer from '../../components/Footer/Footer';
+import MenuMobile from '../../components/TopMenu/MenuMobile';
+import MenuSideBar from '../../components/MenuSideBar/MenuSideBar';
+import PostComponent from '../../components/PostComponent/PostComponent';
 
-import figura08 from '../assets/figura-08.png';
-import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
+import figura08 from '../../assets/figura-08.png';
+import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutRecommendations = () => {
     return (

@@ -12,19 +12,19 @@ import {
 
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
-import Footer from '../components/Footer/Footer';
-import MenuMobile from '../components/TopMenu/MenuMobile';
-import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
-import PostComponent from '../components/PostComponent/PostComponent';
+import Footer from '../../components/Footer/Footer';
+import MenuMobile from '../../components/TopMenu/MenuMobile';
+import MenuSideBar from '../../components/MenuSideBar/MenuSideBar';
+import PostComponent from '../../components/PostComponent/PostComponent';
 
-import figura01 from '../assets/figura-01.jpg';
-import figura02 from '../assets/figura-02.jpg';
-import figura03 from '../assets/figura-03.jpg';
-import figura04 from '../assets/figura-04.png';
-import figura05 from '../assets/figura-05.jpg';
-import figura06 from '../assets/figura-06.png';
-import figura07 from '../assets/figura-07.png';
-import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
+import figura01 from '../../assets/figura-01.jpg';
+import figura02 from '../../assets/figura-02.jpg';
+import figura03 from '../../assets/figura-03.jpg';
+import figura04 from '../../assets/figura-04.png';
+import figura05 from '../../assets/figura-05.jpg';
+import figura06 from '../../assets/figura-06.png';
+import figura07 from '../../assets/figura-07.png';
+import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutImages = () => {
     return (
