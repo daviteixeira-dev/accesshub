@@ -147,12 +147,12 @@ const PageAboutForm = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Identificar o objeto
+                        Identificar o objeto de entrada
 
                         <BadgeWCAGInfoNumber
-                            textWCAG='Critério 1.3.6'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.3.6 (inglês)'
-                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose'
+                            textWCAG='Critério 1.3.5'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.3.5 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose'
                         />
                     </Heading>
 
@@ -162,7 +162,7 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um exemplo de funcionalidade que atende ao critério 1.3.6 da WCAG é o uso de 
+                        Um exemplo de funcionalidade que atende ao critério 1.3.5 da WCAG é o uso de 
                         rótulos claros e descritivos para os campos de formulário em um site.
                     </Text>
 
