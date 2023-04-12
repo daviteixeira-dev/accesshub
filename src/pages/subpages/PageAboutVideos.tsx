@@ -86,11 +86,6 @@ const PageAboutVideos = () => {
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
-                            textWCAG='Critério 1.2.8'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.2.8 (inglês)'
-                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded'
-                        />
                     </Heading>
 
                     <Text
@@ -165,7 +160,7 @@ const PageAboutVideos = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Oferecer audiodescrição para vídeo pré-gravado
+                        Audiodescrição ou transcrição descritiva em texto
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 1.2.3'
@@ -184,6 +179,12 @@ const PageAboutVideos = () => {
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.7 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded'
                         />
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 1.2.8'
+                            tooltipText='Ver Critério WCAG de Sucesso 1.2.8 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded'
+                        />
                     </Heading>
 
                     <Text
@@ -192,7 +193,7 @@ const PageAboutVideos = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Vídeos que transmitem conteúdo visual que não está disponível na faixa de áudio 
+                        Vídeos pré-gravados que transmitem conteúdo visual que não está disponível na faixa de áudio 
                         devem possuir uma audiodescrição.
                     </Text>
 
@@ -205,6 +206,29 @@ const PageAboutVideos = () => {
                         A audiodescrição consiste na descrição clara e objetiva de todas as informações 
                         apresentadas de forma visual e que não fazem parte dos diálogos. Essas descrições 
                         são apresentadas nos espaços entre os diálogos e nas pausas entre as informações sonoras.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Caso não seja possível ter uma audiodescrição é recomendavel que seja fornecido um arquivo 
+                        contendo a descrição em formato de texto para o usúario, como podemos ver no exemplo a seguir:
+                    </Text>
+
+                    <PostComponent article_name={'videos_02'} />
+
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        A transcrição descritiva em texto, ajuda aos usúarios que possam ter problemas de visão, 
+                        dificultando assim a leitura das legendas e/ou a audição seja ruim, dificultando assim o 
+                        entendimento dos diálogos presentes no vídeo.
                     </Text>
 
                 </Flex>
