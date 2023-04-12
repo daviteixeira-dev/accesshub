@@ -37,7 +37,7 @@ function App(){
         <Route path='/componentes' element={<Components />} />
         <Route path='/introducao' element={<Introduction />} />
         <Route path='/credits' element={<CreditsSection />} />
-        <Route path='/error404page' element={<Error404Page />} />
+        <Route path='*' element={<Error404Page />} />
         
         <Route path='/robusto' element={<Components />} />
         <Route path='/operavel' element={<Components />} />
