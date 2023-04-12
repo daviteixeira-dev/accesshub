@@ -249,9 +249,23 @@ const PageAboutRecommendations = () => {
                         com a visão normal, à direita os mesmo sinais vistos por quem tem daltonismo. 
                     </Text>
 
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Podemos usar como exemplo, a validação de uma senha em um formulário, onde a mensagem 
+                        de erro traz consigo um ícone de alerta e uma mensagem informando como corrigir o erro 
+                        além da cor destacando a informação (e não apenas a mudança de cor), como apresentado no 
+                        código a seguir: 
+                    </Text>
+
+                    <PostComponent article_name={'recommendations_03'} />
+
                     <Heading
                         as='h2'
-                        mb='1rem'
+                        my='1rem'
                         display='flex'
                         fontWeight='600'
                         fontSize='1.5rem'
