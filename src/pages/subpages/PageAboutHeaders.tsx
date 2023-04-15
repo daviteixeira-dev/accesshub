@@ -73,11 +73,6 @@ const PageAboutHeaders = () => {
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
                         />
-                        <BadgeWCAGInfoNumber
-                            textWCAG='Critério 2.4.10'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)' 
-                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/section-headings'
-                        />
                     </Heading>
                     
                     <Text
@@ -92,6 +87,27 @@ const PageAboutHeaders = () => {
                         a hierarquia de cabeçalhos como uma forma de navegação na página, pulando de um 
                         para outro, agilizando, assim, a navegação.
                     </Text>
+                    
+                    <PostComponent article_name={'headers_01'} />
+
+                    <Heading
+                        as='h2'
+                        marginY='1rem'
+                        display='flex'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
+                    >
+                        Títulos de Seção
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.4.10'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/section-headings'
+                        />
+                    </Heading>
 
                     <Text
                         mb='1rem'
@@ -104,8 +120,19 @@ const PageAboutHeaders = () => {
                         página tenha apenas um H1. Já os níveis do H2 ao H6 poderão ser utilizados mais de 
                         uma vez na página, mas sem excesso e com lógica textual, obedecendo uma hierarquia.
                     </Text>
-                    
-                    <PostComponent article_name={'headers_01'} />
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Porém, sempre que o conteúdo desenvolvido for dividido em seções, todas as seções 
+                        devem ter títulos claros, com uma hierarquia claramente definida para 
+                        facilitar a identificação das áreas, como no exemplo a seguir: 
+                    </Text>
+
+                    <PostComponent article_name={'headers_03'} />
 
                     <Text
                         my='1rem'
@@ -113,9 +140,9 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para compreender melhor os níveis de título pode-se tomar como exemplo um sítio de 
-                        um livro, onde o nome do livro é o H1, os capítulos são H2, os subcapítulos são H3 
-                        e assim por diante.
+                        Para compreender melhor os níveis de título pode-se tomar como exemplo um site de 
+                        uma receita, onde o nome do capítulo é o H1, os passos são H2, e as descroções dos 
+                        passos são H3 e assim por diante.
                     </Text>
 
                     <PostComponent article_name={'headers_02'} />
