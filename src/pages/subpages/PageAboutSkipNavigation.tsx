@@ -66,7 +66,7 @@ const PageAboutSkipNavigation = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer âncoras para ir direto a um bloco de conteúdo
+                        Fornecer âncora para ir direto a um bloco de conteúdo
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 2.4.1'
@@ -74,6 +74,18 @@ const PageAboutSkipNavigation = () => {
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks'
                         />
                     </Heading>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Um link de pular navegação é uma funcionalidade importante para permitir que 
+                        usuários com deficiências ou limitações possam acessar diretamente o conteúdo 
+                        principal de uma página sem precisar passar por todos os elementos de 
+                        navegação e cabeçalhos.
+                    </Text>
                     
                     <Text
                         mb='1rem'
@@ -84,16 +96,8 @@ const PageAboutSkipNavigation = () => {
                         Devem ser fornecidas âncoras, disponíveis na barra de acessibilidade, que apontem 
                         para links relevantes presentes na mesma página. Assim, é possível ir ao bloco de 
                         conteúdo desejado. Os links devem ser colocados em lugares estratégicos da página, 
-                        como no início e fim do conteúdo e início de fim do menu.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='600'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        É importante ressaltar que o primeiro link da página deve ser o de ir para o conteúdo.
+                        como no início e fim do conteúdo e início de fim do menu. É importante ressaltar que 
+                        o primeiro link da página deve ser o de ir para o conteúdo.
                     </Text>
 
                     <Text
@@ -102,47 +106,10 @@ const PageAboutSkipNavigation = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para facilitar a utilização das âncoras, podem ser disponibilizados atalhos por teclado, 
-                        utilizando o atributo accesskey nos links relevantes. Não pode haver repetição do mesmo 
-                        accesskey em uma página.
+                        A seguir, um exemplo de como deve ser desenvolvido um link de pular navegação:
                     </Text>
 
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Devem ser utilizados ambos os atributos name e id para que as âncoras funcionem em 
-                        todos os navegadores e tecnologias assistivas, tanto textuais quanto gráficos, 
-                        já que há os que suportam ambos os atributos e os que suportam apenas um deles.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        A seguir, um exemplo contendo uma barra de navegação para diferentes tipos de conteúdo 
-                        em uma página web. 
-                    </Text>
-
-                    <PostComponent article_name={'pular-navegacao_01'} />
-
-                    <Text
-                        my='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Os links indicadores de início e fim de conteúdo e início e fim de menu podem estar 
-                        ocultos na página utilizando folhas de estilo. No entanto, é necessário tomar o 
-                        cuidado de ocultá-los de forma que eles continuem acessíveis aos leitores de tela. 
-                        Os mecanismos para ocultar elementos e seus efeitos na acessibilidade são os seguintes:
-                    </Text>
-                    
-                    <PostComponent article_name={'pular-navegacao_02'} />
+                    <PostComponent article_name={'skip-navigation_01'} />
 
                 </Flex>
 
