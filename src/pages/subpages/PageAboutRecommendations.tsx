@@ -139,6 +139,38 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
+                        Cabeçalhos e rótulos
+
+                        <BadgeWCAGInfoNumber 
+                            textWCAG='Critério 2.4.6'
+                            tooltipText='Ver Critério WCAG de Sucesso 2.4.6 (inglês)'
+                            linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels'
+                        />
+                    </Heading>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Os títulos (h1 até h6) e rótulos (campos de formulários) devem ser claros e descritivos, ajudando assim os usuários 
+                        a encontrar as informações que procuram com mais facilidade. Além disso, os controles de entrada de formulário rotulados 
+                        que descrevem claramente qual entrada é esperada, ajuda os usuários a entender como preencher o formulário.
+                    </Text>
+
+                    <PostComponent article_name={'recommendations_04'} />
+
+                    <Heading
+                        as='h2'
+                        my='1rem'
+                        display='flex'
+                        fontWeight='600'
+                        fontSize='1.5rem'
+                        fontFamily='Inter'
+                        flexDirection={['column', 'column', 'row', 'row']}
+                        alignItems={['start', 'start', 'center', 'center']}
+                    >
                         Ordenar de forma lógica e intuitiva a leitura e tabulação
 
                         <BadgeWCAGInfoNumber 
