@@ -109,8 +109,6 @@ const PageAboutBreadcrumb = () => {
 
                     <PostComponent article_name={'breadcrumb_01'} />
 
-                    <PostComponent article_name={'breadcrumb_02'} />
-
                 </Flex>
 
                 <Footer />
