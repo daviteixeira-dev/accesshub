@@ -123,8 +123,6 @@ const PageAboutTable = () => {
 
                     <PostComponent article_name={'table_01'} />
 
-                    <PostComponent article_name={'table_02'} />
-
                     <Text
                         my='1rem'
                         fontWeight='400'
