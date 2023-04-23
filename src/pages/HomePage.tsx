@@ -98,33 +98,7 @@ const HomePage = () => {
           possibilitando a apresentação de padrões e materiais de suporte para ajudar na
           construção de páginas Web acessíveis.
         </Heading>
-
-        <Flex 
-          mt='1rem' 
-          bg='gray.500'
-          padding='.5rem' 
-          alignItems='center' 
-          borderRadius='.5rem'
-          justifyContent='center'
-          _hover={{ bg: 'gray.400', cursor: 'pointer' }} 
-        >
-          <Flex 
-            as='span' 
-            mr='.5rem' 
-            width='1rem' 
-            height='1rem' 
-            rounded='full' 
-            bg='yellow.500'
-            border='1px solid gray' 
-          ></Flex>
-          
-          <Text 
-            fontSize='1rem' 
-            color='whiteAlpha.900'
-          >
-            Este site está em construção
-          </Text>
-        </Flex>
+        
       </Flex>
 
       <Flex
@@ -244,6 +218,7 @@ const HomePage = () => {
       </Flex>
 
       <Footer />
+      
     </Flex>
   );
 };

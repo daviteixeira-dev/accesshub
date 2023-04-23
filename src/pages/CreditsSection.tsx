@@ -95,6 +95,11 @@ const linkItems = [
         ListText: 'Contribute icons created by Vector Stall - Flaticon',
         ListLink: 'https://www.flaticon.com/free-icons/contribute',
         ListTitle: 'contribute icons'
+    },
+    {
+        ListText: 'Left click icons created by Pixel perfect - Flaticon',
+        ListLink: 'https://www.flaticon.com/free-icons/left-click',
+        ListTitle: 'left click icons'
     }
 ]
 

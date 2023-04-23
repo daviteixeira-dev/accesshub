@@ -9,26 +9,14 @@ import {
     Text,
     Icon,
     Image,
-    Heading,
-    Divider,
     IconButton,
     useColorModeValue
 } from '@chakra-ui/react';
 
 import {
-    FaEye,
-    FaCode,
-    FaInfo,
     FaHome,
-    FaBrain,
     FaThLarge,
-    FaKeyboard,
-    FaPenSquare,
     FaRegCompass,
-    FaPlayCircle,
-    FaPuzzlePiece,
-    FaClipboardList,
-    FaRegWindowRestore
 } from 'react-icons/fa';
 
 import MenuSideBarItem from './MenuSideBarItem';
@@ -55,62 +43,6 @@ const MenuSideBar = () => {
             path: '/componentes',
             name: 'Componentes',
             icon: <FaThLarge />
-        },
-    ]
-
-    const menuWCAG = [
-        {
-            path: '/perceptivel',
-            name: 'Perceptível',
-            icon: <FaEye />
-        },
-        {
-            path: '/operavel',
-            name: 'Operável',
-            icon: <FaKeyboard />
-        },
-        {
-            path: '/compressivel',
-            name: 'Compressível',
-            icon: <FaBrain />
-        },
-        {
-            path: '/robusto',
-            name: 'Robusto',
-            icon: <FaRegWindowRestore />
-        }
-    ]
-
-    const menuEmag = [
-        {
-            path: '/marcacao',
-            name: 'Marcação',
-            icon: <FaCode />
-        },
-        {
-            path: '/comportamento',
-            name: 'Comportamento',
-            icon: <FaPuzzlePiece />
-        },
-        {
-            path: '/conteudo-Informacao',
-            name: 'Conteúdo/Informação',
-            icon: <FaInfo />
-        },
-        {
-            path: '/apresentacao-design',
-            name: 'Apresentação/Design',
-            icon: <FaPenSquare />
-        },
-        {
-            path: '/multimidia',
-            name: 'Multimídia',
-            icon: <FaPlayCircle />
-        },
-        {
-            path: '/formulario',
-            name: 'Formulário',
-            icon: <FaClipboardList />
         },
     ]
 
@@ -224,88 +156,7 @@ const MenuSideBar = () => {
                     ))
                 }
             </Flex>
-                
-            <Divider />
 
-            <Flex
-                as='ul'
-                p='1rem'
-                flexDirection='column'
-            >
-                <Heading fontSize='1rem' color={headingsColor}>WCAG</Heading>
-                {
-                    menuWCAG.map((item, index) => (
-                        <NavLink 
-                            key={index}
-                            to={item.path} 
-                            style={({ isActive }) => 
-                                isActive 
-                                ? { 
-                                    background: menuSideBarColorBg, borderRadius: '.5rem', margin: '.5rem 0'
-                                } : {background: 'none', margin: '.5rem 0'}
-                            }
-                        >
-                            <Flex
-                                as='li'
-                                p='.5rem'
-                                alignItems='center'
-                                borderRadius='.5rem'
-                                _hover={{ background: menuSideBarColorBg }}
-                                justifyContent={navSize == 'small' ? 'center' : 'start'}
-                            >
-                                <Icon
-                                    fontSize='1.5rem'
-                                    color={menuIconsColor}
-                                >
-                                    {item.icon}
-                                </Icon>
-                                <MenuSideBarItem menuOption={item.name} navSize={navSize} />
-                            </Flex>
-                        </NavLink>
-                    ))
-                }
-            </Flex>
-            
-            <Divider />
-
-            <Flex
-                as='ul'
-                p='1rem'
-                flexDirection='column'
-            >
-                <Heading fontSize='1rem' color={headingsColor}>eMAG</Heading>
-                {
-                    menuEmag.map((item, index) => (
-                        <NavLink 
-                            to={item.path} 
-                            key={index}
-                            style={({ isActive }) => 
-                                isActive 
-                                ? { 
-                                    background: menuSideBarColorBg, borderRadius: '.5rem', margin: '.5rem 0'
-                                } : {background: 'none', margin: '.5rem 0'}
-                            }
-                        >
-                            <Flex
-                                as='li'
-                                p='.5rem'
-                                alignItems='center'
-                                borderRadius='.5rem'
-                                _hover={{ background: menuSideBarColorBg }}
-                                justifyContent={navSize == 'small' ? 'center' : 'start'}
-                            >
-                                <Icon
-                                    fontSize='1.5rem'
-                                    color={menuIconsColor}
-                                >
-                                    {item.icon}
-                                </Icon>
-                                <MenuSideBarItem menuOption={item.name} navSize={navSize} />
-                            </Flex>
-                        </NavLink>
-                    ))
-                }
-            </Flex>
         </Flex>
     );
 };

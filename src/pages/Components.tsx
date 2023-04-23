@@ -27,6 +27,7 @@ import fontSize from '../../public/fontSize.png';
 import contrast from '../../public/contrast.png';
 import breadcrumb from '../../public/breadcrumb.png';
 import inicialHTML from '../../public/inicialHTML.png';
+import readingMask from '../../public/readingMask.png';
 import recommendations from '../../public/recommendations.png';
 import imageDescription from '../../public/imageDescription.png';
 import keyboardNavigation from '../../public/keyboardNavigation.png';
@@ -192,7 +193,7 @@ const Components = () => {
               imgLink={contrast}
             />
             <ComponentCardItem 
-              cardTitle='Ouvir a descrição da imagem' 
+              cardTitle='Ouvir a descrição' 
               pagLink='/componentes/ouvir-descricao-da-imagem' 
               altImage='Componente para ouvir a descrição da imagem'
               imgLink={imageDescription}
@@ -202,6 +203,12 @@ const Components = () => {
               pagLink='/componentes/navegacao-pelo-teclado' 
               altImage='Componente para navegação via teclado'
               imgLink={keyboardNavigation}
+            />
+            <ComponentCardItem 
+              cardTitle='Máscara de Leitura' 
+              pagLink='/componentes/mascara-de-leitura' 
+              altImage='Componente para utilização da máscara de leitura'
+              imgLink={readingMask}
             />
           </Flex>
 

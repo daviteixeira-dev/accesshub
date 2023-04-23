@@ -20,6 +20,7 @@ import PageAboutVideos from './pages/subpages/PageAboutVideos';
 import PageAboutAudios from './pages/subpages/PageAboutAudios';
 import PageAboutHeaders from './pages/subpages/PageAboutHeaders';
 import PageAboutBreadcrumb from './pages/subpages/PageAboutBreadcrumb';
+import PageAboutReadingMask from './pages/subpages/PageAboutReadingMask';
 import PageAboutSkipNavigation from './pages/subpages/PageAboutSkipNavigation';
 import PageAboutRecommendations from './pages/subpages/PageAboutRecommendations';
 import PageAboutKeyboardNavigation from './pages/subpages/PageAboutKeyboardNavigation';
@@ -61,6 +62,7 @@ function App(){
         <Route path='/componentes/breadcrumbs' element={<PageAboutBreadcrumb />} />
         <Route path='/componentes/recomendacoes' element={<PageAboutRecommendations />} />
         <Route path='/componentes/pular-navegacao' element={<PageAboutSkipNavigation />} />
+        <Route path='/componentes/mascara-de-leitura' element={<PageAboutReadingMask />} />
         <Route path='/componentes/navegacao-pelo-teclado' element={<PageAboutKeyboardNavigation />} />
         <Route path='/componentes/html-estrutura-inicial' element={<PageAboutHTMLInitialStructure />} />
         <Route path='/componentes/alterar-tamanho-da-fonte' element={<PageAboutFunctionChangeFontSize />} />
