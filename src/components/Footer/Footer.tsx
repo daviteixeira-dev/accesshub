@@ -137,26 +137,28 @@ const Footer = () => {
         >
             <Flex></Flex>
 
-            <Link
+            <Flex
                 mb='1rem'
-                isExternal
-                lineHeight='3rem'
-                fontSize='1rem'
-                textAlign='center'
-                bg='blackAlpha.900' 
-                padding='.3rem 1rem'
-                borderRadius='.5rem'
-                color='whiteAlpha.900'
-                href='https://vercel.com/'
-                _hover={{ textDecoration: 'none' }}
+                justifyContent='center'
             >
-                Deployed by ▲ Vercel 
-            </Link>
+                <Link
+                    isExternal
+                    fontSize='1rem'
+                    textAlign='center'
+                    bg='blackAlpha.900' 
+                    padding='.3rem 1rem'
+                    borderRadius='.5rem'
+                    color='whiteAlpha.900'
+                    href='https://vercel.com/'
+                    _hover={{ textDecoration: 'none' }}
+                >
+                    Deployed by ▲ Vercel 
+                </Link>
+            </Flex>
 
             <Flex
-                p='1rem'
-                mb='1rem'
                 alignItems='center'
+                justifyContent='center'
             >
                 <Text
                     fontWeight='400' 
