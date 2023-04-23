@@ -78,6 +78,7 @@ const Footer = () => {
 
                 <ListItem
                     mt='.5rem'
+                    fontFamily='Inter'
                     color='whiteAlpha.900'
                 >
                     <NavLink to='/componentes'>
@@ -87,6 +88,7 @@ const Footer = () => {
 
                 <ListItem
                     mt='.5rem'
+                    fontFamily='Inter'
                     color='whiteAlpha.900'
                 >
                     <NavLink to='/credits'>
@@ -110,11 +112,14 @@ const Footer = () => {
                     Comunidade
                 </ListItem>
 
-                <ListItem>
+                <ListItem
+                    mt='.5rem'
+                    fontFamily='Inter'
+                    color='whiteAlpha.900'
+                >
                     <Link 
-                        mt='.5rem'
                         isExternal
-                        color='whiteAlpha.900'
+                        _hover={{ textDecoration: 'none' }}
                         href='https://github.com/daviteixeira-btm/acesshub'
                     >
                         GitHub
@@ -128,14 +133,16 @@ const Footer = () => {
             p='1rem'
             mb='2rem'
             justifyContent='space-evenly'
-            flexDirection={['column', 'column', 'row', 'row']}
+            flexDirection={['column', 'column', 'column', 'row']}
         >
             <Flex></Flex>
 
             <Link
                 mb='1rem'
                 isExternal
-                fontSize='.9rem'
+                lineHeight='3rem'
+                fontSize='1rem'
+                textAlign='center'
                 bg='blackAlpha.900' 
                 padding='.3rem 1rem'
                 borderRadius='.5rem'
@@ -147,6 +154,7 @@ const Footer = () => {
             </Link>
 
             <Flex
+                p='1rem'
                 mb='1rem'
                 alignItems='center'
             >
@@ -158,7 +166,7 @@ const Footer = () => {
                     color='whiteAlpha.900' 
                 >
                     © 2023 Davi Teixeira. This site, library and examples 
-                    are licensed under <Link isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>
+                    are licensed under <Link _hover={{ textDecoration: 'none' }} isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>
                         MIT
                     </Link>.
                 </Text>
