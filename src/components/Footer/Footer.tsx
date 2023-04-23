@@ -2,38 +2,56 @@ import {
     Flex,
     Link,
     Text,
+    Image,
+    ListItem,
+    UnorderedList,
     useColorModeValue
 } from '@chakra-ui/react';
+
+import { NavLink } from 'react-router-dom';
+
+import logo from '../../../public/logo-accesshub.png';
 
 const Footer = () => {
 
   const footerColor = useColorModeValue('blue.600', 'gray.800');
 
   return (
-    <Flex 
-        h='auto' 
-        w='100%' 
-        as='footer' 
-        padding='1rem' 
+    <Flex
+        h='auto'
+        w='100%'
+        as='footer'
+        padding='1rem'
         bg={footerColor}
         flexDirection='column'
         justifyContent='space-between'
+        boxShadow='0px 4px 12px 4px rgba(0, 0, 0, 0.05)'
     >
-
-        <Flex 
+        <Flex
+            p='1rem'
             mb='2rem'
-            justifyContent='space-between'
+            justifyContent='space-evenly'
             flexDirection={['column', 'column', 'row', 'row']}
         >
-            
-            <Flex 
-                w='39%'
-                padding='1rem'
-                alignItems='start' 
-                flexDirection='column'
-                justifyContent='space-evenly' 
+
+            <Flex
+                p='.5rem'
+                mb='1rem'
+                flexDirection='row'
+                alignItems='center' 
+                justifyContent='start'
             >
+                <NavLink to="/">
+                    <Image
+                        src={logo}
+                        boxSize='50px'
+                        borderRadius='full'
+                        alt='Logomarca do AccessHub no footer.'
+                    />
+                </NavLink>
+
                 <Text
+                    ml='1rem'
                     fontWeight='600' 
                     fontSize='1.3rem'
                     fontFamily='Inter'
@@ -43,131 +61,108 @@ const Footer = () => {
                 </Text>
             </Flex>
 
-            <Flex 
-                w='59%'
-                alignItems='center'
-                flexDirection={['column', 'column', 'row', 'row']}
+            <UnorderedList
+                mb='1rem'
+                textAlign='start'
+                style={{listStyle: 'none'}}
             >
-
-                <Flex 
-                    as='nav'
-                    w='100%'
-                    textAlign='start'
-                    flexDirection='column'
+                
+                <ListItem
+                    fontWeight='600' 
+                    fontSize='1.1rem'
+                    fontFamily='Inter' 
+                    color='whiteAlpha.900' 
                 >
-                    <Text
-                        fontWeight='600' 
-                        fontSize='1.1rem'
-                        fontFamily='Inter' 
-                        color='whiteAlpha.900' 
-                    >
-                        Documentação
-                    </Text>
-                    <Flex 
-                        as='ul' 
-                        flexDirection='column'
-                    >
-                        <Flex as='li'>
-                            <Link 
-                                mt='.5rem'
-                                href='/componentes' 
-                                color='whiteAlpha.900'
-                            >
-                                Componentes
-                            </Link>
-                        </Flex>
+                    Documentação
+                </ListItem>
 
-                        <Flex as='li'>
-                            <Link 
-                                mt='.5rem'
-                                href='/credits' 
-                                color='whiteAlpha.900'
-                            >
-                                Créditos
-                            </Link>
-                        </Flex>
-                    </Flex>
-                </Flex>
-
-                <Flex 
-                    as='nav'
-                    w='100%'
-                    textAlign='start'
-                    flexDirection='column'
+                <ListItem
+                    mt='.5rem'
+                    color='whiteAlpha.900'
                 >
-                    <Text 
-                        fontWeight='600' 
-                        fontSize='1.1rem'
-                        fontFamily='Inter' 
-                        color='whiteAlpha.900' 
-                    >
-                        Comunidade
-                    </Text>
-                    <Flex 
-                        as='ul' 
-                        flexDirection='column'
-                    >
-                        <Flex as='li'>
-                            <Link
-                                mt='.5rem' 
-                                color='whiteAlpha.900' 
-                                href='https://github.com/daviteixeira-btm/acesshub'
-                            >
-                                GitHub
-                            </Link>
-                        </Flex>
-                    </Flex>
-                </Flex>
+                    <NavLink to='/componentes'>
+                        Componentes
+                    </NavLink>
+                </ListItem>
 
-            </Flex>
+                <ListItem
+                    mt='.5rem'
+                    color='whiteAlpha.900'
+                >
+                    <NavLink to='/credits'>
+                        Créditos
+                    </NavLink>
+                </ListItem>
+            </UnorderedList>
+
+            <UnorderedList
+                mb='1rem'
+                textAlign='start'
+                style={{listStyle: 'none'}}
+            >
+                
+                <ListItem
+                    fontWeight='600' 
+                    fontSize='1.1rem'
+                    fontFamily='Inter' 
+                    color='whiteAlpha.900' 
+                >
+                    Comunidade
+                </ListItem>
+
+                <ListItem>
+                    <Link 
+                        mt='.5rem'
+                        isExternal
+                        color='whiteAlpha.900'
+                        href='https://github.com/daviteixeira-btm/acesshub'
+                    >
+                        GitHub
+                    </Link>
+                </ListItem>
+            </UnorderedList>
+
         </Flex>
         
         <Flex
-            justifyContent='space-between'
+            p='1rem'
+            mb='2rem'
+            justifyContent='space-evenly'
             flexDirection={['column', 'column', 'row', 'row']}
         >
-            
-            <Flex 
-                alignItems='start'
-                flexDirection='column'
-                mb={['1rem', '1rem', 0, 0]}
-                justifyContent='space-evenly'
-                w={['100%', '100%', '39%', '39%']}
-                padding={['0','0','1rem', '1rem']}
+            <Flex></Flex>
+
+            <Link
+                mb='1rem'
+                isExternal
+                fontSize='.9rem'
+                bg='blackAlpha.900' 
+                padding='.3rem 1rem'
+                borderRadius='.5rem'
+                color='whiteAlpha.900'
+                href='https://vercel.com/'
+                _hover={{ textDecoration: 'none' }}
             >
-                <Link 
-                    bg='blackAlpha.900' 
-                    padding='.3rem 1rem'
-                    borderRadius='.5rem'
-                    color='whiteAlpha.900'
-                    href='https://vercel.com/'
-                    _hover={{ textDecoration: 'none' }}
-                >
-                    Deployed by ▲ Vercel 
-                </Link>
-            </Flex>
+                Deployed by ▲ Vercel 
+            </Link>
 
             <Flex
+                mb='1rem'
                 alignItems='center'
-                w={['100%','100%','59%','59%']}
-                flexDirection={['column', 'column', 'row', 'row']}
             >
                 <Text
                     fontWeight='400' 
                     fontSize='1.1rem'
+                    textAlign='start'
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
-                    textAlign={['start', 'start', 'start', 'start']}
                 >
                     © 2023 Davi Teixeira. This site, library and examples 
-                    are licensed under <Link 
-                        fontWeight='bold' 
-                        href='https://choosealicense.com/licenses/mit/'
-                    >MIT
+                    are licensed under <Link isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>
+                        MIT
                     </Link>.
                 </Text>
             </Flex>
-
         </Flex>
 
     </Flex>
