@@ -5,6 +5,7 @@ import {
   Show,
   Heading,
   Container,
+  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react';
 
@@ -31,6 +32,105 @@ import readingMask from '../../public/readingMask.png';
 import recommendations from '../../public/recommendations.png';
 import imageDescription from '../../public/imageDescription.png';
 import keyboardNavigation from '../../public/keyboardNavigation.png';
+
+const dataForTheComponentCardItem = [
+  {
+    componentCardTitle: 'Cabeçalhos',
+    componentCardPageLink: '/componentes/cabecalhos',
+    componentCardAltImage: 'Componente de Cabeçalhos',
+    componentCardImgLink: headers,
+  },
+  {
+    componentCardTitle: 'Pular Navegação',
+    componentCardPageLink: '/componentes/pular-navegacao',
+    componentCardAltImage: 'Componente de Pular Navegação',
+    componentCardImgLink: skipNav,
+  },
+  {
+    componentCardTitle: 'Breadcrumbs',
+    componentCardPageLink: '/componentes/breadcrumbs',
+    componentCardAltImage: 'Componente de Breadcrumb',
+    componentCardImgLink: breadcrumb,
+  },
+  {
+    componentCardTitle: 'Tabelas',
+    componentCardPageLink: '/componentes/tabelas',
+    componentCardAltImage: 'Componente de Tabela',
+    componentCardImgLink: table,
+  },
+  {
+    componentCardTitle: 'Formulários',
+    componentCardPageLink: '/componentes/formularios',
+    componentCardAltImage: 'Componente de Formulario',
+    componentCardImgLink: form,
+  },
+  {
+    componentCardTitle: 'HTML Inicial',
+    componentCardPageLink: '/componentes/html-estrutura-inicial',
+    componentCardAltImage: 'Componente de Estrutura Inicial HTML',
+    componentCardImgLink: inicialHTML,
+  },
+  {
+    componentCardTitle: 'Links',
+    componentCardPageLink: '/componentes/links',
+    componentCardAltImage: 'Componente de Links',
+    componentCardImgLink: link,
+  },
+  {
+    componentCardTitle: 'Imagens',
+    componentCardPageLink: '/componentes/imagens',
+    componentCardAltImage: 'Componente de Imagens',
+    componentCardImgLink: images,
+  },
+  {
+    componentCardTitle: 'Vídeos',
+    componentCardPageLink: '/componentes/videos',
+    componentCardAltImage: 'Componente de Vídeo',
+    componentCardImgLink: video,
+  },
+  {
+    componentCardTitle: 'Áudios',
+    componentCardPageLink: '/componentes/audios',
+    componentCardAltImage: 'Componente de Áudio',
+    componentCardImgLink: audio,
+  },
+  {
+    componentCardTitle: 'Recomendações',
+    componentCardPageLink: '/componentes/recomendacoes',
+    componentCardAltImage: 'Componente de Recomendações',
+    componentCardImgLink: recommendations,
+  },
+  {
+    componentCardTitle: 'Mudar o tamanho da fonte',
+    componentCardPageLink: '/componentes/alterar-tamanho-da-fonte',
+    componentCardAltImage: 'Componente para alterar o tamanho da fonte',
+    componentCardImgLink: fontSize,
+  },
+  {
+    componentCardTitle: 'Alterar o contraste do site',
+    componentCardPageLink: '/componentes/alterar-contraste-do-site',
+    componentCardAltImage: 'Componente para alterar o contraste do site',
+    componentCardImgLink: contrast,
+  },
+  {
+    componentCardTitle: 'Ouvir a descrição',
+    componentCardPageLink: '/componentes/ouvir-descricao-da-imagem',
+    componentCardAltImage: 'Componente para ouvir a descrição da imagem',
+    componentCardImgLink: imageDescription,
+  },
+  {
+    componentCardTitle: 'Navegação pelo teclado',
+    componentCardPageLink: '/componentes/navegacao-pelo-teclado',
+    componentCardAltImage: 'Componente para navegação via teclado',
+    componentCardImgLink: keyboardNavigation,
+  },
+  {
+    componentCardTitle: 'Máscara de Leitura',
+    componentCardPageLink: '/componentes/mascara-de-leitura',
+    componentCardAltImage: 'Componente para utilização da máscara de leitura',
+    componentCardImgLink: readingMask,
+  }
+]
 
 const Components = () => {
 
@@ -88,129 +188,22 @@ const Components = () => {
             seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
           </Text>
 
-          <Flex 
-            mb='1rem'
-            justifyContent='space-evenly'
-            flexDirection={['column', 'column', 'row', 'row']} 
+          <SimpleGrid 
+            spacing={4}
+            columns={[1, 1, 4, 4]}
           >
-            <ComponentCardItem 
-              cardTitle='Cabeçalhos' 
-              pagLink='/componentes/cabecalhos' 
-              altImage='Componente de Cabeçalhos'
-              imgLink={headers} 
-            />
-            <ComponentCardItem 
-              cardTitle='Pular Navegação' 
-              pagLink='/componentes/pular-navegacao' 
-              altImage='Componente de Pular Navegação'
-              imgLink={skipNav} 
-            />
-            <ComponentCardItem 
-              cardTitle='Breadcrumbs'
-              pagLink='/componentes/breadcrumbs' 
-              altImage='Componente de Breadcrumb'
-              imgLink={breadcrumb}
-            />
-            <ComponentCardItem 
-              cardTitle='Tabelas' 
-              pagLink='/componentes/tabelas' 
-              altImage='Componente de Tabela'
-              imgLink={table}
-            />
-          </Flex>
-
-          <Flex
-            mb='1rem'
-            justifyContent='space-evenly'
-            flexDirection={['column', 'column', 'row', 'row']}
-          >
-            <ComponentCardItem 
-              cardTitle='Formulários' 
-              pagLink='/componentes/formularios' 
-              altImage='Componente de Formulario'
-              imgLink={form} 
-            />
-            <ComponentCardItem 
-              cardTitle='HTML Inicial' 
-              pagLink='/componentes/html-estrutura-inicial' 
-              altImage='Componente de Estrutura Inicial HTML'
-              imgLink={inicialHTML}
-            />
-            <ComponentCardItem 
-              cardTitle='Links' 
-              pagLink='/componentes/links' 
-              altImage='Componente de Links'
-              imgLink={link}
-            />
-            <ComponentCardItem 
-              cardTitle='Imagens' 
-              pagLink='/componentes/imagens' 
-              altImage='Componente de Imagens'
-              imgLink={images}
-            />
-          </Flex>
-
-          <Flex
-            mb='1rem'
-            justifyContent='space-evenly'
-            flexDirection={['column', 'column', 'row', 'row']}
-          >
-            <ComponentCardItem 
-              cardTitle='Vídeos' 
-              pagLink='/componentes/videos' 
-              altImage='Componente de Vídeo'
-              imgLink={video}
-            />
-            <ComponentCardItem 
-              cardTitle='Áudios' 
-              pagLink='/componentes/audios' 
-              altImage='Componente de Áudio'
-              imgLink={audio}
-            />
-            <ComponentCardItem 
-              cardTitle='Recomendações' 
-              pagLink='/componentes/recomendacoes' 
-              altImage='Componente de Recomendações'
-              imgLink={recommendations}
-            />
-            <ComponentCardItem 
-              cardTitle='Mudar o tamanho da fonte' 
-              pagLink='/componentes/alterar-tamanho-da-fonte' 
-              altImage='Componente para alterar o tamanho da fonte'
-              imgLink={fontSize}
-            />
-          </Flex>
-
-          <Flex
-            mb='1rem'
-            justifyContent='space-evenly'
-            flexDirection={['column', 'column', 'row', 'row']}
-          >
-            <ComponentCardItem 
-              cardTitle='Alterar o contraste do site' 
-              pagLink='/componentes/alterar-contraste-do-site' 
-              altImage='Componente para alterar o contraste do site'
-              imgLink={contrast}
-            />
-            <ComponentCardItem 
-              cardTitle='Ouvir a descrição' 
-              pagLink='/componentes/ouvir-descricao-da-imagem' 
-              altImage='Componente para ouvir a descrição da imagem'
-              imgLink={imageDescription}
-            />
-            <ComponentCardItem 
-              cardTitle='Navegação pelo teclado' 
-              pagLink='/componentes/navegacao-pelo-teclado' 
-              altImage='Componente para navegação via teclado'
-              imgLink={keyboardNavigation}
-            />
-            <ComponentCardItem 
-              cardTitle='Máscara de Leitura' 
-              pagLink='/componentes/mascara-de-leitura' 
-              altImage='Componente para utilização da máscara de leitura'
-              imgLink={readingMask}
-            />
-          </Flex>
+            {
+              dataForTheComponentCardItem.map((item, index) => (
+                <ComponentCardItem
+                  key={index}
+                  cardTitle={item.componentCardTitle}
+                  pagLink={item.componentCardPageLink}
+                  altImage={item.componentCardAltImage}
+                  imgLink={item.componentCardImgLink}
+                />
+              ))
+            }
+          </SimpleGrid>
 
         </Flex>
         
