@@ -4,8 +4,6 @@ import {
   BrowserRouter 
 } from 'react-router-dom';
 
-import './styles/App.css';
-
 import HomePage from './pages/HomePage';
 import Components from './pages/Components';
 import Introduction from './pages/Introduction';
