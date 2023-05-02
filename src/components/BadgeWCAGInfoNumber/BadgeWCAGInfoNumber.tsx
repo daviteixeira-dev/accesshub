@@ -20,8 +20,9 @@ const BadgeWCAGInfoNumber = (props: BadgeProps) => {
                 p='.3rem'
                 variant='solid'
                 fontSize='.8rem'
-                colorScheme='green'
+                bg={'#276749'}
                 borderRadius='.3rem'
+                color='whiteAlpha.900'
                 ml={[0, 0, '.5rem', '.5rem']}
                 mt={['.5rem', '.5rem', 0, 0]}
             >
