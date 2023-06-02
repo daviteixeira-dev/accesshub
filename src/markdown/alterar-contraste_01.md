@@ -21,8 +21,8 @@
                 display: flex;
                 margin-bottom: 1rem;
                 align-items: center;
-                background-color: #ddd;
                 justify-content: space-around;
+                border-bottom: 1px solid #ddd;
             }
 
             header nav ul, 
@@ -87,22 +87,23 @@
             &lt;/nav&gt;
         &lt;/header&gt;
         &lt;main&gt;
-            &lt;h1&gt;
+            &lt;h1 class="textContrast"&gt;
                 Texto de Exemplo
             &lt;/h1&gt;
 
-            &lt;p&gt;
+            &lt;p class="textContrast"&gt;
                 Esse é um texto de exemplo para você observar as funcionalidades de aumentar e diminuir 
                 a fonte, como também resetar a mesma para o tamanho original.
             &lt;/p&gt;
 
-            &lt;p&gt;
+            &lt;p class="textContrast"&gt;
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iusto vero 
                 perspiciatis dolor, ducimus, dolorum delectus omnis voluptas pariatur error 
                 esse provident facilis. Doloribus suscipit quisquam quod saepe deleniti asperiores?
             &lt;/p&gt;
         &lt;/main&gt;
         &lt;script&gt;
+
             let isDarkMode = false;
             let contrastBtn = document.getElementById("contrast-btn");
 
@@ -110,19 +111,28 @@
             function changeContrast() {
                 // Seleciona todos os elementos da página
                 let elements = document.querySelectorAll(".contrast");
+                let textElements = document.querySelectorAll(".textContrast");
 
                 for (let i = 0; i < elements.length; i++) {
                     // Verifica se o contraste atual é o padrão
                     if (!isDarkMode) {
-                        elements[i].style.backgroundColor = "black";
-                        elements[i].style.color = "white";
+                        elements[i].style.backgroundColor = "#000";
+                        elements[i].style.color = "#fff";
                         contrastBtn.innerHTML = "Alterar para o modo claro";
                         isDarkMode = true;
                     } else {
-                        elements[i].style.backgroundColor = "white";
-                        elements[i].style.color = "black";
+                        elements[i].style.backgroundColor = "#fff";
+                        elements[i].style.color = "#000";
                         contrastBtn.innerHTML = "Alterar para o modo escuro";
                         isDarkMode = false;
+                    }
+                }
+
+                for(let i = 0; i < textElements.length; i++){
+                    if(!isDarkMode){
+                        textElements[i].style.color = "#000";
+                    } else {
+                        textElements[i].style.color = "#fff";
                     }
                 }
             }
