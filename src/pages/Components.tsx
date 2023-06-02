@@ -35,6 +35,18 @@ import keyboardNavigation from '../../public/keyboardNavigation.png';
 
 const dataForTheComponentCardItem = [
   {
+    componentCardTitle: 'HTML Inicial',
+    componentCardPageLink: '/componentes/html-estrutura-inicial',
+    componentCardAltImage: 'Componente de Estrutura Inicial HTML',
+    componentCardImgLink: inicialHTML,
+  },
+  {
+    componentCardTitle: 'Recomendações',
+    componentCardPageLink: '/componentes/recomendacoes',
+    componentCardAltImage: 'Componente de Recomendações',
+    componentCardImgLink: recommendations,
+  },
+  {
     componentCardTitle: 'Cabeçalhos',
     componentCardPageLink: '/componentes/cabecalhos',
     componentCardAltImage: 'Componente de Cabeçalhos',
@@ -65,12 +77,6 @@ const dataForTheComponentCardItem = [
     componentCardImgLink: form,
   },
   {
-    componentCardTitle: 'HTML Inicial',
-    componentCardPageLink: '/componentes/html-estrutura-inicial',
-    componentCardAltImage: 'Componente de Estrutura Inicial HTML',
-    componentCardImgLink: inicialHTML,
-  },
-  {
     componentCardTitle: 'Links',
     componentCardPageLink: '/componentes/links',
     componentCardAltImage: 'Componente de Links',
@@ -93,12 +99,6 @@ const dataForTheComponentCardItem = [
     componentCardPageLink: '/componentes/audios',
     componentCardAltImage: 'Componente de Áudio',
     componentCardImgLink: audio,
-  },
-  {
-    componentCardTitle: 'Recomendações',
-    componentCardPageLink: '/componentes/recomendacoes',
-    componentCardAltImage: 'Componente de Recomendações',
-    componentCardImgLink: recommendations,
   },
   {
     componentCardTitle: 'Mudar o tamanho da fonte',

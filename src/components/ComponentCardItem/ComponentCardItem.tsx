@@ -16,8 +16,8 @@ interface ComponentCardItem {
 
 const ComponentCardItem = (props: ComponentCardItem) => {
 
-    const cardBgColor = useColorModeValue('blue.500', 'gray.700');
-    const cardBgColorHover = useColorModeValue('blue.400', 'gray.600');
+    const cardBgColor = useColorModeValue('blue.400', 'gray.700');
+    const cardBgColorHover = useColorModeValue('blue.500', 'gray.600');
     const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
 
     return (
@@ -59,9 +59,9 @@ const ComponentCardItem = (props: ComponentCardItem) => {
                         as='h2'
                         display='flex'
                         fontSize='1rem'
-                        fontWeight='800'
                         textAlign='center'
-                        fontFamily='Inter' 
+                        fontFamily='Inter'
+                        fontWeight='extrabold'
                         color={headingsColor}
                         justifyContent='center'
                     >
