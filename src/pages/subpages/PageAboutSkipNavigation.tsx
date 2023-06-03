@@ -113,6 +113,28 @@ const PageAboutSkipNavigation = () => {
 
                     <PostComponent article_name={'skip-navigation_01'} />
 
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Lembrando que é importante adaptar esse exemplo às necessidades 
+                        específicas do seu site.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Além de melhorar a acessibilidade do seu site, a inclusão de recursos 
+                        de pular navegação também pode ter benefícios em termos de SEO, pois 
+                        ajuda os mecanismos de pesquisa a entenderem melhor a estrutura e o 
+                        conteúdo da sua página.
+                    </Text>
+
                 </Flex>
 
                 <Footer />
