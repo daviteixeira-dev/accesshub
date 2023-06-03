@@ -53,7 +53,7 @@ const PageAboutSkipNavigation = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Pular navegação
+                        Recursos de Pular Navegação
                     </Heading>
 
                     <Heading
@@ -66,7 +66,7 @@ const PageAboutSkipNavigation = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer âncora para ir direto a um bloco de conteúdo
+                        Crie âncoras para acesso direto a blocos de conteúdo
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 2.4.1'
@@ -81,9 +81,9 @@ const PageAboutSkipNavigation = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um link de pular navegação é uma funcionalidade importante para permitir que 
-                        usuários com deficiências ou limitações possam acessar diretamente o conteúdo 
-                        principal de uma página sem precisar passar por todos os elementos de 
+                        Um recurso de pular navegação é essencial para permitir que usuários 
+                        com deficiências ou limitações acessem diretamente o conteúdo principal 
+                        de uma página, sem a necessidade de percorrer todos os elementos de 
                         navegação e cabeçalhos.
                     </Text>
                     
@@ -93,11 +93,13 @@ const PageAboutSkipNavigation = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Devem ser fornecidas âncoras, disponíveis na barra de acessibilidade, que apontem 
-                        para links relevantes presentes na mesma página. Assim, é possível ir ao bloco de 
-                        conteúdo desejado. Os links devem ser colocados em lugares estratégicos da página, 
-                        como no início e fim do conteúdo e início de fim do menu. É importante ressaltar que 
-                        o primeiro link da página deve ser o de ir para o conteúdo.
+                        É recomendado fornecer âncoras, que são links disponíveis na barra de 
+                        acessibilidade, para direcionar os usuários aos links relevantes presentes 
+                        na mesma página. Dessa forma, eles podem ir diretamente para o bloco de 
+                        conteúdo desejado. É importante posicionar esses links estrategicamente 
+                        na página, como no início e no final do conteúdo, bem como no início e 
+                        no final do menu. O primeiro link da página deve ser sempre o de pular 
+                        para o conteúdo principal.
                     </Text>
 
                     <Text
@@ -106,7 +108,7 @@ const PageAboutSkipNavigation = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A seguir, um exemplo de como deve ser desenvolvido um link de pular navegação:
+                        Aqui está um exemplo de como implementar um recurso de pular navegação:
                     </Text>
 
                     <PostComponent article_name={'skip-navigation_01'} />
