@@ -50,7 +50,7 @@ const PageAboutReadingMask = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Máscara de Leitura
+                        Máscara de Leitura para Acessibilidade na Web
                     </Heading>
 
                     <Heading
@@ -63,7 +63,7 @@ const PageAboutReadingMask = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Alternativa para foco na leitura do texto
+                        Solução para aprimorar a experiência de leitura
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 1.4.3'
@@ -96,11 +96,11 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Uma funcionalidade interessante de acessibilidade que pode ajudar a melhorar 
-                        a experiência de leitura de pessoas com dificuldades visuais é uma máscara 
-                        de leitura para sites. Essa funcionalidade pode ser implementada com 
-                        JavaScript e CSS e funciona como um destaque móvel que segue o cursor do 
-                        mouse e ajuda a manter o foco na leitura de um texto.
+                        Uma funcionalidade de acessibilidade muito útil para melhorar a experiência 
+                        de leitura de usuários com dificuldades visuais é a máscara de leitura em 
+                        sites. Essa solução, implementada com JavaScript e CSS, consiste em um 
+                        destaque móvel que acompanha o cursor do mouse, auxiliando na 
+                        focalização do texto durante a leitura.
                     </Text>
 
                     <Text
@@ -109,11 +109,11 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para implementar essa funcionalidade, você pode criar um elemento de div 
-                        com CSS e definir sua posição como absoluta, de modo que possa seguir o 
-                        cursor do mouse. Em seguida, você pode adicionar um evento de mousemove 
-                        no documento e atualizar a posição do div de acordo com as coordenadas do 
-                        cursor.
+                        Para implementar essa funcionalidade em seu site, você pode criar um 
+                        elemento {"<div>"} com estilos CSS e definir sua posição como absoluta, 
+                        permitindo que ele siga o cursor do mouse. Em seguida, adicione um 
+                        evento de mousemove ao documento para atualizar a posição do 
+                        elemento {"<div>"} de acordo com as coordenadas do cursor.
                     </Text>
 
                     <Text
@@ -122,11 +122,22 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Por exemplo, o código abaixo cria uma máscara de leitura com um fundo 
-                        translúcido que segue o cursor do mouse:
+                        Por exemplo, o código abaixo cria uma máscara de leitura com um 
+                        fundo translúcido que acompanha o cursor do mouse:
                     </Text>
 
                     <PostComponent article_name={'readingMask_01'} />
+
+                    <Text
+                        mb='1rem'
+                        ml='1rem'
+                        fontWeight='400'
+                        fontSize='.9rem'
+                        fontFamily='Inter'
+                    >
+                        Trocar os "" por crases `` na linha 57. Codígo: ... mascara.style.top = `$` ...
+                    </Text>
+
 
                     <Text
                         my='1rem'
@@ -134,12 +145,12 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Podemos implementar uma tag button que ative e desative a máscara de leitura, 
-                        podemos adicionar o elemento button no corpo da página e adicionar um 
-                        ouvinte de eventos de clique para o botão. Dentro do ouvinte de eventos, 
-                        podemos verificar se a classe .mascara está presente no elemento da 
-                        máscara. Se estiver presente, removemos a classe. Se não estiver presente, 
-                        adicionamos a classe.
+                        Além disso, é possível adicionar um botão que habilite ou desabilite a 
+                        máscara de leitura. Para isso, crie um elemento {"<button>"} em seu 
+                        código HTML e adicione um ouvinte de eventos de clique a esse 
+                        botão. No manipulador de eventos, você pode verificar se a 
+                        classe "mascara" está presente no elemento da máscara. Se estiver 
+                        presente, remova a classe; caso contrário, adicione-a.
                     </Text>
 
                     <Text
@@ -148,11 +159,10 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um botão com id "toggle-mascara" e criamos uma referência para ele. Em 
-                        seguida, adicionamos um ouvinte de eventos de clique para o botão que 
-                        verifica se a classe .mascara está presente no elemento da máscara. Se 
-                        estiver presente, removemos a classe. Se não estiver presente, adicionamos 
-                        a classe.
+                        No evento de mousemove, verifique se a classe "mascara" está presente 
+                        no elemento da máscara. Se estiver presente, atualize a posição da 
+                        máscara com base no movimento do mouse. Caso contrário, a máscara 
+                        permanecerá inalterada.
                     </Text>
 
                     <Text
@@ -161,30 +171,9 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Dentro do ouvinte de eventos do mousemove, verificamos se a classe .mascara 
-                        está presente no elemento da máscara. Se estiver presente, atualizamos a 
-                        posição da máscara. Se não estiver presente, nada acontece.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Por fim, o evento de mousemove foi adicionado para atualizar a posição da 
-                        div de acordo com o movimento do mouse apenas na vertical.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Com essa funcionalidade, as pessoas com dificuldades visuais podem usar 
-                        a máscara de leitura para acompanhar a leitura do texto e manter o foco 
-                        na linha que está sendo lida.
+                        Com essa funcionalidade, pessoas com dificuldades visuais podem usar 
+                        a máscara de leitura para acompanhar a linha que está sendo lida, 
+                        mantendo o foco e facilitando a compreensão do conteúdo textual em seu site.
                     </Text>
 
                 </Flex>
