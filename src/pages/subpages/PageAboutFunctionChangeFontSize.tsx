@@ -53,7 +53,7 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Funcionalidade para alterar o tamanho da fonte
+                        Funcionalidade de Ajuste de Tamanho da Fonte
                     </Heading>
 
                     <Heading
@@ -66,7 +66,7 @@ const PageAboutFunctionChangeFontSize = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Permitir redimensionamento sem perda de funcionalidade
+                        Possibilitando o redimensionamento sem perda de funcionalidade
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 1.4.4'
@@ -81,9 +81,9 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A página deve continuar legível e funcional mesmo quando redimensionada para 
-                        até 200%. Assim, é preciso garantir que, quando a página for redimensionada, 
-                        não ocorram sobreposições nem o aparecimento de uma barra horizontal.
+                        É importante garantir que a página permaneça legível e funcional mesmo quando 
+                        redimensionada em até 200%. Para isso, evite sobreposições de elementos e a 
+                        aparição de barras de rolagem horizontais ao redimensionar a página.
                     </Text>
 
                     <Text
@@ -92,22 +92,22 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além de permitir o redimensionamento sem perda de funcionalidade, o leiaute do sítio 
-                        deve adequar-se à resolução de tela do dispositivo pelo qual está sendo acessado, 
-                        já que, atualmente, não existe mais um padrão de resolução de tela para os 
-                        computadores e há uma crescente utilização de dispositivos móveis.
+                        Além de permitir o redimensionamento sem perda de funcionalidade, é essencial 
+                        que o layout do site se adapte à resolução de tela do dispositivo utilizado 
+                        para acessá-lo. Considerando a diversidade de resoluções presentes em 
+                        computadores e dispositivos móveis, é importante garantir uma experiência 
+                        consistente.
                     </Text>
 
-                    <Heading
-                        as='h3'
+                    <Text
                         mb='1rem'
-                        fontWeight='600'
-                        fontSize='1.5rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Aqui está um exemplo de código que pode ser usado para 
-                        aumentar, diminuir e resetar o tamanho da fonte em um site:
-                    </Heading>
+                        Aqui está um exemplo de código que permite aumentar, diminuir e 
+                        redefinir o tamanho da fonte em um site:
+                    </Text>
 
                     <PostComponent article_name={'alterarFontes_01'} />
 
@@ -117,11 +117,10 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Este código apresenta três botões com os textos "(A+)", "(A)" e "(A-)" 
-                        e os adiciona a página. Quando os botões são clicados, o código 
-                        seleciona todos os elementos com a classe "font-size" 
-                        (que deve ser adicionada aos elementos que deseja alterar o tamanho da fonte) e 
-                        altera o tamanho da fonte em 2 pixels.
+                        O código abaixo demonstra a adição de três botões, "(A+)", "(A)" e "(A-)", à 
+                        página. Ao clicar nesses botões, o código seleciona todos os elementos com a 
+                        classe "font-size" (que deve ser adicionada aos elementos que terão seu 
+                        tamanho de fonte alterado) e ajusta o tamanho da fonte em 2 pixels.
                     </Text>
 
                     <Text
@@ -130,32 +129,10 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Dentro da tag {'<script></script>'} podemos ver os exemplos de como as 
-                        funções de aumentar, diminuir e resetar o tamanho da fonte são feitos e 
-                        como eles podem ser acessados a partir do atributo "onclick" de um botão no HTML.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Assim, quando um botão é clicado, a função correspondente é chamada e o 
-                        tamanho da fonte é alterado. Isso permite que você adicione os botões 
-                        diretamente no HTML, sem precisar criá-los dinamicamente usando JavaScript.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Você pode adicionar limites de aumento e diminuição de fonte no código acima 
+                        Você pode adicionar limites para o aumento e a diminuição do tamanho da fonte 
                         adicionando condições dentro dos event listeners dos botões. Os limites são 
-                        definidos nas linhas if {`(fontSize < 30)`} e if {`(fontSize > 12)`}, 
-                        onde 30px é o limite máximo para o aumento e 12px é o limite mínimo para a 
+                        definidos em {"if (fontSize < 30)"} e {"if (fontSize > 12)"}, onde 30px é o 
+                        limite máximo para o aumento e 12px é o limite mínimo para a 
                         diminuição. Esses limites podem ser ajustados de acordo com as necessidades 
                         do seu site.
                     </Text>
@@ -166,9 +143,9 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Você pode armazenar o tamanho atual da fonte de cada elemento individualmente, 
-                        em vez de usar uma variável global. Dessa forma, cada elemento terá seu próprio 
-                        tamanho de fonte e não haverá interferência entre os elementos.
+                        É possível armazenar o tamanho atual da fonte de cada elemento individualmente, 
+                        em vez de utilizar uma variável global. Dessa forma, cada elemento terá seu 
+                        próprio tamanho de fonte e não haverá interferência entre eles.
                     </Text>
 
                     <Text
@@ -177,12 +154,13 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Dentro do for loop, usamos a função 
-                        getComputedStyle(elements[i]).fontSize para recuperar o tamanho atual da fonte do 
-                        elemento, e armazenando esse valor na variável fontSize. Depois, verificamos se esse 
-                        tamanho é menor que 30px e, se for, adicionando 2 pixels a ele. Dessa forma, cada 
-                        elemento com a classe "font-size" terá seu próprio tamanho de fonte e será 
-                        aumentado ou diminuido em 2 pixels a cada clique nos botões.
+                        Dentro do loop `for`, utilizamos a 
+                        função `getComputedStyle(elements[i]).fontSize` para obter o tamanho atual 
+                        da fonte do elemento e armazenamos esse valor na variável `fontSize`. Em 
+                        seguida, verificamos se esse tamanho é menor que 30px e, se for, 
+                        adicionamos 2 pixels a ele. Dessa forma, cada elemento com a 
+                        classe "font-size" terá seu próprio tamanho de fonte e será aumentado ou 
+                        diminuído em 2 pixels a cada clique nos botões.
                     </Text>
 
                     <Text
@@ -191,10 +169,10 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para garantir que os valores originais sejam restaurados corretamente, você pode 
-                        armazenar os valores originais da fonte de cada elemento individualmente no 
-                        momento em que a página é carregada e, em seguida, usar esses valores para 
-                        restaurar a fonte quando a função "resetFont" é chamada.
+                        Para garantir que os valores originais sejam restaurados corretamente, você 
+                        pode armazenar os valores originais da fonte de cada elemento individualmente 
+                        quando a página é carregada e, em seguida, utilizá-los para restaurar a 
+                        fonte quando a função "resetFont" é chamada.
                     </Text>
 
                     <Text
@@ -203,12 +181,12 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No momento em que a página é carregada, armazenamos os valores originais da fonte 
-                        de cada elemento com a classe "font-size" em uma variável 
-                        chamada "originalFontSizes". Depois, na função "resetFont", estamos percorrendo 
-                        cada elemento e definindo seu tamanho de fonte como o valor armazenado na 
-                        variável "originalFontSizes". Dessa forma, cada elemento terá seu tamanho de 
-                        fonte original restaurado, independentemente de ter um tamanho diferente 
+                        No momento em que a página é carregada, armazenamos os valores originais da 
+                        fonte de cada elemento com a classe "font-size" em uma variável 
+                        chamada "originalFontSizes". Em seguida, na função "resetFont", percorremos 
+                        cada elemento e definimos seu tamanho de fonte como o valor armazenado na 
+                        variável "originalFontSizes". Dessa forma, cada elemento terá seu tamanho 
+                        de fonte original restaurado, independentemente de ter um tamanho diferente 
                         antes de ser modificado.
                     </Text>
 
@@ -218,9 +196,9 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Lembrando que é importante testar o site com usuários e verificar se o 
-                        limite de aumento e diminuição, além da funcionalidade de resetar o 
-                        tamanho da fonte, atende a necessidade de todos os usuários.
+                        É importante testar o site com usuários para verificar se o limite de aumento 
+                        e diminuição, além da funcionalidade de redefinir o tamanho da fonte, 
+                        atendem às necessidades de todos os usuários.
                     </Text>
 
                     <Heading
@@ -233,7 +211,7 @@ const PageAboutFunctionChangeFontSize = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Critérios da WCAG que foram atendidos
+                        Critérios da WCAG que são atendidos
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 1.4.4'
@@ -266,9 +244,9 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        1.4.4 Resizable Text (Texto redimensionável): O código permite que os usuários 
-                        aumentem e diminuam o tamanho da fonte, garantindo que eles possam 
-                        ajustar a legibilidade do texto de acordo com suas necessidades.
+                        1.4.4 Texto redimensionável: O código permite que os usuários aumentem e 
+                        diminuam o tamanho da fonte, garantindo que eles possam ajustar a 
+                        legibilidade do texto de acordo com suas necessidades.
                     </Text>
 
                     <Text
@@ -277,8 +255,8 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        2.4.4 Link Purpose (Objetivo do Link): Com as funções de aumentar e 
-                        diminuir fonte, os usuários sabem claramente qual é a finalidade do botão.
+                        2.4.4 Objetivo do Link: Com as funções de aumento e diminuição da fonte, os 
+                        usuários compreendem claramente a finalidade dos botões.
                     </Text>
 
                     <Text
@@ -287,9 +265,9 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        3.2.2 On Input (Em Entrada): O código utiliza eventos de click para 
-                        aumentar e diminuir a fonte, permitindo que os usuários realizem 
-                        essas ações facilmente sem precisar de teclado ou outros dispositivos de entrada.
+                        3.2.2 Em Entrada: O código utiliza eventos de clique para aumentar e diminuir a 
+                        fonte, permitindo que os usuários realizem essas ações facilmente, sem a 
+                        necessidade de utilizar o teclado ou outros dispositivos de entrada.
                     </Text>
 
                     <Text
@@ -298,9 +276,9 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        3.2.4 Consistent Navigation (Navegação Consistente): O código utiliza a 
-                        mesma estrutura de botões para aumentar e diminuir a fonte, garantindo 
-                        que os usuários possam facilmente encontrar e usar essas funções.
+                        O código utiliza a mesma estrutura de botões para aumentar e diminuir a 
+                        fonte, garantindo que os usuários possam encontrar e utilizar essas funções 
+                        facilmente.
                     </Text>
 
                     <Heading
@@ -322,9 +300,8 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante lembrar que este código apresentado é apenas uma 
-                        sugestão e pode ser adaptado de acordo com as necessidades específicas do 
-                        seu projeto.
+                        Lembre-se de que esse código é apenas uma sugestão e pode ser adaptado de 
+                        acordo com as necessidades específicas do seu projeto.
                     </Text>
 
                     <Text
@@ -333,10 +310,10 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além disso, é importante também que seja feito testes de usabilidade para verificar se 
-                        a fonte voltando ao tamanho original está de acordo com as necessidades 
-                        do usuário, além de verificar se não há problemas de acessibilidade, 
-                        como fonte muito pequena, após o reset.
+                        Além disso, é importante realizar testes de usabilidade para verificar se a 
+                        restauração do tamanho original da fonte está de acordo com as necessidades 
+                        do usuário e se não há problemas de acessibilidade, como fonte muito 
+                        pequena, após a redefinição.
                     </Text>
 
                     <Text
@@ -345,9 +322,10 @@ const PageAboutFunctionChangeFontSize = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Também é uma boa prática manter o controle do tamanho da fonte em toda 
-                        a página, isto é, deixar o tamanho da fonte do conteúdo dinâmico, e não 
-                        fixo, para atender a necessidade de usuários com diferentes necessidades.
+                        Também é uma boa prática manter o controle do tamanho da fonte em toda a 
+                        página, ou seja, permitir que o tamanho da fonte do conteúdo seja dinâmico 
+                        e não fixo, para atender às necessidades de usuários com diferentes 
+                        preferências.
                     </Text>
 
                 </Flex>
