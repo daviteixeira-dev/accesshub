@@ -1,5 +1,6 @@
-<Code language='html'>
-    &lt;script&gt;
-        document.querySelector('[tabindex="-1"]').focus();
-    &lt;/script&gt;
+<Code language='javascript'>
+
+// Código JavaScript
+document.querySelector('[tabindex="-1"]').focus();
+
 </Code>
