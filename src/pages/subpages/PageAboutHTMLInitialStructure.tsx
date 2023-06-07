@@ -58,18 +58,15 @@ const PageAboutHTMLInitialStructure = () => {
                         Estrutura Inicial HTML
                     </Heading>
 
-                    <Heading
-                        as='h2'
+                    <Text
                         mb='1rem'
-                        display='flex'
-                        fontWeight='600'
-                        fontSize='1.5rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
                         fontFamily='Inter'
-                        flexDirection={['column', 'column', 'row', 'row']}
-                        alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Abaixo um exemplo de estrutura inicial HTML5:
-                    </Heading>
+                        A estrutura inicial HTML5 é a base para o desenvolvimento de sites 
+                        acessíveis. Veja abaixo um exemplo dessa estrutura:
+                    </Text>
 
                     <PostComponent article_name={'html_01'} />
 
@@ -83,7 +80,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Organizar o código HTML de forma lógica e semântica
+                        Organize o código HTML de forma lógica e semântica
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 1.3.1'
@@ -98,9 +95,10 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O código HTML deve ser organizado de forma lógica e semântica, ou seja, apresentando 
-                        os elementos em uma ordem compreensível e correspondendo ao conteúdo desejado. Cada 
-                        elemento HTML deve ser utilizado para o fim que ele foi criado.
+                        É crucial que o código HTML seja organizado de maneira lógica e semântica, ou 
+                        seja, apresentando os elementos em uma ordem compreensível e correspondendo 
+                        ao conteúdo desejado. Cada elemento HTML deve ser utilizado de acordo com 
+                        sua finalidade específica.
                     </Text>
 
                     <Text
@@ -109,14 +107,14 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Assim, marcação semântica adequada deve ser utilizada para designar os cabeçalhos 
-                        (h1, h2, h3), as listas (ul, ol, dl), texto enfatizado (strong), marcação de código 
-                        (code), marcação de abreviaturas (abbr), marcação de citações longas (blockquote), etc. 
-                        Dessa forma, as páginas poderão ser apresentadas e compreendidas sem recursos de 
-                        estilização, tal como as folhas de estilo. Além disso, o código semanticamente 
-                        correto é muito importante para usuários com deficiência visual, pois os leitores 
-                        de tela descrevem primeiro o tipo de elemento e depois realizam a leitura do conteúdo 
-                        que está dentro desse elemento.
+                        Utilize marcações semânticas adequadas para indicar cabeçalhos (h1, h2, h3), 
+                        listas (ul, ol, dl), texto enfatizado (strong), código (code), 
+                        abreviaturas (abbr), citações longas (blockquote) e outros 
+                        elementos. Dessa forma, as páginas poderão ser apresentadas e compreendidas 
+                        mesmo sem estilos adicionais, como folhas de estilo. É importante ressaltar 
+                        que o código semanticamente correto desempenha um papel fundamental na 
+                        acessibilidade de usuários com deficiência visual, já que os leitores 
+                        de tela descrevem o tipo de elemento antes de ler seu conteúdo.
                     </Text>
 
                     <Text
@@ -125,8 +123,8 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Abaixo um exemplo correto de como utilizar corretamente a semântica HTML5 e utilizando 
-                        ARIA:
+                        Aqui está um exemplo prático de como utilizar corretamente a semântica 
+                        HTML5 em conjunto com ARIA (Accessible Rich Internet Applications):
                     </Text>
 
                     <PostComponent article_name={'html_02'} />
@@ -141,7 +139,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Identificar o idioma principal da página
+                        Identifique o idioma principal da página
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 3.1.1'
@@ -156,10 +154,12 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Deve-se identificar o principal idioma utilizado nos documentos. A identificação é 
-                        feita por meio do atributo lang do HTML e, para documentos XHTML, é utilizado o 
-                        xml:lang. Ele deve ser declarado em todas as páginas, pois além de auxiliar na 
-                        acessibilidade do conteúdo, também permite melhor indexação pelos motores de busca.
+                        É necessário identificar o idioma principal utilizado nos documentos 
+                        HTML. Isso pode ser feito por meio do atributo "lang" para HTML 
+                        e "xml:lang" para documentos XHTML. Certifique-se de declarar o idioma 
+                        principal em todas as páginas, pois isso não apenas auxilia na 
+                        acessibilidade do conteúdo, mas também melhora a indexação pelos motores 
+                        de busca.
                     </Text>
 
                     <Heading
@@ -172,7 +172,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Informar mudança de idioma no conteúdo
+                        Informe mudanças de idioma no conteúdo
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 3.1.2'
@@ -187,9 +187,10 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Se algum elemento de uma página possuir conteúdo em um idioma diferente do principal, 
-                        este deverá estar identificado pelo atributo lang. Essa recomendação não se aplica 
-                        para nomes próprios ou termos técnicos que sejam compreendidos no contexto.
+                        Se algum elemento de uma página possuir conteúdo em um idioma diferente do 
+                        idioma principal, é importante identificá-lo utilizando o atributo "lang". No 
+                        entanto, essa recomendação não se aplica a nomes próprios ou termos 
+                        técnicos que sejam compreendidos no contexto.
                     </Text>
 
                     <Heading
@@ -202,7 +203,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Oferecer um título descritivo e informativo à página
+                        Ofereça um título descritivo e informativo para a página
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 2.4.2'
@@ -217,11 +218,13 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O título da página deve ser descritivo e informativo, devendo representar o conteúdo 
-                        principal da página, já que essa informação será a primeira lida pelo leitor de tela, 
-                        quando o usuário acessar a página. O título é informado pelo elemento TITLE e deve 
-                        preferencialmente seguir a estrutura recomendada pelo ePWG, que é [assunto principal 
-                        da página] – [nome do sítio ou sistema] sem palavras extras, ou recursos estilísticos.
+                        O título da página desempenha um papel essencial na acessibilidade. Ele deve 
+                        ser descritivo e informativo, representando o conteúdo principal da 
+                        página, pois será a primeira informação lida pelo leitor de tela quando o 
+                        usuário acessar a página. Utilize o elemento "title" para definir o 
+                        título e, de preferência, siga a estrutura recomendada pelo 
+                        ePWG (E-Ping Web), como [assunto principal da página] – [nome do site ou sistema], evitando 
+                        palavras extras ou recursos estilísticos desnecessários.
                     </Text>
 
                     <Heading
@@ -249,14 +252,16 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Áreas de informação devem ser divididas em grupos fáceis de gerenciar. As divisões mais 
-                        comuns são “topo”, “conteúdo”, “menu” e “rodapé”. Nas páginas internas deve-se manter 
-                        uma mesma divisão para que o usuário se familiarize mais rapidamente com a estrutura 
-                        do site. É importante destacar, entretanto, que a página inicial pode ter uma divisão 
-                        diferente das páginas internas, pois normalmente ela contém mais elementos. O exemplo 
-                        a seguir mostra a divisão da página inicial de um site contendo os blocos 
-                        “topo”, “menu”, “conteúdo” e “rodapé”, além da barra de acessibilidade contendo os 
-                        atalhos.
+                        Uma prática fundamental para garantir a acessibilidade web é dividir as 
+                        áreas de informação em grupos facilmente gerenciáveis. As divisões mais 
+                        comuns são "topo", "conteúdo", "menu" e "rodapé". Nas páginas internas 
+                        do site, é importante manter a mesma estrutura de divisão para que os 
+                        usuários possam se familiarizar rapidamente com a organização. Vale 
+                        ressaltar que a página inicial pode ter uma divisão diferente das 
+                        páginas internas, devido à presença de mais elementos. Veja o exemplo 
+                        a seguir que mostra a divisão da página inicial contendo os 
+                        blocos "topo", "menu", "conteúdo" e "rodapé", além da barra de 
+                        acessibilidade com atalhos.
                     </Text>
 
                     <PostComponent article_name={'html_03'} />
@@ -267,12 +272,12 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A divisão em blocos de conteúdo representa a base para a utilização dos atalhos, 
-                        permitindo que o usuário tenha rápido acesso à área desejada. É importante que 
-                        as diversas páginas de um site possuam um estilo de apresentação coerente e 
-                        sistemático, mantendo-se um padrão de estrutura. Assim, elementos principais 
-                        de navegação deverão ser mantidos na mesma posição em todas as páginas, com 
-                        exceção da página inicial que, muitas vezes, apresenta uma estrutura diferenciada.
+                        A divisão em blocos de conteúdo é essencial para permitir o uso de atalhos, 
+                        oferecendo aos usuários acesso rápido às áreas desejadas. É importante 
+                        manter um estilo de apresentação coerente e sistemático em todas as páginas 
+                        do site, seguindo um padrão de estrutura. Os elementos de navegação 
+                        principais devem ser mantidos na mesma posição em todas as páginas, 
+                        exceto na página inicial, que pode apresentar uma estrutura diferenciada.
                     </Text>
 
                     <Heading
@@ -282,30 +287,31 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.5rem'
                         fontFamily='Inter'
                     >
-                        Em HTML5 e ARIA
+                        Utilizando HTML5 e ARIA
                     </Heading>
 
                     <Text
-                        my='1rem'
+                        mb='1rem'
                         fontWeight='400'
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        As elementos estruturais do HTML HEADER, NAV, SECTION, ARTICLE, ASIDE e FOOTER já são 
-                        interpretadas pela maioria dos leitores de tela. No entanto, é importante utilizar os 
-                        landmarks roles de ARIA associados a elas, para garantir que todos os recursos de 
-                        tecnologia assistiva realizem a interpretação da informação. Apesar de a informação 
-                        ficar duplicada, os leitores de tela que reconhecem o HTML5 darão preferência ao HTML 
-                        e, dessa forma, não irão ler duas vezes a mesma informação.
+                        Os elementos estruturais do HTML, como HEADER, NAV, SECTION, ARTICLE, ASIDE e 
+                        FOOTER, já são interpretados pela maioria dos leitores de tela. No entanto, 
+                        é importante utilizar os papéis (roles) de landmarks do ARIA associados 
+                        a esses elementos, para garantir que todas as tecnologias assistivas 
+                        possam interpretar corretamente as informações. Embora a informação 
+                        fique duplicada, os leitores de tela que reconhecem o HTML5 darão prioridade 
+                        ao HTML e não lerão a mesma informação duas vezes.
                     </Text>
 
                     <Text
-                        my='1rem'
+                        mb='1rem'
                         fontWeight='400'
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Exemplos de elementos estruturais no HTML5:
+                        Aqui estão alguns exemplos de elementos estruturais no HTML5:
                     </Text>
 
                     <UnorderedList>
@@ -314,47 +320,45 @@ const PageAboutHTMLInitialStructure = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            {`<header>`} - Contém informações introdutórias para uma página ou para uma seção 
-                            dela.
+                            {`<header>`} - Contém informações introdutórias para uma página ou seção.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            {`<nav>`} - É utilizada para seções da página que contenham links para outras 
-                            páginas ou seções, como o menu principal, por exemplo. 
+                            {`<nav>`} - Utilizado para seções da página que contêm links para outras 
+                            páginas ou seções, como o menu principal.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            {`<section>`} - Representa uma seção genérica ou uma seção que contém uma aplicação. 
-                            Funciona de maneira parecida com a elemento {`<div>`}, separando seções do documento. 
+                            {`<section>`} - Representa uma seção genérica ou uma seção que contém um 
+                            aplicativo, semelhante ao elemento {"<div>"}, separando seções do documento. 
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            {`<article>`} - Representa uma seção da página independente, como uma postagem em 
-                            um blog, um comentário em um fórum, entre outros. 
+                            {`<article>`} - Representa uma seção independente da página, como uma 
+                            postagem em um blog ou um comentário em um fórum. 
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            {`<aside>`} - Contém conteúdo relacionado à área principal do documento. 
+                            {`<aside>`} - Contém conteúdo relacionado à área principal do documento.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            {`<footer>`} - É utilizada para demarcar o rodapé da página ou de uma seção do 
-                            conteúdo. 
+                            {`<footer>`} - Utilizado para demarcar o rodapé da página ou de uma seção do conteúdo.
                         </ListItem>
                     </UnorderedList>
 
@@ -364,7 +368,7 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Exemplos de landmark roles em ARIA:
+                        E aqui estão alguns exemplos de landmarks no ARIA:
                     </Text>
 
                     <UnorderedList>
@@ -373,9 +377,9 @@ const PageAboutHTMLInitialStructure = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Banner - Contém informações voltadas ao site como um todo e não somente à página. 
-                            Representa as informações normalmente contidas no topo das páginas, como o 
-                            título e o logo do site e a barra de acessibilidade.
+                            Banner - Contém informações voltadas para o site como um todo, 
+                            representando as informações normalmente presentes no topo das 
+                            páginas, como o título, o logotipo do site e a barra de acessibilidade.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
@@ -389,8 +393,9 @@ const PageAboutHTMLInitialStructure = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Contentinfo - Contém informações gerais do site como um todo, que normalmente 
-                            aparecem no rodapé, como copyright, contato, etc.
+                            Contentinfo - Contém informações gerais do site como um todo, que 
+                            normalmente aparecem no rodapé, como direitos autorais e informações 
+                            de contato.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
@@ -404,8 +409,8 @@ const PageAboutHTMLInitialStructure = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Navigation - Contém os links para navegar pelas partes do site ou da página, como 
-                            é o caso do menu.
+                            Navigation - Contém os links para navegar pelas partes do 
+                            site ou da página, como o menu.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
@@ -422,12 +427,12 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O elemento HEADER pode ser utilizado várias vezes em uma mesma página sem problemas de 
-                        semântica, pois ele possui duas funções diferentes. A primeira é a de conter as 
-                        informações do topo da página e, para isso, deverá ser utilizado o role banner. A 
-                        segunda função é para indicar um cabeçalho de seção e pode ser utilizada várias vezes 
-                        no documento. Neste caso, deve ser utilizado o role heading e, preferencialmente, 
-                        deverá conter algum nível de título.
+                        O elemento HEADER pode ser utilizado várias vezes em uma mesma página sem 
+                        problemas de semântica, pois ele possui duas funções diferentes. A primeira 
+                        função é conter as informações do topo da página, nesse caso, deve-se 
+                        utilizar o role banner. A segunda função é indicar um cabeçalho de 
+                        seção e pode ser usado várias vezes no documento. Nesse caso, deve-se 
+                        utilizar o role heading e, preferencialmente, incluir um nível de título.
                     </Text>
 
                     <Text
@@ -436,8 +441,8 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O conteúdo principal do site não possui um elemento específico no HTML5 como os 
-                        demais, então a sua identificação é feita com o valor main no role.
+                        O conteúdo principal do site não possui um elemento específico no HTML5 
+                        como os demais, então sua identificação é feita com o valor main no role.
                     </Text>
 
                     <Text
@@ -446,10 +451,11 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O elemento FOOTER, assim como o HEADER, pode ser utilizado mais que uma vez na mesma 
-                        página, pois ele pode ser utilizado para dois objetivos. O primeiro é para o rodapé 
-                        geral da página que deve receber o valor contentinfo para o role. O segundo é para 
-                        indicar rodapé em seções e, nesse caso, deve ser utilizado o role complementary.
+                        O elemento FOOTER, assim como o HEADER, pode ser utilizado mais de uma vez na 
+                        mesma página, pois pode ser usado para dois propósitos diferentes. O primeiro 
+                        é para o rodapé geral da página, que deve receber o valor contentinfo 
+                        para o role. O segundo é para indicar um rodapé em seções e, nesse caso, 
+                        deve-se utilizar o role complementary.
                     </Text>
 
                     <Text
@@ -458,9 +464,9 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O elemento SECTION do HTML5 é indicado para separar seções dentro do documento, podendo 
-                        ser utilizado quantas vezes forem necessárias na mesma página. O ARIA role que contém o 
-                        mesmo papel do elemento possui o valor section.
+                        O elemento SECTION do HTML5 é indicado para separar seções dentro do 
+                        documento e pode ser utilizado quantas vezes forem necessárias na mesma 
+                        página. O ARIA role que tem o mesmo propósito do elemento é o valor section.
                     </Text>
 
                     <Text
@@ -469,10 +475,11 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Abaixo, temos um exemplo de estrutura de uma página utilizando as elementos estruturais 
-                        do HTML5 e ARIA roles. Além dos landmarks, também foram utilizados outros roles, como é 
-                        o caso do heading (utilizado para identificar títulos) e do article (identifica conteúdo 
-                        que faz sentido isolado, que é independente, como uma postagem em um blog). 
+                        Aqui está um exemplo de estrutura de página utilizando os elementos estruturais 
+                        do HTML5 e os roles do ARIA. Além dos landmarks, também foram utilizados 
+                        outros roles, como o heading (utilizado para identificar títulos) e o 
+                        article (identifica conteúdo que faz sentido isolado, como uma postagem 
+                        em um blog). 
                     </Text>
 
                     <PostComponent article_name={'html_04'} />
@@ -483,13 +490,14 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Como podemos ver, o HTML5 ampliou consideravelmente a quantidade de elementos, os quais, 
-                        aliados aos roles do WAI ARIA, vêm facilitar a aplicação de semântica em áreas 
-                        estruturais. Porém, mesmo com a aplicação dessas novas ferramentas ainda devem ser 
-                        fornecidas âncoras para as áreas relevantes da página, pois a marcação semântica 
-                        ainda não é suficiente para garantir que os leitores de tela ou outros agentes de 
-                        usuário que possuem funcionalidades específicas para navegação pelo teclado, consigam 
-                        listar esses novos elementos.        
+                        Como podemos ver, o HTML5 ampliou consideravelmente a quantidade de elementos 
+                        que, em conjunto com os roles do ARIA, facilitam a aplicação de semântica em 
+                        áreas estruturais. No entanto, mesmo com a aplicação dessas novas 
+                        ferramentas, ainda é necessário fornecer âncoras para as áreas relevantes 
+                        da página, pois a marcação semântica por si só não é suficiente para garantir 
+                        que os leitores de tela ou outros agentes de usuário que possuem 
+                        funcionalidades específicas para navegação por teclado possam listar esses 
+                        novos elementos.
                     </Text>
 
                     <Text
@@ -498,9 +506,9 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Toda divisão de conteúdo que possua um significado importante deve ser feita utilizando 
-                        o elemento SECTION no lugar do elemento DIV, pois o DIV no HTML5 possui a função de 
-                        apenas agrupar elementos que precisam ser agrupados, mas não possuem uma separação 
+                        Toda divisão de conteúdo que tenha um significado importante deve ser feita 
+                        utilizando o elemento SECTION em vez do elemento DIV, já que o DIV no HTML5 
+                        tem apenas a função de agrupar elementos, sem fornecer uma separação 
                         semântica dos demais elementos. 
                     </Text>
 
@@ -514,7 +522,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não criar páginas com atualização automática periódica
+                        Evite criar páginas com atualizações automáticas periódicas
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 3.2.5'
@@ -529,13 +537,12 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A atualização automática periódica – muito utilizada por canais de notícias - é comumente 
-                        realizada através do uso do o atributo http-equiv com conteúdo “refresh” da elemento meta 
-                        no HEAD do documento (ex: {`<'meta http-equiv="refresh" content="30" /'>`}, onde a página 
-                        seria recarregada a cada 30 segundos). O problema dessa atualização é que ela tira do 
-                        usuário sua autonomia em relação à escolha (semelhante a abertura de novas instâncias em 
-                        navegadores) e podem confundir e desorientar os usuários, especialmente usuários que 
-                        utilizam leitores de tela.
+                        A atualização automática periódica - comumente usada por canais de notícias - é 
+                        frequentemente realizada usando o atributo http-equiv com conteúdo "refresh" do 
+                        elemento meta no cabeçalho do documento (por exemplo: {`<'meta http-equiv="refresh" content="30" /'>`}, 
+                        onde a página seria atualizada a cada 30 segundos). O problema dessa atualização é que ela 
+                        retira do usuário a autonomia de escolha (semelhante à abertura de novas instâncias nos navegadores) 
+                        e pode confundir e desorientar os usuários, especialmente aqueles que usam leitores de tela.
                     </Text>
 
                     <Text
@@ -544,10 +551,11 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Como exemplo de uma boa prática, em uma interface Web para e-mail (Webmail), um 
-                        desenvolvedor pode fornecer um botão ou link para buscar novos e-mails recebidos 
-                        em vez de atualizar automaticamente. Em páginas onde o limite de tempo é absolutamente 
-                        necessário, o usuário deverá ser informado que a página é atualizada automaticamente.
+                        Como exemplo de uma boa prática, em uma interface web de e-mail (webmail), um 
+                        desenvolvedor pode fornecer um botão ou link para buscar novos e-mails 
+                        recebidos em vez de atualizar automaticamente. Em páginas onde o limite de 
+                        tempo é absolutamente necessário, o usuário deve ser informado de que a 
+                        página está sendo atualizada automaticamente.
                     </Text>
 
                     <Heading
@@ -560,7 +568,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não utilizar redirecionamento automático de páginas
+                        Evite utilizar redirecionamento automático de páginas
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 3.2.5'
@@ -575,9 +583,10 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Não devem ser utilizadas marcações para redirecionar a uma nova página, como o uso do 
-                        atributo http-equiv com conteúdo “refresh” do elemento META. Ao invés disso, deve-se 
-                        configurar o servidor para que o redirecionamento seja transparente para o usuário.
+                        Não devem ser utilizadas marcações para redirecionar para uma nova página, 
+                        como o uso do atributo http-equiv com conteúdo "refresh" do elemento meta. Em 
+                        vez disso, o servidor deve ser configurado para que o redirecionamento seja 
+                        transparente para o usuário.
                     </Text>
 
                     <Heading
@@ -590,7 +599,7 @@ const PageAboutHTMLInitialStructure = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa para modificar limite de tempo
+                        Fornecer alternativa para modificar o limite de tempo
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 2.2.1'
@@ -605,10 +614,74 @@ const PageAboutHTMLInitialStructure = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Em uma página onde há limite de tempo para realizar uma tarefa deve haver a opção de 
-                        desligar, ajustar ou prolongar esse limite. Essa recomendação não se aplica a eventos 
-                        em que o limite de tempo é absolutamente necessário. Deve-se lembrar que, em ambos os 
-                        casos, o limite de tempo deve ser informado.
+                        Em uma página onde há um limite de tempo para realizar uma tarefa, deve haver 
+                        a opção de desligar, ajustar ou prolongar esse limite. Essa recomendação não 
+                        se aplica a eventos em que o limite de tempo é absolutamente necessário. É 
+                        importante lembrar que, em ambos os casos, o limite de tempo deve ser 
+                        informado ao usuário.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Ao tratar da acessibilidade da web, essas práticas ajudam a garantir que os 
+                        usuários tenham controle e possam navegar pelo conteúdo sem encontrar 
+                        alterações ou interrupções inesperadas. Ao evitar atualizações automáticas, 
+                        fornecer redirecionamento transparente e permitir que os usuários 
+                        modifiquem os limites de tempo, os desenvolvedores podem criar uma 
+                        experiência web mais inclusiva para todos os usuários, incluindo aqueles 
+                        com deficiências.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Aqui está um exemplo de como essas práticas podem ser implementadas:
+                    </Text>
+
+                    <PostComponent article_name={'html_05'} />
+
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Neste exemplo, temos uma página que demonstra uma abordagem alternativa à 
+                        atualização automática. Em vez de atualizar a página automaticamente, é 
+                        fornecido um botão "Buscar novos e-mails" para que o usuário possa 
+                        decidir quando deseja buscar por novas mensagens. Dessa forma, o usuário 
+                        tem controle sobre a ação e não é interrompido de maneira inesperada.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Lembrando que este é apenas um exemplo simplificado para ilustração. Você pode 
+                        adaptar e personalizar o código de acordo com as necessidades específicas 
+                        do seu projeto.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Ao seguir essas diretrizes, os desenvolvedores podem melhorar a acessibilidade 
+                        de seus sites, aprimorar a experiência do usuário e estar em conformidade 
+                        com os padrões de acessibilidade da web. Além disso, fornecer instruções 
+                        claras e alternativas para limites de tempo capacita os usuários a navegar 
+                        na web de maneira mais eficaz e eficiente.
                     </Text>
 
                 </Flex>
