@@ -1,7 +1,7 @@
 <Code language='html'>
 
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang='pt-br'&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;title&gt;Exemplo de página sem atualização automática&lt;/title&gt;
