@@ -2,7 +2,7 @@
 // Código HTML
 &lt;button onclick='aumentarVolume()'&gt;Aumentar volume&lt;/button&gt;
 &lt;button onclick='diminuirVolume()'&gt;Diminuir volume&lt;/button&gt;
-&lt;button onclick='toggleMultar()'&gt;Multar&lt;/button&gt;
+&lt;button onclick='toggleMutar()'&gt;Mutar&lt;/button&gt;
 &lt;video id="video">&lt;/video&gt;
 
 // Código JavaScript
@@ -21,7 +21,7 @@ function diminuirVolume() {
     }
 }
 
-function toggleMultar() {
+function toggleMutar() {
     video.muted = !video.muted;
 }
 &lt;/script&gt;

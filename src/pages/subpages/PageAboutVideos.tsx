@@ -168,7 +168,7 @@ const PageAboutVideos = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Play/pause
+                        Play/Pause
                     </Heading>
 
                     <Text
