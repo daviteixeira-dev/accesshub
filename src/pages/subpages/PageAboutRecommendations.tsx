@@ -93,12 +93,12 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os Padrões Web são recomendações do W3C (World Wide Web Consortium), as quais são 
-                        destinadas a orientar os desenvolvedores para o uso de boas práticas que tornam a 
-                        web acessível para todos, permitindo assim que os desenvolvedores criem experiências 
-                        ricas, alimentadas por um vasto armazenamento de dados, os quais estão disponíveis 
-                        para qualquer dispositivo e compatíveis com atuais e futuros agentes de usuário 
-                        (ex: navegadores). 
+                        Os Padrões Web são recomendações do W3C (World Wide Web Consortium) que 
+                        orientam os desenvolvedores sobre o uso de boas práticas para tornar a 
+                        web acessível a todos. Ao seguir esses padrões, os desenvolvedores podem 
+                        criar experiências ricas, alimentadas por um vasto armazenamento de 
+                        dados, que estão disponíveis em todos os dispositivos e compatíveis 
+                        com navegadores atuais e futuros. 
                     </Text>
 
                     <Text
@@ -107,11 +107,11 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando tratamos de acessibilidade as principais recomendações são as de 
-                        <Link href='https://www.w3c.br/Padroes/WebDesignAplicacoes'> Web Design e Aplicações</Link>, 
-                        que referem-se aos padrões para o desenvolvimento de páginas Web, incluindo HTML5 CSS, 
-                        SVG, Ajax, e outras tecnologias para Aplicações Web (WebApps), assim como o padrão 
-                        internacional de acessibilidade WCAG, internacionalização e dispositivos móveis.
+                        Quando se trata de acessibilidade, as principais recomendações são os Padrões 
+                        de <Link href='https://www.w3c.br/Padroes/WebDesignAplicacoes'> Web Design e Aplicações</Link>, que 
+                        abrangem o desenvolvimento de páginas da web, incluindo HTML5, CSS, SVG, Ajax e 
+                        outras tecnologias para WebApps, bem como o padrão internacional de 
+                        acessibilidade WCAG, internacionalização e dispositivos móveis.
                     </Text>
 
                     <Text
@@ -120,13 +120,13 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Outro ponto importante no respeito aos Padrões Web é a separação de camadas. As camadas 
-                        lógicas deverão ser separadas, de acordo com o objetivo para o qual elas foram 
-                        desenvolvidas. Assim, para a camada de conteúdo devem ser utilizadas as linguagens 
-                        de marcação, como HTML e xHTML. Para a camada de apresentação visual do conteúdo, 
-                        utilizam-se as folhas de estilo css em qualquer uma de suas versões. Já para a camada 
-                        que modifica o comportamento dos elementos, são utilizadas linguagens javascript e 
-                        modelos de objeto (dom).
+                        Outro aspecto importante ao respeitar os Padrões Web é a separação de 
+                        camadas. As camadas lógicas devem ser separadas de acordo com seu 
+                        propósito. A camada de conteúdo deve utilizar linguagens de marcação, 
+                        como HTML e XHTML. Para a camada de apresentação visual do conteúdo, 
+                        utiliza-se CSS em qualquer uma de suas versões. Já para a camada que 
+                        modifica o comportamento dos elementos, são utilizadas linguagens 
+                        JavaScript e modelos de objeto (DOM).
                     </Text>
 
                     <Heading
@@ -154,9 +154,11 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os títulos (h1 até h6) e rótulos (campos de formulários) devem ser claros e descritivos, ajudando assim os usuários 
-                        a encontrar as informações que procuram com mais facilidade. Além disso, os controles de entrada de formulário rotulados 
-                        que descrevem claramente qual entrada é esperada, ajuda os usuários a entender como preencher o formulário.
+                        Os títulos (h1 até h6) e rótulos (campos de formulários) devem ser claros e 
+                        descritivos, auxiliando os usuários a encontrar as informações desejadas 
+                        com mais facilidade. Além disso, os controles de entrada de formulário 
+                        devem ser rotulados de forma explícita, descrevendo qual entrada é 
+                        esperada. Isso ajuda os usuários a entender como preencher o formulário.
                     </Text>
 
                     <PostComponent article_name={'recommendations_04'} />
@@ -192,9 +194,9 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Deve-se criar o código HTML com uma sequência lógica de leitura para percorrer links, 
-                        controles de formulários e objetos. Essa sequência é determinada pela ordem que se 
-                        encontra no código HTML.
+                        É importante criar o código HTML com uma sequência lógica de leitura para 
+                        percorrer links, controles de formulários e objetos. Essa sequência é 
+                        determinada pela ordem em que os elementos aparecem no código HTML.
                     </Text>
 
                     <Text
@@ -203,11 +205,13 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É recomendável disponibilizar o bloco do conteúdo principal da página antes do bloco 
-                        de menu. Isso facilita o acesso por quem navega via teclado, permitindo um acesso mais 
-                        ágil, sem a necessidade de navegar por todos os itens de menu antes de chegar ao 
-                        conteúdo. Apesar de atalhos (como links e teclas) auxiliarem nesse sentido, alguns 
-                        usuários não sabem e podem ser de difícil utilização para pessoas com deficiência motora.
+                        Recomenda-se que o bloco de conteúdo principal da página seja disponibilizado 
+                        antes do bloco de menu. Isso facilita o acesso para usuários que navegam 
+                        usando o teclado, permitindo um acesso mais rápido sem a necessidade de 
+                        percorrer todos os itens do menu antes de chegar ao conteúdo. Embora 
+                        atalhos (como links e teclas) ajudem nesse sentido, alguns usuários podem 
+                        não estar familiarizados com eles e podem ter dificuldades devido a 
+                        deficiências motoras.
                     </Text>
 
                     <PostComponent article_name={'recommendations_01'} />
@@ -218,10 +222,11 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Em alguns casos, pode-se forçar a navegação via atributo tabindex. No entanto, se 
-                        houver a necessidade de utilizar o tabindex, o mesmo deverá ser utilizado com a 
-                        semântica correta e ser verificado manualmente se o fluxo fornecido é realmente o 
-                        desejado. O uso do tabindex pode resultar em uma ordem e tabulação inconsistente. 
+                        Em alguns casos, pode ser necessário forçar a ordem de navegação usando 
+                        o atributo tabindex. No entanto, ao utilizar o tabindex, é importante 
+                        garantir que ele seja usado corretamente e verificar manualmente se o 
+                        fluxo fornecido é realmente o desejado. O uso incorreto do tabindex 
+                        pode resultar em uma ordem e tabulação inconsistentes.
                     </Text>
 
                     <Heading
@@ -256,9 +261,9 @@ const PageAboutRecommendations = () => {
                         fontFamily='Inter'
                     >
                         A cor ou outras características sensoriais, como forma, tamanho, localização 
-                        visual, orientação ou som não devem ser utilizadas como o único meio para 
-                        transmitir informações, indicar uma ação, pedir uma resposta ao usuário ou 
-                        distinguir um elemento visual.
+                        visual, orientação ou som, não devem ser usadas como o único meio para 
+                        transmitir informações, indicar uma ação, solicitar uma resposta do 
+                        usuário ou distinguir um elemento visual.
                     </Text>
 
                     <Flex
@@ -277,8 +282,10 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Assim, a cor não deve ser o unico elemento de diferenciação. A esquerda sinais 
-                        com a visão normal, à direita os mesmo sinais vistos por quem tem daltonismo. 
+                        Por exemplo, a cor não deve ser o único elemento de diferenciação, pois pessoas 
+                        com daltonismo podem ter dificuldades em distinguir cores. Na imagem acima, à 
+                        esquerda estão os sinais vistos por pessoas com visão normal, à direita estão 
+                        os mesmos sinais vistos por pessoas com daltonismo.
                     </Text>
 
                     <Text
@@ -287,10 +294,9 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Podemos usar como exemplo, a validação de uma senha em um formulário, onde a mensagem 
-                        de erro traz consigo um ícone de alerta e uma mensagem informando como corrigir o erro 
-                        além da cor destacando a informação (e não apenas a mudança de cor), como apresentado no 
-                        código a seguir: 
+                        Podemos usar como exemplo a validação de uma senha em um formulário, em que a 
+                        mensagem de erro traz um ícone de alerta e uma mensagem explicando como 
+                        corrigir o erro, além da cor que destaca a informação. Veja o código a seguir:
                     </Text>
 
                     <PostComponent article_name={'recommendations_03'} />
@@ -320,10 +326,10 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Não devem ser utilizados efeitos visuais piscantes, intermitentes ou cintilantes. Em 
-                        pessoas com epilepsia fotosensitiva, o cintilar ou piscar pode desencadear um ataque 
-                        epilético. A exigência dessa diretriz aplica-se também para propaganda de terceiros 
-                        inserida na página.
+                        Não devem ser utilizados efeitos visuais piscantes, intermitentes ou 
+                        cintilantes. Esses efeitos podem desencadear ataques epiléticos em pessoas 
+                        com epilepsia fotosensitiva. Essa diretriz também se aplica a anúncios 
+                        de terceiros inseridos na página.
                     </Text>
 
                     <Heading
@@ -351,13 +357,14 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Conteúdos como slideshows, que “se movem”, rolagens, movimentações em geral ou animações 
-                        não devem ser disparadas automaticamente sem o controle do usuário, mesmo em propagandas 
-                        na página. Ao usuário deve ser repassado o controle sobre essas movimentações 
-                        (quer seja por escolha de preferência de visualização da página, quer por outro método 
-                        qualquer acessível a usuário com deficiência). Além disso, o usuário deve ser capaz de 
-                        parar e reiniciar conteúdos que se movem, sem exceção. É desejável que o usuário tenha 
-                        também o controle da velocidade desses conteúdos.
+                        Conteúdos como slideshows, rolagens, movimentações em geral ou animações 
+                        não devem ser reproduzidos automaticamente sem o controle do usuário, mesmo 
+                        em propagandas na página. O usuário deve ter o controle sobre essas 
+                        movimentações, seja por meio de preferências de visualização da página 
+                        ou de outro método acessível a usuários com deficiência. Além disso, o 
+                        usuário deve ser capaz de interromper e reiniciar conteúdos em movimento, 
+                        sem exceção. É desejável que o usuário também possa controlar a 
+                        velocidade desses conteúdos.
                     </Text>
 
                     <Heading
@@ -384,9 +391,9 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os documentos devem ser disponibilizados preferencialmente em HTML. Também podem ser 
-                        utilizados arquivos para download no formato ODF, tomando-se os cuidados para que 
-                        sejam acessíveis. Se um arquivo for disponibilizado em PDF, deverá ser fornecida 
+                        Os documentos devem ser disponibilizados preferencialmente em HTML. Também é 
+                        possível utilizar arquivos para download no formato ODF, desde que sejam 
+                        acessíveis. Se um arquivo for disponibilizado em PDF, é necessário fornecer 
                         uma alternativa em HTML ou ODF.
                     </Text>
 
@@ -396,11 +403,12 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        OBS: O ODF (Open Document Format) é um formato aberto de documento adotado pela 
-                        e-PING (Arquitetura de Interoperabilidade em Governo Eletrônico) que pode ser 
-                        implementado em qualquer sistema. O ODF engloba formatos como: ODT (Open Data Text) 
-                        para documentos de texto, ODS (Open Data Sheet) para planilhas eletrônicas, 
-                        ODP (Open Data Presentation) para apresentações de slides, entre outros.
+                        Observação: O ODF (Open Document Format) é um formato aberto de documento 
+                        adotado pela e-PING (Arquitetura de Interoperabilidade em Governo Eletrônico), 
+                        que pode ser implementado em qualquer sistema. O ODF engloba formatos como 
+                        ODT (Open Data Text) para documentos de texto, ODS (Open Data Sheet) para 
+                        planilhas eletrônicas, ODP (Open Data Presentation) para apresentações 
+                        de slides, entre outros.
                     </Text>
 
                     <Heading
@@ -428,11 +436,12 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O texto de um site deve ser de fácil leitura e compreensão, não exigindo do usuário 
-                        um nível de instrução mais avançado do que o ensino fundamental completo. Quando o 
-                        texto exigir uma capacidade de leitura mais avançada, deve ser disponibilizado 
-                        informações suplementares que expliquem ou ilustrem conteúdo principal. Outra 
-                        alternativa é versão simplificada do conteúdo em texto.
+                        O texto de um site deve ser de fácil leitura e compreensão, não exigindo do 
+                        usuário um nível de instrução mais avançado do que o ensino fundamental 
+                        completo. Quando o texto exigir uma capacidade de leitura mais avançada, 
+                        devem ser fornecidas informações suplementares que expliquem ou ilustrem 
+                        o conteúdo principal. Outra alternativa é fornecer uma versão simplificada 
+                        do conteúdo em texto.
                     </Text>
 
                     <Text
@@ -441,8 +450,8 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Existem algumas técnicas que auxiliam na melhora da inteligibilidade de textos, 
-                        como, por exemplo:
+                        Existem algumas técnicas que podem ajudar a melhorar a inteligibilidade 
+                        dos textos, tais como:
                     </Text>
 
                     <UnorderedList mb='1rem'>
@@ -451,52 +460,52 @@ const PageAboutRecommendations = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Desenvolver apenas um tópico por parágrafo;
+                            Desenvolver apenas um tópico por parágrafo.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar sentenças organizadas de modo simplificado para o propósito 
-                            do conteúdo (sujeito, verbo e objeto, preferencialmente);
+                            Utilizar sentenças organizadas de forma simplificada para o propósito 
+                            do conteúdo, seguindo a estrutura sujeito-verbo-objeto, preferencialmente.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Dividir sentenças longas em sentenças mais curtas;
+                            Dividir sentenças longas em sentenças mais curtas.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Evitar o uso de jargão, expressões regionais ou termos especializados que 
-                            possam não ser claros para todos;
+                            Evitar o uso de jargão, expressões regionais ou termos especializados 
+                            que possam não ser claros para todos.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar palavras comuns no lugar de outras pouco familiares;
+                            Utilizar palavras comuns em vez de palavras pouco familiares.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar listas de itens ao invés de uma longa série de palavras ou 
-                            frases separadas por vírgulas;
+                            Utilizar listas de itens em vez de uma longa série de palavras ou 
+                            frases separadas por vírgulas.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Fazer referências claras a pronomes e outras partes do documento;
+                            Fazer referências claras a pronomes e outras partes do documento.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
@@ -538,11 +547,11 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Ao menos na primeira ocorrência de siglas, abreviaturas ou palavras incomuns 
-                        (ambíguas, desconhecidas ou utilizadas de forma muito específica), deve ser 
-                        disponibilizada sua explicação ou forma completa. Essa explicação pode estar 
-                        expressa no próprio texto, pode estar presente em um glossário ou, então, através 
-                        da utilização do elemento abbr, conforme exemplos a seguir.
+                        Pelo menos na primeira ocorrência de siglas, abreviaturas ou palavras 
+                        incomuns (ambíguas, desconhecidas ou utilizadas de forma muito específica), 
+                        deve ser fornecida sua explicação ou forma completa. Essa explicação 
+                        pode estar presente no próprio texto, em um glossário ou por meio do 
+                        uso do elemento {"<abbr></abbr>"}, conforme os exemplos a seguir:
                     </Text>
 
                     <PostComponent article_name={'recommendations_02'} />
@@ -553,8 +562,9 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um site sobre desenvolvimento Web fornece um link de menu para o Glossário, que 
-                        contém explicações para termos como HTML, CSS, Tag, atributo, etc.
+                        Um site sobre desenvolvimento web fornece um link no menu para um 
+                        Glossário, que contém explicações para termos como HTML, CSS, Tag, 
+                        atributo, etc.
                     </Text>
 
                     <Heading
@@ -582,8 +592,9 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para qualquer animação que inicie automaticamente na página devem ser fornecidos 
-                        mecanismos para que o usuário possa pausar, parar ou ocultar tal animação.
+                        Para qualquer animação que inicie automaticamente na página, devem ser 
+                        fornecidos mecanismos para que o usuário possa pausar, parar ou ocultar 
+                        a animação.
                     </Text>
 
                     <Heading
@@ -596,7 +607,7 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Garantir que os objetos programáveis sejam acessíveis
+                        Garantir a acessibilidade dos objetos programáveis
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 2.1.1'
@@ -617,11 +628,12 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Deve-se garantir que scripts e conteúdos dinâmicos e outros elementos programáveis 
-                        sejam acessíveis e que seja possível sua execução via navegação. Além de proporcionar 
-                        o uso por teclado, estratégias devem ser adotadas para proporcionar o acesso a todos 
-                        independente de seu dispositivo. A funcionalidade drag-an-drop pode ter como 
-                        alternativa o uso dos atalhos de recortar e colar.
+                        É importante garantir que scripts, conteúdos dinâmicos e outros elementos 
+                        programáveis sejam acessíveis e que sua execução seja possível por meio 
+                        da navegação. Além disso, estratégias devem ser adotadas para garantir o 
+                        acesso a todos os usuários, independentemente do dispositivo utilizado. A 
+                        funcionalidade de arrastar e soltar (drag-and-drop) pode ter como 
+                        alternativa o uso de atalhos de recortar e colar.
                     </Text>
 
                     <Text
@@ -630,8 +642,8 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando não for possível que o elemento programável seja diretamente acessível, deve 
-                        ser fornecida uma alternativa em HTML para o conteúdo.
+                        Quando não for possível tornar um elemento programável diretamente acessível, 
+                        é necessário fornecer uma alternativa em HTML para o conteúdo.
                     </Text>
 
                     <Text
@@ -640,15 +652,14 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando o script for utilizado em uma página da Web, uma forma de fornecer uma alternativa 
-                        para ele é através do elemento NOSCRIPT. Este elemento pode ser utilizado para mostrar 
-                        conteúdos em navegadores que não suportam scripts ou que tenham o script desabilitado. 
-                        No entanto, se o navegador tiver suporte a scripts e estes estiverem habilitados, o 
-                        elemento NOSCRIPT será ignorado. Dessa forma, a utilização do elemento NOSCRIPT para 
-                        um script inacessível não garante que o objeto seja acessível. Assim, a recomendação 
-                        é que o próprio script seja desenvolvido tomando-se o cuidado para que ele seja 
-                        acessível, e o elemento NOSCRIPT deve ser utilizado para abranger os casos em que 
-                        scripts não são suportados.  
+                        Quando um script for utilizado em uma página da web, uma forma de fornecer 
+                        uma alternativa é por meio do elemento NOSCRIPT. Esse elemento pode ser 
+                        utilizado para exibir conteúdos em navegadores que não suportam scripts 
+                        ou nos quais os scripts estão desabilitados. No entanto, se o navegador 
+                        tiver suporte a scripts e eles estiverem habilitados, o elemento NOSCRIPT 
+                        será ignorado. Portanto, é importante desenvolver o próprio script com 
+                        cuidado para garantir a acessibilidade, e o elemento NOSCRIPT deve ser 
+                        usado para abranger os casos em que os scripts não são suportados. 
                     </Text>
 
                 </Flex>
