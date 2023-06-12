@@ -66,7 +66,7 @@ const PageAboutHeaders = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Utilizar corretamente os níveis de cabeçalho
+                        Utilizando corretamente os níveis de cabeçalho
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 1.3.1'
@@ -81,11 +81,13 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os níveis de cabeçalho (elementos HTML H1 a H6) devem ser utilizados de forma 
-                        hierárquica, pois organizam a ordem de importância e subordinação dos conteúdos, 
-                        facilitando a leitura e compreensão. Além disso, muitos leitores de tela utilizam 
-                        a hierarquia de cabeçalhos como uma forma de navegação na página, pulando de um 
-                        para outro, agilizando, assim, a navegação.
+                        Os cabeçalhos desempenham um papel fundamental na organização e acessibilidade 
+                        do conteúdo de um site. Ao utilizar corretamente os níveis de 
+                        cabeçalho (elementos HTML H1 a H6), é possível estabelecer uma hierarquia clara, 
+                        facilitando a leitura, compreensão e navegação do usuário. Além disso, os 
+                        leitores de tela utilizam essa hierarquia como um meio de navegação eficiente, 
+                        permitindo que os usuários pulem entre os cabeçalhos e encontrem as seções de 
+                        interesse com facilidade.
                     </Text>
                     
                     <PostComponent article_name={'headers_01'} />
@@ -100,7 +102,7 @@ const PageAboutHeaders = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Títulos de Seção
+                        Criando títulos de seção significativos e bem estruturados
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 2.4.10'
@@ -115,10 +117,11 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Conceitualmente, existem seis níveis de títulos, sendo o H1 o mais alto, ou seja, 
-                        deverá corresponder ao conteúdo principal da página, assim é recomendável que toda 
-                        página tenha apenas um H1. Já os níveis do H2 ao H6 poderão ser utilizados mais de 
-                        uma vez na página, mas sem excesso e com lógica textual, obedecendo uma hierarquia.
+                        Em termos conceituais, existem seis níveis de títulos, com o H1 sendo o mais 
+                        importante, representando o conteúdo principal da página. É recomendável que 
+                        cada página tenha apenas um H1, que deve corresponder ao título principal do 
+                        documento. Já os níveis de H2 a H6 podem ser utilizados várias vezes em uma 
+                        página, desde que sigam uma lógica textual coerente e hierarquia adequada.
                     </Text>
 
                     <Text
@@ -127,9 +130,10 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Porém, sempre que o conteúdo desenvolvido for dividido em seções, todas as seções 
-                        devem ter títulos claros, com uma hierarquia claramente definida para 
-                        facilitar a identificação das áreas, como no exemplo a seguir: 
+                        Quando dividir o conteúdo em seções, é fundamental atribuir títulos claros e bem 
+                        definidos a cada seção, garantindo uma hierarquia lógica e consistente. Isso 
+                        permite uma identificação fácil das diferentes áreas do conteúdo, como 
+                        ilustrado no exemplo a seguir: 
                     </Text>
 
                     <PostComponent article_name={'headers_03'} />
@@ -140,9 +144,9 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para compreender melhor os níveis de título pode-se tomar como exemplo um site de 
-                        uma receita, onde o nome do capítulo é o H1, os passos são H2, e as descroções dos 
-                        passos são H3 e assim por diante.
+                        Um exemplo prático pode ser encontrado em um site de receitas, onde o título do 
+                        capítulo seria o H1, os passos seriam identificados como H2 e as descrições dos 
+                        passos como H3, e assim por diante.
                     </Text>
 
                     <PostComponent article_name={'headers_02'} />
