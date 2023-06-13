@@ -153,6 +153,17 @@ const PageAboutVideos = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
+                        A seguir, um exemplo de implementação correta de um vídeo em uma página web:
+                    </Text>
+
+                    <PostComponent article_name={'videos_09'} />
+
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
                         Caso você decida desenvolver as funcionalidades por conta própria, a seguir 
                         estão as principais funcionalidades que podem ser implementadas em um player 
                         de vídeo:
