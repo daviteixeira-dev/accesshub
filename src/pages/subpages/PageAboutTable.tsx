@@ -53,7 +53,7 @@ const PageAboutTable = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Tabela
+                        Tabelas
                     </Heading>
 
                     <Text
@@ -62,11 +62,12 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Em tabelas de dados simples, o uso apropriado do elemento TH para os cabeçalhos e do 
-                        elemento TD para as células de dados é essencial para torná-las acessíveis. Para 
-                        incrementar a acessibilidade, deve-se utilizar os elementos THEAD, TBODY e TFOOT, 
-                        para agrupar as linhas de cabeçalho, do corpo da tabela e do final, respectivamente, 
-                        com exceção de quando a tabela possuir apenas o corpo, sem ter seções de cabeçalho e rodapé.
+                        Quando se trata de acessibilidade, é crucial utilizar corretamente os elementos 
+                        HTML para tornar as tabelas de dados simples acessíveis. Para isso, é importante 
+                        utilizar o elemento {"<th></th>"} para os cabeçalhos e o elemento {"<td></td>"} para 
+                        as células de dados. Além disso, recomenda-se agrupar as linhas de cabeçalho, 
+                        corpo e rodapé utilizando os elementos {"<thead></thead>"}, {"<tbody></tbody>"} e {"<tfoot></tfoot>"}, a 
+                        menos que a tabela possua apenas o corpo sem seções de cabeçalho e rodapé.
                     </Text>
 
                     <Text
@@ -75,9 +76,10 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O W3C sugere utilizar o TFOOT antes do TBODY dentro da definição TABLE para que o agente 
-                        de usuário possa renderizar o rodapé antes de receber todas (potencialmente numerosas) 
-                        linha de dados. 
+                        De acordo com as diretrizes do W3C, é sugerido colocar o 
+                        elemento {"<tfoot></tfoot>"} antes do {"<tbody></tbody>"} na definição da 
+                        tabela. Dessa forma, o agente de usuário pode renderizar o rodapé antes de 
+                        processar todas as linhas de dados (que podem ser numerosas).
                     </Text>
 
                     <Heading
@@ -90,7 +92,7 @@ const PageAboutTable = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Em tabelas, utilizar títulos e resumos de forma apropriada
+                        Utilizando títulos e resumos adequados nas tabelas
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 1.3.1'
@@ -105,10 +107,11 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O título da tabela deve ser definido pelo elemento CAPTION e deve ser o primeiro 
-                        elemento utilizado após a declaração do elemento TABLE. Em casos de tabelas extensas, 
-                        deve ser fornecido um resumo de seus dados através do atributo summary que deve ser 
-                        declarado no elemento TABLE.
+                        O título da tabela deve ser definido pelo elemento {"<caption></caption>"} e deve 
+                        ser o primeiro elemento logo após a declaração do 
+                        elemento {"<table></table>"}. Em caso de tabelas extensas, é importante fornecer 
+                        um resumo dos dados da tabela utilizando o atributo `summary`, que deve ser 
+                        declarado no elemento {"<table></table"}.
                     </Text>
 
                     <Text
@@ -117,8 +120,8 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Abaixo, um exemplo da implementação de uma Tabela em HTML5 e em seguida sua estlização 
-                        em CSS3, sendo esta usada em todos os exemplos de tabela:
+                        Aqui está um exemplo de implementação de uma tabela em HTML5, seguido pela sua 
+                        estilização em CSS3, que pode ser aplicada a todos os exemplos de tabelas:
                     </Text>
 
                     <PostComponent article_name={'table_01'} />
@@ -129,9 +132,9 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para tabelas mais complexas, é necessário utilizar marcações para associar as células de 
-                        dados com as células de cabeçalho. A maneira mais adequada de realizar esse procedimento 
-                        é utilizar os atributos id/headers ou scope/col.
+                        Para tabelas mais complexas, é necessário associar as células de dados às células 
+                        de cabeçalho utilizando marcações apropriadas. A maneira mais adequada de fazer 
+                        isso é utilizando os atributos `id`/`headers` ou `scope`/`col`.
                     </Text>
 
                     <Text
@@ -140,8 +143,22 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No primeiro, pode-se associar qualquer célula de conteúdo a qualquer célula de cabeçalho, 
-                        utilizando o mesmo valor para o atributo id e para o header. Veja o exemplo abaixo: 
+                        No primeiro caso, você pode associar qualquer célula de conteúdo a qualquer célula 
+                        de cabeçalho, utilizando o mesmo valor para o atributo `id` e `headers`. Veja o 
+                        exemplo abaixo:
+                    </Text>
+
+                    <PostComponent article_name={'table_02'} />
+
+                    <Text
+                        my='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        No segundo caso, a associação é feita automaticamente e é mais comumente usada 
+                        em tabelas de associação direta, onde é atribuído o valor `col` ao 
+                        atributo `scope` nos cabeçalhos. Veja o exemplo abaixo: 
                     </Text>
 
                     <PostComponent article_name={'table_03'} />
@@ -152,8 +169,7 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No segundo caso, a associação é automática, sendo mais utilizado em tabelas de associação 
-                        direta, nas quais é dado o valor col para o atributo scope nos cabeçalhos. Veja o exemplo abaixo: 
+                        Por fim, segue um exemplo de tabela utilizando o atributo `axis`:
                     </Text>
 
                     <PostComponent article_name={'table_04'} />
@@ -164,20 +180,9 @@ const PageAboutTable = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Por fim, um exemplo de tabela com o uso do atributo axis:
-                    </Text>
-
-                    <PostComponent article_name={'table_05'} />
-
-                    <Text
-                        my='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Por fim, as tabelas devem ser utilizadas apenas para dados tabulares e não para 
-                        efeitos de disposição dos elementos na página. Para este fim, utilize as folhas 
-                        de estilo.
+                        É importante lembrar que as tabelas devem ser usadas somente para apresentar 
+                        dados tabulares e não para o layout dos elementos na página. Para isso, 
+                        utilize folhas de estilo CSS.
                     </Text>
 
                 </Flex>
