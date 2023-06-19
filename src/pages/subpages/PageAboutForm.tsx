@@ -5,8 +5,7 @@ import {
     Show,
     Heading, 
     ListItem, 
-    Container, 
-    OrderedList, 
+    Container,
     UnorderedList 
 } from '@chakra-ui/react';
 
@@ -84,9 +83,10 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Ao serem utilizados botões do tipo imagem (input type=”image”), que servem 
-                        para o mesmo propósito do botão do tipo submit, deve ser fornecida uma descrição 
-                        textual para o botão através do atributo alt, conforme o exemplo a seguir.
+                        Ao utilizar botões de imagem (input type="image") em formulários, é importante 
+                        fornecer uma descrição textual para esses botões usando o atributo alt. Isso 
+                        permite que os usuários que não conseguem visualizar as imagens compreendam a 
+                        finalidade do botão. Veja o exemplo abaixo:
                     </Text>
 
                     <PostComponent article_name={'form_01'} />
@@ -97,9 +97,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Já para outros tipos de botões (reset e button), é preciso substituir o botão pela 
-                        imagem que se deseja utilizar através do CSS. Nesse caso, para que o botão seja 
-                        acessível, ele deve possuir um value descritivo, conforme o exemplo a seguir.
+                        Para outros tipos de botões, como reset e button, é necessário substituir o botão 
+                        pela imagem desejada por meio do CSS. Nesse caso, é importante que o botão possua 
+                        um valor descritivo usando o atributo value, conforme o exemplo a seguir:
                     </Text>
 
                     <PostComponent article_name={'form_02'} />
@@ -114,7 +114,7 @@ const PageAboutForm = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Associar etiquetas aos seus campos
+                        Associar etiquetas aos campos
 
                         <BadgeWCAGInfoNumber
                             textWCAG='Critério 1.3.1'
@@ -130,9 +130,9 @@ const PageAboutForm = () => {
                         fontFamily='Inter'
                     >
                         As etiquetas de texto (elemento LABEL) devem estar associadas aos seus campos 
-                        (elementos INPUT, SELECT e TEXTAREA, à exceção do elemento BUTTON) correspondentes 
-                        no formulário, através dos atributos for do label e id do input, os quais deverão 
-                        ter o mesmo valor.
+                        correspondentes (elementos INPUT, SELECT e TEXTAREA, exceto BUTTON) nos 
+                        formulários. Isso pode ser feito utilizando os atributos for no label e id 
+                        no input, com valores iguais.
                     </Text>
 
                     <PostComponent article_name={'form_03'} />
@@ -172,23 +172,12 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Por exemplo, ao criar um formulário de cadastro em um site, é importante 
-                        utilizar rótulos descritivos para cada campo de entrada, para que os usuários 
-                        saibam o que é esperado deles e possam preencher o formulário corretamente. Além 
-                        disso, é importante que esses rótulos sejam associados aos campos de entrada 
-                        por meio do atributo "for" no HTML, ou que sejam inseridos dentro do 
-                        elemento "label" para facilitar a navegação e interação dos usuários 
-                        com o teclado.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Um exemplo de código HTML que utiliza rótulos descritivos para um campo de 
-                        formulário seria:
+                        Ao criar um formulário de cadastro em um site, é importante utilizar rótulos 
+                        descritivos para cada campo de entrada. Isso ajuda os usuários a entenderem o 
+                        propósito de cada campo e preencherem o formulário corretamente. Certifique-se 
+                        de associar esses rótulos aos campos de entrada usando o atributo "for" no HTML 
+                        ou inserindo-os dentro do elemento "label" para melhorar a navegação e interação 
+                        dos usuários pelo teclado. Veja o exemplo de código HTML abaixo:
                     </Text>
 
                     <PostComponent article_name={'form_06'} />
@@ -199,11 +188,10 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Nesse exemplo, o rótulo "Nome" está claramente descrito e associado ao campo 
-                        de entrada de texto por meio do atributo "for" no rótulo e do atributo "id" 
-                        no campo de entrada. Isso ajuda a identificar claramente o objetivo do campo 
-                        para os usuários que navegam por meio de leitores de tela ou que utilizam o 
-                        teclado para navegar no site.
+                        No exemplo acima, o rótulo "Nome" está claramente descrito e associado ao 
+                        campo de entrada de texto usando o atributo "for" no rótulo e o atributo "id" 
+                        no campo de entrada. Isso ajuda a identificar claramente a finalidade do campo 
+                        para os usuários que utilizam leitores de tela ou navegam pelo site usando o teclado.
                     </Text>
 
                     <Heading
@@ -231,10 +219,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os elementos do formulário devem ser distribuídos corretamente através do código HTML, 
-                        criando, assim, uma sequência lógica de navegação. Assim, os formulários devem primeiro 
-                        ser codificados considerando a ordem lógica de navegação para depois serem organizados 
-                        visualmente via CSS.
+                        Os elementos do formulário devem ser organizados de forma lógica no código HTML, 
+                        criando uma sequência de navegação coerente. Posteriormente, é possível organizar 
+                        visualmente os elementos usando CSS.
                     </Text>
 
                     <Heading
@@ -262,9 +249,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando um elemento de formulário receber o foco, não deve ser iniciada uma mudança 
-                        automática na página que confunda ou desoriente o usuário. Assim, as mudanças devem 
-                        ocorrer através do acionamento de um botão.
+                        Evite iniciar automaticamente mudanças no contexto da página quando um elemento 
+                        do formulário recebe foco, pois isso pode confundir ou desorientar os usuários. Em 
+                        vez disso, as mudanças devem ser acionadas por meio de um botão.
                     </Text>
 
                     <Heading
@@ -292,10 +279,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para conteúdo que exigir entrada de dados por parte do usuário, devem ser fornecidas 
-                        quando necessário, instruções de preenchimento juntamente com as etiquetas 
-                        (elemento LABEL). A utilização de caracteres pré-definidos em áreas de entrada de 
-                        texto só deve ocorrer se:
+                        Quando houver a necessidade de entrada de dados por parte do usuário, forneça 
+                        instruções de preenchimento junto com as etiquetas (elemento LABEL). A utilização 
+                        de caracteres pré-definidos em campos de entrada de texto só deve ocorrer se:
                     </Text>
 
                     <UnorderedList>
@@ -304,25 +290,25 @@ const PageAboutForm = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            O texto for incluído após a entrada de dados pelo usuário (por exemplo, sugerir um 
-                            novo nome de usuário caso o escolhido já exista);
+                            O texto for incluído após a entrada de dados pelo usuário (por exemplo, sugerir 
+                            um novo nome de usuário caso o escolhido já exista).
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            A semântica do documento justifique a inclusão de texto pré-definido 
-                            (por exemplo, uma loja virtual que só vende para determinado país já vem com o 
-                            campo país preenchido);
+                            A semântica do documento justificar a inclusão de texto pré-definido (por 
+                            exemplo, uma loja virtual que só vende para determinado país já vem com o 
+                            campo país preenchido).
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Os caracteres tenham sido fornecidos previamente pelo usuário 
-                            (por exemplo, refinamento de busca).
+                            Os caracteres tiverem sido fornecidos previamente pelo usuário (por exemplo, 
+                            refinamento de busca).
                         </ListItem>
                     </UnorderedList>
 
@@ -332,9 +318,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Recomenda-se que a entrada de dados seja facilitada, como a exclusão de caracteres 
-                        especiais em campos numéricos (Ex: número de documentos como CPF, datas, moeda), e a 
-                        simplificação de campos. 
+                        Recomenda-se facilitar a entrada de dados, removendo caracteres especiais em 
+                        campos numéricos (ex: número de documentos como CPF, datas, moeda) e simplificando 
+                        os campos.
                     </Text>
 
                     <Text
@@ -343,11 +329,12 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Campos de preenchimento obrigatório devem ser claramente indicados. O HTML5 traz um 
-                        novo atributo, o required, que especifica que um campo é obrigatório. Essa informação 
-                        é lida pelo leitor de tela. Além disso, caso o usuário tente enviar o formulário sem 
-                        preencher o campo obrigatório, uma informação do tipo “por favor, preencha esse campo” 
-                        aparecerá na tela, além de ser interpretada pelo leitor de tela.
+                        Campos de preenchimento obrigatório devem ser claramente indicados. No HTML5, 
+                        você pode utilizar o atributo "required" para especificar que um campo é 
+                        obrigatório. Essa informação é lida pelo leitor de tela. Além disso, caso o 
+                        usuário tente enviar o formulário sem preencher o campo obrigatório, uma 
+                        mensagem do tipo "Por favor, preencha esse campo" será exibida na tela e também 
+                        será interpretada pelo leitor de tela.
                     </Text>
 
                     <Text
@@ -356,9 +343,10 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além do atributo required, o HTML5 apresenta, também, o placeholder. Ele é utilizado 
-                        com os elementos INPUT e TEXTAREA para definir uma dica de preenchimento do campo. 
-                        Quando o campo recebe o foco, a dica desaparece, mas é lida pelo leitor de tela.
+                        Outro atributo útil do HTML5 é o placeholder, que pode ser usado com os 
+                        elementos INPUT e TEXTAREA para fornecer uma dica de preenchimento para o 
+                        campo. Quando o campo recebe foco, a dica desaparece, mas ainda é lida pelo 
+                        leitor de tela.
                     </Text>
 
                     <Text
@@ -367,8 +355,8 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Outros atributos do HTML5 bastante importantes para acrescentar informações aos campos 
-                        do formulário são:
+                        Além disso, existem outros atributos do HTML5 que podem ser importantes para 
+                        fornecer informações adicionais aos campos do formulário, tais como:
                     </Text>
 
                     <UnorderedList>
@@ -377,52 +365,51 @@ const PageAboutForm = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            autofocus: Utilizado para o foco do teclado ir diretamente ao campo que possua esse 
-                            atributo quando a página com o formulário for carregada;
+                            autofocus: define o campo que receberá o foco do teclado quando a página com o formulário for carregada.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            maxlength: Determina um número máximo de caracteres que o campo pode ter;
+                            maxlength: determina o número máximo de caracteres permitidos em um campo.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            min e max: Determina o valor mínimo e máximo para o campo. Podem ser utilizados 
-                            separadamente;
+                            min e max: define o valor mínimo e máximo permitido para um campo (podem ser 
+                            utilizados separadamente)
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            pattern: Permite que sejam definidas expressões para validação do campo;
+                            pattern: permite definir uma expressão regular para validar o campo.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            novalidate: Para desativar a validação do formulário (utilizado com o elemento FORM);
+                            novalidate: desativa a validação do formulário (usado com o elemento FORM).
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            formnovalidate: Para desativar a validação dos dados de um formulário 
-                            (utilizado com os elementos INPUT e BUTTON);
+                            formnovalidate: desativa a validação dos dados de um formulário (usado com 
+                            os elementos INPUT e BUTTON).
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            draggable: Torna o campo arrastável (Drag and Drop);
+                            draggable: torna o campo arrastável (arrastar e soltar).
                         </ListItem>
                     </UnorderedList>
 
@@ -432,8 +419,8 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além de melhorar a semântica, os novos atributos e valores do HTML5 tornam o 
-                        desenvolvimento mais fácil e o resultado mais acessível.
+                        Além de melhorar a semântica do código, esses novos atributos e valores do HTML5 
+                        facilitam o desenvolvimento e tornam o resultado final mais acessível.
                     </Text>
 
                     <PostComponent article_name={'form_04'} />
@@ -448,8 +435,7 @@ const PageAboutForm = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Identificar erros de entrada de dados e confirmar o envio 
-                        das informações
+                        Identificar erros de entrada de dados e confirmar o envio das informações
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 3.1.1'
@@ -464,8 +450,11 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando um erro de entrada de dados for automaticamente detectado, o item que apresenta 
-                        erro deve ser identificado e descrito ao usuário por texto.
+                        Ao detectar automaticamente erros de entrada de dados em um formulário, é importante 
+                        identificar e descrever ao usuário o item que apresenta o erro por meio de texto. Quando 
+                        o usuário envia o formulário sem preencher campos obrigatórios ou preenche algum 
+                        campo de maneira incorreta, o foco deve retornar ao início do formulário, exibindo 
+                        um aviso de erro e links para os campos problemáticos.
                     </Text>
 
                     <Text
@@ -474,9 +463,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O usuário envia o formulário e deixa de preencher campos obrigatórios ou preenche algum 
-                        campo de maneira incorreta. O foco retorna ao início do formulário contendo o aviso de 
-                        erro e links (âncoras) para os campos do formulário que apresentaram erro.
+                        Após a validação dos dados, antes de enviar o formulário, é recomendado exibir uma tela 
+                        de confirmação. Isso permite que o usuário verifique as informações fornecidas e, se 
+                        necessário, faça edições antes de enviar os dados.
                     </Text>
 
                     <Text
@@ -485,21 +474,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Após a validação dos dados, antes de enviar o formulário, uma tela de confirmação deverá 
-                        aparecer, permitindo que o usuário verifique e, se necessário, edite as informações 
-                        antes de enviá-las.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        No HTML5 existem novos valores para o atributo type do elemento INPUT e, de acordo com 
-                        a definição do input type, a validação do lado do cliente ocorre através do próprio HTML, 
-                        já que esses valores basicamente definem o tipo de dado esperado pelo campo. Assim, o 
-                        HTML5 acrescentou os seguintes valores para o atributo type:
+                        No HTML5, existem novos valores para o atributo "type" do elemento "input". Esses valores 
+                        são úteis para a validação do lado do cliente, pois definem o tipo de dado esperado pelo 
+                        campo. Alguns desses valores incluem::
                     </Text>
 
                     <UnorderedList>
@@ -508,91 +485,91 @@ const PageAboutForm = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            email: Indica a entrada de um endereço de e-mail;
+                            email: Indica a entrada de um endereço de e-mail.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            tel: Indica a entrada de um número de telefone;
+                            tel: Indica a entrada de um número de telefone.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            search: Indica um controle input do tipo busca;
+                            search: Indica um campo de busca.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            url: Indica a entrada de endereço URL;
+                            url: Indica a entrada de endereço URL.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            datatime: Indica a entrada de data e hora;
+                            datatime: Indica a entrada de data e hora.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            datatime-local: Indica a entrada de data e hora local;
+                            datatime-local: Indica a entrada de data e hora local.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            date: Indica a entrada de apenas uma data;
+                            date: Indica a entrada de uma data.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            month: Indica a entrada de ano e mês apenas;
+                            month: Indica a entrada de um mês e ano.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            week: Indica a entrada de ano e dia da semana;
+                            week: Indica a entrada de uma semana e ano.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            time: Indica a entrada de um horário com hora, minuto, segundos e fração de segundos;
+                            time: Indica a entrada de um horário.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            number: Indica uma entrada numérica;
+                            number: Indica uma entrada numérica.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            range: Indica a entrada de um número contido dentro de um intervalo;
+                            range: Indica a entrada de um número dentro de um intervalo.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            color: Indica a entrada do código de uma cor.
+                            color: Indica a entrada de um código de cor.
                         </ListItem>
                     </UnorderedList>
 
@@ -621,10 +598,9 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É recomendado que os campos com informações relacionadas sejam agrupadas utilizando o 
-                        elemento FIELDSET, principalmente em formulários longos. O agrupamento deverá ser feito 
-                        de maneira lógica, associando o elemento LEGEND explicando claramente o propósito ou 
-                        natureza dos agrupamentos.
+                        Recomenda-se agrupar campos com informações relacionadas usando o elemento "fieldset", 
+                        especialmente em formulários longos. É importante associar o elemento "legend" a cada 
+                        grupo para explicar claramente o propósito ou a natureza do agrupamento.
                     </Text>
 
                     <Text
@@ -633,8 +609,8 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No caso do elemento SELECT, pode ser utilizado o elemento OPTGROUP para agrupar os itens 
-                        da lista de seleção.
+                        No caso de elementos "select", você pode utilizar o elemento "optgroup" para agrupar os 
+                        itens da lista de seleção.
                     </Text>
 
                     <PostComponent article_name={'form_05'} />
@@ -649,7 +625,7 @@ const PageAboutForm = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer estratégias de segurança específicas ao invés de CAPTCHA
+                        Fornecer estratégias de segurança específicas em vez de CAPTCHA
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 1.3.1'
@@ -664,20 +640,10 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        CAPTCHAs são utilizados para impedir que softwares automatizados, conhecidos como bots, 
-                        executem ações que degradem a qualidade do serviço de um sistema, provocando danos em 
-                        áreas e e-serviços de sítios em um curto espaço de tempo, podendo sobrecarregar 
-                        servidores e deixar sítios indisponíveis por um dado período.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Recomenda-se uma combinação de diferentes estratégias para serviços mais seguros e 
-                        acessíveis para substituir o uso de CAPTCHA, como por exemplo:
+                        O uso de CAPTCHA para evitar ações automatizadas de softwares pode apresentar 
+                        problemas significativos em termos de usabilidade, acessibilidade e segurança. Em vez 
+                        de depender exclusivamente de CAPTCHA, é recomendado combinar diferentes estratégias 
+                        para criar serviços seguros e acessíveis. Algumas dessas estratégias incluem:
                     </Text>
 
                     <UnorderedList>
@@ -686,28 +652,28 @@ const PageAboutForm = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Limites de conexão;
+                            Limites de conexão.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Monitoramento;
+                            Monitoramento.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Consistência nas políticas de segurança;
+                            Consistência nas políticas de segurança.
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Uso de técnicas de desenvolvimento de serviços e formulários seguros.
+                            Implementação de técnicas de desenvolvimento de serviços e formulários seguros.
                         </ListItem>
                     </UnorderedList>
 
@@ -717,74 +683,10 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Tal recomendação se deve ao fato de que o uso de CAPTCHA pode ocasionar problemas 
-                        significativos a sítios e formulários:
-                    </Text>
-
-                    <UnorderedList>
-                        <ListItem
-                            fontSize='1rem'
-                            fontWeight='600'
-                            fontFamily='Inter'
-                        >
-                            Usabilidade: O ônus de detecção de problemas e invasões é delegado a pessoa, ao 
-                            invés do sistema. Como CAPTCHAs são projetados para serem difíceis de ler e entender, 
-                            tornam os serviços que os utilizam muito mais difíceis de usar.
-                        </ListItem>
-                        <ListItem
-                            fontSize='1rem'
-                            fontWeight='600'
-                            fontFamily='Inter'
-                        >
-                            Acessibilidade: Os CAPTCHAS são inacessíveis por sua natureza, não são lidos, nem 
-                            interpretados por leitores de tela. Isso efetivamente torna o serviço inutilizável 
-                            por alguns grupos de pessoas. Mesmo CAPTCHAs que oferecem versões em áudio não 
-                            resolvem completamente o problema, pois muitas pessoas podem possuir deficiência 
-                            auditiva e visual.
-                        </ListItem>
-                        <ListItem
-                            fontSize='1rem'
-                            fontWeight='600'
-                            fontFamily='Inter'
-                        >
-                            Segurança: Desenvolver um CAPTCHA internamente costuma gerar CAPTCHAS inseguros, 
-                            com falhas já mapeadas por spammers. No entanto, ao utilizar CAPTCHAS de terceiros 
-                            há outros problemas a serem considerados:
-                        </ListItem>
-                        <OrderedList>
-                            <ListItem
-                                fontSize='1rem'
-                                fontWeight='600'
-                                fontFamily='Inter'
-                            >
-                                Privacidade: O serviço de CAPTCHA pode incluir cookies, coletar estatísticas e 
-                                mapear o comportamento de navegação das pessoas que acessam o serviço. Isto 
-                                introduz preocupações com a privacidade significativas.
-                            </ListItem>
-                            <ListItem
-                                fontSize='1rem'
-                                fontWeight='600'
-                                fontFamily='Inter'
-                            >
-                                Performance: O uso de um serviço CAPTCHA incorre no desempenho do sítio. Se o 
-                                serviço ficar indisponível, o mesmo acontece com o acesso ao serviço da página 
-                                que utiliza o CAPTCHA.
-                            </ListItem>
-                        </OrderedList>
-                    </UnorderedList>
-
-                    <Text
-                        my='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Caso o uso de CAPTCHA seja estritamente necessário, o mesmo deverá ser fornecido em 
-                        forma de pergunta simples de interpretação (CAPTCHA Humano), e este preferencialmente 
-                        só deverá ser apresentado após pelo menos 2 tentativas de envio do formulário, por 
-                        exemplo. Tais perguntas poderão ser respondidas apenas por um ser humano. No entanto, 
-                        é preciso garantir que a pergunta não seja de difícil resolução, permitindo que a 
-                        mesma possa ser respondida por pessoas de variadas culturas e níveis de instrução.
+                        O uso de CAPTCHA pode afetar negativamente a usabilidade de um serviço, pois a tarefa de 
+                        detectar problemas e invasões é transferida para o usuário. Além disso, CAPTCHAs são 
+                        frequentemente difíceis de ler e entender, o que torna o serviço mais difícil de ser 
+                        utilizado.
                     </Text>
 
                     <Text
@@ -793,13 +695,48 @@ const PageAboutForm = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para tal, podem ser utilizadas perguntas de senso comum, como por exemplo, 
-                        “qual é a cor do céu?” ou “o fogo é quente ou frio?”. Também podem ser utilizados 
-                        testes matemáticos. No entanto, é preciso tomar cuidado para que esses testes não 
-                        sejam facilmente “quebrados” por determinados programas. Uma alternativa é solicitar 
-                        que o usuário escreva o resultado do teste matemático por extenso, como 
-                        “escreva por extenso quanto é 2 + 3”, ou ainda “responda por extenso quanto é dois 
-                        mais três”.
+                        Outra questão importante é a acessibilidade. CAPTCHAs não são acessíveis por natureza e 
+                        não podem ser lidos ou interpretados por leitores de tela, tornando o serviço 
+                        inutilizável para algumas pessoas. Mesmo que versões em áudio sejam oferecidas, elas 
+                        não resolvem completamente o problema, pois muitas pessoas podem ter deficiências 
+                        visuais e auditivas.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Além disso, a implementação de CAPTCHAs internos pode resultar em falhas de segurança, 
+                        enquanto o uso de CAPTCHAs de terceiros pode levantar preocupações com privacidade e 
+                        afetar o desempenho do site.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Se for absolutamente necessário utilizar CAPTCHA, é recomendado fornecer uma pergunta 
+                        simples que possa ser respondida apenas por seres humanos (CAPTCHA humano). Essa pergunta 
+                        deve ser apresentada apenas após pelo menos duas tentativas de envio do formulário. É 
+                        importante garantir que a pergunta não seja difícil demais, permitindo que pessoas de 
+                        diferentes culturas e níveis de instrução possam respondê-la.
+                    </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Algumas opções de perguntas incluem questões de senso comum, como "Qual é a cor do céu?" 
+                        ou "O fogo é quente ou frio?". Testes matemáticos também podem ser utilizados, desde que 
+                        não sejam facilmente contornados por programas automatizados. Uma alternativa é 
+                        solicitar que o usuário escreva o resultado do teste matemático por extenso, 
+                        como "Escreva por extenso quanto é 2 + 3" ou "Responda por extenso quanto é dois mais três".
                     </Text>
 
                 </Flex>
