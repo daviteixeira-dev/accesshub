@@ -93,11 +93,11 @@ const PageAboutAudios = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Áudio gravado deve possuir uma transcrição descritiva. Além de essencial para 
-                        pessoas com deficiência auditiva, a alternativa em texto também é importante 
-                        para usuários que não possuem equipamento de som, que desejam apenas realizar a 
-                        leitura do material ou não dispõem de tempo para ouvir um arquivo multimídia. Neste 
-                        caso, também é desejável a alternativa em Libras.
+                        É importante fornecer uma transcrição descritiva para áudios gravados. Essa 
+                        alternativa em texto é essencial para pessoas com deficiência auditiva, mas 
+                        também beneficia usuários que não possuem equipamentos de som, preferem a 
+                        leitura do material ou têm restrições de tempo. Além disso, é recomendável 
+                        fornecer uma alternativa em Libras (Língua Brasileira de Sinais).
                     </Text>
 
                     <PostComponent article_name={'audios_01'} />
@@ -108,8 +108,8 @@ const PageAboutAudios = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Uma apresentação prévia do conteúdo dos dois tipos de arquivo e de sua duração 
-                        também é desejável.
+                        Também é desejável fornecer uma prévia do conteúdo dos arquivos de áudio, bem 
+                        como a duração de cada um.
                     </Text>
 
                     <Heading
@@ -122,7 +122,7 @@ const PageAboutAudios = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer controle de áudio para som
+                        Fornecer controle de áudio para o som
 
                         <BadgeWCAGInfoNumber 
                             textWCAG='Critério 1.4.2'
@@ -137,8 +137,9 @@ const PageAboutAudios = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Deve ser fornecido um mecanismo para parar, pausar, silenciar ou ajustar o volume 
-                        de qualquer som que se reproduza na página.
+                        É importante fornecer um mecanismo que permita aos usuários controlar o áudio 
+                        reproduzido na página. Esse mecanismo deve incluir opções para parar, pausar, 
+                        silenciar ou ajustar o volume do som.
                     </Text>
 
                 </Flex>
