@@ -92,8 +92,9 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Deve ser fornecida uma descrição para as imagens da página, utilizando-se, 
-                        para tanto o atributo alt. 
+                        É importante fornecer uma descrição para as imagens da página usando o atributo 
+                        alt. Essa descrição deve transmitir o significado e o propósito da imagem para os 
+                        usuários que não conseguem visualizá-la.
                     </Text>
 
                     <Flex
@@ -114,8 +115,9 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No caso de banners e outras imagens que reproduzam textos, o ideal é reproduzir o texto 
-                        escrito.
+                        Quando se trata de banners e outras imagens que reproduzem textos, é recomendado que 
+                        o texto seja reproduzido na descrição alternativa. Isso garante que os usuários com 
+                        deficiência visual tenham acesso às informações contidas na imagem.
                     </Text>
 
                     <Flex
@@ -136,8 +138,9 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Descrever qualquer imagem, em geral, é algo bastante subjetivo e a descrição deve ser 
-                        adaptada ao contexto em que a imagem se encontra.
+                        A descrição de uma imagem é subjetiva e deve ser adaptada ao contexto em que a 
+                        imagem está inserida. Pense no objetivo da imagem e como ela contribui para o 
+                        conteúdo da página.
                     </Text>
 
                     <Text
@@ -146,12 +149,10 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Apesar de não haver um limite de caracteres para o atributo alt, ele é utilizado para 
-                        descrições sintéticas, em poucas palavras ou em uma frase curta. Para imagens mais 
-                        complexas que exigem uma descrição mais detalhada, como infográficos, por exemplo, 
-                        deve-se fornecer, além do alt, a descrição no próprio contexto ou um link para a 
-                        descrição longa logo após a imagem. Deve ficar claro para o usuário que esse link 
-                        remete para a descrição longa da imagem, conforme o exemplo a seguir.
+                        Para imagens mais complexas, como infográficos, é possível fornecer uma descrição 
+                        mais detalhada no próprio contexto ou por meio de um link para uma página com a 
+                        descrição completa. Certifique-se de que o usuário entenda que o link leva a uma 
+                        descrição mais detalhada, como no exemplo a seguir:
                     </Text>
 
                     <Flex
@@ -170,8 +171,8 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Este é um exemplo de descrição de infográfico, desta forma a sua descrição textual 
-                        está disponível em outra página. A seguir um exemplo de implementação: 
+                        Aqui está um exemplo de descrição de infográfico. A descrição completa está 
+                        disponível em outra página. Veja o exemplo de implementação: 
                     </Text>
 
                     <PostComponent article_name={'images_03'} />
@@ -182,9 +183,10 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Lembrando que em gráficos simples, as informações podem estar contidas na própria página 
-                        ajudando o entendimento, inclusive, de pessoas que tem dificuldade com visualizações 
-                        de gráficos ou queiram utilizar as informações para outros fins, como pesquisas.
+                        É importante lembrar que, em gráficos simples, as informações podem estar contidas 
+                        na própria página, o que facilita o entendimento para usuários com dificuldades 
+                        de visualização ou que desejam utilizar as informações de outras maneiras, como 
+                        para pesquisas.
                     </Text>
 
                     <Flex
@@ -215,9 +217,8 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Foram incorporados ao HTML5 os elementos FIGURE e FIGCAPTION, que são utilizados em 
-                        conjunto com o objetivo de agrupar uma imagem IMG com a sua legenda, a qual 
-                        aparecerá visualmente. 
+                        No HTML5, foram introduzidos os elementos FIGURE e FIGCAPTION, que permitem 
+                        agrupar uma imagem IMG com sua legenda correspondente. 
                     </Text>
 
                     <Text
@@ -226,13 +227,11 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O elemento FIGURE não é usado apenas para marcação de imagens, ele define um bloco de 
-                        conteúdo independente que normalmente contém linhas de códigos, imagens, gráficos, 
-                        diagramas e vídeos que fazem referência ao conteúdo principal do documento. 
-                        O elemento FIGCAPTION é opcional e exibe uma legenda para o elemento FIGURE. 
-                        Esse novo elemento age como subtítulo opcional ou legenda para qualquer 
-                        conteúdo contido dentro do elemento FIGURE e não substitui o atributo alt nas 
-                        descrições das imagens.
+                        O elemento FIGURE não é usado apenas para imagens, mas também para agrupar 
+                        conteúdos independentes, como trechos de código, gráficos, diagramas e vídeos 
+                        relacionados ao conteúdo principal do documento. O elemento FIGCAPTION é 
+                        opcional e exibe uma legenda para a figura. Ele complementa o atributo alt 
+                        e fornece uma descrição visualmente visível para a imagem.
                     </Text>
 
                     <Text
@@ -241,9 +240,9 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Pode-se ter várias imagens, vídeos, gráficos, dentro de um único elemento FIGURE. Caso 
-                        haja um elemento FIGCAPTION este deve ser o primeiro ou o último filho do elemento 
-                        FIGURE e só um FIGCAPTION irá representar a legenda. 
+                        É possível ter várias imagens, vídeos e gráficos dentro de um único elemento 
+                        FIGURE. Caso haja um elemento FIGCAPTION, ele deve ser o primeiro ou o último 
+                        filho do elemento FIGURE, e apenas um FIGCAPTION será utilizado como legenda. 
                     </Text>
 
                     <Flex
@@ -264,11 +263,11 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        OBS: Imagens que não transmitem conteúdo, ou seja, imagens decorativas, devem ser 
-                        inseridas por CSS. Um exemplo seria o separador pontilhado logo abaixo do título 
-                        de nível 3 “Acessibilidade web” em uma página, neste caso, isso seria uma imagem 
-                        decorativa cuja função foi inserida através das folhas de estilo. Note que em alguns 
-                        casos a imagem pode ser substituída por um código CSS. 
+                        Observação: Imagens decorativas, que não transmitem conteúdo, podem ser 
+                        inseridas por meio de CSS. Por exemplo, um separador pontilhado abaixo 
+                        de um título pode ser implementado como uma imagem decorativa inserida 
+                        por meio de folhas de estilo. Em alguns casos, a imagem pode ser substituída 
+                        por código CSS. 
                     </Text>
 
                     <Heading
@@ -296,9 +295,10 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um mapa de imagens é uma imagem dividida em áreas selecionáveis definidas por elemento 
-                        AREA . Cada área é um link para outra página Web ou outra seção da página atual. 
-                        É um recurso em desuso, mas pode ser útil na acessibilidade de infográficos, por exemplo.  
+                        Mapas de imagem são imagens divididas em áreas selecionáveis definidas por elementos 
+                        AREA. Cada área funciona como um link para outra página ou seção da página 
+                        atual. Embora este recurso esteja em desuso, ele pode ser útil para tornar 
+                        infográficos acessíveis, por exemplo.
                     </Text>
 
                     <Text
@@ -307,7 +307,8 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Esse recurso não deve ser utilizado para menus ou seleção de regiões para serviços.
+                        Os mapas de imagem do lado do cliente requerem descrições fornecidas pelo atributo 
+                        alt para cada uma das áreas ativas, ou seja, para cada link que recebe foco.
                     </Text>
 
                     <Text
@@ -316,27 +317,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Existem dois tipos de mapas de imagem: mapas do lado do cliente.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Para mapas de imagem do lado do cliente, devem ser fornecidas descrições através do 
-                        atributo alt para cada uma das zonas ativas, ou seja, para cada um dos links que 
-                        receberá o foco.
-                    </Text>
-
-                    <Text
-                        mb='1rem'
-                        fontWeight='400'
-                        fontSize='1.2rem'
-                        fontFamily='Inter'
-                    >
-                        Abaixo, um exemplo (mapa de imagem do lado do cliente):
+                        Aqui está um exemplo de mapa de imagem do lado do cliente:
                     </Text>
 
                     <Flex
@@ -378,7 +359,8 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além dos mapas de imagem do lado do cliente, existem os do lado do servidor.
+                        Além dos mapas de imagem do lado do cliente, existem também os mapas de 
+                        imagem do lado do servidor.
                     </Text>
 
                     <Text
@@ -387,7 +369,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Abaixo, um exemplo (mapa de imagem do lado do servidor):
+                        Aqui está um exemplo de mapa de imagem do lado do servidor:
                     </Text>
 
                     <Flex
@@ -421,13 +403,13 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No entanto, é recomendada a utilização de mapas de imagem do lado do cliente, já que 
-                        para mapas de imagem do lado do servidor não é possível fornecer um alt para cada uma 
-                        das zonas ativas, somente para o mapa como um todo, não sendo possível, portanto, 
-                        torná-lo acessível. No entanto, se for realmente necessária sua utilização, devem 
-                        ser fornecidos links redundantes relativos a cada região ativa do mapa de imagem, 
-                        conforme o exemplo a seguir, para que, desta forma, usuários com leitores de tela 
-                        possam ter acesso ao seu conteúdo.
+                        Entretanto, é recomendado o uso de mapas de imagem do lado do cliente, pois 
+                        os mapas de imagem do lado do servidor não permitem fornecer um texto alternativo 
+                        para cada área ativa individualmente. Apenas um texto alternativo para todo o 
+                        mapa pode ser fornecido, o que dificulta a acessibilidade. Caso seja necessário 
+                        utilizar mapas de imagem do lado do servidor, é recomendado fornecer links 
+                        redundantes para cada região ativa do mapa, permitindo que usuários de leitores 
+                        de tela tenham acesso ao conteúdo.
                     </Text>
 
                 </Flex>
