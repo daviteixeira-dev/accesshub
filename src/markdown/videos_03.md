@@ -1,11 +1,11 @@
 <Code language='html'>
-// Código HTML
+&lt;!-- Código HTML --&gt;
 &lt;button onclick='aumentarVolume()'&gt;Aumentar volume&lt;/button&gt;
 &lt;button onclick='diminuirVolume()'&gt;Diminuir volume&lt;/button&gt;
 &lt;button onclick='toggleMutar()'&gt;Mutar&lt;/button&gt;
 &lt;video id="video">&lt;/video&gt;
 
-// Código JavaScript
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
 let meuVideo = document.getElementById("video");
 

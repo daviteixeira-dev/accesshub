@@ -1,8 +1,8 @@
 <Code language='html'>
-// Código HTML
+&lt;!-- Código HTML --&gt;
 &lt;button onclick="downloadVideo()"&gt;Baixar vídeo&lt;/button&gt;
 
-// Código JavaScript
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
 function downloadVideo() {
     let videoUrl = "../video/video.mp4";

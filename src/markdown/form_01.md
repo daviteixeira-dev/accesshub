@@ -1,6 +1,4 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;input type="image" name="enviar" src="enviar.jpg" alt="enviar"&gt;
 </Code>

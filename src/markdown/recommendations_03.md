@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;form&gt;
     &lt;label for="senha">Senha: &lt;/label&gt;
         &lt;input

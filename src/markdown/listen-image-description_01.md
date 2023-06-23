@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;button id="playButton" onclick="playDescription()"&gt;Reproduzir&lt;/button&gt;
 
 &lt;figure&gt;
@@ -13,8 +11,7 @@
     &gt;
 &lt;/figure&gt;
 
-// Código JavaScript
-
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
     var images = document.getElementsByTagName("img");
 

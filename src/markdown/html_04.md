@@ -1,4 +1,5 @@
 <Code language='html'>
+&lt;!-- Código HTML --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html lang='pt-br'&gt;
 &lt;head&gt;

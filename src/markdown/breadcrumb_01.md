@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código CSS
-
+&lt;!-- Código CSS --&gt;
 &lt;style&gt;
     .breadcrumb {
         padding: 10px;
@@ -34,8 +32,7 @@
     }
 &lt;/style&gt;
 
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;nav class='navBreadCrumb' aria-label='breadcrumb'&gt;
     &lt;ol class='breadcrumb'&gt;
         &lt;li class='breadcrumb-items'&gt;
@@ -52,5 +49,4 @@
         &lt;/li&gt;
     &lt;/ol&gt;
 &lt;/nav&gt;
-
 </Code>

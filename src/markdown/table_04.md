@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;table summary='Despesas de transporte durante o mês de Agosto nas cidades de Porto Alegre e Florianópolis'&gt;
     &lt;caption&gt;Relatório de despesa de viagem&lt;/caption&gt;
     &lt;thead&gt;

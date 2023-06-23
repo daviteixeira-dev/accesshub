@@ -1,8 +1,8 @@
 <Code language='html'>
-// Código HTML
+&lt;!-- Código HTML --&gt;
 &lt;button onclick="downloadAudiodescricao()"&gt;Áudio descrição&lt;/button&gt;
 
-// Código JavaScript
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
 function downloadAudiodescricao() {
     // URL da audiodescrição do vídeo

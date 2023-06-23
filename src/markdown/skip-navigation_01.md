@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;a href="#main-content" id="skip-link" class="hidden"&gt;Ir para o conteúdo principal&lt;/a&gt;
 
 &lt;main id="main-content"&gt;
@@ -14,8 +12,7 @@
 
 &lt;/main&gt;
 
-// Código JavaScript
-
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
     const skipLink = document.getElementById("skip-link");
     const skipLinkHidden = document.querySelector(".hidden");
@@ -41,5 +38,4 @@
         }
     });
 &lt;/script&gt;
-
 </Code>

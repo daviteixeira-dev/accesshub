@@ -1,5 +1,5 @@
 <Code language='html'>
-// Código HTML
+&lt;!-- Código HTML --&gt;
 &lt;label for="subtitleSelect"&gt;Escolha a legenda:&lt;/label&gt;
 &lt;select id="subtitleSelect" onchange="changeSubtitle()"&gt;
     &lt;option value="0"&gt;Desativar legenda&lt;/option&gt;
@@ -8,7 +8,7 @@
     &lt;option value="3"&gt;Español&lt;/option&gt;
 &lt;/select&gt;
 
-// Código JavaScript
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
 let subtitleSelect = document.getElementById("subtitleSelect");
 

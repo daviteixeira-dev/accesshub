@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;table summary='Tabela de vendas de maçã e banana efetuadas no ano de 2010'&gt;
     &lt;caption&gt;Vendas 2010&lt;/caption&gt;
     &lt;thead&gt;

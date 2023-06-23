@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;table&gt;
     &lt;caption tabindex="0"&gt;Tabela de Lista de Compras&lt;/caption&gt;
     &lt;thead&gt;

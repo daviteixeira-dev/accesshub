@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;img src='mapaImg.jpg' alt='Imagem com alternativas [A] e [B]' usemap='#Map'&gt;
 &lt;map name='Map' id='Map'&gt;
     &lt;area shape='rect' coords='8,10,63,59' href='a.html' alt='Link para a seção [A]'&gt;

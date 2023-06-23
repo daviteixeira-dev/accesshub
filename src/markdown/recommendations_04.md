@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;h1&gt;O que é e para que serve o HTML?&lt;/h1&gt;
 &lt;p&gt;O HTML (HyperText Markup Language), é a linguagem de marcação de 
 hipertexto utilizada no desenvolvimento de websites...&lt;/p&gt;

@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código CSS
-
+&lt;!-- Código CSS --&gt;
 &lt;style&gt;
     audio, a {
         margin-bottom: 1rem;
@@ -14,8 +12,7 @@
     }
 &lt;/style&gt;
 
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;audio id='audio' controls&gt;
     &lt;source src='audio.ogg' type='audio/ogg'&gt;
     &lt;source src='audio.mp3' type='audio/mpeg'&gt;
@@ -27,8 +24,7 @@
 &lt;button onclick='diminuirVolume()'&gt;Diminuir volume&lt;/button&gt;
 &lt;button onclick='multar()'&gt;Multar&lt;/button&gt;
 
-// Código JavaScript
-
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
     var meuAudio = document.getElementById('audio');
     function playPause(){
@@ -50,6 +46,5 @@
     function multar(){
         meuAudio.volume = 0;
     }
-
 &lt;/script&gt;
 </Code>

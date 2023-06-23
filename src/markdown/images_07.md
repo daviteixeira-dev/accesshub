@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;a href='novaPagina.jpg'&gt;
     &lt;img src='bandeiraBrasil.jpg' usemap='#Map' alt='Bandeira do Brasil (Links a seguir)'/&gt;
 &lt;/a&gt;

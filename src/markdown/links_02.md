@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;nav role="navigation"&gt;
     &lt;ul id="menu" role='menu'&gt;
         &lt;li role="menuitem"&gt;

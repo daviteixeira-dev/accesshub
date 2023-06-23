@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;table&gt;
     &lt;caption&gt;Resultado do Concurso&lt;/caption&gt;
     &lt;tr&gt;

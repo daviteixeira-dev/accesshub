@@ -1,9 +1,9 @@
 <Code language='html'>
-// Código HTML
+&lt;!-- Código HTML --&gt;
 &lt;button onclick='playPause()' class="pausePlaybtn"&gt;Play&lt;/button&gt;
 &lt;video id="video"&gt;&lt;/video&gt;
 
-// Código JavaScript
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
 let meuVideo = document.getElementById("video");
 

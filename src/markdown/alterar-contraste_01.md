@@ -1,5 +1,6 @@
 
 <Code language='html'>
+&lt;!-- Código HTML --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html lang="pt-br"&gt;
     &lt;head&gt;
@@ -102,6 +103,8 @@
                 esse provident facilis. Doloribus suscipit quisquam quod saepe deleniti asperiores?
             &lt;/p&gt;
         &lt;/main&gt;
+
+        &lt;!-- Código JavaScript --&gt;
         &lt;script&gt;
 
             let isDarkMode = false;

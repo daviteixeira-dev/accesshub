@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;!-- Explicação no próprio texto --&gt;
 &lt;p&gt;A ONU (Organização das Nações Unidas) é um órgão internacional criado em 1945.&lt;/p&gt;
 

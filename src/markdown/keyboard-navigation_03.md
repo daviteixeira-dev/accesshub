@@ -1,6 +1,5 @@
 <Code language='javascript'>
-
-//Codigo JavaScript
+// Código JavaScript
 document.addEventListener("keydown", function(event){
 
     let elementsWithTabIndex = Array.from(document.querySelectorAll("[tabindex]"));

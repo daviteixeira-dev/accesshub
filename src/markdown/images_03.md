@@ -1,15 +1,13 @@
 <Code language='html'>
-
-// Código HTML
-
-&lt;!--Codigo da página onde a Imagem está localizada--&gt;
+&lt;!-- Código HTML --&gt;
+&lt;!-- Código da página onde a Imagem está localizada --&gt;
 &lt;img
     src='grafico.jpg'
     alt='Infográfico sobre selos e certificações conscientes'
 /&gt;
 &lt;p&gt;&lt;a href='/selos-e-certificacoes.html'&gt;Conteúdo texto do Inforgráfico&lt;/a&gt; - disponível&lt;/p&gt;
-&lt;!--Codigo da página de descrição--&gt;
 
+&lt;!-- Código da página de descrição --&gt;
 &lt;h1&gt;Selos e certificações conscientes&lt;/h1&gt;
 &lt;p&gt;Conheças os selos e certificações que atestam a qualidade e responsabilidade das empresas na produção&lt;/p&gt;
 &lt;dl&gt;

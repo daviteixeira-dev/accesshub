@@ -1,12 +1,9 @@
 <Code language='html'>
-
-Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;div class="getMascara"&gt;&lt;/div&gt;
 &lt;button title="Máscara de leitura" onclick="ReadMask()"&gt;M&lt;/button&gt;
 
-Código CSS
-
+&lt;!-- Código CSS --&gt;
 &lt;style&gt;
 
 .mascara {
@@ -29,8 +26,7 @@ Código CSS
 
 &lt;/style&gt;
 
-Código JavaScript
-
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
     let getMascara = document.querySelector("getMascara");
 

@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;nav id='bloco-conteudo'&gt;
     &lt;p&gt;Bem-Vindo(a), você deseja: &lt;/p&gt;
     &lt;ul&gt;

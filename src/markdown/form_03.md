@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;form&gt;
     &lt;label for="nome"&gt;Nome: &lt;/label&gt;
     &lt;input type="text" name="nome" id="nome"&gt;

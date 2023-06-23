@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código CSS
-
+&lt;!-- Código CSS --&gt;
 &lt;style&gt;
     table, caption, th, td {
         padding: 1rem;
@@ -26,8 +24,7 @@
     }
 &lt;/style&gt;
 
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;table summary="Nesta tabela é apresentado o demostrativo patrimônial de todos os bens do indivíduo X."&gt;
     &lt;caption&gt;Demonstrativo do Patrimônio&lt;/caption&gt;
     &lt;thead&gt;

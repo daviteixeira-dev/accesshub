@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;form action="#" method="post"&gt;
     &lt;label for="nome"&gt;Nome:&lt;/label&gt;
     &lt;input type=text name="nome" id="nome" placeholder="Digite o seu nome" required /&gt;

@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código CSS
-
+&lt;!-- Código CSS --&gt;
 &lt;style&gt;
     input.btLimpar{
         border:0;
@@ -12,7 +10,6 @@
     }
 &lt;/style&gt;
 
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;input type="reset" name="limpar" value="Limpar" class="btLimpar"&gt;
 </Code>

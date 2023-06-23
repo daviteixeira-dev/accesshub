@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;img
     src='grafico.png'
     alt='Gráfico de respostas por regiões do país.'

@@ -1,15 +1,12 @@
 <Code language='html'>
-
-// Código CSS
-
+&lt;!-- Código CSS --&gt;
 &lt;style&gt;
     a:focus, a:hover {
         border: 2px solid #F00;
     }
 &lt;/style&gt;
 
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;ul&gt;
     &lt;li&gt;&lt;a href="/acessibilidade/index.php"&gt;Página Inicial&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="/acessibilidade/eventos.php"&gt;Eventos&lt;/a&gt;&lt;/li&gt;

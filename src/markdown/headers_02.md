@@ -1,7 +1,6 @@
 <Code language='html'>
 
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;h1&gt;Bolo de Morango do Pica-Pau&lt;/h1&gt;
 
 &lt;h2&gt;Ingredientes:&lt;/h2&gt;
@@ -45,5 +44,4 @@ os morangos picados à massa com movimentos suaves.&lt;/p&gt;
 &lt;p&gt;Divida o bolo ao meio horizontalmente e, em seguida, faça uma pequena cavidade com uma colher. Preencha 
 a cavidade com chantilly de morango. Faça mais uma cavidade e espalhe um pouco mais de chantilly 
 por cima. Una as duas metades do bolo e decore com morangos.&lt;/p&gt;
-
 </Code>

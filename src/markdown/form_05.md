@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;form method="post" action="#"&gt;
     &lt;fieldset&gt;
         &lt;legend&gt;Dados Pessoais&lt;/legend&gt;

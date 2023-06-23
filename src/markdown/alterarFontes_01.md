@@ -1,16 +1,13 @@
 
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;button title="Aumentar fonte" onclick="increaseFont()"&gt;(A+)&lt;/button&gt;
 &lt;button title="Tamanho de fonte padrão" onclick="resetFont()"&gt;(A)&lt;/button&gt;
 &lt;button title="Diminuir fonte" onclick="decreaseFont()"&gt;(A-)&lt;/button&gt;
 
 &lt;p class="font-size"&gt;Esse é um texto de exemplo para você observar as funcionalidades.&lt;/p&gt;
 
-// Código JavaScript
-
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
     //Variáveis para armazenar os valores originais da fonte
 

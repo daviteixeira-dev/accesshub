@@ -1,7 +1,5 @@
 <Code language='html'>
-
-// Código HTML
-
+&lt;!-- Código HTML --&gt;
 &lt;video id="video" width='500px' height='300px' controls&gt;
     &lt;source type='video/mp4' src='video/video.mp4'&gt;
         &lt;track
@@ -24,5 +22,4 @@
         &gt;
     Seu navegador não suporta a elemento video.
 &lt;/video&gt;
-
 </Code>

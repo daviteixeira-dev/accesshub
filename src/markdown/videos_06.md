@@ -1,5 +1,5 @@
 <Code language='html'>
-// Código HTML
+&lt;!-- Código HTML --&gt;
 &lt;label for="speed"&gt;Velocidade:&lt;/label&gt;
 &lt;select id="speed" onchange="changePlaybackSpeed()"&gt;
     &lt;option value="0.25"&gt;0.25x&lt;/option&gt;
@@ -10,7 +10,7 @@
 &lt;/select&gt;
 &lt;video id="video">&lt;/video&gt;
 
-// Código JavaScript
+&lt;!-- Código JavaScript --&gt;
 &lt;script&gt;
 
 let meuVideo = document.getElementById("video");
