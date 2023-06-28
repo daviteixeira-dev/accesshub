@@ -22,7 +22,8 @@ import puzzle from '../../public/puzzle.png';
 
 const Introduction = () => {
 
-  const bgColor = useColorModeValue('gray.300', 'gray.700');
+  const bgColor = useColorModeValue('gray.200', 'gray.700');
+  const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900');
 
   return (
     <Flex>
@@ -164,7 +165,6 @@ const Introduction = () => {
             textAlign='center'
             alignItems='center'
             borderRadius='1rem'
-            // border='1px solid red'
             flexDirection='column'
             justifyContent='center'
             background={bgColor}
@@ -180,6 +180,7 @@ const Introduction = () => {
               as='h3'
               my='1rem'
               fontWeight='600'
+              color={textColor}
               fontSize='1.5rem'
               fontFamily='Inter'
             >
@@ -190,6 +191,7 @@ const Introduction = () => {
               mb='1rem'
               fontWeight='500'
               fontSize='1.2rem'
+              color={textColor}
               fontFamily='Inter'
             >
               O desenvolvimento do AccessHub é uma iniciativa para a construção de um projeto open-source 
