@@ -108,7 +108,7 @@ const PageAboutRecommendations = () => {
                         fontFamily='Inter'
                     >
                         Quando se trata de acessibilidade, as principais recomendações são os Padrões 
-                        de <Link href='https://www.w3c.br/Padroes/WebDesignAplicacoes'> Web Design e Aplicações</Link>, que 
+                        de <Link color='blue.900' href='https://www.w3c.br/Padroes/WebDesignAplicacoes' textDecor='underline' isExternal> Web Design e Aplicações</Link>, que 
                         abrangem o desenvolvimento de páginas da web, incluindo HTML5, CSS, SVG, Ajax e 
                         outras tecnologias para WebApps, bem como o padrão internacional de 
                         acessibilidade WCAG, internacionalização e dispositivos móveis.
