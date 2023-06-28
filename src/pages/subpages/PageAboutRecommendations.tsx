@@ -378,11 +378,6 @@ const PageAboutRecommendations = () => {
                         alignItems={['start', 'start', 'center', 'center']}
                     >
                         Disponibilizar documentos em formatos acessíveis
-
-                        <BadgeWCAGInfoNumber 
-                            textWCAG='Sem Critério'
-                            tooltipText='É uma recomendação do eMAG'
-                        />
                     </Heading>
 
                     <Text
