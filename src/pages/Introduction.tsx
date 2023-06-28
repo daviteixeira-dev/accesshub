@@ -195,7 +195,7 @@ const Introduction = () => {
               fontFamily='Inter'
             >
               O desenvolvimento do AccessHub é uma iniciativa para a construção de um projeto open-source 
-              para a comunidade e contribuições são bem-vindas. Para contribuir, <Link color='blue.500' textDecor='underline' href='https://github.com/daviteixeira-btm/accesshub/pulls' isExternal >acesse e use o mecanismo de 
+              para a comunidade e contribuições são bem-vindas. Para contribuir, <Link color='blue.900' textDecor='underline' href='https://github.com/daviteixeira-btm/accesshub/pulls' isExternal >acesse e use o mecanismo de 
               contribuição do GitHub</Link>, você pode encontar o passo a passo disponibilizado na descrição do projeto.
             </Text>
 
