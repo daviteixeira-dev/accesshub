@@ -51,7 +51,6 @@ const MenuSideBar = () => {
     const colorToogle = useColorModeValue('yellow.300', 'orange.300');
     const menuSideBarColor = useColorModeValue('gray.200', 'gray.800');
     const menuSideBarColorBg = useColorModeValue('#cbd5e0', '#bee3f8');
-    const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
 
     return (
         <Flex
@@ -125,23 +124,25 @@ const MenuSideBar = () => {
             >
                 {
                     sideBarItem.map((item, index) => (
-                        <NavLink 
-                            key={index} 
-                            to={item.path} 
-                            style={({ isActive }) => 
-                                isActive 
-                                ? { 
-                                    background: menuSideBarColorBg, borderRadius: '.5rem', margin: '.5rem 0'
-                                } : {background: 'none', margin: '.5rem 0'}
-                            }
+                        <Flex
+                            as='li'
+                            m='.5rem 0'
+                            width='100%'
+                            display='flex'
+                            alignItems='center'
+                            borderRadius='.5rem'
+                            _hover={{ background: menuSideBarColorBg }}
+                            justifyContent={navSize == 'small' ? 'center' : 'start'}
                         >
-                            <Flex
-                                as='li'
-                                p='.5rem'
-                                alignItems='center'
-                                borderRadius='.5rem'
-                                _hover={{ background: menuSideBarColorBg }}
-                                justifyContent={navSize == 'small' ? 'center' : 'start'}
+                            <NavLink 
+                                key={index} 
+                                to={item.path}
+                                style={({ isActive }) => 
+                                    isActive 
+                                    ? { 
+                                        background: menuSideBarColorBg, borderRadius: '.5rem',  display: 'flex', padding: '.5rem'
+                                    } : {background: 'none', display: 'flex', padding: '.5rem'}
+                                }
                             >
                                 <Icon
                                     fontSize='1.5rem'
@@ -151,8 +152,8 @@ const MenuSideBar = () => {
                                 </Icon>
 
                                 <MenuSideBarItem menuOption={item.name} navSize={navSize} />
-                            </Flex>
-                        </NavLink>
+                            </NavLink>
+                        </Flex>
                     ))
                 }
             </Flex>

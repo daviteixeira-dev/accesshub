@@ -11,8 +11,9 @@ const MenuSideBarItem = (props: MenuSideBarItemProps) => {
 
     return (
         <Flex
-            ml='1rem' 
-            fontSize='1rem' 
+            ml='1rem'
+            width='12rem'
+            fontSize='1rem'
             fontWeight='500' 
             color={menuIconsTextColor} 
             _hover={{ textDecor: 'none' }} 
