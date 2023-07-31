@@ -35,4 +35,7 @@
   <li><a href='https://accesshub.vercel.app/componentes/mascara-de-leitura'>Funcionalidade para a utilização da Máscara de Leitura</a></li>
 </ul>
 
+<h2>Como contribuir?</h2>
+<p>Por favor, leia nossas <a href='/src'>diretrizes de contribuição</a>. Estão incluídas instruções para abrir <span lang='en'><i>issues</i></span>, padrões de codificação e notas sobre desenvolvimento. Lembre-se que todo o código desenvolvido para as funcionalidades tem que está padronizado de acordo com as diretrizes do WCAG e eMAG.</p>
+
 ##### Gostou do AccessHub? Então dê a esse repósitorio uma estrela! ⭐⬆️
