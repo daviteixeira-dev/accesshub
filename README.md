@@ -36,7 +36,7 @@
 </ul>
 
 <h2>Como contribuir?</h2>
-<p>Por favor, leia nossas <a href='/src'>diretrizes de contribuição</a>. Estão incluídas instruções para abrir <span lang='en'><i>issues</i></span>, padrões de codificação e notas sobre desenvolvimento. Lembre-se que todo o código desenvolvido para as funcionalidades tem que está padronizado de acordo com as diretrizes do <a href='https://www.w3.org/TR/WCAG22/'>WCAG</a> e <a href='https://emag.governoeletronico.gov.br/'>eMAG</a>.</p>
+<p>Por favor, leia nossas <a href='https://github.com/daviteixeira-btm/accesshub/blob/main/CONTRIBUTING.md'>diretrizes de contribuição</a>. Estão incluídas instruções para abrir <span lang='en'><i>issues</i></span>, padrões de codificação e notas sobre desenvolvimento. Lembre-se que todo o código desenvolvido para as funcionalidades tem que está padronizado de acordo com as diretrizes do <a href='https://www.w3.org/TR/WCAG22/'>WCAG</a> e <a href='https://emag.governoeletronico.gov.br/'>eMAG</a>.</p>
 
 <h2>Boas primeiras <i lang='en'>Issues</i></h2>
 <p>Para ajudá-lo a se familiarizar com nosso processo de contribuição, temos uma tabela de diretrizes da WCAG que mostra o cenário atual do projeto e quais foram implementadas. Este é um ótimo lugar para começar.</p>
