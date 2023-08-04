@@ -35,6 +35,13 @@
   <li><a href='https://accesshub.vercel.app/componentes/mascara-de-leitura'>Funcionalidade para a utilização da Máscara de Leitura</a></li>
 </ul>
 
+<h2>Tecnologias</h2>
+
+<div align='center'>
+<a href=''><img src='https://avatars.githubusercontent.com/u/9950313?s=200&v=4' width='50' alt='NodeJS'/></a><a href=''><img src='https://avatars.githubusercontent.com/u/65625612?s=200&v=4' width='60' alt='ViteJS'/></a><a href=''><img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png' width='60' alt='ReactJS'/></a><a href=''><img src='https://miro.medium.com/v2/resize:fit:494/1*F1iFV5NTRN9YrAIC2VtFaA.png' width='60' alt='ReactRouterV6'/></a><a href=''><img src='https://avatars.githubusercontent.com/u/54212428?s=200&v=4' width='60' alt='Chakra-UI'/></a><a href=''><img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png' width='60' alt='TypeScript'/></a>
+</div>
+
+
 <h2>Como contribuir?</h2>
 <p>Por favor, leia nossas <a href='https://github.com/daviteixeira-btm/accesshub/blob/main/CONTRIBUTING.md'>diretrizes de contribuição</a>. Estão incluídas instruções para abrir <span lang='en'><i>issues</i></span>, padrões de codificação e notas sobre desenvolvimento. Lembre-se que todo o código desenvolvido para as funcionalidades tem que está padronizado de acordo com as diretrizes do <a href='https://www.w3.org/TR/WCAG22/'>WCAG</a> e <a href='https://emag.governoeletronico.gov.br/'>eMAG</a>.</p>
 
