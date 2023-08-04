@@ -6,6 +6,10 @@
   <p><i>AccessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web, possibilitando a apresentação de padrões e materiais de suporte para ajudar na construção de páginas Web acessíveis.</i></p>
   <a href='https://www.accesshub.vercel.app'><b>www.accesshub.vercel.app</b></a>
 </div>
+<br/>
+<div align='center'>
+  <img src='https://img.shields.io/badge/version-beta-yellow'/> <a href='https://github.com/daviteixeira-btm/accesshub/blob/main/LICENSE'><img src='https://img.shields.io/badge/licence-MIT-green'/></a>
+</div>
 
 <h2>Documentação</h2>
 <p>Saiba mais sobre como usar o <a href='https://www.accesshub.vercel.app'>AccessHub no site oficial!</a></p>
