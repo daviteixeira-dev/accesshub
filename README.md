@@ -37,8 +37,10 @@
 
 <h2>Tecnologias</h2>
 
+> Para o desenvolvimento do AccessHub, atualmente é utilizado as seguintes tecnologias:
+
 <div align='center'>
-<a href=''><img src='https://avatars.githubusercontent.com/u/9950313?s=200&v=4' width='50' alt='NodeJS'/></a><a href=''><img src='https://avatars.githubusercontent.com/u/65625612?s=200&v=4' width='60' alt='ViteJS'/></a><a href=''><img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png' width='60' alt='ReactJS'/></a><a href=''><img src='https://miro.medium.com/v2/resize:fit:494/1*F1iFV5NTRN9YrAIC2VtFaA.png' width='60' alt='ReactRouterV6'/></a><a href=''><img src='https://avatars.githubusercontent.com/u/54212428?s=200&v=4' width='60' alt='Chakra-UI'/></a><a href=''><img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png' width='60' alt='TypeScript'/></a>
+<a href='https://nodejs.org/en'><img src='/archives/images/logo-nodejs.png' width='100' alt='NodeJS'/></a><a href='https://vitejs.dev/'><img src='/archives/images/logo-vitejs.png' width='100' alt='ViteJS'/></a><a href='https://react.dev/'><img src='/archives/images/logo-reactjs.png' width='100' alt='ReactJS'/></a><a href='https://reactrouter.com/en/main'><img src='/archives/images/logo-react-router-v6.png' width='100' alt='ReactRouterV6'/></a><a href='https://chakra-ui.com/'><img src='/archives/images/logo-chakra-ui.png' width='100' alt='Chakra-UI'/></a><a href='https://www.typescriptlang.org/'><img src='/archives/images/logo-typescript.png' width='100' alt='TypeScript'/></a>
 </div>
 
 
