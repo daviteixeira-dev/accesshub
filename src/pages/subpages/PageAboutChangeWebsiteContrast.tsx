@@ -69,6 +69,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         Oferecendo um Contraste Mínimo entre Plano de Fundo e Primeiro Plano
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.3'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum'
@@ -117,6 +118,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         Contraste Aprimorado
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.6'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.6 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced'

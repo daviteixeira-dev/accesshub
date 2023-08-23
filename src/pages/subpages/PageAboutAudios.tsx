@@ -68,19 +68,22 @@ const PageAboutAudios = () => {
                     >
                         Fornecer alternativa para áudio
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.2'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.6'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.6 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
@@ -124,7 +127,8 @@ const PageAboutAudios = () => {
                     >
                         Fornecer controle de áudio para o som
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.2'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-control'

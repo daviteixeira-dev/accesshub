@@ -83,6 +83,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Organize o código HTML de forma lógica e semântica
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
@@ -142,6 +143,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Identifique o idioma principal da página
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/language-of-page'
@@ -175,6 +177,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Informe mudanças de idioma no conteúdo
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts'
@@ -206,6 +209,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Ofereça um título descritivo e informativo para a página
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.2'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/page-titled'
@@ -240,6 +244,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Dividir as áreas de informação
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.3'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation'
@@ -525,6 +530,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Evite criar páginas com atualizações automáticas periódicas
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.5'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
@@ -571,6 +577,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Evite utilizar redirecionamento automático de páginas
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.5'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
@@ -602,6 +609,7 @@ const PageAboutHTMLInitialStructure = () => {
                         Fornecer alternativa para modificar o limite de tempo
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.2.1'
                             tooltipText='Ver Critério WCAG de Sucesso 2.2.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable'

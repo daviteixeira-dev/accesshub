@@ -69,6 +69,7 @@ const PageAboutHeaders = () => {
                         Utilizando corretamente os níveis de cabeçalho
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
@@ -104,7 +105,8 @@ const PageAboutHeaders = () => {
                     >
                         Criando títulos de seção significativos e bem estruturados
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.10'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/section-headings'

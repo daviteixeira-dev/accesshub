@@ -3,20 +3,20 @@ import {
     Text,
     Hide,
     Show,
+    Link,
     Heading,
     Container,
     useColorModeValue,
-    Link
 } from '@chakra-ui/react';
 
 import {
+    Tr,
+    Th,
+    Td,
     Table,
     Thead,
     Tbody,
     Tfoot,
-    Tr,
-    Th,
-    Td,
     TableCaption,
     TableContainer,
   } from '@chakra-ui/react'
@@ -116,27 +116,31 @@ const CurrentScenario = () => {
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.1.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded'
@@ -146,21 +150,24 @@ const CurrentScenario = () => {
                                 <Tr>
                                     <Td textAlign='center' width='25%'>[1.2.4]</Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.5'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.5 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.6'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.6 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.7'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.7 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded'
@@ -169,7 +176,8 @@ const CurrentScenario = () => {
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.2.8'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.2.8 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded'
@@ -178,13 +186,15 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[1.2.9]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.3.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.3.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.3.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence'
@@ -193,7 +203,8 @@ const CurrentScenario = () => {
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.3.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.3.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'
@@ -202,6 +213,7 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[1.3.4]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.3.5'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.3.5 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose'
@@ -211,14 +223,16 @@ const CurrentScenario = () => {
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.4.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.4.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/use-of-color'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.4.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.4.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-control'
@@ -226,6 +240,7 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.4.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.4.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum'
@@ -233,6 +248,7 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.4.4'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.4.4 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/resize-text'
@@ -243,6 +259,7 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[1.4.5]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 1.4.6'
                                             tooltipText='Ver Critério WCAG de Sucesso 1.4.6 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced'
@@ -294,21 +311,24 @@ const CurrentScenario = () => {
                             <Tbody>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.1.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.1.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.1.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.1.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.1.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception'
@@ -319,13 +339,15 @@ const CurrentScenario = () => {
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.2.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.2.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.2.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
@@ -338,7 +360,8 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[2.2.5]</Td>
                                     <Td textAlign='center' width='25%'>[2.2.6]</Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.3.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.3.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold'
@@ -350,6 +373,7 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[2.3.3]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks'
@@ -357,13 +381,15 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/page-titled'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-order'
@@ -373,6 +399,7 @@ const CurrentScenario = () => {
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.4'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.4 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context'
@@ -380,7 +407,8 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>[2.4.5]</Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.6'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.6 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels'
@@ -388,6 +416,7 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.7'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.7 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-visible'
@@ -396,7 +425,8 @@ const CurrentScenario = () => {
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.8'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.8 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/location'
@@ -404,13 +434,15 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.9'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.9 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 2.4.10'
                                             tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/section-headings'
@@ -468,6 +500,7 @@ const CurrentScenario = () => {
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.1.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.1.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/language-of-page'
@@ -475,20 +508,23 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.1.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.1.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.1.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.1.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/unusual-words'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.1.4'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.1.4 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/abbreviations'
@@ -497,7 +533,8 @@ const CurrentScenario = () => {
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.1.5'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.1.5 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/reading-level'
@@ -507,6 +544,7 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[3.2.1]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.2.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.2.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-input'
@@ -516,13 +554,15 @@ const CurrentScenario = () => {
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.2.3'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.2.3 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.2.4'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.2.4 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification'
@@ -530,6 +570,7 @@ const CurrentScenario = () => {
                                     </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.2.5'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
@@ -541,6 +582,7 @@ const CurrentScenario = () => {
                                     <Td textAlign='center' width='25%'>[3.3.1]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 3.3.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 3.3.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions'
@@ -592,14 +634,16 @@ const CurrentScenario = () => {
                             <Tbody>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 4.1.1'
                                             tooltipText='Ver Critério WCAG de Sucesso 4.1.1 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/parsing'
                                         />
                                     </Td>
                                     <Td textAlign='center' width='25%'>
-                                        <BadgeWCAGInfoNumber 
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#276749'
                                             textWCAG='Critério 4.1.2'
                                             tooltipText='Ver Critério WCAG de Sucesso 4.1.2 (inglês)'
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value'

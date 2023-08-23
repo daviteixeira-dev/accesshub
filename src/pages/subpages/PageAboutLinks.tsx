@@ -84,7 +84,8 @@ const PageAboutLinks = () => {
                     >
                         Separação de links adjacentes
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
@@ -143,7 +144,8 @@ const PageAboutLinks = () => {
                     >
                         Abrir novas instâncias apenas com solicitação do usuário
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.5'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.5 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
@@ -229,12 +231,14 @@ const PageAboutLinks = () => {
                         Descrição clara e sucinta dos links
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.4'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.4 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context'
                         />
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.9'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.9 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only'
@@ -316,6 +320,7 @@ const PageAboutLinks = () => {
                         Evidenciar visualmente o elemento em foco
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.7'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.7 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-visible'

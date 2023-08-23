@@ -69,7 +69,8 @@ const PageAboutListenImageDescription = () => {
                     >
                         Recursos sensoriais
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.3'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'

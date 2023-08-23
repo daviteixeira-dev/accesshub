@@ -65,25 +65,29 @@ const PageAboutReadingMask = () => {
                     >
                         Solução para aprimorar a experiência de leitura
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.3'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum'
                         />
                         
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap'
                         />
                         
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts'
                         />
                         
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 4.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 4.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/name-role-value'

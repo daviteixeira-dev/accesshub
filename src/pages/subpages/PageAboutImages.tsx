@@ -79,7 +79,8 @@ const PageAboutImages = () => {
                     >
                         Fornecer alternativa em texto para as imagens de um site
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
@@ -282,7 +283,8 @@ const PageAboutImages = () => {
                     >
                         Utilizar mapas de imagem de forma acessível
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'

@@ -94,7 +94,8 @@ const PageAboutTable = () => {
                     >
                         Utilizando títulos e resumos adequados nas tabelas
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'

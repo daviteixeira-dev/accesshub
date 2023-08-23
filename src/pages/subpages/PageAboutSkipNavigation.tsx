@@ -69,6 +69,7 @@ const PageAboutSkipNavigation = () => {
                         Crie âncoras para acesso direto a blocos de conteúdo
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.1'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks'

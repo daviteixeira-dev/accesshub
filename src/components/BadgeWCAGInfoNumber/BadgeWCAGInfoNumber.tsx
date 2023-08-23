@@ -1,13 +1,14 @@
 import { 
     Link,
     Badge,
-    Tooltip
+    Tooltip,
 } from '@chakra-ui/react';
 
 interface BadgeProps {
     textWCAG: string,
+    bgColor?: string,
     linkWCAG?: string,
-    tooltipText: string
+    tooltipText: string,
 }
 
 const BadgeWCAGInfoNumber = (props: BadgeProps) => {
@@ -20,7 +21,7 @@ const BadgeWCAGInfoNumber = (props: BadgeProps) => {
                 p='.3rem'
                 variant='solid'
                 fontSize='.8rem'
-                bg={'#276749'}
+                bg={props.bgColor}
                 borderRadius='.3rem'
                 color='whiteAlpha.900'
                 ml={[0, 0, '.5rem', '.5rem']}

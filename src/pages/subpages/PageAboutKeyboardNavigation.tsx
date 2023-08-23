@@ -180,12 +180,14 @@ const PageAboutKeyboardNavigation = () => {
                         Disponibilização de todas as Funções da Página via Teclado
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 2.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard'
                         />
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap'
@@ -323,7 +325,8 @@ const PageAboutKeyboardNavigation = () => {
                     >
                         Teclado - Sem Exceção
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.1.3'
                             tooltipText='Ver Critério WCAG de Sucesso 2.1.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception'

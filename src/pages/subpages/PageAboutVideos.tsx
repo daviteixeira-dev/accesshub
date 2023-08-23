@@ -68,19 +68,22 @@ const PageAboutVideos = () => {
                     >
                         Providenciar Alternativas para Vídeos
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.2'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.6'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.6 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
@@ -487,25 +490,29 @@ const PageAboutVideos = () => {
                     >
                         Audiodescrição ou transcrição descritiva em texto
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.3'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.5'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.5 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.7'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.7 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.2.8'
                             tooltipText='Ver Critério WCAG de Sucesso 1.2.8 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded'

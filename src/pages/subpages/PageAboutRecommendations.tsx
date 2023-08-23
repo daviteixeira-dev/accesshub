@@ -74,13 +74,15 @@ const PageAboutRecommendations = () => {
                     >
                         Respeitar os Padrões Web
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 4.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 4.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/parsing'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 4.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 4.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value'
@@ -141,7 +143,8 @@ const PageAboutRecommendations = () => {
                     >
                         Cabeçalhos e rótulos
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.6'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.6 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels'
@@ -175,13 +178,15 @@ const PageAboutRecommendations = () => {
                     >
                         Ordenar de forma lógica e intuitiva a leitura e tabulação
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.2'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.3'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-order'
@@ -241,13 +246,15 @@ const PageAboutRecommendations = () => {
                     >
                         Não utilizar apenas a cor para diferenciar elementos
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.3'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/use-of-color'
@@ -313,7 +320,8 @@ const PageAboutRecommendations = () => {
                     >
                         Não incluir situações com intermitência de tela
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 2.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold'
@@ -344,7 +352,8 @@ const PageAboutRecommendations = () => {
                     >
                         Assegurar o controle do usuário sobre as alterações temporais do conteúdo
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.2.2'
                             tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
@@ -418,7 +427,8 @@ const PageAboutRecommendations = () => {
                     >
                         Garantir a leitura e compreensão das informações
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.5'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.5 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/reading-level'
@@ -523,13 +533,15 @@ const PageAboutRecommendations = () => {
                     >
                         Exibir uma explicação para siglas, abreviaturas e palavras incomuns
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.3'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/unusual-words'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.4'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.4 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/abbreviations'
@@ -574,7 +586,8 @@ const PageAboutRecommendations = () => {
                     >
                         Fornecer controle de animação
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.2.2'
                             tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
@@ -604,13 +617,15 @@ const PageAboutRecommendations = () => {
                     >
                         Garantir a acessibilidade dos objetos programáveis
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 2.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.1.2'
                             tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap'

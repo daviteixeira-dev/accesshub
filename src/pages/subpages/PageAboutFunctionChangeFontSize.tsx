@@ -69,6 +69,7 @@ const PageAboutFunctionChangeFontSize = () => {
                         Possibilitando o redimensionamento sem perda de funcionalidade
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.4'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.4 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/resize-text'
@@ -214,24 +215,28 @@ const PageAboutFunctionChangeFontSize = () => {
                         Critérios da WCAG que são atendidos
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.4.4'
                             tooltipText='Ver Critério WCAG de Sucesso 1.4.4 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/resize-text'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.4'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.4 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.2'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-input'
                         />
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.4'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.4 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification'

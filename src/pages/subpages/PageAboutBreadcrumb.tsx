@@ -70,7 +70,8 @@ const PageAboutBreadcrumb = () => {
                     >
                         Informando ao usuário sua localização na página de forma acessível
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.8'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.8 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/location'

@@ -71,6 +71,7 @@ const PageAboutForm = () => {
                         Fornecer alternativa em texto para os botões de imagem de formulários
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
@@ -117,6 +118,7 @@ const PageAboutForm = () => {
                         Associar etiquetas aos campos
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
@@ -150,6 +152,7 @@ const PageAboutForm = () => {
                         Identificar o objeto de entrada
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.5'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.5 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose'
@@ -207,6 +210,7 @@ const PageAboutForm = () => {
                         Estabelecer uma ordem lógica de navegação
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 2.4.3'
                             tooltipText='Ver Critério WCAG de Sucesso 2.4.3 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-order'
@@ -237,6 +241,7 @@ const PageAboutForm = () => {
                         Não provocar automaticamente alteração no contexto
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.2.2'
                             tooltipText='Ver Critério WCAG de Sucesso 3.2.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-input'
@@ -267,6 +272,7 @@ const PageAboutForm = () => {
                         Fornecer instruções para entrada de dados
 
                         <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.3.2'
                             tooltipText='Ver Critério WCAG de Sucesso 3.3.2 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions'
@@ -437,7 +443,8 @@ const PageAboutForm = () => {
                     >
                         Identificar erros de entrada de dados e confirmar o envio das informações
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 3.1.1'
                             tooltipText='Ver Critério WCAG de Sucesso 3.1.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-focus'
@@ -585,7 +592,8 @@ const PageAboutForm = () => {
                     >
                         Agrupar campos de formulário
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
@@ -627,7 +635,8 @@ const PageAboutForm = () => {
                     >
                         Fornecer estratégias de segurança específicas em vez de CAPTCHA
 
-                        <BadgeWCAGInfoNumber 
+                        <BadgeWCAGInfoNumber
+                            bgColor='#276749'
                             textWCAG='Critério 1.3.1'
                             tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
