@@ -9,6 +9,7 @@ import Components from './pages/Components';
 import Introduction from './pages/Introduction';
 import Error404Page from './pages/Error404Page';
 import CreditsSection from './pages/CreditsSection';
+import CurrentScenario from './pages/CurrentScenario';
 
 import PageAboutForm from './pages/subpages/PageAboutForm';
 import PageAboutTable from './pages/subpages/PageAboutTable';
@@ -35,6 +36,7 @@ function App(){
         <Route path='/' element={<HomePage />} />
         <Route path='/componentes' element={<Components />} />
         <Route path='/introducao' element={<Introduction />} />
+        <Route  path='/current-scenario' element={<CurrentScenario />} />
         <Route path='/credits' element={<CreditsSection />} />
         <Route path='*' element={<Error404Page />} />
         

@@ -15,6 +15,7 @@ import {
 
 import {
     FaHome,
+    FaTasks,
     FaThLarge,
     FaRegCompass,
 } from 'react-icons/fa';
@@ -43,6 +44,11 @@ const MenuSideBar = () => {
             path: '/componentes',
             name: 'Componentes',
             icon: <FaThLarge />
+        },
+        {
+            path: '/current-scenario',
+            name: 'Cenário atual',
+            icon: <FaTasks />
         },
     ]
 
