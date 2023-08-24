@@ -148,7 +148,14 @@ const CurrentScenario = () => {
                                     </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[1.2.4]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.2.4'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.2.4 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-live'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -183,7 +190,14 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[1.2.9]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.2.9'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.2.9 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-live'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -210,7 +224,14 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[1.3.4]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.3.4'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.3.4 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/orientation'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -219,7 +240,14 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[1.3.6]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.3.6'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.3.6 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
@@ -256,7 +284,14 @@ const CurrentScenario = () => {
                                     </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[1.4.5]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.5'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.5 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/images-of-text'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -265,17 +300,66 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[1.4.7]</Td>
-                                    <Td textAlign='center' width='25%'>[1.4.8]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.7'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.7 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/low-or-no-background-audio'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.8'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.8 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[1.4.9]</Td>
-                                    <Td textAlign='center' width='25%'>[1.4.10]</Td>
-                                    <Td textAlign='center' width='25%'>[1.4.11]</Td>
-                                    <Td textAlign='center' width='25%'>[1.4.12]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.9'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.9 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.10'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.10 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/reflow'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.11'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.11 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.12'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.12 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/text-spacing'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[1.4.13]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 1.4.13'
+                                            tooltipText='Ver Critério WCAG de Sucesso 1.4.13 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                     <Td textAlign='center' width='25%'>-</Td>
@@ -334,7 +418,14 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[2.1.4]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.1.4'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.1.4 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
                                     <Td textAlign='center' width='25%'>
@@ -353,12 +444,40 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[2.2.3]</Td>
-                                    <Td textAlign='center' width='25%'>[2.2.4]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.2.3'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.2.3 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-timing'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.2.4'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.2.4 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/interruptions'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[2.2.5]</Td>
-                                    <Td textAlign='center' width='25%'>[2.2.6]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.2.5'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.2.5 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/re-authenticating'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.2.6'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.2.6 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/timeouts'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -367,10 +486,24 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[2.3.2]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.3.2'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.3.2 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/three-flashes'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[2.3.3]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.3.3'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.3.3 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -405,7 +538,14 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[2.4.5]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.4.5'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.4.5 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -448,23 +588,59 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/section-headings'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[2.4.11]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.5.1'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.5.1 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[2.4.12]</Td>
-                                    <Td textAlign='center' width='25%'>[2.4.13]</Td>
-                                    <Td textAlign='center' width='25%'>[2.5.1]</Td>
-                                    <Td textAlign='center' width='25%'>[2.5.2]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.5.2'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.5.2 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.5.3'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.5.3 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/label-in-name'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.5.4'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.5.4 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.5.5'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.5.5 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/target-size'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[2.5.3]</Td>
-                                    <Td textAlign='center' width='25%'>[2.5.4]</Td>
-                                    <Td textAlign='center' width='25%'>[2.5.5]</Td>
-                                    <Td textAlign='center' width='25%'>[2.5.6]</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td textAlign='center' width='25%'>[2.5.7]</Td>
-                                    <Td textAlign='center' width='25%'>[2.5.8]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 2.5.6'
+                                            tooltipText='Ver Critério WCAG de Sucesso 2.5.6 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/concurrent-input-mechanisms'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>-</Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                 </Tr>
@@ -540,8 +716,22 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/reading-level'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[3.1.6]</Td>
-                                    <Td textAlign='center' width='25%'>[3.2.1]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.1.6'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.1.6 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pronunciation'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.2.1'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.2.1 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/on-focus'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -576,10 +766,16 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/change-on-request'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[3.2.6]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.3.1'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.3.1 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/error-identification'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[3.3.1]</Td>
                                     <Td textAlign='center' width='25%'>
                                         <BadgeWCAGInfoNumber
                                             bgColor='#276749'
@@ -588,17 +784,40 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[3.3.3]</Td>
-                                    <Td textAlign='center' width='25%'>[3.3.4]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.3.3'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.3.3 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.3.4'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.3.4 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data'
+                                        />
+                                    </Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.3.5'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.3.5 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/help'
+                                        />
+                                    </Td>
                                 </Tr>
                                 <Tr>
-                                    <Td textAlign='center' width='25%'>[3.3.5]</Td>
-                                    <Td textAlign='center' width='25%'>[3.3.6]</Td>
-                                    <Td textAlign='center' width='25%'>[3.3.7]</Td>
-                                    <Td textAlign='center' width='25%'>[3.3.8]</Td>
-                                </Tr>
-                                <Tr>
-                                    <Td textAlign='center' width='25%'>[3.3.9]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 3.3.6'
+                                            tooltipText='Ver Critério WCAG de Sucesso 3.3.6 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-all'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                     <Td textAlign='center' width='25%'>-</Td>
@@ -649,7 +868,14 @@ const CurrentScenario = () => {
                                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value'
                                         />
                                     </Td>
-                                    <Td textAlign='center' width='25%'>[4.1.3]</Td>
+                                    <Td textAlign='center' width='25%'>
+                                        <BadgeWCAGInfoNumber
+                                            bgColor='#C53030'
+                                            textWCAG='Critério 4.1.3'
+                                            tooltipText='Ver Critério WCAG de Sucesso 4.1.3 (inglês)'
+                                            linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/status-messages'
+                                        />
+                                    </Td>
                                     <Td textAlign='center' width='25%'>-</Td>
                                 </Tr>
                             </Tbody>
