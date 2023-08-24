@@ -27,6 +27,7 @@ import Footer from '../components/Footer/Footer';
 import MenuMobile from '../components/TopMenu/MenuMobile';
 import MenuSideBar from '../components/MenuSideBar/MenuSideBar';
 import BadgeWCAGInfoNumber from '../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
+import ComponentStatusPanel from '../components/ComponentStatusPanel/ComponentStatusPanel';
 
 const CurrentScenario = () => {
 
@@ -90,8 +91,22 @@ const CurrentScenario = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O projeto atualmente encontra-se na <Link color='blue.900' href='https://www.w3.org/WAI/WCAG21/Understanding/' textDecor='underline' isExternal> versão 2.1 do WCAG </Link>.
+                        O projeto atualmente encontra-se na <Link color='blue.900' href='https://www.w3.org/WAI/WCAG21/Understanding/' textDecor='underline' isExternal> versão 2.1 do WCAG</Link>.
                     </Text>
+
+                    <Text
+                        mb='1rem'
+                        fontWeight='400'
+                        fontSize='1.2rem'
+                        fontFamily='Inter'
+                    >
+                        Além disso, os códigos open-source atualmente não apresentam, em sua maioria, o desenvolvimento 
+                        incluíndo o <Link color='blue.900' href='https://www.w3.org/WAI/standards-guidelines/aria/' textDecor='underline' isExternal> WAI-ARIA</Link>, sendo este necessário para uma melhor acessibilidade. 
+                    </Text>
+
+                    <Flex>
+                        <ComponentStatusPanel />
+                    </Flex>
 
                     <TableContainer
                         padding='.5rem'
