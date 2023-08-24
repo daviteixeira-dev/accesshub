@@ -15,7 +15,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-import { FaHome, FaRegCompass, FaThLarge } from 'react-icons/fa';
+import { FaHome, FaRegCompass, FaTasks, FaThLarge } from 'react-icons/fa';
 
 import { FiMenu } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
@@ -53,6 +53,11 @@ const MenuMobile = (props: MenuItemsProps) => {
         path: '/componentes',
         name: 'Componentes',
         icon: <FaThLarge />
+    },
+    {
+      path: '/current-scenario',
+      name: 'Cenário atual',
+      icon: <FaTasks />
     },
   ]
 
