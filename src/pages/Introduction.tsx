@@ -218,7 +218,7 @@ const Introduction = () => {
             fontFamily='Inter'
           >
             O AccessHub ainda está em desenvolvimento, podendo receber incrementos conforme a pesquisa 
-            avança. Até o momento temos o trabalho do qual o projeto está sendo realizado:
+            avança. Até o momento, temos a <Link fontWeight='bold' color='blue.900' href='https://repositorio.ufc.br/handle/riufc/73954' textDecor='underline' isExternal> monografia</Link> da qual o projeto foi desenvolvido:
           </Text>
 
           <Text
@@ -227,7 +227,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            SILVA, Davi Teixeira. <Text as='b'>ACCESSHUB: GUIA DE ACESSIBILIDADE PARA DESENVOLVEDORES WEB</Text>. 2023. 55 f. TCC (Graduação) - Curso de Sistemas de Informação, Universidade Federal do Ceará, Quixadá, 2023.
+            <Text as='span' fontWeight='bold' >Citação:</Text> SILVA, Davi Teixeira. <Text as='b'>AccessHub: um guia de acessibilidade para desenvolvedores web</Text>. 2023. 88 f. Trabalho de Conclusão de Curso (Graduação em Sistema de Informação)- Universidade Federal do Ceará, Campus de Quixadá, Quixadá, 2023.
           </Text>
 
         </Flex>
