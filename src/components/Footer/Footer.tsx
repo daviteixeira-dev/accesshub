@@ -91,6 +91,16 @@ const Footer = () => {
                     fontFamily='Inter'
                     color='whiteAlpha.900'
                 >
+                    <NavLink to='/current-scenario'>
+                        Cenário Atual
+                    </NavLink>
+                </ListItem>
+
+                <ListItem
+                    mt='.5rem'
+                    fontFamily='Inter'
+                    color='whiteAlpha.900'
+                >
                     <NavLink to='/credits'>
                         Créditos
                     </NavLink>
@@ -167,7 +177,7 @@ const Footer = () => {
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
                 >
-                    © 2023 Davi Teixeira. This site, library and examples 
+                    © 2023 <Link href='https://github.com/daviteixeira-btm' textDecor='underline' isExternal> Davi Teixeira</Link>. This site, library and examples 
                     are licensed under <Link _hover={{ textDecoration: 'none' }} isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>
                         MIT
                     </Link>.
