@@ -21,7 +21,7 @@ interface CardOfStatusPainelProps {
 
 const CardOfStatusPainel = (props: CardOfStatusPainelProps) => {
     return (
-        <Card border='1px solid gray'>
+        <Card border='1px solid gray' tabIndex={0}>
 
             <CardHeader p='.5rem'>
                 <Heading fontSize='1rem'>

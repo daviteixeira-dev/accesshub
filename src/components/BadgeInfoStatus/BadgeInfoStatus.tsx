@@ -30,13 +30,14 @@ const BadgeInfoStatus = (props: BadgeInfoProps) => {
             border='1px solid gray'
             justifyContent='space-evenly'
         >
-            <Tooltip 
+            <Tooltip
                 placement='top'
                 label={props.tooltipTextWaiAria}
             >
                 <Badge
                     margin='0'
                     padding='0'
+                    tabIndex={0}
                     width='2rem'
                     height='2rem'
                     display='flex'
@@ -59,6 +60,7 @@ const BadgeInfoStatus = (props: BadgeInfoProps) => {
                 <Badge
                     margin='0'
                     padding='0'
+                    tabIndex={0}
                     width='2rem'
                     height='2rem'
                     display='flex'
@@ -81,6 +83,7 @@ const BadgeInfoStatus = (props: BadgeInfoProps) => {
                 <Badge
                     margin='0'
                     padding='0'
+                    tabIndex={0}
                     width='2rem'
                     height='2rem'
                     display='flex'
