@@ -16,6 +16,7 @@
 <ul>
   <li><a href='https://accesshub.vercel.app/introducao'>Introdução</a></li>
   <li><a href='https://accesshub.vercel.app/componentes'>Componentes</a></li>
+  <li><a href='https://accesshub.vercel.app/current-scenario'>Cenário Atual</li>
 </ul>
 <p><b>Componentes de Funcionalidades de Accessibilidade</b></p>
 
@@ -52,7 +53,7 @@
 <p>Por favor, leia nossas <a href='https://github.com/daviteixeira-btm/accesshub/blob/main/CONTRIBUTING.md'>diretrizes de contribuição</a>. Estão incluídas instruções para abrir <span lang='en'><i>issues</i></span>, padrões de codificação e notas sobre desenvolvimento. Lembre-se que todo o código desenvolvido para as funcionalidades tem que está padronizado de acordo com as diretrizes do <a href='https://www.w3.org/TR/WCAG22/'>WCAG</a> e <a href='https://emag.governoeletronico.gov.br/'>eMAG</a>.</p>
 
 <h2>Boas primeiras <i lang='en'>Issues</i></h2>
-<p>Para ajudá-lo a se familiarizar com nosso processo de contribuição, temos uma tabela de diretrizes da WCAG que mostra o cenário atual do projeto e quais foram implementadas. Este é um ótimo lugar para começar.</p>
+<p>Para ajudá-lo a se familiarizar com nosso processo de contribuição, temos uma tabela de diretrizes da WCAG que mostra o <a href="https://accesshub.vercel.app/current-scenario">cenário atual</a> do projeto e quais foram implementadas. Este é um ótimo lugar para começar.</p>
 
 <h2>Licença</h2>
 <p>React é licenciado pelo <a href='https://github.com/daviteixeira-btm/accesshub/blob/main/LICENSE'>MIT</a>.</p>
