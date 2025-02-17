@@ -7,6 +7,8 @@ import {
     CardHeader, 
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import BadgeInfoStatus from '../BadgeInfoStatus/BadgeInfoStatus';
 
 interface CardOfStatusPainelProps {
@@ -17,9 +19,12 @@ interface CardOfStatusPainelProps {
     tooltip_tooltipTextCode: string,
     tooltip_tooltipTextWaiAria: string,
     tooltip_tooltipTextHasText: string
-}
+};
 
 const CardOfStatusPainel = (props: CardOfStatusPainelProps) => {
+
+    const { t } = useTranslation();
+
     return (
         <Card border='1px solid gray' tabIndex={0}>
 
@@ -31,7 +36,7 @@ const CardOfStatusPainel = (props: CardOfStatusPainelProps) => {
 
             <CardBody p='.5rem'>
                 <Text fontSize='.9rem'>
-                    Abaixo, é possível ver os status atuais do componente:
+                    {t('currentScenarioPage.descriptionCardOfStatusPainel')}
                 </Text>
             </CardBody>
 
