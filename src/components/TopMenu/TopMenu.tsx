@@ -1,15 +1,15 @@
 import { 
-    Box, 
     Flex, 
     Text, 
     Link, 
-    Stack, 
+    Stack,
     useColorModeValue
 } from '@chakra-ui/react';
 
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
 import TopMenuLogo from './TopMenuLogo';
+import TranslationButton from '../TranslationButton/TranslationButton';
 
 const MenuItem = ({ children, isLast, to = '/', ...rest }: any) => {
     return (
@@ -27,20 +27,22 @@ const MenuLinks = () => {
     const colorToogle = useColorModeValue('yellow.300', 'orange.300');
 
     return (
-        <Box>
-            <Stack 
-                m={0}
-                pt={0}
-                spacing={8}
-                align='center'
-                direction='row'
-                bgColor={bgColor}
-                color={colorToogle}
-                justify={['space-between', 'space-between', 'flex-end', 'flex-end']}
-            >
-                <ToogleColorMode />
-            </Stack>
-        </Box>
+        <Stack 
+            mt={2}
+            spacing={2}
+            align='center'
+            direction='row'
+            bgColor={bgColor}
+            color={colorToogle}
+            ml={['1rem', '1rem', '0', '0']}
+            justifyContent={['space-between', 'space-evenly', 'flex-end', 'flex-end']}
+        >
+            <ToogleColorMode />
+
+            <TranslationButton language='en'/>
+
+            <TranslationButton language='pt'/>
+        </Stack>
     );
 };
 
@@ -51,8 +53,6 @@ const NavBarContainer = ({ children, ...props }: any) => {
     return (
         <Flex
             top='0'
-            py={4}
-            px={6}
             as='nav'
             w='100%'
             zIndex={2}
@@ -61,9 +61,11 @@ const NavBarContainer = ({ children, ...props }: any) => {
             boxShadow='sm'
             bg={menuColor}
             position='fixed'
+            alignItems='center'
             color='whiteAlpha.900'
-            justify='space-between'
             fontFamily='Inter, sans-serif'
+            padding={['.5rem', '5rem', '.5rem', '1rem 1.5rem']}
+            justifyContent={['center', 'space-between', 'space-between', 'space-between']}
             {...props}
         >
             {children}
