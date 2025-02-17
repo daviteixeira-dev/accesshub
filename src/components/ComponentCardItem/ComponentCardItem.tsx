@@ -41,7 +41,6 @@ const ComponentCardItem = (props: ComponentCardItem) => {
                 >
                     <Image 
                         h='10rem'
-                        src='gibbresh.png' 
                         alt={props.altImage}
                         borderRadius={['.5rem', '.5rem', 0, 0]}
                         fallbackSrc={props.imgLink} 
