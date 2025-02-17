@@ -15,11 +15,15 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { FaHome, FaRegCompass, FaTasks, FaThLarge } from 'react-icons/fa';
 
 import { FiMenu } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
+
 import MenuSideBarItem from '../MenuSideBar/MenuSideBarItem';
+import TranslationButton from '../TranslationButton/TranslationButton';
 
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
 
@@ -31,6 +35,8 @@ interface MenuItemsProps {
 
 const MenuMobile = (props: MenuItemsProps) => {
 
+  const { t } = useTranslation();
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const menuColor = useColorModeValue('blue.600', 'gray.800');
   const buttonBgColor = useColorModeValue('blue.400', 'gray.700');
@@ -41,22 +47,22 @@ const MenuMobile = (props: MenuItemsProps) => {
   const menuMobileItem = [
     {
         path: '/',
-        name: 'Página Inicial',
+        name: 'menuMobile.home',
         icon: <FaHome />
     },
     {
         path: '/introducao',
-        name: 'Introdução',
+        name: 'menuMobile.introduction',
         icon: <FaRegCompass />
     },
     {
         path: '/componentes',
-        name: 'Componentes',
+        name: 'menuMobile.components',
         icon: <FaThLarge />
     },
     {
       path: '/current-scenario',
-      name: 'Cenário atual',
+      name: 'menuMobile.currentScenario',
       icon: <FaTasks />
     },
   ]
@@ -104,9 +110,15 @@ const MenuMobile = (props: MenuItemsProps) => {
             
             <DrawerCloseButton />
 
-            <DrawerHeader>Menu</DrawerHeader>
+            <DrawerHeader>{t('menuMobile.title')}</DrawerHeader>
 
             <DrawerBody>
+
+              <Flex justifyContent="space-evenly">
+                <TranslationButton language='en'/>
+                <TranslationButton language='pt'/>
+              </Flex>
+
               <Flex
                 as='ul'
                 p='1rem'
@@ -139,7 +151,7 @@ const MenuMobile = (props: MenuItemsProps) => {
                           {item.icon}
                         </Icon>
 
-                        <MenuSideBarItem menuOption={item.name} />
+                        <MenuSideBarItem menuOption={t(item.name)} />
                       </Flex>
                     </NavLink>
                   ))
@@ -147,9 +159,10 @@ const MenuMobile = (props: MenuItemsProps) => {
               </Flex>
             </DrawerBody>
 
-            <DrawerFooter>  
+            <DrawerFooter>
+              
               <Button variant='outline' mr={3} onClick={onClose}>
-                Fechar
+                {t('menuMobile.closeButton')}
               </Button>
             </DrawerFooter>
 
