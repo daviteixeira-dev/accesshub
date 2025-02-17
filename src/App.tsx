@@ -1,8 +1,6 @@
-import { 
-  Route, 
-  Routes, 
-  BrowserRouter 
-} from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+
+import './i18n';
 
 import HomePage from './pages/HomePage';
 import Components from './pages/Components';
@@ -32,7 +30,6 @@ function App(){
   return (
     <BrowserRouter>
       <Routes>
-
         <Route path='/' element={<HomePage />} />
         <Route path='/componentes' element={<Components />} />
         <Route path='/introducao' element={<Introduction />} />
@@ -68,7 +65,6 @@ function App(){
         <Route path='/componentes/alterar-tamanho-da-fonte' element={<PageAboutFunctionChangeFontSize />} />
         <Route path='/componentes/alterar-contraste-do-site' element={<PageAboutChangeWebsiteContrast />} />
         <Route path='/componentes/ouvir-descricao-da-imagem' element={<PageAboutListenImageDescription />} />
-
       </Routes>
     </BrowserRouter>
   );
