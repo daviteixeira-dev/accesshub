@@ -8,6 +8,8 @@ import {
     UnorderedList
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../components/Footer/Footer';
@@ -104,11 +106,14 @@ const linkItems = [
 ]
 
 const CreditsSection = () => {
+
+    const { t } = useTranslation();
+    
     return (
         <Flex>
 
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('creditsPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -140,7 +145,7 @@ const CreditsSection = () => {
                         fontFamily='Inter'
                         mt={['6rem', '6rem', '1.5rem', '1.5rem']}
                     >
-                        Créditos
+                        {t('creditsPage.title')}
                     </Heading>
 
                     <Text
@@ -149,7 +154,7 @@ const CreditsSection = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Abaixo os devidos créditos das imagens utilizadas no projeto.
+                        {t('creditsPage.firstParagraph')}
                     </Text>
 
                     <Flex

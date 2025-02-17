@@ -7,6 +7,8 @@ import {
     Container
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../../components/Footer/Footer';
@@ -16,11 +18,14 @@ import PostComponent from '../../components/PostComponent/PostComponent';
 import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutAudios = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Flex>
 
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('audiosPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -53,7 +58,7 @@ const PageAboutAudios = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Áudios
+                        {t('audiosPage.title')}
                     </Heading>
 
                     <Heading
@@ -66,26 +71,26 @@ const PageAboutAudios = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa para áudio
+                        {t('audiosPage.firstSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.2.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.2.1 (inglês)'
+                            textWCAG={t('audiosPage.firstSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('audiosPage.firstSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.2.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.2.2 (inglês)'
+                            textWCAG={t('audiosPage.firstSubtitle.secondBadge.badgeTextWCAG')}
+                            tooltipText={t('audiosPage.firstSubtitle.secondBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.2.6'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.2.6 (inglês)'
+                            textWCAG={t('audiosPage.firstSubtitle.thirdBadge.badgeTextWCAG')}
+                            tooltipText={t('audiosPage.firstSubtitle.thirdBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded'
                         />
                     </Heading>
@@ -96,11 +101,7 @@ const PageAboutAudios = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante fornecer uma transcrição descritiva para áudios gravados. Essa 
-                        alternativa em texto é essencial para pessoas com deficiência auditiva, mas 
-                        também beneficia usuários que não possuem equipamentos de som, preferem a 
-                        leitura do material ou têm restrições de tempo. Além disso, é recomendável 
-                        fornecer uma alternativa em Libras (Língua Brasileira de Sinais).
+                        {t('audiosPage.firstSubtitle.firstParagraph')}
                     </Text>
 
                     <PostComponent article_name={'audios_01'} />
@@ -111,8 +112,7 @@ const PageAboutAudios = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Também é desejável fornecer uma prévia do conteúdo dos arquivos de áudio, bem 
-                        como a duração de cada um.
+                        {t('audiosPage.firstSubtitle.secondParagraph')}
                     </Text>
 
                     <Heading
@@ -125,12 +125,12 @@ const PageAboutAudios = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer controle de áudio para o som
+                        {t('audiosPage.secondSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.4.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.4.2 (inglês)'
+                            textWCAG={t('audiosPage.secondSubtitle.badgeTextWCAG')}
+                            tooltipText={t('audiosPage.secondSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/audio-control'
                         />
                     </Heading>
@@ -141,9 +141,7 @@ const PageAboutAudios = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante fornecer um mecanismo que permita aos usuários controlar o áudio 
-                        reproduzido na página. Esse mecanismo deve incluir opções para parar, pausar, 
-                        silenciar ou ajustar o volume do som.
+                        {t('audiosPage.secondSubtitle.firstParagraph')}
                     </Text>
 
                 </Flex>

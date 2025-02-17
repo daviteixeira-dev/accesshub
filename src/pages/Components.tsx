@@ -9,6 +9,8 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../components/Footer/Footer';
@@ -35,97 +37,97 @@ import keyboardNavigation from '../../public/keyboardNavigation.png';
 
 const dataForTheComponentCardItem = [
   {
-    componentCardTitle: 'HTML Inicial',
+    componentCardTitle: 'componentsPage.initialHTMLCard',
     componentCardPageLink: '/componentes/html-estrutura-inicial',
     componentCardAltImage: 'Componente de Estrutura Inicial HTML',
     componentCardImgLink: inicialHTML,
   },
   {
-    componentCardTitle: 'Recomendações',
+    componentCardTitle: 'componentsPage.recommendationsCard',
     componentCardPageLink: '/componentes/recomendacoes',
     componentCardAltImage: 'Componente de Recomendações',
     componentCardImgLink: recommendations,
   },
   {
-    componentCardTitle: 'Cabeçalhos',
+    componentCardTitle: 'componentsPage.headingCard',
     componentCardPageLink: '/componentes/cabecalhos',
     componentCardAltImage: 'Componente de Cabeçalhos',
     componentCardImgLink: headers,
   },
   {
-    componentCardTitle: 'Pular Navegação',
+    componentCardTitle: 'componentsPage.skipNavigationCard',
     componentCardPageLink: '/componentes/pular-navegacao',
     componentCardAltImage: 'Componente de Pular Navegação',
     componentCardImgLink: skipNav,
   },
   {
-    componentCardTitle: 'Breadcrumbs',
+    componentCardTitle: 'componentsPage.breadcrumbsCard',
     componentCardPageLink: '/componentes/breadcrumbs',
     componentCardAltImage: 'Componente de Breadcrumb',
     componentCardImgLink: breadcrumb,
   },
   {
-    componentCardTitle: 'Tabelas',
+    componentCardTitle: 'componentsPage.tablesCard',
     componentCardPageLink: '/componentes/tabelas',
     componentCardAltImage: 'Componente de Tabela',
     componentCardImgLink: table,
   },
   {
-    componentCardTitle: 'Formulários',
+    componentCardTitle: 'componentsPage.formsCard',
     componentCardPageLink: '/componentes/formularios',
     componentCardAltImage: 'Componente de Formulario',
     componentCardImgLink: form,
   },
   {
-    componentCardTitle: 'Links',
+    componentCardTitle: 'componentsPage.linksCard',
     componentCardPageLink: '/componentes/links',
     componentCardAltImage: 'Componente de Links',
     componentCardImgLink: link,
   },
   {
-    componentCardTitle: 'Imagens',
+    componentCardTitle: 'componentsPage.imagesCard',
     componentCardPageLink: '/componentes/imagens',
     componentCardAltImage: 'Componente de Imagens',
     componentCardImgLink: images,
   },
   {
-    componentCardTitle: 'Vídeos',
+    componentCardTitle: 'componentsPage.videosCard',
     componentCardPageLink: '/componentes/videos',
     componentCardAltImage: 'Componente de Vídeo',
     componentCardImgLink: video,
   },
   {
-    componentCardTitle: 'Áudios',
+    componentCardTitle: 'componentsPage.audiosCard',
     componentCardPageLink: '/componentes/audios',
     componentCardAltImage: 'Componente de Áudio',
     componentCardImgLink: audio,
   },
   {
-    componentCardTitle: 'Mudar o tamanho da fonte',
+    componentCardTitle: 'componentsPage.changeFontSizeCard',
     componentCardPageLink: '/componentes/alterar-tamanho-da-fonte',
     componentCardAltImage: 'Componente para alterar o tamanho da fonte',
     componentCardImgLink: fontSize,
   },
   {
-    componentCardTitle: 'Alterar o contraste do site',
+    componentCardTitle: 'componentsPage.changeSiteContrastCard',
     componentCardPageLink: '/componentes/alterar-contraste-do-site',
     componentCardAltImage: 'Componente para alterar o contraste do site',
     componentCardImgLink: contrast,
   },
   {
-    componentCardTitle: 'Ouvir a descrição',
+    componentCardTitle: 'componentsPage.listenToDescriptionCard',
     componentCardPageLink: '/componentes/ouvir-descricao-da-imagem',
     componentCardAltImage: 'Componente para ouvir a descrição da imagem',
     componentCardImgLink: imageDescription,
   },
   {
-    componentCardTitle: 'Navegação pelo teclado',
+    componentCardTitle: 'componentsPage.keyboardNavigationCard',
     componentCardPageLink: '/componentes/navegacao-pelo-teclado',
     componentCardAltImage: 'Componente para navegação via teclado',
     componentCardImgLink: keyboardNavigation,
   },
   {
-    componentCardTitle: 'Máscara de Leitura',
+    componentCardTitle: 'componentsPage.readingMaskCard',
     componentCardPageLink: '/componentes/mascara-de-leitura',
     componentCardAltImage: 'Componente para utilização da máscara de leitura',
     componentCardImgLink: readingMask,
@@ -134,6 +136,8 @@ const dataForTheComponentCardItem = [
 
 const Components = () => {
 
+  const { t } = useTranslation();
+
   const bodyColor = useColorModeValue('blackAlpha.50', 'gray.800');
   const headingsColor = useColorModeValue('gray.900', 'whiteAlpha.900');
 
@@ -141,7 +145,7 @@ const Components = () => {
     <Flex bg={bodyColor}>
 
       <SkipNavLink zIndex={2}>
-        Ir para o conteúdo
+        {t('componentsPage.skipToMainContent')}
       </SkipNavLink>
       
       <Hide below='md'>
@@ -175,7 +179,7 @@ const Components = () => {
             color={headingsColor}
             mt={['6rem', '6rem', '1.5rem', '1.5rem']}
           >
-            Componentes
+            {t('componentsPage.title')}
           </Heading>
 
           <Text 
@@ -184,8 +188,7 @@ const Components = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            O AccessHub fornece um guia de implementação dos componentes para ajudá-lo a construir 
-            seus projetos mais rapidamente. Aqui está uma visão geral das categorias de componentes:
+            {t('componentsPage.firstParagraph')}
           </Text>
 
           <SimpleGrid 
@@ -196,7 +199,7 @@ const Components = () => {
               dataForTheComponentCardItem.map((item, index) => (
                 <ComponentCardItem
                   key={index}
-                  cardTitle={item.componentCardTitle}
+                  cardTitle={t(item.componentCardTitle)}
                   pagLink={item.componentCardPageLink}
                   altImage={item.componentCardAltImage}
                   imgLink={item.componentCardImgLink}

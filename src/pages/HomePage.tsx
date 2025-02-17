@@ -13,6 +13,8 @@ import {
 
 import { NavLink } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
+
 import Footer from '../components/Footer/Footer';
 import TopMenu from '../components/TopMenu/TopMenu';
 
@@ -23,6 +25,8 @@ import openSource from '../../public/openSource.png';
 import recommendations from '../../public/userLike.png';
 
 const HomePage = () => {
+
+  const { t } = useTranslation();
   
   const bodyColor = useColorModeValue('gray.100', 'gray.800');
   const textSpanBlue = useColorModeValue('blue.600', 'blue.400');
@@ -38,18 +42,18 @@ const HomePage = () => {
   const cardItem = [
     {
       avatarIMG: article,
-      cardTitle: 'Padrões de Referências',
-      cardText: 'Desenvolver material de referência para o suporte na implementação das funcionalidades de acessibilidade Web por desenvolvedores.'
+      cardTitle: "homepage.referencePatternCard.title",
+      cardText: "homepage.referencePatternCard.text"
     },
     {
       avatarIMG: recommendations,
-      cardTitle: 'Conjunto de Recomendações',
-      cardText: 'Sugerir um conjunto de recomendações para apoiar a implementação das funcionalidades de acessibilidade Web.'
+      cardTitle: 'homepage.recommendationSetCard.title',
+      cardText: 'homepage.recommendationSetCard.text'
     },
     {
       avatarIMG: openSource,
-      cardTitle: 'Exemplos Open Source',
-      cardText: 'Disponibilizar exemplos de código open source para apoiar a implementação das funcionalidades de acessibilidade Web.'
+      cardTitle: 'homepage.openSourceExamplesCard.title',
+      cardText: 'homepage.openSourceExamplesCard.text'
     }
   ]
 
@@ -83,7 +87,7 @@ const HomePage = () => {
           mt={['2rem', '2rem', '4rem', '4rem']}
           fontSize={['2.5rem', '2.5rem', '3rem', '3.5rem']}
         >
-          Desenvolva e deixe o seu site mais <Text as='span' color={textSpanBlue}>acessível</Text>
+          {t('homepage.title')} <Text as='span' color={textSpanBlue}>{t('homepage.titleBlue')}</Text>
         </Heading>
 
         <Heading
@@ -94,9 +98,7 @@ const HomePage = () => {
           fontFamily='Inter'
           color={textColor}
         >
-          AccessHub é um guia sobre funcionalidades de acessibilidade para desenvolvedores Web,
-          possibilitando a apresentação de padrões e materiais de suporte para ajudar na
-          construção de páginas Web acessíveis.
+          {t('homepage.subtitle')}
         </Heading>
         
       </Flex>
@@ -112,22 +114,22 @@ const HomePage = () => {
 
         <NavLink to='/introducao'>
           <Flex
+            as='span'
             fontSize='1.2rem'
             fontWeight='700'
             fontFamily='Inter'
             alignItems='center'
-            borderRadius='.5rem'
+            borderRadius='.3rem'
             color='whiteAlpha.900'
             bg={bgBottonIntroduction}
             justifyContent='space-around'
             mb={['1rem', '1rem', '0', '0']}
             height={['4rem', '4rem', 'auto', 'auto']}
-            width={['12rem', '12rem', '10rem', '10rem']}
-            padding={['1rem', '1rem', '1rem', '1.5rem 2rem']}
+            width={['12rem', '12rem', '10rem', '12rem']}
+            padding={['1rem', '1rem', '1rem', '1rem']}
             _hover={{ backgroundColor: bgBottonIntroductionHover }}
           >
-            Introdução
-            <Icon as={FaArrowRight} ml='.5rem'/>
+            {t('homepage.introduction.button')} <Icon as={FaArrowRight} ml='.5rem'/>
           </Flex>
         </NavLink>
 
@@ -143,13 +145,13 @@ const HomePage = () => {
             fontFamily='Inter'
             alignItems='center'
             bg={bgBottonGithub}
-            borderRadius='.5rem'
+            borderRadius='.3rem'
             justifyContent='space-around'
             mb={['1rem', '1rem', '0', '0']}
             height={['4rem', '4rem', 'auto', 'auto']}
-            width={['12rem', '12rem', '10rem', '10rem']}
+            width={['12rem', '12rem', '10rem', '12rem']}
             _hover={{ backgroundColor: bgBottonGithubHover }}
-            padding={['1rem', '1rem', '1rem', '1.5rem 2rem']}
+            padding={['1rem', '1rem', '1rem', '1rem']}
           >
             <Icon as={FaGithub} mr='.5rem' />
             GitHub
@@ -177,9 +179,7 @@ const HomePage = () => {
             color={headingsColor}
             fontSize={['1.5rem', '1.5rem', '1.8rem', '1.8rem']}
           >
-            Nosso objetivo, é fornecer exemplos de implementações, 
-            auxiliando no processo de programação 
-            de <Text as='span' color={textSpanBlue}>funcionalidades</Text> de acessibilidade.
+            {t('homepage.objective.subtitle')} <Text as='span' color={textSpanBlue}>{t('homepage.objective.subtitleBlue')}</Text> {t('homepage.objective.subtitleAccessibility')}
           </Heading>
         </Flex>
 
@@ -202,10 +202,10 @@ const HomePage = () => {
                   <Avatar size='lg' name='Card Info' src={item.avatarIMG} />
                   <Stack mt='6' spacing='3'>
                     <Heading as='h4' fontFamily='Inter' fontWeight='700' size='md'>
-                      {item.cardTitle}
+                      {t(item.cardTitle)}
                     </Heading>
                     <Text fontFamily='Inter' fontWeight='400' size='md'>
-                      {item.cardText}
+                      {t(item.cardText)}
                     </Text>
                   </Stack>
                 </CardBody>

@@ -12,6 +12,8 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../components/Footer/Footer';
@@ -22,6 +24,8 @@ import puzzle from '../../public/puzzle.png';
 
 const Introduction = () => {
 
+  const { t } = useTranslation();
+
   const bgColor = useColorModeValue('gray.200', 'gray.700');
   const textColor = useColorModeValue('blackAlpha.900', 'whiteAlpha.900');
 
@@ -29,7 +33,7 @@ const Introduction = () => {
     <Flex>
       
       <SkipNavLink zIndex={2}>
-        Ir para o conteúdo
+        {t('introductionPage.skipToMainContent')}
       </SkipNavLink>
 
       <Hide below='md'>
@@ -62,7 +66,7 @@ const Introduction = () => {
             fontFamily='Inter'
             mt={['6rem', '6rem', '1.5rem', '1.5rem']}
           >
-            Sobre o AccessHub
+            {t('introductionPage.title')}
           </Heading>
 
           <Text
@@ -71,11 +75,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            É importante garantir o desenvolvimento de conteúdos ou serviços acessíveis na internet 
-            que estejam disponíveis para todas as pessoas. Para isso, a adoção de práticas de 
-            acessibilidade na Web visa tornar os sites mais acessíveis e utilizáveis pelo maior 
-            número possível de pessoas, independentemente de seus conhecimentos, habilidades ou 
-            características técnicas.
+            {t('introductionPage.firstParagraph')}
           </Text>
 
           <Text
@@ -84,10 +84,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            Portanto, implementar funcionalidades de acessibilidade em projetos de desenvolvimento de 
-            sistemas Web, significa que pessoas com algum tipo de deficiência podem fazer uso da Web 
-            nas mesmas condições que o restante das pessoas. Aplicar as práticas de acessibilidade 
-            permite que os usuários possam perceber, compreender, navegar e interagir com a Web.
+            {t('introductionPage.secondParagraph')}
           </Text>
 
           <Text
@@ -96,8 +93,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            Entretanto, o desenvolvimento de sistemas Web é, geralmente, realizado sem oferecer o suporte 
-            necessário para que pessoas com limitações possam acessá-los sem dificuldades. 
+            {t('introductionPage.thirdParagraph')}
           </Text>
 
           <Text
@@ -106,11 +102,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            Dessa forma, criamos o AccessHub, um projeto open-source alinhado as diretrizes e recomendações 
-            do WCAG e do eMAG que busca oferecer exemplos de implementações como referência, 
-            principalmente, para desenvolvedores inexperientes, facilitando no processo de programação de 
-            funcionalidades e recursos que estejam em conformidade com as recomendações de acessibilidade, 
-            podendo ser reutilizados, diminuindo o retrabalho e agilizando o processo de desenvolvimento.
+            {t('introductionPage.fourthParagraph')}
           </Text>
 
           <Heading
@@ -120,7 +112,7 @@ const Introduction = () => {
             fontSize='1.5rem'
             fontFamily='Inter'
           >
-            Objetivos
+            {t('introductionPage.objectives.title')}
           </Heading>
 
           <Text
@@ -129,8 +121,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            Assim, temos como objetivo lhe proporcionar um guia sobre funcionalidades de acessibilidade para desenvolvedores Web, 
-            a fim de prover:
+            {t('introductionPage.objectives.firstParagraph')}
           </Text>
 
           <UnorderedList>
@@ -139,23 +130,21 @@ const Introduction = () => {
               fontWeight='500'
               fontFamily='Inter'
             >
-              Apresentação de padrões e materiais de referência para ajudar na construção de sistemas 
-              Web acessíveis. 
+              {t('introductionPage.objectives.firstItemOnTheList')}
             </ListItem>
             <ListItem
               fontSize='1rem'
               fontWeight='500'
               fontFamily='Inter'
             >
-              Sugerir um conjunto de recomendações de funcionalidades para acessibilidade Web.
+              {t('introductionPage.objectives.secondItemOnTheList')}
             </ListItem>
             <ListItem
               fontSize='1rem'
               fontWeight='500'
               fontFamily='Inter'
             >
-              Fornecer exemplos open source para acessibilidade Web que possam ser facilmente acessados, 
-              compreendidos e compartilhados.
+              {t('introductionPage.objectives.thirdItemOnTheList')}
             </ListItem>
           </UnorderedList>
 
@@ -184,7 +173,7 @@ const Introduction = () => {
               fontSize='1.5rem'
               fontFamily='Inter'
             >
-              Como contribuir?
+              {t('introductionPage.howToContribute.title')}
             </Heading>
 
             <Text
@@ -194,9 +183,7 @@ const Introduction = () => {
               color={textColor}
               fontFamily='Inter'
             >
-              O desenvolvimento do AccessHub é uma iniciativa para a construção de um projeto open-source 
-              para a comunidade e contribuições são bem-vindas. Para contribuir, <Link color='blue.900' textDecor='underline' href='https://github.com/daviteixeira-btm/accesshub/pulls' isExternal >acesse e use o mecanismo de 
-              contribuição do GitHub</Link>, você pode encontar o passo a passo disponibilizado na descrição do projeto.
+              {t('introductionPage.howToContribute.firstParagraphPartOne')} <Link color='blue.900' textDecor='underline' href='https://github.com/daviteixeira-dev/accesshub/pulls' isExternal >{t('introductionPage.howToContribute.firstParagraphTextLink')}</Link> {t('introductionPage.howToContribute.firstParagraphPartTwo')}
             </Text>
 
           </Flex>
@@ -208,7 +195,7 @@ const Introduction = () => {
             fontSize='1.5rem'
             fontFamily='Inter'
           >
-            Referências
+            {t('introductionPage.references.title')}
           </Heading>
 
           <Text
@@ -217,8 +204,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            O AccessHub ainda está em desenvolvimento, podendo receber incrementos conforme a pesquisa 
-            avança. Até o momento, temos a <Link fontWeight='bold' color='blue.900' href='https://repositorio.ufc.br/handle/riufc/73954' textDecor='underline' isExternal> monografia</Link> da qual o projeto foi desenvolvido:
+            {t('introductionPage.references.firstParagraphPartOne')} <Link fontWeight='bold' color='blue.900' href='https://repositorio.ufc.br/handle/riufc/73954' textDecor='underline' isExternal>{t('introductionPage.references.firstParagraphTextLink')}</Link> {t('introductionPage.references.firstParagraphPartTwo')}
           </Text>
 
           <Text
@@ -227,7 +213,7 @@ const Introduction = () => {
             fontSize='1.2rem'
             fontFamily='Inter'
           >
-            <Text as='span' fontWeight='bold' >Citação:</Text> SILVA, Davi Teixeira. <Text as='b'>AccessHub: um guia de acessibilidade para desenvolvedores web</Text>. 2023. 88 f. Trabalho de Conclusão de Curso (Graduação em Sistema de Informação)- Universidade Federal do Ceará, Campus de Quixadá, Quixadá, 2023.
+            <Text as='span' fontWeight='bold' >{t('introductionPage.references.quote')}</Text>{t('introductionPage.references.author')}<Text as='b'>{t('introductionPage.references.projectName')}</Text> {t('introductionPage.references.academicWorkInformation')}
           </Text>
 
         </Flex>

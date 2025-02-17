@@ -7,9 +7,14 @@ import {
 
 import { NavLink } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
+
 import '../styles/Error404Page.css';
 
 const Error404Page = () => {
+
+  const { t } = useTranslation();
+  
   return (
     <Flex
       p='1rem'
@@ -154,7 +159,7 @@ const Error404Page = () => {
         marginBottom={['1rem', '1rem', '1rem', '2rem']}
         fontSize={['1.5rem', '1.5rem', '1rem', '2rem']}
       >
-        Ops, error 404. A página que você está procurando não existe.
+        {t('404Page.firstParagraph')}
       </Heading>
 
       <NavLink to='/'>
@@ -167,7 +172,7 @@ const Error404Page = () => {
           backgroundColor='blue.600'
           _hover={{ bg: 'blue.700' }}
         >
-          Voltar para a Página Inicial
+          {t('404Page.button')}
         </Flex>
       </NavLink>
 

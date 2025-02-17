@@ -10,12 +10,15 @@ import {
     Container  
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../../components/Footer/Footer';
 import MenuMobile from '../../components/TopMenu/MenuMobile';
 import MenuSideBar from '../../components/MenuSideBar/MenuSideBar';
 import PostComponent from '../../components/PostComponent/PostComponent';
+import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 import figura01 from '../../assets/figura-01.jpg';
 import figura02 from '../../assets/figura-02.jpg';
@@ -24,14 +27,16 @@ import figura04 from '../../assets/figura-04.png';
 import figura05 from '../../assets/figura-05.jpg';
 import figura06 from '../../assets/figura-06.png';
 import figura07 from '../../assets/figura-07.png';
-import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutImages = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Flex>
 
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('imagesPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -64,7 +69,7 @@ const PageAboutImages = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Imagens
+                        {t('imagesPage.title')}
                     </Heading>
 
                     <Heading
@@ -77,12 +82,12 @@ const PageAboutImages = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer alternativa em texto para as imagens de um site
+                        {t('imagesPage.firstSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.1.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
+                            textWCAG={t('imagesPage.firstSubtitle.badgeTextWCAG')}
+                            tooltipText={t('imagesPage.firstSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
                         />
                     </Heading>
@@ -93,9 +98,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante fornecer uma descrição para as imagens da página usando o atributo 
-                        alt. Essa descrição deve transmitir o significado e o propósito da imagem para os 
-                        usuários que não conseguem visualizá-la.
+                        {t('imagesPage.firstSubtitle.firstParagraph')}
                     </Text>
 
                     <Flex
@@ -116,9 +119,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando se trata de banners e outras imagens que reproduzem textos, é recomendado que 
-                        o texto seja reproduzido na descrição alternativa. Isso garante que os usuários com 
-                        deficiência visual tenham acesso às informações contidas na imagem.
+                        {t('imagesPage.firstSubtitle.secondParagraph')}
                     </Text>
 
                     <Flex
@@ -139,9 +140,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A descrição de uma imagem é subjetiva e deve ser adaptada ao contexto em que a 
-                        imagem está inserida. Pense no objetivo da imagem e como ela contribui para o 
-                        conteúdo da página.
+                        {t('imagesPage.firstSubtitle.thirdParagraph')}
                     </Text>
 
                     <Text
@@ -150,10 +149,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para imagens mais complexas, como infográficos, é possível fornecer uma descrição 
-                        mais detalhada no próprio contexto ou por meio de um link para uma página com a 
-                        descrição completa. Certifique-se de que o usuário entenda que o link leva a uma 
-                        descrição mais detalhada, como no exemplo a seguir:
+                        {t('imagesPage.firstSubtitle.fourthParagraph')}
                     </Text>
 
                     <Flex
@@ -172,8 +168,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Aqui está um exemplo de descrição de infográfico. A descrição completa está 
-                        disponível em outra página. Veja o exemplo de implementação: 
+                        {t('imagesPage.firstSubtitle.fifthParagraph')}
                     </Text>
 
                     <PostComponent article_name={'images_03'} />
@@ -184,10 +179,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante lembrar que, em gráficos simples, as informações podem estar contidas 
-                        na própria página, o que facilita o entendimento para usuários com dificuldades 
-                        de visualização ou que desejam utilizar as informações de outras maneiras, como 
-                        para pesquisas.
+                        {t('imagesPage.firstSubtitle.sixthParagraph')}
                     </Text>
 
                     <Flex
@@ -209,7 +201,7 @@ const PageAboutImages = () => {
                         fontSize='1.5rem'
                         fontFamily='Inter'
                     >
-                        Em HTML5
+                        {t('imagesPage.firstSubtitle.subtitle')}
                     </Heading>
 
                     <Text
@@ -218,8 +210,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No HTML5, foram introduzidos os elementos FIGURE e FIGCAPTION, que permitem 
-                        agrupar uma imagem IMG com sua legenda correspondente. 
+                        {t('imagesPage.firstSubtitle.seventhParagraph')}
                     </Text>
 
                     <Text
@@ -228,11 +219,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O elemento FIGURE não é usado apenas para imagens, mas também para agrupar 
-                        conteúdos independentes, como trechos de código, gráficos, diagramas e vídeos 
-                        relacionados ao conteúdo principal do documento. O elemento FIGCAPTION é 
-                        opcional e exibe uma legenda para a figura. Ele complementa o atributo alt 
-                        e fornece uma descrição visualmente visível para a imagem.
+                        {t('imagesPage.firstSubtitle.eightParagraph')}
                     </Text>
 
                     <Text
@@ -241,9 +228,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É possível ter várias imagens, vídeos e gráficos dentro de um único elemento 
-                        FIGURE. Caso haja um elemento FIGCAPTION, ele deve ser o primeiro ou o último 
-                        filho do elemento FIGURE, e apenas um FIGCAPTION será utilizado como legenda. 
+                        {t('imagesPage.firstSubtitle.ninthParagraph')} 
                     </Text>
 
                     <Flex
@@ -264,11 +249,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Observação: Imagens decorativas, que não transmitem conteúdo, podem ser 
-                        inseridas por meio de CSS. Por exemplo, um separador pontilhado abaixo 
-                        de um título pode ser implementado como uma imagem decorativa inserida 
-                        por meio de folhas de estilo. Em alguns casos, a imagem pode ser substituída 
-                        por código CSS. 
+                        {t('imagesPage.firstSubtitle.tenthParagraph')}
                     </Text>
 
                     <Heading
@@ -281,12 +262,12 @@ const PageAboutImages = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Utilizar mapas de imagem de forma acessível
+                        {t('imagesPage.secondSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.1.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.1.1 (inglês)'
+                            textWCAG={t('imagesPage.secondSubtitle.badgeTextWCAG')}
+                            tooltipText={t('imagesPage.secondSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html'
                         />
                     </Heading>
@@ -297,10 +278,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Mapas de imagem são imagens divididas em áreas selecionáveis definidas por elementos 
-                        AREA. Cada área funciona como um link para outra página ou seção da página 
-                        atual. Embora este recurso esteja em desuso, ele pode ser útil para tornar 
-                        infográficos acessíveis, por exemplo.
+                        {t('imagesPage.secondSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -309,8 +287,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os mapas de imagem do lado do cliente requerem descrições fornecidas pelo atributo 
-                        alt para cada uma das áreas ativas, ou seja, para cada link que recebe foco.
+                        {t('imagesPage.secondSubtitle.secondParagraph')}
                     </Text>
 
                     <Text
@@ -319,7 +296,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Aqui está um exemplo de mapa de imagem do lado do cliente:
+                        {t('imagesPage.secondSubtitle.thirdParagraph')}
                     </Text>
 
                     <Flex
@@ -361,8 +338,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além dos mapas de imagem do lado do cliente, existem também os mapas de 
-                        imagem do lado do servidor.
+                        {t('imagesPage.secondSubtitle.fourthParagraph')}
                     </Text>
 
                     <Text
@@ -371,7 +347,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Aqui está um exemplo de mapa de imagem do lado do servidor:
+                        {t('imagesPage.secondSubtitle.fifthParagraph')}
                     </Text>
 
                     <Flex
@@ -390,9 +366,9 @@ const PageAboutImages = () => {
                                 alt='Bandeira do Brasil (Links a seguir)'
                             />
                             <Text mt='1rem'>
-                                <Link href='areaVerde.html'>Área Verde</Link> - 
-                                <Link href='areaAmarela.html'> Área Amarela</Link> - 
-                                <Link href='areaAzul.html'> Área Azul</Link>
+                                <Link href='areaVerde.html'>{t('imagesPage.secondSubtitle.greenArea')}</Link> - 
+                                <Link href='areaAmarela.html'>{t('imagesPage.secondSubtitle.yellowArea')}</Link> - 
+                                <Link href='areaAzul.html'>{t('imagesPage.secondSubtitle.blueArea')}</Link>
                             </Text>
                         </Box>
                     </Flex>
@@ -405,13 +381,7 @@ const PageAboutImages = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Entretanto, é recomendado o uso de mapas de imagem do lado do cliente, pois 
-                        os mapas de imagem do lado do servidor não permitem fornecer um texto alternativo 
-                        para cada área ativa individualmente. Apenas um texto alternativo para todo o 
-                        mapa pode ser fornecido, o que dificulta a acessibilidade. Caso seja necessário 
-                        utilizar mapas de imagem do lado do servidor, é recomendado fornecer links 
-                        redundantes para cada região ativa do mapa, permitindo que usuários de leitores 
-                        de tela tenham acesso ao conteúdo.
+                        {t('imagesPage.secondSubtitle.sixthParagraph')}
                     </Text>
 
                 </Flex>
