@@ -20,34 +20,39 @@ import {
     FaRegCompass,
 } from 'react-icons/fa';
 
+import { useTranslation } from 'react-i18next';
+
 import MenuSideBarItem from './MenuSideBarItem';
 import ToogleColorMode from '../ToogleComponent/ToogleColorMode';
+import TranslationButton from '../TranslationButton/TranslationButton';
 
-import logo from '../../../public/logo-accesshub.png'
+import logo from '../../../public/logo-accesshub.png';
 
 const MenuSideBar = () => {
+
+    const { t } = useTranslation();
 
     const [navSize, setNavSize] = useState('large');
 
     const sideBarItem = [
         {
             path: '/',
-            name: 'Página Inicial',
+            name: 'menuSideBar.home',
             icon: <FaHome />
         },
         {
             path: '/introducao',
-            name: 'Introdução',
+            name: 'menuSideBar.introduction',
             icon: <FaRegCompass />
         },
         {
             path: '/componentes',
-            name: 'Componentes',
+            name: 'menuSideBar.components',
             icon: <FaThLarge />
         },
         {
             path: '/current-scenario',
-            name: 'Cenário atual',
+            name: 'menuSideBar.currentScenario',
             icon: <FaTasks />
         },
     ]
@@ -104,23 +109,32 @@ const MenuSideBar = () => {
                 w='100%'
                 p='.5rem'
                 alignSelf='center'
+                flexDirection='column'
                 justifyContent={navSize == 'small' ? 'space-around' : 'space-evenly'}
             >
-                <IconButton
-                    width='3rem'
-                    bg='blue.400'
-                    icon={<FiMenu />}
-                    color='whiteAlpha.900'
-                    aria-label='Menu Icon'
-                    _hover={{ background: 'blue.500' }}
-                    onClick={() => {
-                        if (navSize === 'small')
-                            setNavSize('large')
-                        else
-                            setNavSize('small')
-                    }}
-                />
-                <ToogleColorMode />
+                <Flex width='100%' justifyContent='space-evenly'>
+                    <IconButton
+                        bg='blue.400'
+                        icon={<FiMenu />}
+                        color='whiteAlpha.900'
+                        aria-label='Menu Icon'
+                        _hover={{ background: 'blue.500' }}
+                        onClick={() => {
+                            if (navSize === 'small')
+                                setNavSize('large')
+                            else
+                                setNavSize('small')
+                        }}
+                    />
+
+                    <ToogleColorMode />
+                </Flex>
+
+                <Flex marginTop='1rem' justifyContent='space-evenly'>
+                    <TranslationButton language='en'/>
+
+                    <TranslationButton language='pt'/>
+                </Flex>
             </Flex>
                 
             <Flex
@@ -131,6 +145,7 @@ const MenuSideBar = () => {
                 {
                     sideBarItem.map((item, index) => (
                         <Flex
+                            key={index}
                             as='li'
                             m='.5rem 0'
                             width='100%'
@@ -141,7 +156,6 @@ const MenuSideBar = () => {
                             justifyContent={navSize == 'small' ? 'center' : 'start'}
                         >
                             <NavLink 
-                                key={index} 
                                 to={item.path}
                                 style={({ isActive }) => 
                                     isActive 
@@ -157,7 +171,7 @@ const MenuSideBar = () => {
                                     {item.icon}
                                 </Icon>
 
-                                <MenuSideBarItem menuOption={item.name} navSize={navSize} />
+                                <MenuSideBarItem menuOption={t(item.name)} navSize={navSize} />
                             </NavLink>
                         </Flex>
                     ))
