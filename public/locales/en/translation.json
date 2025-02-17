@@ -1,0 +1,1286 @@
+{
+    "homepage": {
+        "title": "Develop and make your site more ",
+        "titleBlue": "accessible",
+        "subtitle": "AccessHub is a guide to accessibility features for Web developers, enabling the presentation of standards and support materials to help in the construction of accessible Web pages.",
+        "introduction": {
+            "button": "Introduction"
+        },
+        "objective": {
+            "subtitle": "Our goal is to provide implementation examples, assisting in the process of programming ",
+            "subtitleBlue": "features",
+            "subtitleAccessibility": " accessibility."
+        },
+        "referencePatternCard": {
+            "title": "Reference Standards",
+            "text": "Develop reference material to support the implementation of Web accessibility features by developers."
+        },
+        "recommendationSetCard": {
+            "title": "Recommendation Set",
+            "text": "Suggest a set of recommendations to support the implementation of web accessibility features."
+        },
+        "openSourceExamplesCard": {
+            "title": "Open Source Examples",
+            "text": "Provide open source code examples to support the implementation of web accessibility features."
+        }
+    },
+    "footer": {
+        "documetation": "Documentation",
+        "components": "Components",
+        "currentScenario": "Current Scenario",
+        "credits": "Credits",
+        "community": "Community",
+        "copyright": "© 2023 ",
+        "developedBy": "Davi Teixeira",
+        "developedText": ". This site, library and examples are licensed under ",
+        "mit": "MIT."
+    },
+    "menuSideBar": {
+        "home": "Home",
+        "introduction": "Introduction",
+        "components": "Components",
+        "currentScenario": "Current scenario"
+    },
+    "menuMobile": {
+        "title": "Menu",
+        "home": "Home",
+        "introduction": "Introduction",
+        "components": "Components",
+        "currentScenario": "Current scenario",
+        "closeButton": "Close"
+    },
+    "introductionPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "About AccessHub",
+        "firstParagraph": "It is important to ensure the development of accessible content or services on the Internet that are available to everyone. To this end, the adoption of web accessibility practices aims to make websites more accessible and usable by the greatest possible number of people, regardless of their knowledge, skills or technical characteristics.",
+        "secondParagraph": "Therefore, implementing accessibility features in web systems development projects means that people with some type of disability can use the Web under the same conditions as everyone else. Applying accessibility practices allows users to perceive, understand, navigate and interact with the Web.",
+        "thirdParagraph": "However, the development of web systems is generally carried out without offering the necessary support so that people with limitations can access them without difficulties.",
+        "fourthParagraph": "Therefore, we created AccessHub, an open-source project aligned with the WCAG and eMAG guidelines and recommendations that seeks to offer examples implementations as a reference, mainly for inexperienced developers, facilitating the process of programming functionalities and resources that comply with accessibility recommendations, which can be reused, reducing rework and speeding up the development process.",
+        "objectives": {
+            "title": "Objectives",
+            "firstParagraph": "Therefore, our objective is to provide you with a guide on accessibility functionalities for Web developers, in order to provide:",
+            "firstItemOnTheList": "Presentation of standards and reference materials to help in the construction of accessible Web systems.",
+            "secondItemOnTheList": "Suggest a set of functionality recommendations for Web accessibility.",
+            "thirdItemOnTheList": "Provide open source examples for Web accessibility that can be easily accessed, understood and shared."
+        },
+        "howToContribute": {
+            "title": "How to contribute?",
+            "firstParagraphPartOne": "AccessHub development is an initiative to build an open-source project for the community and contributions are welcome. To contribute, ",
+            "firstParagraphTextLink": "access and use the GitHub contribution mechanism",
+            "firstParagraphPartTwo": ", you can find the step-by-step guide provided in the project description."
+        },
+        "references": {
+            "title": "References",
+            "firstParagraphPartOne": "AccessHub is still under development and may receive additions as research progresses. So far, we have the ",
+            "firstParagraphTextLink": "monograph",
+            "firstParagraphPartTwo": " from which the project was developed:",
+            "quote": "Quote:",
+            "author": " SILVA, Davi Teixeira. ",
+            "projectName": "AccessHub: an accessibility guide for web developers",
+            "academicWorkInformation": ". 2023. 88 p. Course Completion Work (Undergraduate Degree in Information Systems) - Federal University of Ceará, Quixadá Campus, Quixadá, 2023."
+        }
+    },
+    "componentsPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Components",
+        "firstParagraph": "AccessHub provides a component implementation guide to help you build your projects faster. Here is an overview of the component categories:",
+        "initialHTMLCard": "Initial HTML",
+        "recommendationsCard": "Recommendations",
+        "headingCard": "Headings",
+        "skipNavigationCard": "Skip Navigation",
+        "breadcrumbsCard": "Breadcrumbs",
+        "tablesCard": "Tables",
+        "formsCard": "Forms",
+        "linksCard": "Links",
+        "imagesCard": "Images",
+        "videosCard": "Videos",
+        "audiosCard": "Audios",
+        "changeFontSizeCard": "Change Font Size",
+        "changeSiteContrastCard": "Change Contrast Website",
+        "listenToDescriptionCard": "Listen to description",
+        "keyboardNavigationCard": "Keyboard Navigation",
+        "readingMaskCard": "Reading Mask"
+    },
+    "currentScenarioPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Current project scenario",
+        "firstParagraph": "On this page, we can see from the tables below how the current scenario of explanations and implementations of open-source code available on AccessHub is:",
+        "secondParagraph": "The project is currently in ",
+        "secondParagraphTextLink": "version 2.1 of WCAG.",
+        "thirdParagraphPartOne": "In addition, most open-source codes currently do not feature development including ",
+        "thirdParagraphTextLink": "WAI-ARIA",
+        "thirdParagraphPartTwo": ", which is necessary for better accessibility.",
+        "wcagCriteria": "WCAG Criteria",
+        "lastUpdated": "Last updated 08/23/2023",
+        "perceptible": "Perceptible",
+        "operable": "Operable",
+        "understandable": "Understandable",
+        "robust": "Robust",
+        "criteria": {
+            "1_1_1": {
+                "text": "Criterion 1.1.1",
+                "tooltipText": "See WCAG Success Criteria 1.1.1"
+            },
+            "1_2_1": {
+                "text": "Criterion 1.2.1",
+                "tooltipText": "See WCAG Success Criteria 1.2.1"
+            },
+            "1_2_2": {
+                "text": "Criterion 1.2.2",
+                "tooltipText": "See WCAG Success Criteria 1.2.2"
+            },
+            "1_2_3": {
+                "text": "Criterion 1.2.3",
+                "tooltipText": "See WCAG Success Criteria 1.2.3"
+            },
+            "1_2_4": {
+                "text": "Criterion 1.2.4",
+                "tooltipText": "See WCAG Success Criterion 1.2.4"
+            },
+            "1_2_5": {
+                "text": "Criterion 1.2.5",
+                "tooltipText": "See WCAG Success Criterion 1.2.5"
+            },
+            "1_2_6": {
+                "text": "Criterion 1.2.6",
+                "tooltipText": "See WCAG Success Criterion 1.2.6"
+            },
+            "1_2_7": {
+                "text": "Criterion 1.2.7",
+                "tooltipText": "See WCAG Success Criterion 1.2.7"
+            },
+            "1_2_8": {
+                "text": "Criterion 1.2.8",
+                "tooltipText": "See WCAG Success Criterion 1.2.8"
+            },
+            "1_2_9": {
+                "text": "Criterion 1.2.9",
+                "tooltipText": "See WCAG Success Criterion 1.2.9"
+            },
+            "1_3_1": {
+                "text": "Criterion 1.3.1",
+                "tooltipText": "See WCAG Success Criterion 1.3.1"
+            },
+            "1_3_2": {
+                "text": "Criterion 1.3.2",
+                "tooltipText": "See WCAG Success Criterion 1.3.2"
+            },
+            "1_3_3": {
+                "text": "Criterion 1.3.3",
+                "tooltipText": "See WCAG Success Criterion 1.3.3"
+            },
+            "1_3_4": {
+                "text": "Criterion 1.3.4",
+                "tooltipText": "See WCAG Success Criterion 1.3.4"
+            },
+            "1_3_5": {
+                "text": "Criterion 1.3.5",
+                "tooltipText": "See WCAG Success Criterion 1.3.5"
+            },
+            "1_3_6": {
+                "text": "Criterion 1.3.6",
+                "tooltipText": "See WCAG Success Criterion 1.3.6"
+            },
+            "1_4_1": {
+                "text": "Criterion 1.4.1",
+                "tooltipText": "See WCAG Success Criteria 1.4.1"
+            },
+            "1_4_2": {
+                "text": "Criterion 1.4.2",
+                "tooltipText": "See WCAG Success Criteria 1.4.2"
+            },
+            "1_4_3": {
+                "text": "Criterion 1.4.3",
+                "tooltipText": "See WCAG Success Criteria 1.4.3"
+            },
+            "1_4_4": {
+                "text": "Criterion 1.4.4",
+                "tooltipText": "See WCAG Success Criteria 1.4.4"
+            },
+            "1_4_5": {
+                "text": "Criterion 1.4.5",
+                "tooltipText": "See WCAG Success Criteria 1.4.5"
+            },
+            "1_4_6": {
+                "text": "Criterion 1.4.6",
+                "tooltipText": "See WCAG Success Criteria 1.4.6"
+            },
+            "1_4_7": {
+                "text": "Criterion 1.4.7",
+                "tooltipText": "See WCAG Success Criteria 1.4.7"
+            },
+            "1_4_8": {
+                "text": "Criterion 1.4.8",
+                "tooltipText": "See WCAG Success Criteria 1.4.8"
+            },
+            "1_4_9": {
+                "text": "Criterion 1.4.9",
+                "tooltipText": "See WCAG Success Criteria 1.4.9"
+            },
+            "1_4_10": {
+                "text": "Criterion 1.4.10",
+                "tooltipText": "See WCAG Success Criteria 1.4.10"
+            },
+            "1_4_11": {
+                "text": "Criterion 1.4.11",
+                "tooltipText": "See WCAG Success Criteria 1.4.11"
+            },
+            "1_4_12": {
+                "text": "Criterion 1.4.12",
+                "tooltipText": "See WCAG Success Criteria 1.4.12"
+            },
+            "1_4_13": {
+                "text": "Criterion 1.4.13",
+                "tooltipText": "See WCAG Success Criterion 1.4.13"
+            },
+            "2_1_1": {
+                "text": "Criterion 2.1.1",
+                "tooltipText": "See WCAG Success Criterion 2.1.1"
+            },
+            "2_1_2": {
+                "text": "Criterion 2.1.2",
+                "tooltipText": "See WCAG Success Criterion 2.1.2"
+            },
+            "2_1_3": {
+                "text": "Criterion 2.1.3",
+                "tooltipText": "See WCAG Success Criteria 2.1.3"
+            },
+            "2_1_4": {
+                "text": "Criterion 2.1.4",
+                "tooltipText": "View WCAG Success Criteria 2.1.4"
+            },
+            "2_2_1": {
+                "text": "Criterion 2.2.1",
+                "tooltipText": "View WCAG Success Criteria 2.2.1"
+            },
+            "2_2_2": {
+                "text": "Criterion 2.2.2",
+                "tooltipText": "View WCAG Success Criteria 2.2.2"
+            },
+            "2_2_3": {
+                "text": "Criterion 2.2.3",
+                "tooltipText": "View Criteria WCAG Success Criteria 2.2.3"
+            },
+            "2_2_4": {
+                "text": "Criterion 2.2.4",
+                "tooltipText": "View WCAG Success Criteria 2.2.4"
+            },
+            "2_2_5": {
+                "text": "Criterion 2.2.5",
+                "tooltipText": "View WCAG Success Criteria 2.2.5"
+            },
+            "2_2_6": {
+                "text": "Criterion 2.2.6",
+                "tooltipText": "View WCAG Success Criteria 2.2.6"
+            },
+            "2_3_1": {
+                "text": "Criterion 2.3.1",
+                "tooltipText": "View WCAG Success Criteria 2.3.1"
+            },
+            "2_3_2": {
+                "text": "Criterion 2.3.2",
+                "tooltipText": "See WCAG Success Criteria 2.3.2"
+            },
+            "2_3_3": {
+                "text": "Criterion 2.3.3",
+                "tooltipText": "See WCAG Success Criteria 2.3.3"
+            },
+            "2_4_1": {
+                "text": "Criterion 2.4.1",
+                "tooltipText": "See WCAG Success Criteria 2.4.1"
+            },
+            "2_4_2": {
+                "text": "Criterion 2.4.2",
+                "tooltipText": "See WCAG Success Criteria 2.4.2"
+            },
+            "2_4_3": {
+                "text": "Criterion 2.4.3",
+                "tooltipText": "See WCAG Success Criteria 2.4.3"
+            },
+            "2_4_4": {
+                "text": "Criterion 2.4.4",
+                "tooltipText": "See WCAG Success Criteria 2.4.4"
+            },
+            "2_4_5": {
+                "text": "Criterion 2.4.5",
+                "tooltipText": "See WCAG Success Criteria 2.4.5"
+            },
+            "2_4_6": {
+                "text": "Criterion 2.4.6",
+                "tooltipText": "See WCAG Success Criteria 2.4.6"
+            },
+            "2_4_7": {
+                "text": "Criterion 2.4.7",
+                "tooltipText": "See WCAG Success Criteria 2.4.7"
+            },
+            "2_4_8": {
+                "text": "Criterion 2.4.8",
+                "tooltipText": "See WCAG Success Criteria 2.4.8"
+            },
+            "2_4_9": {
+                "text": "Criterion 2.4.9",
+                "tooltipText": "See WCAG Success Criteria 2.4.9"
+            },
+            "2_4_10": {
+                "text": "Criterion 2.4.10",
+                "tooltipText": "See WCAG Success Criteria 2.4.10"
+            },
+            "2_5_1": {
+                "text": "Criterion 2.5.1",
+                "tooltipText": "See WCAG Success Criterion 2.5.1"
+            },
+            "2_5_2": {
+                "text": "Criterion 2.5.2",
+                "tooltipText": "See WCAG Success Criterion 2.5.2"
+            },
+            "2_5_3": {
+                "text": "Criterion 2.5.3",
+                "tooltipText": "See WCAG Success Criterion 2.5.3"
+            },
+            "2_5_4": {
+                "text": "Criterion 2.5.4",
+                "tooltipText": "See WCAG Success Criterion 2.5.4"
+            },
+            "2_5_5": {
+                "text": "Criterion 2.5.5",
+                "tooltipText": "See WCAG Success Criterion 2.5.5"
+            },
+            "2_5_6": {
+                "text": "Criterion 2.5.6",
+                "tooltipText": "See WCAG Success Criterion 2.5.6"
+            },
+            "3_1_1": {
+                "text": "Criterion 3.1.1",
+                "tooltipText": "See WCAG Success Criterion 3.1.1"
+            },
+            "3_1_2": {
+                "text": "Criterion 3.1.2",
+                "tooltipText": "See WCAG Success Criterion 3.1.2"
+            },
+            "3_1_3": {
+                "text": "Criterion 3.1.3",
+                "tooltipText": "See WCAG Success Criterion 3.1.3"
+            },
+            "3_1_4": {
+                "text": "Criterion 3.1.4",
+                "tooltipText": "See WCAG Success Criterion 3.1.4"
+            },
+            "3_1_5": {
+                "text": "Criterion 3.1.5",
+                "tooltipText": "See WCAG Success Criterion 3.1.5"
+            },
+            "3_1_6": {
+                "text": "Criterion 3.1.6",
+                "tooltipText": "See WCAG Success Criterion 3.1.6"
+            },
+            "3_2_1": {
+                "text": "Criterion 3.2.1",
+                "tooltipText": "See WCAG Success Criterion 3.2.1"
+            },
+            "3_2_2": {
+                "text": "Criterion 3.2.2",
+                "tooltipText": "See WCAG Success Criterion 3.2.2"
+            },
+            "3_2_3": {
+                "text": "Criterion 3.2.3",
+                "tooltipText": "See WCAG Success Criterion 3.2.3"
+            },
+            "3_2_4": {
+                "text": "Criterion 3.2.4", "tooltipText": "See WCAG Success Criterion 3.2.4"
+            },
+            "3_2_5": {
+                "text": "Criterion 3.2.5",
+                "tooltipText": "See WCAG Success Criterion 3.2.5"
+            },
+            "3_3_1": {
+                "text": "Criterion 3.3.1",
+                "tooltipText": "See WCAG Success Criterion 3.3.1"
+            },
+            "3_3_2": {
+                "text": "Criterion 3.3.2",
+                "tooltipText": "See WCAG Success Criterion 3.3.2"
+            },
+            "3_3_3": {
+                "text": "Criterion 3.3.3",
+                "tooltipText": "See WCAG Success Criterion 3.3.3"
+            },
+            "3_3_4": {
+                "text": "Criterion 3.3.4",
+                "tooltipText": "See WCAG Success Criterion 3.3.4"
+            },
+            "3_3_5": {
+                "text": "Criterion 3.3.5",
+                "tooltipText": "See WCAG Success Criterion 3.3.5"
+            },
+            "3_3_6": {
+                "text": "Criterion 3.3.6",
+                "tooltipText": "See WCAG Success Criterion 3.3.6"
+            },
+            "4_1_1": {
+                "text": "Criterion 4.1.1",
+                "tooltipText": "See WCAG Success Criterion 4.1.1"
+            },
+            "4_1_2": {
+                "text": "Criterion 4.1.2",
+                "tooltipText": "See WCAG Success Criteria 4.1.2"
+            },
+            "4_1_3": {
+                "text": "Criterion 4.1.3",
+                "tooltipText": "See WCAG Success Criteria 4.1.3"
+            }
+        },
+        "descriptionCardOfStatusPainel": "Below, you can see the current status of the component:",
+        "initialHTMLCard": {
+            "title": "Initial HTML",
+            "hasWaiAriaExamples": "Has some examples with WAI-ARIA.",
+            "hasCodeExamples": "Shows some code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "recommendationsCard": {
+            "title":"Recommendations",
+            "hasWaiAriaExamples": "Does not have examples with WAI-ARIA.",
+            "hasCodeExamples": "Shows some code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "headingCard": {
+            "title": "Headings",
+            "hasWaiAriaExamples": "No WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "skipNavigationCard": {
+            "title": "Skip Navigation",
+            "hasWaiAriaExamples": "No WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "breadcrumbsCard": {
+            "title": "Breadcrumbs",
+            "hasWaiAriaExamples": "Has some examples with WAI-ARIA.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "tablesCard": {
+            "title": "Tables",
+            "hasWaiAriaExamples": "Has no examples with WAI-ARIA.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "formsCard": {
+            "title":"Forms",
+            "hasWaiAriaExamples": "Does not have examples with WAI-ARIA.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "linksCard": {
+            "title":"Links",
+            "hasWaiAriaExamples": "Has some examples with WAI-ARIA.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "imagesCard": {
+            "title":"Images",
+            "hasWaiAriaExamples": "Does not have WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "videosCard": {
+            "title": "Videos",
+            "hasWaiAriaExamples": "Does not have WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "audiosCard": {
+            "title":"Audios",
+            "hasWaiAriaExamples": "Does not have WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "changeFontSizeCard": {
+            "title": "Change font size",
+            "hasWaiAriaExamples": "Does not have WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "changeSiteContrastCard": {
+            "title": "Change site contrast",
+            "hasWaiAriaExamples": "No WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "listenToDescriptionCard": {
+            "title": "Listen to description",
+            "hasWaiAriaExamples": "No WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples." 
+        },
+        "keyboardNavigationCard": {
+            "title": "Keyboard Navigation",
+            "hasWaiAriaExamples": "No WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        },
+        "readingMaskCard": {
+            "title": "Reading Mask",
+            "hasWaiAriaExamples": "No WAI-ARIA examples.",
+            "hasCodeExamples": "Shows code examples.",
+            "hasTextualExamples": "Shows textual examples."
+        }
+    },
+    "initialHTMLPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "HTML Initial Structure",
+        "firstParagraph": "The HTML5 initial structure is the basis for developing accessible websites. See below an example of this structure:",
+        "firstSubtitle": {
+            "title": "Organize HTML code logically and semantically",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criteria 1.3.1",
+            "firstParagraph": "It is crucial that HTML code is organized logically and semantically, that is, presenting the elements in an understandable order and corresponding to the desired content. Each HTML element should be used according to its specific purpose.",
+            "secondParagraph": "Use appropriate semantic markup to indicate headings (h1, h2, h3), lists (ul, ol, dl), emphasized text (strong), code, abbreviations (abbr), long quotes (blockquote) and other elements. This way, pages can be presented and understood even without additional styles, such as style sheets. It is important to note that semantically correct code plays a key role in accessibility for visually impaired users, since screen readers describe the type of an element before reading its content.",
+            "thirdParagraph": "Here is a practical example of how to correctly use HTML5 semantics in conjunction with ARIA (Accessible Rich Internet Applications):"
+        },
+        "secondSubtitle": {
+            "title": "Identify the primary language of the page",
+            "badgeTextWCAG": "Criterion 3.1.1",
+            "badgeTooltipText": "See WCAG Success Criterion 3.1.1",
+            "firstParagraph": "It is necessary to identify the primary language used in HTML documents. This can be done using the 'lang' attribute for HTML and 'xml:lang' for XHTML documents. Be sure to declare the primary language on all pages, as this not only helps with content accessibility but also improves indexing by search engines." 
+        },
+        "thirdSubtitle": {
+            "title": "Report language changes in content",
+            "badgeTextWCAG": "Criterion 3.1.2",
+            "badgeTooltipText": "See WCAG Success Criterion 3.1.2",
+            "firstParagraph": "If any element on a page contains content in a language other than the primary language, it is important to identify it using the 'lang' attribute. However, this recommendation does not apply to proper nouns or technical terms that are understood in context."
+        },
+        "fourthSubtitle": {
+            "title": "Provide a descriptive and informative title for the page",
+            "badgeTextWCAG": "Criterion 2.4.2",
+            "badgeTooltipText": "See WCAG Success Criterion 2.4.2",
+            "firstParagraph": "The page title plays an essential role in accessibility. It should be descriptive and informative, representing the main content of the page, as it will be the first information read by the screen reader when the user accesses the page. Use the 'title' element to define the title and, preferably, follow the structure recommended by ePWG (E-Ping Web), such as [main subject of the page] – [name of the site or system], avoiding extra words or unnecessary stylistic features."
+        },
+        "fifthSubtitle": {
+            "title": "Dividing information areas",
+            "badgeTextWCAG": "Criterion 3.2.3",
+            "badgeTooltipText": "See WCAG Success Criterion 3.2.3",
+            "firstParagraph": "A fundamental practice for ensuring web accessibility is to divide information areas into easily manageable groups. The most common divisions are 'top', 'content', 'menu' and 'footer'. On the internal pages of the site, it is important to maintain the same division structure so that users can quickly familiarize themselves with the organization. It is worth noting that the home page may have a different division than the internal pages, due to the presence of more elements. See the following example that shows the division of the home page containing the blocks 'top', 'menu', 'content' and 'footer', in addition to the accessibility bar with shortcuts.",
+            "secondParagraph": "Division into blocks of content is essential to allow the use of shortcuts, offering users quick access to the desired areas. It is important to maintain a coherent and systematic presentation style on all pages of the site, following a standard structure. The main navigation elements should be kept in the same position on all pages, except on the home page, which may have a different structure.",
+            "subtitle": "Using HTML5 and ARIA",
+            "thirdParagraph": "The structural elements of HTML, such as HEADER, NAV, SECTION, ARTICLE, ASIDE and FOOTER, are already interpreted by most screen readers. However, it is important to use the ARIA landmark roles associated with these elements, to ensure that all assistive technologies can correctly interpret the information. Although the information is duplicated, screen readers that recognize HTML5 will give priority to HTML and will not read the same information twice.",
+            "fourthParagraph": "Here are some examples of structural elements in HTML5:",
+            "firstList": {
+                "firstItem": "<header> - Contains introductory information for a page or section.",
+                "secondItem": "<nav> - Used for sections of the page that contain links to other pages or sections, such as the main menu.",
+                "thirdItem": "<section> - Represents a generic section or a section that contains an application, similar to the <div> element, separating sections of the document.",
+                "fourthItem": "<article> - Represents a stand-alone section of the page, such as a blog post or a forum comment.",
+                "fifthItem": "<aside> - Contains content related to the main area of ​​the document.",
+                "sixthItem": "<footer> - Used to demarcate the page footer or of a section of content."
+            },
+            "fifthParagraph": "And here are some examples of landmarks in ARIA:",
+            "secondList": {
+                "firstItem": "Banner - Contains information focused on the site as a whole, representing the information normally present at the top of the pages, such as the title, the site logo and the accessibility bar.",
+                "secondItem": "Complementary - Additional or complementary content to the main content.",
+                "thirdItem": "Contentinfo - Contains general information about the site as a whole, which normally appears in the footer, such as copyright and contact information.",
+                "fourthItem": "Main - Contains the main content of the page.",
+                "fifthItem": "Navigation - Contains links to navigate through parts of the site or page, such as the menu.",
+                "sixthItem": "Search - This section contains the site's search form."
+            },
+            "sixthParagraph": "The HEADER element can be used multiple times on the same page without semantic problems, as it has two different functions. The first function is to contain the information at the top of the page, in which case the banner role should be used. The second function is to indicate a section header and can be used multiple times in the document. In this case, the heading role should be used and, preferably, a title level should be included.",
+            "seventhParagraph": "The main content of the site does not have a specific element in HTML5 like the others, so its identification is done with the main value in the role.",
+            "eighthParagraph": "The FOOTER element, like the HEADER, can be used more than once on the same page, as it can be used for two different purposes. The first is for the general footer of the page, which should receive the contentinfo value for the role. The second is to indicate a footer in sections and, in this case, the complementary role should be used.",
+            "ninthParagraph": "The HTML5 SECTION element is indicated to separate sections within the document and can be used as many times as necessary on the same page. The ARIA role that has the same purpose the element's site is the value section.",
+            "tenthParagraph": "Here is an example of a page structure using HTML5 structural elements and ARIA roles. In addition to landmarks, other roles were also used, such as heading (used to identify titles) and article (identifies content that makes sense in isolation, such as a blog post).",
+            "eleventhParagraph": "As we can see, HTML5 has considerably expanded the number of elements that, together with ARIA roles, facilitate the application of semantics in structural areas. However, even with the application of these new tools, it is still necessary to provide anchors for the relevant areas of the page, since semantic markup alone is not enough to ensure that screen readers or other user agents that have specific functionality for keyboard navigation can list these new elements.",
+            "twelfthParagraph": "Any division of content that has an important meaning should be done using the SECTION element instead of the DIV element, since the DIV in HTML5 only has the function of grouping elements, without providing a semantic separation from the other elements."
+        },
+        "sixthSubtitle": {
+            "title": "Avoid creating pages with periodic auto-refreshes",
+            "badgeTextWCAG": "Criterion 3.2.5",
+            "badgeTooltipText": "See WCAG Success Criterion 3.2.5",
+            "firstParagraph": "Periodic auto-refresh - commonly used by news outlets - is often achieved using the http-equiv attribute with the 'refresh' content of the meta element in the document head (e.g.: <'meta http-equiv='refresh' content='30' /'>, where the page would refresh every 30 seconds). The problem with this refresh is that it takes away the user's autonomy of choice (similar to opening new instances in browsers) and can confuse and disorient users, especially those using screen readers.",
+            "secondParagraph": "As an example of a best practice, in a web email interface (webmail), a developer might provide a button or a link to fetch new incoming mail instead of automatically refreshing. On pages where a timeout is absolutely necessary, the user should be informed that the page is being refreshed automatically."
+        },
+        "seventhSubtitle": {
+            "title": "Avoid using automatic page redirection",
+            "badgeTextWCAG": "Criterion 3.2.5",
+            "badgeTooltipText": "See WCAG Success Criterion 3.2.5",
+            "firstParagraph": "Markup to redirect to a new page, such as using the http-equiv attribute with 'refresh' content of the meta element, should not be used. Instead, the server should be configured so that the redirection is transparent to the user."
+        },
+        "eighthSubtitle": {
+            "title": "Provide alternative to override time limit",
+            "badgeTextWCAG": "Criterion 2.2.1",
+            "badgeTooltipText": "See WCAG Success Criterion 2.2.1",
+            "firstParagraph": "On a page where there is a time limit to perform a task, there should be an option to turn off, adjust, or extend that time limit. This recommendation does not apply to events where the time limit is absolutely necessary. It is important to remember that in both cases, the time limit should be communicated to the user.",
+            "secondParagraph": "When addressing web accessibility, these practices help ensure that users have control and can navigate content without encountering unexpected changes or interruptions. By avoiding automatic updates, providing transparent redirection, and allowing users to override time limits, developers can create a more inclusive web experience for all users, including those with disabilities.", 
+            "thirdParagraph": "Here is an example of how these practices can be implemented:",
+            "fourthParagraph": "In this example, we have a page that demonstrates an alternative approach to auto-refresh. Instead of automatically refreshing the page, a 'Fetch New Mail' button is provided so that the user can decide when they want to check for new messages. This way, the user has control over the action and is not interrupted unexpectedly.",
+            "fifthParagraph": "Please note that this is just a simplified example for illustration purposes. You can adapt and customize the code to suit your specific project needs.",
+            "sixthParagraph": "By following these guidelines, developers can improve the accessibility of their websites, enhance the user experience, and comply with web accessibility standards. Additionally, providing clear instructions and alternatives for time limits empowers users to navigate the web more effectively and efficiently."
+        }
+    },
+    "recommendationsPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Recommendations",
+        "firstSubtitle": {
+            "title": "Adhere to Web Standards",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 4.1.1",
+                "badgeTooltipText": "See WCAG Success Criterion 4.1.1"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 4.1.2",
+                "badgeTooltipText": "See WCAG Success Criterion 4.1.2"
+            },
+            "firstParagraph": "Web Standards are recommendations from the World Wide Web Consortium (W3C) that guide developers on using best practices to make the web accessible to everyone. By following these standards, developers can create rich experiences powered by a wide range of data storage, which are available on all devices and compatible with current and future browsers.",
+            "secondParagraphPartOne": "When it comes to accessibility, the main recommendations are the Web Design and Applications Standards",
+            "secondParagraphTextLink": "Web Design and Applications",
+            "secondParagraphPartTwo": ", which cover the development of web pages, including HTML5, CSS, SVG, Ajax and other technologies for WebApps, as well as the international accessibility standard WCAG, internationalization and mobile devices.",
+            "thirdParagraph": "Another important aspect when respecting Web Standards is the separation of layers. The logical layers must be separated according to their purpose. The content layer must use markup languages, such as HTML and XHTML. For the visual presentation layer of the content, CSS is used in any of its versions. For the layer that modifies the behavior of the elements, JavaScript languages ​​and object models (DOM) are used."
+        },
+        "secondSubtitle": {
+            "title": "Headings and Labels",
+            "badgeTextWCAG": "Criterion 2.4.6",
+            "badgeTooltipText": "See WCAG Success Criterion 2.4.6",
+            "firstParagraph": "Headings (h1 through h6) and labels (form fields) should be clear and descriptive, helping users find the desired information more easily. In addition, form input controls should be explicitly labeled, describing what input is expected. This helps users understand how to fill out the form."
+        },
+        "thirdSubtitle": {
+            "title": "Ordering in a logical and intuitive way for reading and tabbing",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.3.2",
+                "badgeTooltipText": "See WCAG Success Criteria 1.3.2"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 2.4.3",
+                "badgeTooltipText": "See WCAG Success Criteria 2.4.3"
+            },
+            "firstParagraph": "It is important to create HTML code with a logical reading sequence for traversing links, form controls, and objects. This sequence is determined by the order in which the elements appear in the HTML code.",
+            "secondParagraph": "It is recommended that the main content block of the page be made available before the menu block. This makes it easier for users who navigate using the keyboard, allowing faster access without having to scroll through all the menu items before reaching the content. While shortcuts (such as links and keys) help in this regard, some users may not be familiar with them and may have difficulty due to motor impairments.",
+            "thirdParagraph": "In some cases, it may be necessary to force the navigation order using the tabindex attribute. However, when using tabindex, it is important to ensure that it is used correctly and manually check that the flow provided is actually what is desired. Incorrect use of tabindex can result in inconsistent order and tabbing."
+        },
+        "fourthSubtitle": {
+            "title": "Do not use color alone to differentiate elements",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.3.3",
+                "badgeTooltipText": "See WCAG Success Criterion 1.3.3"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 1.4.1",
+                "badgeTooltipText": "See WCAG Success Criterion 1.4.1"
+            },
+            "firstParagraph": "Color or other sensory characteristics, such as shape, size, visual location, orientation, or sound, should not be used as the sole means of conveying information, indicating an action, prompting a user response, or distinguishing a visual element.",
+            "secondParagraph": "For example, color should not be the sole element of differentiation, as people with color blindness may have difficulty in distinguish colors. In the image above, on the left are the signs seen by people with normal vision, on the right are the same signs seen by people with color blindness.",
+            "thirdParagraph": "We can use as an example the validation of a password in a form, in which the error message brings an alert icon and a message explaining how to correct the error, in addition to the color that highlights the information. See the following code:"
+        },
+        "fifthSubtitle": {
+            "title": "Do not include screen flickering",
+            "badgeTextWCAG": "Criterion 2.3.1",
+            "badgeTooltipText": "See WCAG Success Criterion 2.3.1",
+            "firstParagraph": "Visual effects that flash, flicker, or shimmer should not be used. These effects can trigger epileptic seizures in people with photosensitive epilepsy. This guideline also applies to third-party advertisements placed on the page."
+        },
+        "sixthSubtitle": {
+            "title": "Ensure user control over temporal changes in content",
+            "badgeTextWCAG": "Criterion 2.2.2",
+            "badgeTooltipText": "See WCAG Success Criterion 2.2.2",
+            "firstParagraph": "Content such as slideshows, scrolling, general movement, or animations should not automatically play without user control, even in advertisements on the page. The user should have control over such movement, either through page viewing preferences or another method accessible to users with disabilities. In addition, the user should be able to stop and restart moving content, without exception. It is desirable that the user also be able to control the speed of such content." 
+        },
+        "seventhSubtitle": {
+            "title": "Make documents available in accessible formats",
+            "firstParagraph": "Documents should preferably be made available in HTML. It is also possible to use downloadable files in ODF format, as long as they are accessible. If a file is made available in PDF, it is necessary to provide an alternative in HTML or ODF.",
+            "secondParagraph": "Note: ODF (Open Document Format) is an open document format adopted by e-PING (Electronic Government Interoperability Architecture), which can be implemented in any system. ODF includes formats such as ODT (Open Data Text) for text documents, ODS (Open Data Sheet) for spreadsheets, ODP (Open Data Presentation) for slide presentations, among others."
+        },
+        "eighthSubtitle": {
+            "title": "Ensure that information is readable and understandable",
+            "badgeTextWCAG": "Criterion 3.1.5",
+            "badgeTooltipText": "See WCAG Success Criterion 3.1.5",
+            "firstParagraph": "The text on a website should be easy to read and understand, and should not require the user to have a higher level of education than a primary school education. When the text requires a more advanced reading ability, supplementary information should be provided to explain or illustrate the main content. Another alternative is to provide a simplified version of the content in text.",
+            "secondParagraph": "There are some techniques that can help improve the intelligibility of texts, such as:",
+            "firstList": {
+                "firstItem": "Develop only one topic per paragraph.",
+                "secondItem": "Use sentences organized in a simplified way for the purpose of the content, following the structure subject-verb-object, preferably.",
+                "thirdItem": "Break up long sentences into shorter ones.",
+                "fourthItem": "Avoid using jargon, regional expressions, or specialized terms that may not be clear to everyone.",
+                "fifthItem": "Use common words instead of unfamiliar ones.",
+                "sixthItem": "Use lists of items instead of a long series of words or phrases separated by commas.",
+                "seventhItem": "Make clear references to pronouns and other parts of the document.",
+                "eighthItem": "Use the active voice, preferably."
+            }
+        },
+        "ninthSubtitle": {
+            "title": "Display an explanation for acronyms, abbreviations, and uncommon words",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 3.1.3",
+                "badgeTooltipText": "See WCAG Success Criterion 3.1.3"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 3.1.4",
+                "badgeTooltipText": "See WCAG Success Criterion 3.1.4"
+            },
+            "firstParagraph": "At least the first occurrence of acronyms, abbreviations, or uncommon words (ambiguous, unknown, or used in a very specific way), their explanation or full form must be provided. This explanation may be present in the text itself, in a glossary, or through the use of the <abbr></abbr> element, as the following examples:",
+            "secondParagraph": "A website about web development provides a link in the menu to a Glossary, which contains explanations for terms such as HTML, CSS, Tag, attribute, etc."
+        },
+        "tenthSubtitle": {
+            "title": "Provide animation control",
+            "badgeTextWCAG": "Criterion 2.2.2",
+            "badgeTooltipText": "See WCAG Success Criterion 2.2.2",
+            "firstParagraph": "For any animation that starts automatically on the page, mechanisms must be provided so that the user can pause, stop, or hide the animation."
+        },
+        "eleventhSubtitle": {
+            "title": "Ensure accessibility of programmable objects",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 2.1.1",
+                "badgeTooltipText": "See WCAG Success Criterion 2.1.1"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 2.1.2",
+                "badgeTooltipText": "See WCAG Success Criterion 2.1.2"
+            },
+            "firstParagraph": "It is important to ensure that scripts, dynamic content, and other programmable elements are accessible and that their execution is possible through navigation. In addition, strategies should be adopted to ensure access for all users, regardless of the device used. Drag-and-drop functionality can be alternatively used to use shortcuts such as cut and paste. and paste.",
+            "secondParagraph": "When it is not possible to make a scriptable element directly accessible, it is necessary to provide an HTML alternative for the content.",
+            "thirdParagraph": "When scripting is used in a web page, one way to provide an alternative is through the NOSCRIPT element. This element can be used to display content in browsers that do not support scripting or in which scripting is disabled. However, if the browser supports scripting and scripting is enabled, the NOSCRIPT element will be ignored. Therefore, it is important to design the script itself with care to ensure accessibility, and the NOSCRIPT element should be used to cover cases where scripting is not supported." 
+        }
+    },
+    "headingPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Headings",
+        "firstSubtitle": {
+            "title": "Using Heading Levels Correctly",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criteria 1.3.1",
+            "firstParagraph": "Headings play a key role in the organization and accessibility of a website's content. By using heading levels (HTML elements H1 to H6) correctly, a clear hierarchy can be established, making it easier for users to read, understand, and navigate. In addition, screen readers use this hierarchy as an efficient means of navigation, allowing users to jump between headings and find sections of interest easily." 
+        },
+        "secondSubtitle": {
+            "title": "Creating meaningful and well-structured section titles",
+            "badgeTextWCAG": "Criterion 2.4.10",
+            "badgeTooltipText": "See WCAG Success Criterion 2.4.10",
+            "firstParagraph": "Conceptually, there are six levels of headings, with H1 being the most important, representing the main content of the page. It is recommended that each page have only one H1, which should correspond to the main title of the document. Levels H2 to H6 can be used multiple times on a page, as long as they follow a coherent textual logic and adequate hierarchy.",
+            "secondParagraph": "When dividing content into sections, it is essential to assign clear and well-defined titles to each section, ensuring a logical and consistent hierarchy. This allows for easy identification of the different areas of the content, as illustrated in the following example:",
+            "thirdParagraph": "A practical example can be found on a website recipes, where the chapter title would be H1, the steps would be identified as H2, and the step descriptions as H3, and so on."
+        }
+    },
+    "skipNavigationPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Skip Navigation Features",
+        "firstSubtitle": {
+            "title": "Create anchors for direct access to content blocks",
+            "badgeTextWCAG": "Criterion 2.4.1",
+            "badgeTooltipText": "See WCAG Success Criteria 2.4.1",
+            "firstParagraph": "A skip navigation feature is essential to allow users with disabilities or limitations to directly access the main content of a page, without having to scroll through all the navigation elements and headings.",
+            "secondParagraph": "It is recommended to provide anchors, which are links available in the accessibility bar, to direct users to the relevant links present on the same page. This way, they can go directly to the desired content block. It is important to position these links strategically on the page, such as at the beginning and end of the page. content, as well as at the beginning and end of the menu. The first link on the page should always be the one that jumps to the main content.",
+            "thirdParagraph": "Here is an example of how to implement a skip navigation feature:",
+            "fourthParagraph": "Remember, it is important to adapt this example to the specific needs of your site.",
+            "fifthParagraph": "In addition to improving the accessibility of your site, including skip navigation features can also have SEO benefits, as it helps search engines better understand the structure and content of your page."
+        }
+    },
+    "breadcrumbsPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Breadcrumbs",
+        "firstSubtitle": {
+            "title": "Informing the user of their location on the page in an accessible way",
+            "badgeTextWCAG": "Criterion 2.4.8",
+            "badgeTooltipText": "See WCAG Success Criterion 2.4.8",
+            "firstParagraph": "It is essential to provide a mechanism that allows the user to orient themselves within a set of pages by informing their current location. A commonly used approach is the implementation of 'breadcrumbs', which are navigable links arranged in a hierarchical list, allowing the user to understand the path taken to the current page.",
+            "secondParagraph": "It is important to emphasize that all pages in the path, except the current page, must be implemented as links and inserted in a list.",
+            "thirdParagraph": "Here is an example of implementing breadcrumbs in HTML5, along with styling in CSS3:",
+            "fourthParagraph": "Breadcrumbs play a key role in web accessibility, providing a better browsing experience for all users, especially those who rely on assistive technologies such as screen readers. Below are some reasons why breadcrumbs are important for accessibility:",
+            "firstList": {
+                "firstItem": "Spatial orientation: Breadcrumbs provide a clear visual orientation to where the user is on a website, which is particularly useful for people with visual impairments. This allows them to understand the structure of the site and navigate more easily.",
+                "secondItem": "Context and comprehension: Breadcrumbs show the hierarchy of the site, allowing users to understand the relationship between pages and content. This is especially valuable for people with cognitive disabilities or who have difficulty following the structure of the site.",
+                "thirdItem": "Efficient navigation: Breadcrumbs provide an additional form of navigation, allowing users to easily access higher levels of the site. This is useful for people who want to quickly return to a previous section without having to navigate through the entire navigation structure again.",
+                "fourthItem": "Improved usability: Breadcrumbs make it easier to find and retrieve information, making navigation more intuitive and efficient. This benefits all users, regardless of whether they have disabilities or not."
+            },
+            "fifthParagraph": "When designing an accessible website, it is recommended to include clear and consistent breadcrumbs on all pages, following best practices for implementation. Make sure that breadcrumbs are identifiable by screen readers and can be easily navigated by users. This will improve the accessibility and usability of your site for all visitors."
+        }
+    },
+    "tablesPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Tables",
+        "firstParagraph": "When it comes to accessibility, it is crucial to use HTML elements correctly to make simple data tables accessible. To do this, it is important to use the <th></th> element for headers and the <td></td> element for data cells. In addition, it is recommended to group the header, body and footer rows using the <thead></thead>, <tbody></tbody> and <tfoot></tfoot> elements, unless the table has only the body with no header and footer sections.",
+        "secondParagraph": "According to W3C guidelines, it is suggested to place the <tfoot></tfoot> element before the <tbody></tbody> in the table definition. This way, the user agent can render the footer before processing all the data rows (which can be numerous).",
+        "firstSubtitle": {
+            "title": "Using appropriate titles and summaries in tables",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criterion 1.3.1",
+            "firstParagraph": "The table title should be defined by the <caption></caption> element and should be the first element immediately after the <table></table> element is declared. In the case of large tables, it is important to provide a summary of the table data using the `summary` attribute, which should be declared on the <table></table> element.",
+            "secondParagraph": "Here is an example of implementing a table in HTML5, followed by its styling in CSS3, which can be applied to all table examples:",
+            "thirdParagraph": "For more complex tables, it is necessary to associate the data cells with the header cells using appropriate markup. The most appropriate way to do this is by using the `id`/`headers` or `scope`/`col` attributes.",
+            "fourthParagraph": "In the first case, you can associate any content cell with any header cell, using the same value for the `id` and `headers` attributes. See the example below:",
+            "fifthParagraph": "In the second case, the association is done automatically and is most commonly used in direct association tables, where the `col` value is assigned to the `scope` attribute in the headers. See the example below:",
+            "sixthParagraph": "Finally, here is an example of a table using the `axis` attribute:",
+            "seventhParagraph": "It is important to remember that tables should only be used to present tabular data and not for the layout of elements on the page. For this, use CSS style sheets."
+        }
+    },
+    "formsPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Forms",
+        "firstSubtitle": {
+            "title": "Provide text alternatives for image buttons in forms",
+            "badgeTextWCAG": "Criterion 1.1.1",
+            "badgeTooltipText": "See WCAG Success Criteria 1.1.1",
+            "firstParagraph": "When using image buttons (input type='image') in forms, it is important to provide a textual description for these buttons using the alt attribute. This allows users who cannot see the images to understand the purpose of the button. See the example below:",
+            "secondParagraph": "For other types of buttons, such as reset and button, it is necessary to replace the button with the desired image using CSS. In this case, it is important that the button has a descriptive value using the value attribute, as in the following example:"
+        },
+        "secondSubtitle": {
+            "title": "Associate labels with fields",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criterion 1.3.1",
+            "firstParagraph": "Text labels (LABEL element) must be associated with their corresponding fields (INPUT, SELECT and TEXTAREA elements, except BUTTON) in forms. This can be done using the for attributes on the label and id on the input, with equal values." 
+        },
+        "thirdSubtitle": {
+            "title": "Identify the input object",
+            "badgeTextWCAG": "Criterion 1.3.5",
+            "badgeTooltipText": "See WCAG Success Criterion 1.3.5",
+            "firstParagraph": "An example of functionality that meets WCAG criterion 1.3.5 is the use of clear, descriptive labels for form fields on a website.",
+            "secondParagraph": "When creating a registration form on a website, it is important to use descriptive labels for each input field. This helps users understand the purpose of each field and fill out the form correctly. Be sure to associate these labels with the input fields using the 'for' attribute in the HTML or by placing them inside the 'label' element to improve navigation and keyboard interaction for users. See the example HTML code below:",
+            "thirdParagraph": "In the example Above, the 'Name' label is clearly described and associated with the text input field using the 'for' attribute on the label and the 'id' attribute on the input field. This helps to clearly identify the purpose of the field for users who use screen readers or navigate the site using the keyboard." 
+        },
+        "fourthSubtitle": {
+            "title": "Establish a logical navigation order",
+            "badgeTextWCAG": "Criterion 2.4.3",
+            "badgeTooltipText": "See WCAG Success Criterion 2.4.3",
+            "firstParagraph": "Form elements should be organized logically in the HTML code, creating a coherent navigation sequence. Elements can then be visually organized using CSS." 
+        },
+        "fifthSubtitle": {
+            "title": "Do not automatically trigger a change in context",
+            "badgeTextWCAG": "Criterion 3.2.2",
+            "badgeTooltipText": "See WCAG Success Criterion 3.2.2",
+            "firstParagraph": "Avoid automatically initiating changes in page context when a form element receives focus, as this can confuse or disorient users. Instead, changes should be triggered by a button."
+        },
+        "sixthSubtitle": {
+            "title": "Provide data entry instructions",
+            "badgeTextWCAG": "Criterion 3.3.2",
+            "badgeTooltipText": "See WCAG Success Criterion 3.3.2",
+            "firstParagraph": "When data entry is required by the user, provide instructions for filling in the data along with the labels (LABEL element). The use of predefined characters in text entry fields should only occur if:",
+            "firstList": {
+                "firstItem": "The text is included after the user has entered the data (for example, suggesting a new username if the chosen username already exists).",
+                "secondItem": "The semantics of the document justify the inclusion of predefined text (for example, an online store that only sells to a certain country already has the country field filled in).",
+                "thirdItem": "The characters have been previously provided by the user (for example, refinement of search)." 
+            },
+            "secondParagraph": "It is recommended to facilitate data entry by removing special characters in numeric fields (e.g., document numbers such as CPF, dates, currency) and simplifying the fields.",
+            "thirdParagraph": "Required fields must be clearly indicated. In HTML5, you can use the 'required' attribute to specify that a field is mandatory. This information is read by the screen reader. In addition, if the user tries to submit the form without filling in the mandatory field, a message such as 'Please fill in this field' will be displayed on the screen and will also be interpreted by the screen reader.",
+            "fourthParagraph": "Another useful HTML5 attribute is the placeholder, which can be used with the INPUT and TEXTAREA elements to provide a filling hint for the field. When the field receives focus, the hint disappears, but is still read by the screen reader.",
+            "fifthParagraph": "In addition, there are other HTML5 attributes that may be important to provide additional information to users. form fields, such as:",
+            "secondList": {
+                "firstItem": "autofocus: defines the field that will receive keyboard focus when the page with the form is loaded.",
+                "secondItem": "maxlength: determines the maximum number of characters allowed in a field.",
+                "thirdItem": "min and max: defines the minimum and maximum value allowed for a field (can be used separately)",
+                "fourthItem": "pattern: allows you to define a regular expression to validate the field.",
+                "fifthItem": "novalidate: disables form validation (used with the FORM element).",
+                "sixthItem": "formnovalidate: disables validation of form data (used with the INPUT and BUTTON elements).",
+                "seventhItem": "draggable: makes the field draggable (drag and drop)." 
+            },
+            "sixthParagraph": "In addition to improving code semantics, these new HTML5 attributes and values make development easier and the end result more accessible."
+        },
+        "seventhSubtitle": {
+            "title": "Identify data entry errors and confirm submission of information",
+            "badgeTextWCAG": "Criterion 3.1.1",
+            "badgeTooltipText": "See WCAG Success Criterion 3.1.1",
+            "firstParagraph": "When automatically detecting data entry errors in a form, it is important to identify and describe to the user the item that is causing the error through text. When the user submits the form without filling in required fields or fills in a field incorrectly, the focus should return to the beginning of the form, displaying an error warning and links to the problematic fields.",
+            "secondParagraph": "After validating the data, before submitting the form, it is recommended to display a confirmation screen. This allows the user to verify the information provided and, if necessary, make edits before submitting the data.",
+            "thirdParagraph": "In HTML5, there are new values for the 'type' attribute of the <div> element. 'input'. These values are useful for client-side validation as they define the data type expected by the field. Some of these values ​​include:",
+            "firstList": {
+                "firstItem": "email: Indicates an email address entry.",
+                "secondItem": "tel: Indicates a phone number entry.",
+                "thirdItem": "search: Indicates a search field.",
+                "fourthItem": "url: Indicates a URL address entry.",
+                "fifthItem": "datatime: Indicates a date and time entry.",
+                "sixthItem": "datatime-local: Indicates a local date and time entry.",
+                "seventhItem": "date: Indicates a date entry.",
+                "eighthItem": "month: Indicates a month and year entry.",
+                "ninthItem": "week: Indicates a week and year entry.",
+                "tenthItem": "time: Indicates a time entry.",
+                "eleventhItem": "number: Indicates a numeric entry.",
+                "twelfthItem": "range: Indicates a range of the entry of a number within a range.",
+                "thirteenthItem": "color: Indicates the entry of a color code."
+            }
+        },
+        "eighthSubtitle": {
+            "title": "Grouping form fields",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criteria 1.3.1",
+            "fifthParagraph": "It is recommended to group fields with related information using the 'fieldset' element, especially in long forms. It is important to associate the 'legend' element with each group to clearly explain the purpose or nature of the grouping.",
+            "secondParagraph": "In the case of 'select' elements, you can use the 'optgroup' element to group the select list items."
+        },
+        "ninthSubtitle": {
+            "title": "Provide specific security strategies in lieu of CAPTCHA",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criterion 1.3.1",
+            "firstParagraph": "Using CAPTCHA to prevent automated software actions can present significant usability, accessibility, and security issues. Rather than relying solely on CAPTCHA, it is recommended to combine different strategies to create secure and accessible services. Some of these strategies include:",
+            "firstList": {
+                "firstItem": "Connection limits.",
+                "secondItem": "Monitoring.",
+                "thirdItem": "Consistency in security policies.",
+                "fourthItem": "Implementing secure forms and services development techniques." 
+            },
+            "secondParagraph": "The use of CAPTCHAs can negatively affect the usability of a service, as the task of detecting issues and intrusions is transferred to the user. Furthermore, CAPTCHAs are often difficult to read and understand, which makes the service more difficult to use.",
+            "thirdParagraph": "Another important issue is accessibility. CAPTCHAs are inherently non-accessible and cannot be read or interpreted by screen readers, making the service unusable for some people. Even if audio versions are offered, they do not completely solve the problem, as many people may have visual and hearing impairments.",
+            "fourthParagraph": "In addition, implementing internal CAPTCHAs can result in security flaws, while using third-party CAPTCHAs can raise privacy concerns and affect the performance of the site.",
+            "fifthParagraph": "If it is absolutely necessary to use CAPTCHAs, it is recommended to provide a simple question that can only be answered by humans (human CAPTCHA). This question should only be presented after at least two attempts to submit the form. It is important to ensure that the question is not too difficult, allowing people from different cultures and levels of education to answer it.",
+            "sixthParagraph": "Some question options include common sense questions, such as 'What is the color of the sky?' or 'Is fire hot or cold?'. Mathematical tests can also be used, as long as they are not easily circumvented by automated programs. An alternative is to ask the user to write out the result of the mathematical test in words, such as 'Write out what 2 + 3 is' or 'Write out what two plus three is'."
+        }
+    },
+    "linksPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Links",
+        "firstParagraph": "The HTML anchor tag, <a></a>, with the href attribute, is used to create links between web pages, either on the same page or at other URL addresses. The content inside the <a></a> tag indicates the destination of the link. See below for an example implementation:",
+        "firstSubtitle": {
+            "title": "Separating Adjacent Links",
+            "badgeTextWCAG": "Criterion 1.3.1",
+            "badgeTooltipText": "See WCAG Success Criteria 1.3.1",
+            "firstParagraph": "To avoid confusion, especially for screen reader users, it is recommended to separate adjacent links with more than single spaces. One way to do this is by using lists, where each item in the list is a link. Lists can be styled with CSS to display the items side by side in the desired way.",
+            "secondParagraph": "If links are inside a paragraph of text, you can also use commas, parentheses, square brackets, pipes, and other characters to separate them.",
+            "thirdParagraph": "There are three ARIA specification roles that can be used in lists: navigation, which indicates the site's main menu (equivalent to the HTML5 NAV element), menu, and menubar. The menu role and menubar role are similar and indicate menus that are not the page's main menu. The difference is that the menu role is more general, while the menubar is ideal for creating horizontal menus. An example of using a menu is to have submenus inside the main menu. The menu and menubar roles can have children with the menuitem role to indicate that they are menu items."
+        },
+        "secondSubtitle": {
+            "title": "Open new instances only at user request",
+            "badgeTextWCAG": "Criterion 3.2.5",
+            "badgeTooltipText": "See WCAG Success Criterion 3.2.5",
+            "firstParagraph": "The decision to open new tabs, windows, or make any changes to keyboard focus control should be left to the user. Therefore, avoid using:",
+            "firstList": {
+                "firstItem": "Pop-ups.",
+                "secondItem": "Open new tabs or windows.",
+                "thirdItem": "The target='_blank' attribute.",
+                "fourthItem": "Changes to keyboard focus control.",
+                "fifthItem": "Other elements that have not been requested by the user." 
+            },
+            "secondParagraph": "It is important that links open in the current browser tab or window, as visually impaired users may have difficulty identifying that a new window has been opened. Additionally, if they are in a new window, they may have difficulty navigating back to the previous page using the browser's 'back' button. If it is absolutely necessary to open a link in a new window, it is recommended that the user be informed of this in the link text itself. This allows the user to decide whether or not they want to leave the current tab or window, and they will be aware that it is a new window or tab." 
+        },
+        "thirdSubtitle": {
+            "title": "Clear and succinct description of links",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 2.4.4",
+                "badgeTooltipText": "See WCAG Success Criteria 2.4.4"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 2.4.9",
+                "badgeTooltipText": "See WCAG Success Criteria 2.4.9"
+            },
+            "firstParagraph": "Each link should have a clear description of the destination, including whether the link leads to another site. In addition, the link text should make sense even outside the context of the page.",
+            "secondParagraph": "Be careful not to use the same description for two or more links that point to different destinations. Likewise, links that lead to the same destination should have the same description.",
+            "thirdParagraph": "It is not necessary to use the title attribute in links, as it is not well supported by assistive technologies such as screen readers, and is not useful for people who navigate only by keyboard. In addition, the title attribute is not well supported on mobile devices such as cell phones. Therefore, if you want to provide additional information for a link, include it in the link text itself or in the context of the page, but avoid repeating the content of the link in the title attribute.",
+            "fourthParagraph": "When creating links to file downloads, it is important to provide the file extension and size in the link text itself. See the following example:",
+            "fifthParagraph": "Note: Avoid using links with text such as 'click here', 'read more', 'more information', 'learn more', 'see more', 'access the list', as these expressions do not make sense out of context. Many screen reader users navigate through links, and descriptions like 'click here' or 'see more' are not enough for them to understand the link's destination or locate it on the page."
+        },
+        "fourthSubtitle": {
+            "title": "Visually highlight the focused element",
+            "badgeTextWCAG": "Criterion 2.4.7",
+            "badgeTooltipText": "See WCAG Success Criterion 2.4.7",
+            "firstParagraph": "The area that receives keyboard focus must be clearly highlighted, and that area must be clickable. By default, links and form elements already display a highlighted border when they receive keyboard focus. This border can be styled with CSS to improve its appearance, but should not be removed. A minimum border thickness of 2px is recommended.",
+            "secondParagraph": "The :focus pseudo-class is used to style an HTML element when it receives keyboard focus, such as links and form elements. The :hover pseudo-class is used to style an element when the mouse hovers over it."
+        }
+    },
+    "imagesPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Images",
+        "firstSubtitle": {
+            "title": "Provide text alternatives for images on a website",
+            "badgeTextWCAG": "Criterion 1.1.1",
+            "badgeTooltipText": "See WCAG Success Criteria 1.1.1",
+            "firstParagraph": "It is important to provide a description for images on a page using the alt attribute. This description should convey the meaning and purpose of the image to users who cannot see it.",
+            "secondParagraph": "When it comes to banners and other images that display text, it is recommended that the text be displayed in the alternative description. This ensures that users with visual impairments have access to the information contained in the image.",
+            "thirdParagraph": "The description of an image is subjective and should be tailored to the context in which the image is inserted. Consider the purpose of the image and how it contributes to the content of the page.",
+            "fourthParagraph": "For more complex images, such as infographics, you can provide a more detailed description in the context itself or by linking to a page with the full description. Make sure the user understands that the link leads to a more detailed description, as in the following example:",
+            "fifthParagraph": "Here is an example of an infographic description. The full description is available on another page. See the implementation example:",
+            "sixthParagraph": "It is important to remember that, in simple graphics, the information can be contained on the page itself, which makes it easier to understand for users with visualization difficulties or who want to use the information in other ways, such as for searches.",
+            "subtitle": "In HTML5",
+            "seventhParagraph": "In HTML5, the FIGURE and FIGCAPTION elements were introduced, which allow you to group an IMG image with its corresponding caption.",
+            "eightParagraph": "The FIGURE element is not only used for images, but also to group independent content, such as code snippets, graphs, diagrams and videos related to the main content of the document. The FIGCAPTION element is optional and displays a caption for the figure. It complements the alt attribute and provides a visually visible description for the image.",
+            "ninthParagraph": "It is possible to have multiple images, videos and graphs within a single FIGURE element. If there is a FIGCAPTION element, it must be the first or last child of the FIGURE element, and only one FIGCAPTION will be used as a caption.",
+            "tenthParagraph": "Note: Decorative images, which do not convey content, can be inserted via CSS. For example, a dotted separator below a title can be implemented as a decorative image inserted via style sheets. In some cases, the image can be replaced with CSS code."
+        },
+        "secondSubtitle": {
+            "title": "Use image maps in an accessible way",
+            "badgeTextWCAG": "Criterion 1.1.1",
+            "badgeTooltipText": "See WCAG Success Criterion 1.1.1",
+            "firstParagraph": "Image maps are images divided into selectable areas defined by AREA elements. Each area functions as a link to another page or section of the current page. Although this feature is deprecated, it can be useful for making infographics accessible, for example.",
+            "secondParagraph": "Client-side image maps require descriptions provided by the alt attribute for each of the active areas, that is, for each link that receives focus.",
+            "thirdParagraph": "Here is an example of a client-side image map:",
+            "fourthParagraph": "In addition to client-side image maps, there are also server-side image maps.",
+            "fifthParagraph": "Here is an example of a server-side image map:",
+            "greenArea": "Green Area",
+            "yellowArea": " Yellow Area",
+            "blueArea": " Blue Area",
+            "sixthParagraph": "However, it is recommended to use client-side image maps, since server-side image maps do not allow to provide alternative text for each active area individually. Only one alt text can be provided for the entire map, which makes accessibility difficult. If server-side image maps are required, it is recommended to provide redundant links for each active region of the map, allowing screen reader users to access the content." 
+        }
+    },
+    "videosPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Videos",
+        "firstSubtitle": {
+            "title": "Provide Alternatives for Videos",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.2.1",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.1"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 1.2.2",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.2"
+            },
+            "thirdBadge": {
+                "badgeTextWCAG": "Criterion 1.2.6",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.6"
+            },
+            "firstParagraph": "It is crucial that videos made available on your site have controls, especially for playing, pausing and stopping. With HTML5, you can take advantage of the <video></video> element, a standard for video playback that makes it easy to control features, including standard controls using the 'controls' attribute.",
+            "secondParagraph": "It is important to provide an audio or text alternative for videos that do not have audio. Videos that contain spoken audio in the main language of the page should be accompanied by subtitles. This approach is not only essential for people with visual impairments, but it is also useful for users who do not have access to audio, prefer to read the content, or have time constraints to watch a video.",
+            "thirdParagraph": "For example, if a video demonstrates how to create a low-cost assistive technology without audio, it is necessary to provide a text file that describes the content of the video and the steps involved.",
+            "fourthParagraph": "In addition to the text alternative and subtitles, it is desirable to provide Brazilian Sign Language (Libras) for videos with audio.",
+            "fifthParagraph": "It is important to ensure that the video player is accessible, allowing access to the controls via keyboard and providing adequate descriptions for screen readers.",
+            "sixthParagraph": "Here is an example of a correct implementation of a video on a web page:",
+            "seventhParagraph": "If you decide to develop the functionalities yourself, the following are the main functionalities that can be implemented in a video player:"
+        },
+        "secondSubtitle": {
+            "title": "Play/Pause",
+            "firstParagraph": "You can use the HTMLMediaElement API to manually control the playback of a video. Below is an example of JavaScript code that plays/pauses a video when a button is clicked:",
+            "secondParagraph": "In the example above, we have a video with the ID 'myVideo' and a button with the class 'pausePlaybtn' that has its onclick event set to 'playPause()'. The playPause() function checks if the video is paused using the paused property of the HTMLMediaElement element. If the video is paused, it is played by calling play(), otherwise it is paused by calling pause(). Make sure to replace 'path/to/video.mp4' with the correct path to your video file." 
+        },
+        "thirdSubtitle": {
+            "title": "Fullscreen Mode",
+            "firstParagraph": "To add a button that toggles between fullscreen and normal mode on a video element, you can use the JavaScript Fullscreen API. Here is some sample JavaScript code that allows you to achieve this functionality:",
+            "secondParagraph": "In the example above, we have a button called 'fullscreenButton' that calls the toggleFullscreen() function when clicked. The function checks if the browser supports fullscreen mode using the different APIs available, such as requestFullscreen, mozRequestFullScreen, webkitRequestFullscreen, and msRequestFullscreen. It toggles between fullscreen and normal mode based on the current state of the video. Make sure to replace 'path/to/video.mp4' with the correct path to your video file." 
+        },
+        "fourthSubtitle": {
+            "title": "Increase, decrease, and mute the volume",
+            "firstParagraph": "Here is an example JavaScript function that allows you to increase, decrease, and mute the volume of a video element using buttons:",
+            "secondParagraph": "In the example above, we have three buttons: Volume Up, Volume Down, and Mute. Each button calls a corresponding JavaScript function: increaseVolume(), decreaseVolume(), and toggleMute(). The increaseVolume() function increases the volume by 0.1 if the current volume is less than 1.0. The decreaseVolume() function decreases the volume by 0.1 if the current volume is greater than 0.0. The toggleMute() function unmutes the video. Make sure to replace 'path/to/video.mp4' with the correct path to your video file."
+        },
+        "fifthSubtitle": {
+            "title": "Choose between different subtitle options",
+            "firstParagraph": "To allow the user to choose between different subtitle options, you can create a subtitle selector (like a dropdown) and update the video's text track based on the selected option. Here's an example of how you might implement this using JavaScript:",
+            "secondParagraph": "In the example above, we added three text tracks to the video element, each with a different language and label. We then created a <select> subtitle selector with different options, including an option to disable subtitles.",
+            "thirdParagraph": "The changeSubtitle() function is called whenever the user selects a different option in the subtitle selector. The function disables all text tracks (track.mode = 'disabled') and then enables the text track corresponding to the selected option (selectedTrack.mode = 'showing'). Make sure to replace the paths 'path/to/video.mp4', 'path/to/subtitles-pt.vtt', 'path/to/subtitles-en.vtt', and 'path/to/subtitles-es.vtt' with the correct paths to your video and subtitle files. Additionally, you can add or remove additional text tracks as needed by updating the number of options in the subtitle selector and adjusting the value values ​​of the options.",
+            "fourthParagraph": "You can also add an event listener for the loadeddata event on each text track. This way, you can ensure that the text track is fully loaded before activating it. Add a loadeddata event listener for each text track in the changeSubtitle() function. When the loadeddata event is triggered for a text track, the trackLoaded() function will be called. This function removes the loadeddata event listener from the text track and activates the text track by setting track.mode = 'showing'. This way, we ensure that the text tracks are only activated when they are fully loaded, avoiding problems with displaying the subtitles." 
+        }, 
+        "sixthSubtitle": { 
+            "title": "Download Video", 
+            "firstParagraph": "You can create a button that, when clicked, downloads the video. When the 'Download Video' button is clicked, the downloadVideo() function is called. Inside this function, we use fetch() to fetch the video file as a Blob object. We then create a URL for the Blob using URL.createObjectURL(blob). Next, we dynamically create an <a> element, set the href attribute to the video URL, the download attribute to the name of the download file, and trigger the click event using a.click(). Finally, we revoke the object's URL using URL.revokeObjectURL(url). Here's an example of how to do this using JavaScript:",
+            "secondParagraph": "In this example, you need to replace 'path/to/video.mp4' with the correct path to your video and 'video.mp4' with the desired name for the download file.",
+            "thirdParagraph": "This way, when the user clicks the 'Download Video' button, the video file will be downloaded directly."
+        },
+        "seventhSubtitle": {
+            "title": "Choose the video playback speed",
+            "firstParagraph": "You can add a <select> element to your HTML to allow the user to select the video playback speed. You can then add a change event to the <select> element and, inside the event handler, adjust the video element's playbackRate property based on the selected option. Here's an example of how to do this using JavaScript:",
+            "secondParagraph": "In this example, we add a <select> element with the id 'speed' and an onchange event handler that calls the changePlaybackSpeed() function. The function gets the video element by the id 'myVideo' and the <select> element by the id 'speed'. We then get the selected value from the <select> element and convert it to a floating point number using parseFloat(). Finally, we assign the playback speed value to the video element's playbackRate.",
+            "thirdParagraph": "This way, the user can select a playback speed in <select> and the video will play at the chosen speed. The default is '1x'."
+        },
+        "eighthSubtitle": {
+            "title": "Audio Description or Text-Based Descriptive Transcription",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.2.3",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.3"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 1.2.5",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.5"
+            },
+            "thirdBadge": {
+                "badgeTextWCAG": "Criterion 1.2.7",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.7"
+            },
+            "fourthBadge": {
+                "badgeTextWCAG": "Criterion 1.2.8",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.8"
+            },
+            "firstParagraph": "Pre-recorded videos that convey visual content that is not available in the audio track must have an audio description.",
+            "secondParagraph": "Audio description consists of a clear and objective description of all information presented visually that is not part of the dialogue. These descriptions are presented in the spaces between dialogue and in the pauses between audio information.",
+            "thirdParagraph": "To add a button that triggers the download of the audio description of a video, you can add a button in your HTML code to represent the audio description download button and in JavaScript, you need to define the function that will be triggered when the button is clicked. Within this function, you can create and trigger the download of the audio description. Here is an example of a function to download audio descriptions:",
+            "fourthParagraph": "With these steps, when the user clicks the 'Download Audio Description' button, the downloadAudioDescription function will be triggered, creating a temporary link that triggers the download of the audio description. Make sure to replace 'path/to/audiodescription.mp3' with the correct path to the audio description file for your video.",
+            "fifthParagraph": "If it is not possible to have an audio description, it is recommended that a file containing the description in text format be provided to the user. As we can see in the following example:",
+            "sixthParagraph": "In this example, we have a video with the src attribute pointing to the video file (video.mp4) and a button with the onclick attribute calling the downloadTranscription() function when clicked.",
+            "seventhParagraph": "Inside the downloadTranscription() function, we make an HTTP request using XMLHttpRequest to get the contents of the transcription file (transcription.txt). When the response is received successfully (state 4 and status 200), the transcription contents are extracted from the response.",
+            "eighthParagraph": "Next, we create a temporary <a> link element to simulate the download of the transcription file. We set the link URL with the transcription contents, specify the name of the transcription file, and simulate the click on that link using the click() method. This way, the user can download the transcript in text format.",
+            "ninthParagraph": "The descriptive text transcript helps users who may have vision problems or difficulties reading subtitles or hearing, making it easier to understand the dialogues in the video."
+        }
+    },
+    "audiosPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Audio",
+        "firstSubtitle": {
+            "title": "Provide alternative for audio",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.2.1",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.1"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 1.2.2",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.2"
+            },
+            "thirdBadge": {
+                "badgeTextWCAG": "Criterion 1.2.6",
+                "badgeTooltipText": "See WCAG Success Criteria 1.2.6" 
+            },
+            "firstParagraph": "It is important to provide a descriptive transcript for recorded audio. This text alternative is essential for people with hearing impairments, but it also benefits users who do not have sound equipment, prefer to read the material, or have time constraints. In addition, it is recommended to provide an alternative in Libras (Brazilian Sign Language).",
+            "secondParagraph": "It is also desirable to provide a preview of the content of the audio files, as well as the duration of each one."
+        },
+        "secondSubtitle": {
+            "title": "Provide audio control for sound",
+            "badgeTextWCAG": "Criterion 1.4.2",
+            "badgeTooltipText": "See WCAG Success Criterion 1.4.2",
+            "firstParagraph": "It is important to provide a mechanism that allows users to control the audio played on the page. This mechanism should include options to stop, pause, mute, or adjust the volume of the sound." 
+        }
+    },
+    "changeFontSizePage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Font Size Adjustment Functionality",
+        "firstSubtitle": {
+            "title": "Enabling resizing without loss of functionality",
+            "badgeTextWCAG": "Criterion 1.4.4",
+            "badgeTooltipText": "See WCAG Success Criteria 1.4.4",
+            "firstParagraph": "It is important to ensure that the page remains readable and functional even when resized by up to 200%. To do this, avoid overlapping elements and the appearance of horizontal scroll bars when resizing the page.",
+            "secondParagraph": "In addition to allowing resizing without loss of functionality, it is essential that the website layout adapts to the screen resolution of the device used to access it. Considering the diversity of resolutions present on computers and mobile devices, it is important to ensure a consistent experience.", 
+            "thirdParagraph": "Here is some sample code that allows you to increase, decrease, and reset the font size on a website:",
+            "fourthParagraph": "The code below demonstrates adding three buttons, '(A+)', '(A)', and '(A-)', to the page. When you click on these buttons, the code selects all elements with the 'font-size' class (which should be added to elements that will have their font size changed) and adjusts the font size by 2 pixels.",
+            "fifthParagraph": "You can add limits to the increase and decrease of the font size by adding conditions inside the event listeners of the buttons. The limits are set in if (fontSize < 30) and if (fontSize > 12), where 30px is the maximum limit for the increase and 12px is the minimum limit for the decrease. These limits can be adjusted according to your site's needs.",
+            "sixthParagraph": "You can store the current font size of each element individually, instead of using a global variable. This way, each element will have its own font size and there will be no interference between them.",
+            "seventhParagraph": "Inside the `for` loop, we use the `getComputedStyle(elements[i]).fontSize` function to get the current font size of the element and store this value in the `fontSize` variable. We then check if this size is smaller than 30px and, if so, we add 2 pixels to it. This way, each element with the 'font-size' class will have its own font size and will be increased or decreased by 2 pixels with each button click.",
+            "eightParagraph": "To ensure that the original values are restored correctly, you can store the original font values of each element individually when the page loads, and then use them to restore the font when the 'resetFont' function is called.",
+            "ninthParagraph": "At the time the page loads, we store the original font values of each element with the 'font-size' class in a variable called 'originalFontSizes'. Then, in the 'resetFont' function, we loop through each element and set its font size to the value stored in the 'originalFontSizes' variable. This way, each element will have its original font size restored, regardless of whether it was a different size before it was modified.",
+            "tenthParagraph": "It is important to test your site with users to verify that the increase and decrease limit, as well as the font resizing functionality, meet the needs of all users."
+        },
+        "secondSubtitle": {
+            "title": "WCAG Criteria that are met",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.4.4",
+                "badgeTooltipText": "See WCAG Success Criterion 1.4.4"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 2.4.4",
+                "badgeTooltipText": "See WCAG Success Criterion 2.4.4"
+            },
+            "thirdBadge": {
+                "badgeTextWCAG": "Criterion 3.2.2",
+                "badgeTooltipText": "See WCAG Success Criterion 3.2.2"
+            },
+            "fourthBadge": {
+                "badgeTextWCAG": "Criterion 3.2.4",
+                "badgeTooltipText": "See WCAG Success Criterion 3.2.4"
+            },
+            "firstParagraph": "1.4.4 Resizable Text: The code allows users to increase and decrease the font size, ensuring that they can adjust the readability of the text according to their needs.",
+            "secondParagraph": "2.4.4 Link Purpose: With the font increase and decrease functions, users clearly understand the purpose of the buttons.",
+            "thirdParagraph": "3.2.2 On Input: The code uses click events to increase and decrease the font, allowing users to perform these actions easily without the need to use the keyboard or other input devices.",
+            "fourthParagraph": "The code uses the same button structure to increase and decrease the font, ensuring that users can find and use these functions easily."
+        },
+        "thirdSubtitle": {
+            "title": "Recommendations",
+            "firstParagraph": "Please note that this code is just a suggestion and can be adapted to suit your specific project needs.",
+            "secondParagraph": "In addition, it is important to perform usability testing to verify that restoring the original font size meets the user's needs and that there are no accessibility issues, such as a font that is too small, after resetting.",
+            "thirdParagraph": "It is also a good practice to maintain control over the font size throughout the page, i.e. allow the font size of the content to be dynamic rather than fixed, to meet the needs of users with different preferences."
+        }
+    },
+    "changeSiteContrastPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Site Contrast Change Functionality",
+        "firstSubtitle": {
+            "title": "Providing Minimum Contrast Between Background and Foreground",
+            "badgeTextWCAG": "Criterion 1.4.3",
+            "badgeTooltipText": "See WCAG Success Criteria 1.4.3",
+            "firstParagraph": "It is crucial to ensure that background and foreground colors provide adequate contrast for viewing by people with low vision, color impairments, or who use monochrome video monitors. To improve accessibility, avoid using images as backgrounds, as this can make reading difficult and distracting to the user.",
+            "secondParagraph": "The contrast ratio can be calculated by dividing the brightness value by the contrast value. relative contrast ratio of the lightest color in one of the planes to the relative brightness value of the darkest color in the other plane. The ISO-9241-3 standard recommends a minimum contrast ratio of 3:1 between background and foreground. However, due to loss of contrast perception resulting from low visual acuity, chromodeficiency, or aging, a minimum of 4.5:1 is recommended"
+        },
+        "secondSubtitle": {
+            "title": "Enhanced Contrast",
+            "badgeTextWCAG": "Criterion 1.4.6",
+            "badgeTooltipText": "See WCAG Success Criterion 1.4.6",
+            "firstParagraph": "WCAG criterion 1.4.6 states that the visual elements of a web page must present adequate contrast to facilitate reading and understanding by people with visual impairments or reading difficulties. To meet this criterion, it is important to ensure that the default contrast of the website complies with accessibility standards.",
+            "secondParagraph": "Adequate contrast is measured by the contrast ratio (CI), which ranges from 1:1 (no contrast) to 21:1 (high contrast). For normal text, the minimum recommended contrast ratio is 4.5:1. For large text (18 points or more) and bold text, the minimum recommended ratio is 3:1.",
+            "thirdParagraph": "Therefore, it is essential that website developers pay attention to the adequate contrast of visual elements, ensuring accessibility for all people.",
+            "fourthParagraph": "Here is an example of code that can be used to change the contrast of the website via a button:",
+            "fifthParagraph": "Remember that this code is just a suggestion and can be adapted according to the specific needs of your project."
+        }
+    },
+    "listenToDescriptionPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Image Audio Description Functionality",
+        "firstSubtitle": {
+            "title": "Sensory Affordances",
+            "badgeTextWCAG": "Criterion 1.3.3",
+            "badgeTooltipText": "See WCAG Success Criterion 1.3.3",
+            "firstParagraph": "Criterion 1.3.3 of the Web Content Accessibility Guidelines (WCAG) is called 'Sensory Affordances' and is intended to ensure that website information and interactions can be understood and operated by users with different sensory needs, such as visual, auditory, motor, and cognitive impairments.",
+            "secondParagraph": "A feature that meets WCAG criterion 1.3.3 - Sensory Affordances is the inclusion of audio descriptions for images and graphics. For example, For example, we can use JavaScript code to add audio descriptions to images using the 'alt' tag and the JavaScript 'speak()' function. See an example below:",
+            "thirdParagraph": "For better control by users using the keyboard, we can add a play button in HTML and give it an ID so that it can be selected by JavaScript. We then write a function that will be executed when the button is clicked. This function can use the JavaScript SpeechSynthesis API to read the image description to the user.",
+            "fourthParagraph": "When the 'Play' button is clicked, the image description will be read to the user using speech synthesis. This meets WCAG criterion 1.3.3 - Sensory Capabilities, as it provides an audio alternative to the image content."
+        }
+    },
+    "keyboardNavigationPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Keyboard Navigation",
+        "firstParagraph": "There are times when you are developing something unique and may not have a native equivalent in the browser. Therefore, you need to create a custom control and add keyboard support.",
+        "secondParagraph": "To make an element focusable, you need to ensure that it is included in the natural tab order. This can be done using the tabindex attribute.",
+        "thirdParagraph": "To insert an element into the tab order, allowing the user to access it using the Tab or Shift + Tab keys, we assign the value zero to the element's tabindex attribute. This way, when the user presses the Tab key, the focus will be directed to that element, and when they press other keys on the keyboard, keyboard events will be sent to that element. See the following example:",
+        "fourthParagraph": "In addition, the zero tabindex allows the element to be focused programmatically. Therefore, we can call the focus method of this element in JavaScript and direct focus to it. This can be useful if we need to redirect the user to a specific control, perhaps after an action or event on our page has completed.",
+        "fifthParagraph": "To make an element not included in the tab order but still focusable, we can add the tabindex attribute with the value -1. This way, it will not be possible to focus on the element when pressing the Tab key. However, we can select the element using a small JavaScript code, as shown in the example below:",
+        "sixthParagraph": "The -1 tabindex can be useful in solutions where we need to manage focus, moving it to another place on the page to provide an easier and more efficient tabbing experience. It can also be used to temporarily disable a custom interactive control.",
+        "seventhParagraph": "As for elements with a tabindex greater than zero, they will be skipped ahead of all others in the natural tab order. However, it is generally discouraged to use tabindex with a value greater than zero, as this is considered an antipattern. The reason is that screen readers navigate the DOM in a linear fashion, which means there is no guarantee that users will access controls with a higher tabindex before any other element in the document.",
+        "eighthParagraph": "Therefore, the general best practice is to rearrange the element earlier in the DOM if you want it to have a higher position in the tab order.",
+        "firstSubtitle": {
+            "title": "Make All Page Functions Keyboard Accessible",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 2.1.1",
+                "badgeTooltipText": "See WCAG Success Criterion 2.1.1"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 2.1.2",
+                "badgeTooltipText": "See WCAG Success Criterion 2.1.2"
+            },
+            "firstParagraph": "All page functions developed in scripting languages, such as JavaScript, should be programmed considering the use of the keyboard. The focus should not be blocked or fixed on a specific element, allowing the user to navigate through all elements using the keyboard.",
+            "secondParagraph": "Some mouse-specific functionalities have a logical correspondence via the keyboard, as shown in the following table:",
+            "table": {
+                "keyboardEvent": "Keyboard event",
+                "correspondingMouseEvent": "Corresponding mouse event",
+                "tableCaption": "Keyboard events and their mouse counterparts"
+            },
+            "thirdParagraph": "Note: * Some event handlers are device-independent, that is, they apply to any device (mouse, keyboard or others), as is the case with: onFocus, onBlur, onSelect, onChange and onClick (when used in a link or form element).",
+            "fourthParagraph": "When multiple event handlers are used for the same action, in order to allow it to work both with the mouse and the keyboard. It is important to test the final result in different browsers and with different assistive technology resources to ensure that the event is actually accessible.",
+            "fifthParagraph": "Preferably use onclick/onkeypress instead of onmousedown/onkeydown and onmouseup/onkeyup, as the latter automatically trigger the event via the keyboard. If there is a real need to use these events, it is important to control which key should be triggered for the event to occur.",
+            "sixthParagraph": "There are mouse functions that do not have a direct correspondence via the keyboard, such as double-click (dblclick). In these cases, it is necessary to implement an alternative function, for example, including buttons that perform the same function via the keyboard.",
+            "seventhParagraph": "The onclick event already works via the keyboard (ENTER key) in most browsers. Dropdown menus and other menus that contain subitems must be accessible by keyboard."
+        },
+        "secondSubtitle": {
+            "title": "Keyboard - No Exception",
+            "badgeTextWCAG": "Criterion 2.1.3",
+            "badgeTooltipText": "See WCAG Success Criterion 2.1.3",
+            "firstParagraph": "An example of JavaScript functionality for a website would be a page with a table of data. The table has column and row headers, and each cell contains a value. The functionality allows the user to navigate through the table using only the keyboard, without the need to use the mouse.",
+            "secondParagraph": "The functionality is implemented using the JavaScript 'tabindex' event. When the user presses the Tab key, the focus moves to the next cell in the table. When pressing the arrow keys, the focus moves to the adjacent cell in the direction of the arrow pressed. The user can also use the Enter or Space keys to select a specific cell.",
+            "thirdParagraph": "In addition, the functionality provides keyboard navigation mechanisms to access the current column and row header, allowing the user to understand the context of the data displayed.",
+            "fourthParagraph": "Here's how this functionality can be implemented in the table example mentioned above, by adding the relevant JavaScript code:",
+            "fifthParagraph": "You can add the tabindex attribute to the elements you want to allow keyboard navigation, and use JavaScript to detect the pressing of the arrow keys and move the focus to the previous or next tabindex element.",
+            "sixthParagraph": "This code uses the addEventListener method to listen for the keydown event, that is, when a key is pressed. It then creates an array with the elements that have the tabindex attribute and uses the indexOf method to find out which element has the current focus (document.activeElement). Finally, a switch is used to detect the navigation arrows and move the focus to the previous or next tabindex element.",
+            "seventhParagraph": "This functionality is important because it allows people with mobility difficulties, such as those with physical mobility issues, to access and interact with the table content efficiently and independently. In addition, it also benefits users who prefer to use the keyboard instead of the mouse, such as people with visual impairments, who may have difficulty tracking the mouse cursor on the screen."
+        }
+    },
+    "readingMaskPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Web Accessibility Reading Mask",
+        "firstSubtitle": {
+            "title": "Solution to enhance reading experience",
+            "firstBadge": {
+                "badgeTextWCAG": "Criterion 1.4.3",
+                "badgeTooltipText": "See WCAG Success Criteria 1.4.3"
+            },
+            "secondBadge": {
+                "badgeTextWCAG": "Criterion 2.1.2",
+                "badgeTooltipText": "See WCAG Success Criteria 2.1.2"
+            },
+            "thirdBadge": {
+                "badgeTextWCAG": "Criterion 3.1.2",
+                "badgeTooltipText": "See WCAG Success Criteria 3.1.2"
+            },
+            "fourBadge": {
+                "badgeTextWCAG": "Criteria 4.1.2",
+                "badgeTooltipText": "See WCAG Success Criteria 4.1.2"
+            },
+            "firstParagraph": "A very useful accessibility feature to improve the reading experience of visually impaired users is the reading mask on websites. This solution, implemented with JavaScript and CSS, consists of a movable highlight that follows the mouse cursor, helping to focus on the text while reading.",
+            "secondParagraph": "To implement this feature on your website, you can create a <div> element with CSS styles and set its position to absolute, allowing it to follow the mouse cursor. Then, add a mousemove event to the document to update the position of the <div> element according to the cursor coordinates.",
+            "thirdParagraph": "For example, the code below creates a reading mask with a translucent background that follows the mouse cursor:",
+            "codeLegend": "Replace the '' with backticks `` on line 57. Code: ... mascara.style.top = `$` ...",
+            "fourthParagraph": "In addition, you can add a button that enables or disables the reading mask. To do this, create a <button> element in your HTML code and add a click event listener to that button. In the event handler, you can check if the 'mascara' class is present on the mask element. If it is present, remove the class; otherwise, add it.",
+            "fifthParagraph": "In the mousemove event, check if the 'mascara' class is present on the mask element. If present, update the mask position based on mouse movement. Otherwise, the mask remains unchanged.",
+            "sixthParagraph": "With this functionality, people with visual impairments can use the reading mask to follow the line being read, maintaining focus and making it easier to understand the textual content on your website."
+        }
+    },
+    "creditsPage": {
+        "skipToMainContent": "Skip to main content",
+        "title": "Credits",
+        "firstParagraph": "Below are the due credits for the images used in the project."
+    },
+    "404Page": {
+        "firstParagraph": "Oops, error 404. The page you are looking for does not exist.",
+        "button": "Return to Home Page"
+    }
+}
