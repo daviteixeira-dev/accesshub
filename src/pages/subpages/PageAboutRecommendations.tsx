@@ -11,6 +11,8 @@ import {
     UnorderedList  
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../../components/Footer/Footer';
@@ -22,11 +24,14 @@ import figura08 from '../../assets/figura-08.png';
 import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutRecommendations = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Flex>
 
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('recommendationsPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -59,7 +64,7 @@ const PageAboutRecommendations = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Recomendações
+                        {t('recommendationsPage.title')}
                     </Heading>
 
                     <Heading
@@ -72,19 +77,19 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Respeitar os Padrões Web
+                        {t('recommendationsPage.firstSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 4.1.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 4.1.1 (inglês)'
+                            textWCAG={t('recommendationsPage.firstSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.firstSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/parsing'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 4.1.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 4.1.2 (inglês)'
+                            textWCAG={t('recommendationsPage.firstSubtitle.secondBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.firstSubtitle.secondBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/name-role-value'
                         />
                     </Heading>
@@ -95,12 +100,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os Padrões Web são recomendações do W3C (World Wide Web Consortium) que 
-                        orientam os desenvolvedores sobre o uso de boas práticas para tornar a 
-                        web acessível a todos. Ao seguir esses padrões, os desenvolvedores podem 
-                        criar experiências ricas, alimentadas por um vasto armazenamento de 
-                        dados, que estão disponíveis em todos os dispositivos e compatíveis 
-                        com navegadores atuais e futuros. 
+                        {t('recommendationsPage.firstSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -109,11 +109,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando se trata de acessibilidade, as principais recomendações são os Padrões 
-                        de <Link color='blue.900' href='https://www.w3c.br/Padroes/WebDesignAplicacoes' textDecor='underline' isExternal> Web Design e Aplicações</Link>, que 
-                        abrangem o desenvolvimento de páginas da web, incluindo HTML5, CSS, SVG, Ajax e 
-                        outras tecnologias para WebApps, bem como o padrão internacional de 
-                        acessibilidade WCAG, internacionalização e dispositivos móveis.
+                        {t('recommendationsPage.firstSubtitle.secondParagraphParteOne')}<Link color='blue.900' href='https://www.w3c.br/Padroes/WebDesignAplicacoes' textDecor='underline' isExternal>{t('recommendationsPage.firstSubtitle.secondParagraphTextLink')}</Link>{t('recommendationsPage.firstSubtitle.secondParagraphPartTwo')}
                     </Text>
 
                     <Text
@@ -122,13 +118,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Outro aspecto importante ao respeitar os Padrões Web é a separação de 
-                        camadas. As camadas lógicas devem ser separadas de acordo com seu 
-                        propósito. A camada de conteúdo deve utilizar linguagens de marcação, 
-                        como HTML e XHTML. Para a camada de apresentação visual do conteúdo, 
-                        utiliza-se CSS em qualquer uma de suas versões. Já para a camada que 
-                        modifica o comportamento dos elementos, são utilizadas linguagens 
-                        JavaScript e modelos de objeto (DOM).
+                        {t('recommendationsPage.firstSubtitle.thirdParagraph')}
                     </Text>
 
                     <Heading
@@ -141,12 +131,12 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Cabeçalhos e rótulos
+                        {t('recommendationsPage.secondSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.4.6'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.4.6 (inglês)'
+                            textWCAG={t('recommendationsPage.secondSubtitle.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.secondSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels'
                         />
                     </Heading>
@@ -157,11 +147,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os títulos (h1 até h6) e rótulos (campos de formulários) devem ser claros e 
-                        descritivos, auxiliando os usuários a encontrar as informações desejadas 
-                        com mais facilidade. Além disso, os controles de entrada de formulário 
-                        devem ser rotulados de forma explícita, descrevendo qual entrada é 
-                        esperada. Isso ajuda os usuários a entender como preencher o formulário.
+                        {t('recommendationsPage.secondSubtitle.firstParagraph')}
                     </Text>
 
                     <PostComponent article_name={'recommendations_04'} />
@@ -176,19 +162,19 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Ordenar de forma lógica e intuitiva a leitura e tabulação
+                        {t('recommendationsPage.thirdSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.3.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.3.2 (inglês)'
+                            textWCAG={t('recommendationsPage.thirdSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.thirdSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.4.3'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.4.3 (inglês)'
+                            textWCAG={t('recommendationsPage.thirdSubtitle.secondBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.thirdSubtitle.secondBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/focus-order'
                         />
                     </Heading>
@@ -199,9 +185,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante criar o código HTML com uma sequência lógica de leitura para 
-                        percorrer links, controles de formulários e objetos. Essa sequência é 
-                        determinada pela ordem em que os elementos aparecem no código HTML.
+                        {t('recommendationsPage.thirdSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -210,13 +194,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Recomenda-se que o bloco de conteúdo principal da página seja disponibilizado 
-                        antes do bloco de menu. Isso facilita o acesso para usuários que navegam 
-                        usando o teclado, permitindo um acesso mais rápido sem a necessidade de 
-                        percorrer todos os itens do menu antes de chegar ao conteúdo. Embora 
-                        atalhos (como links e teclas) ajudem nesse sentido, alguns usuários podem 
-                        não estar familiarizados com eles e podem ter dificuldades devido a 
-                        deficiências motoras.
+                        {t('recommendationsPage.thirdSubtitle.secondParagraph')}
                     </Text>
 
                     <PostComponent article_name={'recommendations_01'} />
@@ -227,11 +205,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Em alguns casos, pode ser necessário forçar a ordem de navegação usando 
-                        o atributo tabindex. No entanto, ao utilizar o tabindex, é importante 
-                        garantir que ele seja usado corretamente e verificar manualmente se o 
-                        fluxo fornecido é realmente o desejado. O uso incorreto do tabindex 
-                        pode resultar em uma ordem e tabulação inconsistentes.
+                       {t('recommendationsPage.thirdSubtitle.thirdParagraph')}
                     </Text>
 
                     <Heading
@@ -244,19 +218,19 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não utilizar apenas a cor para diferenciar elementos
+                        {t('recommendationsPage.fourthSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.3.3'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.3.3 (inglês)'
+                            textWCAG={t('recommendationsPage.fourthSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.fourthSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.4.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.4.1 (inglês)'
+                            textWCAG={t('recommendationsPage.fourthSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.fourthSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/use-of-color'
                         />
                     </Heading>
@@ -267,10 +241,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A cor ou outras características sensoriais, como forma, tamanho, localização 
-                        visual, orientação ou som, não devem ser usadas como o único meio para 
-                        transmitir informações, indicar uma ação, solicitar uma resposta do 
-                        usuário ou distinguir um elemento visual.
+                        {t('recommendationsPage.fourthSubtitle.firstParagraph')}
                     </Text>
 
                     <Flex
@@ -289,10 +260,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Por exemplo, a cor não deve ser o único elemento de diferenciação, pois pessoas 
-                        com daltonismo podem ter dificuldades em distinguir cores. Na imagem acima, à 
-                        esquerda estão os sinais vistos por pessoas com visão normal, à direita estão 
-                        os mesmos sinais vistos por pessoas com daltonismo.
+                        {t('recommendationsPage.fourthSubtitle.secondParagraph')}
                     </Text>
 
                     <Text
@@ -301,9 +269,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Podemos usar como exemplo a validação de uma senha em um formulário, em que a 
-                        mensagem de erro traz um ícone de alerta e uma mensagem explicando como 
-                        corrigir o erro, além da cor que destaca a informação. Veja o código a seguir:
+                        {t('recommendationsPage.fourthSubtitle.thirdParagraph')}
                     </Text>
 
                     <PostComponent article_name={'recommendations_03'} />
@@ -318,12 +284,12 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Não incluir situações com intermitência de tela
+                        {t('recommendationsPage.fifthSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.3.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.3.1 (inglês)'
+                            textWCAG={t('recommendationsPage.fifthSubtitle.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.fifthSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold'
                         />
                     </Heading>
@@ -334,10 +300,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Não devem ser utilizados efeitos visuais piscantes, intermitentes ou 
-                        cintilantes. Esses efeitos podem desencadear ataques epiléticos em pessoas 
-                        com epilepsia fotosensitiva. Essa diretriz também se aplica a anúncios 
-                        de terceiros inseridos na página.
+                        {t('recommendationsPage.fifthSubtitle.firstParagraph')}
                     </Text>
 
                     <Heading
@@ -350,12 +313,12 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Assegurar o controle do usuário sobre as alterações temporais do conteúdo
+                        {t('recommendationsPage.sixthSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.2.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
+                            textWCAG={t('recommendationsPage.sixthSubtitle.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.sixthSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
                         />
                     </Heading>
@@ -366,14 +329,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Conteúdos como slideshows, rolagens, movimentações em geral ou animações 
-                        não devem ser reproduzidos automaticamente sem o controle do usuário, mesmo 
-                        em propagandas na página. O usuário deve ter o controle sobre essas 
-                        movimentações, seja por meio de preferências de visualização da página 
-                        ou de outro método acessível a usuários com deficiência. Além disso, o 
-                        usuário deve ser capaz de interromper e reiniciar conteúdos em movimento, 
-                        sem exceção. É desejável que o usuário também possa controlar a 
-                        velocidade desses conteúdos.
+                        {t('recommendationsPage.sixthSubtitle.firstParagraph')}
                     </Text>
 
                     <Heading
@@ -386,7 +342,7 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Disponibilizar documentos em formatos acessíveis
+                        {t('recommendationsPage.seventhSubtitle.title')}
                     </Heading>
 
                     <Text
@@ -395,10 +351,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os documentos devem ser disponibilizados preferencialmente em HTML. Também é 
-                        possível utilizar arquivos para download no formato ODF, desde que sejam 
-                        acessíveis. Se um arquivo for disponibilizado em PDF, é necessário fornecer 
-                        uma alternativa em HTML ou ODF.
+                        {t('recommendationsPage.seventhSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -407,12 +360,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Observação: O ODF (Open Document Format) é um formato aberto de documento 
-                        adotado pela e-PING (Arquitetura de Interoperabilidade em Governo Eletrônico), 
-                        que pode ser implementado em qualquer sistema. O ODF engloba formatos como 
-                        ODT (Open Data Text) para documentos de texto, ODS (Open Data Sheet) para 
-                        planilhas eletrônicas, ODP (Open Data Presentation) para apresentações 
-                        de slides, entre outros.
+                        {t('recommendationsPage.seventhSubtitle.secondParagraph')}
                     </Text>
 
                     <Heading
@@ -425,12 +373,12 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Garantir a leitura e compreensão das informações
+                        {t('recommendationsPage.eighthSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 3.1.5'
-                            tooltipText='Ver Critério WCAG de Sucesso 3.1.5 (inglês)'
+                            textWCAG={t('recommendationsPage.eighthSubtitle.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.eighthSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/reading-level'
                         />
                     </Heading>
@@ -441,12 +389,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O texto de um site deve ser de fácil leitura e compreensão, não exigindo do 
-                        usuário um nível de instrução mais avançado do que o ensino fundamental 
-                        completo. Quando o texto exigir uma capacidade de leitura mais avançada, 
-                        devem ser fornecidas informações suplementares que expliquem ou ilustrem 
-                        o conteúdo principal. Outra alternativa é fornecer uma versão simplificada 
-                        do conteúdo em texto.
+                        {t('recommendationsPage.eighthSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -455,8 +398,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Existem algumas técnicas que podem ajudar a melhorar a inteligibilidade 
-                        dos textos, tais como:
+                        {t('recommendationsPage.eighthSubtitle.secondParagraph')}
                     </Text>
 
                     <UnorderedList mb='1rem'>
@@ -465,59 +407,56 @@ const PageAboutRecommendations = () => {
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Desenvolver apenas um tópico por parágrafo.
+                            {t('recommendationsPage.eighthSubtitle.firstList.firstItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar sentenças organizadas de forma simplificada para o propósito 
-                            do conteúdo, seguindo a estrutura sujeito-verbo-objeto, preferencialmente.
+                            {t('recommendationsPage.eighthSubtitle.firstList.secondItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Dividir sentenças longas em sentenças mais curtas.
+                            {t('recommendationsPage.eighthSubtitle.firstList.thirdItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Evitar o uso de jargão, expressões regionais ou termos especializados 
-                            que possam não ser claros para todos.
+                            {t('recommendationsPage.eighthSubtitle.firstList.fourthItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar palavras comuns em vez de palavras pouco familiares.
+                            {t('recommendationsPage.eighthSubtitle.firstList.fifthItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar listas de itens em vez de uma longa série de palavras ou 
-                            frases separadas por vírgulas.
+                            {t('recommendationsPage.eighthSubtitle.firstList.sixthItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Fazer referências claras a pronomes e outras partes do documento.
+                            {t('recommendationsPage.eighthSubtitle.firstList.seventhItem')}
                         </ListItem>
                         <ListItem
                             fontSize='1rem'
                             fontWeight='600'
                             fontFamily='Inter'
                         >
-                            Utilizar, preferencialmente, a voz ativa.
+                            {t('recommendationsPage.eighthSubtitle.firstList.eighthItem')}
                         </ListItem>
                     </UnorderedList>
 
@@ -531,19 +470,19 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Exibir uma explicação para siglas, abreviaturas e palavras incomuns
+                        {t('recommendationsPage.ninthSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 3.1.3'
-                            tooltipText='Ver Critério WCAG de Sucesso 3.1.3 (inglês)'
+                            textWCAG={t('recommendationsPage.ninthSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.ninthSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/unusual-words'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 3.1.4'
-                            tooltipText='Ver Critério WCAG de Sucesso 3.1.4 (inglês)'
+                            textWCAG={t('recommendationsPage.ninthSubtitle.secondBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.ninthSubtitle.secondBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/abbreviations'
                         />
                     </Heading>
@@ -554,11 +493,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Pelo menos na primeira ocorrência de siglas, abreviaturas ou palavras 
-                        incomuns (ambíguas, desconhecidas ou utilizadas de forma muito específica), 
-                        deve ser fornecida sua explicação ou forma completa. Essa explicação 
-                        pode estar presente no próprio texto, em um glossário ou por meio do 
-                        uso do elemento {"<abbr></abbr>"}, conforme os exemplos a seguir:
+                        {t('recommendationsPage.ninthSubtitle.firstParagraph')}
                     </Text>
 
                     <PostComponent article_name={'recommendations_02'} />
@@ -569,9 +504,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um site sobre desenvolvimento web fornece um link no menu para um 
-                        Glossário, que contém explicações para termos como HTML, CSS, Tag, 
-                        atributo, etc.
+                        {t('recommendationsPage.ninthSubtitle.secondParagraph')}
                     </Text>
 
                     <Heading
@@ -584,12 +517,12 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Fornecer controle de animação
+                        {t('recommendationsPage.tenthSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.2.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.2.2 (inglês)'
+                            textWCAG={t('recommendationsPage.tenthSubtitle.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.tenthSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide'
                         />
                     </Heading>
@@ -600,9 +533,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para qualquer animação que inicie automaticamente na página, devem ser 
-                        fornecidos mecanismos para que o usuário possa pausar, parar ou ocultar 
-                        a animação.
+                        {t('recommendationsPage.tenthSubtitle.firstParagraph')}
                     </Text>
 
                     <Heading
@@ -615,19 +546,19 @@ const PageAboutRecommendations = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Garantir a acessibilidade dos objetos programáveis
+                        {t('recommendationsPage.eleventhSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.1.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.1.1 (inglês)'
+                            textWCAG={t('recommendationsPage.eleventhSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.eleventhSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/keyboard'
                         />
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.1.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
+                            textWCAG={t('recommendationsPage.eleventhSubtitle.secondBadge.badgeTextWCAG')}
+                            tooltipText={t('recommendationsPage.eleventhSubtitle.secondBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap'
                         />
                     </Heading>
@@ -638,12 +569,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É importante garantir que scripts, conteúdos dinâmicos e outros elementos 
-                        programáveis sejam acessíveis e que sua execução seja possível por meio 
-                        da navegação. Além disso, estratégias devem ser adotadas para garantir o 
-                        acesso a todos os usuários, independentemente do dispositivo utilizado. A 
-                        funcionalidade de arrastar e soltar (drag-and-drop) pode ter como 
-                        alternativa o uso de atalhos de recortar e colar.
+                        {t('recommendationsPage.eleventhSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -652,8 +578,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando não for possível tornar um elemento programável diretamente acessível, 
-                        é necessário fornecer uma alternativa em HTML para o conteúdo.
+                       {t('recommendationsPage.eleventhSubtitle.secondParagraph')}
                     </Text>
 
                     <Text
@@ -662,14 +587,7 @@ const PageAboutRecommendations = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando um script for utilizado em uma página da web, uma forma de fornecer 
-                        uma alternativa é por meio do elemento NOSCRIPT. Esse elemento pode ser 
-                        utilizado para exibir conteúdos em navegadores que não suportam scripts 
-                        ou nos quais os scripts estão desabilitados. No entanto, se o navegador 
-                        tiver suporte a scripts e eles estiverem habilitados, o elemento NOSCRIPT 
-                        será ignorado. Portanto, é importante desenvolver o próprio script com 
-                        cuidado para garantir a acessibilidade, e o elemento NOSCRIPT deve ser 
-                        usado para abranger os casos em que os scripts não são suportados. 
+                         {t('recommendationsPage.eleventhSubtitle.thirdParagraph')}
                     </Text>
 
                 </Flex>

@@ -10,11 +10,15 @@ import {
 
 import { NavLink } from 'react-router-dom';
 
+import { useTranslation } from 'react-i18next';
+
 import logo from '../../../public/logo-accesshub.png';
 
 const Footer = () => {
 
   const footerColor = useColorModeValue('blue.600', 'gray.800');
+
+  const { t } = useTranslation();
 
   return (
     <Flex
@@ -73,7 +77,7 @@ const Footer = () => {
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
                 >
-                    Documentação
+                    {t('footer.documetation')}
                 </ListItem>
 
                 <ListItem
@@ -82,7 +86,7 @@ const Footer = () => {
                     color='whiteAlpha.900'
                 >
                     <NavLink to='/componentes'>
-                        Componentes
+                        {t('footer.components')}
                     </NavLink>
                 </ListItem>
 
@@ -92,7 +96,7 @@ const Footer = () => {
                     color='whiteAlpha.900'
                 >
                     <NavLink to='/current-scenario'>
-                        Cenário Atual
+                        {t('footer.currentScenario')}
                     </NavLink>
                 </ListItem>
 
@@ -102,7 +106,7 @@ const Footer = () => {
                     color='whiteAlpha.900'
                 >
                     <NavLink to='/credits'>
-                        Créditos
+                        {t('footer.credits')}
                     </NavLink>
                 </ListItem>
             </UnorderedList>
@@ -119,7 +123,7 @@ const Footer = () => {
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
                 >
-                    Comunidade
+                    {t('footer.community')}
                 </ListItem>
 
                 <ListItem
@@ -177,10 +181,7 @@ const Footer = () => {
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
                 >
-                    © 2023 <Link href='https://github.com/daviteixeira-btm' textDecor='underline' isExternal> Davi Teixeira</Link>. This site, library and examples 
-                    are licensed under <Link _hover={{ textDecoration: 'none' }} isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>
-                        MIT
-                    </Link>.
+                    {t('footer.copyright')} <Link href='https://github.com/daviteixeira-dev' textDecor='underline' isExternal>{t('footer.developedBy')}</Link>{t('footer.developedText')} <Link _hover={{ textDecoration: 'none' }} isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>{t('footer.mit')}</Link>
                 </Text>
             </Flex>
         </Flex>

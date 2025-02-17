@@ -7,6 +7,8 @@ import {
     Container
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../../components/Footer/Footer';
@@ -16,11 +18,14 @@ import PostComponent from '../../components/PostComponent/PostComponent';
 import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutHeaders = () => {
+
+    const { t } = useTranslation();
+    
     return (
         <Flex>
 
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('headingPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -53,7 +58,7 @@ const PageAboutHeaders = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Cabeçalhos
+                        {t('headingPage.title')}
                     </Heading>
 
                     <Heading
@@ -66,12 +71,12 @@ const PageAboutHeaders = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Utilizando corretamente os níveis de cabeçalho
+                        {t('headingPage.firstSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.3.1'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.3.1 (inglês)'
+                            textWCAG={t('headingPage.firstSubtitle.badgeTextWCAG')}
+                            tooltipText={t('headingPage.firstSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships'
                         />
                     </Heading>
@@ -82,13 +87,7 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Os cabeçalhos desempenham um papel fundamental na organização e acessibilidade 
-                        do conteúdo de um site. Ao utilizar corretamente os níveis de 
-                        cabeçalho (elementos HTML H1 a H6), é possível estabelecer uma hierarquia clara, 
-                        facilitando a leitura, compreensão e navegação do usuário. Além disso, os 
-                        leitores de tela utilizam essa hierarquia como um meio de navegação eficiente, 
-                        permitindo que os usuários pulem entre os cabeçalhos e encontrem as seções de 
-                        interesse com facilidade.
+                        {t('headingPage.firstSubtitle.firstParagraph')}
                     </Text>
                     
                     <PostComponent article_name={'headers_01'} />
@@ -103,12 +102,12 @@ const PageAboutHeaders = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Criando títulos de seção significativos e bem estruturados
+                        {t('headingPage.secondSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.4.10'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.4.10 (inglês)'
+                            textWCAG={t('headingPage.secondSubtitle.badgeTextWCAG')}
+                            tooltipText={t('headingPage.secondSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/section-headings'
                         />
                     </Heading>
@@ -119,11 +118,7 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Em termos conceituais, existem seis níveis de títulos, com o H1 sendo o mais 
-                        importante, representando o conteúdo principal da página. É recomendável que 
-                        cada página tenha apenas um H1, que deve corresponder ao título principal do 
-                        documento. Já os níveis de H2 a H6 podem ser utilizados várias vezes em uma 
-                        página, desde que sigam uma lógica textual coerente e hierarquia adequada.
+                        {t('headingPage.secondSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -132,10 +127,7 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Quando dividir o conteúdo em seções, é fundamental atribuir títulos claros e bem 
-                        definidos a cada seção, garantindo uma hierarquia lógica e consistente. Isso 
-                        permite uma identificação fácil das diferentes áreas do conteúdo, como 
-                        ilustrado no exemplo a seguir: 
+                        {t('headingPage.secondSubtitle.secondParagraph')}
                     </Text>
 
                     <PostComponent article_name={'headers_03'} />
@@ -146,9 +138,7 @@ const PageAboutHeaders = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Um exemplo prático pode ser encontrado em um site de receitas, onde o título do 
-                        capítulo seria o H1, os passos seriam identificados como H2 e as descrições dos 
-                        passos como H3, e assim por diante.
+                        {t('headingPage.secondSubtitle.thirdParagraph')}
                     </Text>
 
                     <PostComponent article_name={'headers_02'} />

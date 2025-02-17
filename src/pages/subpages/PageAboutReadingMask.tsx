@@ -7,6 +7,8 @@ import {
     Container
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../../components/Footer/Footer';
@@ -16,10 +18,13 @@ import PostComponent from '../../components/PostComponent/PostComponent';
 import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutReadingMask = () => {
+
+    const { t } = useTranslation();
+    
     return (
         <Flex>
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('readingMaskPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -50,7 +55,7 @@ const PageAboutReadingMask = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Máscara de Leitura para Acessibilidade na Web
+                        {t('readingMaskPage.title')}
                     </Heading>
 
                     <Heading
@@ -63,33 +68,33 @@ const PageAboutReadingMask = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Solução para aprimorar a experiência de leitura
+                        {t('readingMaskPage.firstSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.4.3'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.4.3 (inglês)'
+                            textWCAG={t('readingMaskPage.firstSubtitle.firstBadge.badgeTextWCAG')}
+                            tooltipText={t('readingMaskPage.firstSubtitle.firstBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum'
                         />
                         
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 2.1.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 2.1.2 (inglês)'
+                            textWCAG={t('readingMaskPage.firstSubtitle.secondBadge.badgeTextWCAG')}
+                            tooltipText={t('readingMaskPage.firstSubtitle.secondBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap'
                         />
                         
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 3.1.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 3.1.2 (inglês)'
+                            textWCAG={t('readingMaskPage.firstSubtitle.thirdBadge.badgeTextWCAG')}
+                            tooltipText={t('readingMaskPage.firstSubtitle.thirdBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts'
                         />
                         
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 4.1.2'
-                            tooltipText='Ver Critério WCAG de Sucesso 4.1.2 (inglês)'
+                            textWCAG={t('readingMaskPage.firstSubtitle.fourBadge.badgeTextWCAG')}
+                            tooltipText={t('readingMaskPage.firstSubtitle.fourBadge.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG22/Understanding/name-role-value'
                         />
                     </Heading>
@@ -100,11 +105,7 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Uma funcionalidade de acessibilidade muito útil para melhorar a experiência 
-                        de leitura de usuários com dificuldades visuais é a máscara de leitura em 
-                        sites. Essa solução, implementada com JavaScript e CSS, consiste em um 
-                        destaque móvel que acompanha o cursor do mouse, auxiliando na 
-                        focalização do texto durante a leitura.
+                        {t('readingMaskPage.firstSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -113,11 +114,7 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Para implementar essa funcionalidade em seu site, você pode criar um 
-                        elemento {"<div>"} com estilos CSS e definir sua posição como absoluta, 
-                        permitindo que ele siga o cursor do mouse. Em seguida, adicione um 
-                        evento de mousemove ao documento para atualizar a posição do 
-                        elemento {"<div>"} de acordo com as coordenadas do cursor.
+                        {t('readingMaskPage.firstSubtitle.secondParagraph')}
                     </Text>
 
                     <Text
@@ -126,8 +123,7 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Por exemplo, o código abaixo cria uma máscara de leitura com um 
-                        fundo translúcido que acompanha o cursor do mouse:
+                        {t('readingMaskPage.firstSubtitle.thirdParagraph')}
                     </Text>
 
                     <PostComponent article_name={'readingMask_01'} />
@@ -139,7 +135,7 @@ const PageAboutReadingMask = () => {
                         fontSize='.9rem'
                         fontFamily='Inter'
                     >
-                        Trocar os "" por crases `` na linha 57. Codígo: ... mascara.style.top = `$` ...
+                        {t('readingMaskPage.firstSubtitle.codeLegend')}
                     </Text>
 
 
@@ -149,12 +145,7 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Além disso, é possível adicionar um botão que habilite ou desabilite a 
-                        máscara de leitura. Para isso, crie um elemento {"<button>"} em seu 
-                        código HTML e adicione um ouvinte de eventos de clique a esse 
-                        botão. No manipulador de eventos, você pode verificar se a 
-                        classe "mascara" está presente no elemento da máscara. Se estiver 
-                        presente, remova a classe; caso contrário, adicione-a.
+                        {t('readingMaskPage.firstSubtitle.fourthParagraph')}
                     </Text>
 
                     <Text
@@ -163,10 +154,7 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        No evento de mousemove, verifique se a classe "mascara" está presente 
-                        no elemento da máscara. Se estiver presente, atualize a posição da 
-                        máscara com base no movimento do mouse. Caso contrário, a máscara 
-                        permanecerá inalterada.
+                        {t('readingMaskPage.firstSubtitle.fifthParagraph')}
                     </Text>
 
                     <Text
@@ -175,9 +163,7 @@ const PageAboutReadingMask = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Com essa funcionalidade, pessoas com dificuldades visuais podem usar 
-                        a máscara de leitura para acompanhar a linha que está sendo lida, 
-                        mantendo o foco e facilitando a compreensão do conteúdo textual em seu site.
+                        {t('readingMaskPage.firstSubtitle.sixthParagraph')}
                     </Text>
 
                 </Flex>

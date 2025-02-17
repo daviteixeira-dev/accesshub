@@ -7,6 +7,8 @@ import {
     Container
 } from '@chakra-ui/react';
 
+import { useTranslation } from 'react-i18next';
+
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav';
 
 import Footer from '../../components/Footer/Footer';
@@ -16,11 +18,14 @@ import PostComponent from '../../components/PostComponent/PostComponent';
 import BadgeWCAGInfoNumber from '../../components/BadgeWCAGInfoNumber/BadgeWCAGInfoNumber';
 
 const PageAboutChangeWebsiteContrast = () => {
+
+    const { t } = useTranslation();
+    
     return (
         <Flex>
 
             <SkipNavLink zIndex={2}>
-                Ir para o conteúdo
+                {t('changeSiteContrastPage.skipToMainContent')}
             </SkipNavLink>
 
             <Hide below='md'>
@@ -53,7 +58,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontFamily='Inter'
                         mt={['5rem', '5rem', '1rem', '1rem']}
                     >
-                        Funcionalidade de Mudança de Contraste de um Site
+                        {t('changeSiteContrastPage.title')}
                     </Heading>
 
                     <Heading
@@ -66,12 +71,12 @@ const PageAboutChangeWebsiteContrast = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Oferecendo um Contraste Mínimo entre Plano de Fundo e Primeiro Plano
+                        {t('changeSiteContrastPage.firstSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.4.3'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.4.3 (inglês)'
+                            textWCAG={t('changeSiteContrastPage.firstSubtitle.badgeTextWCAG')}
+                            tooltipText={t('changeSiteContrastPage.firstSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum'
                         />
                     </Heading>
@@ -82,12 +87,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        É crucial garantir que as cores do plano de fundo e do primeiro plano
-                        apresentem um contraste adequado para serem visualizadas por pessoas
-                        com baixa visão, cromodeficiências ou que utilizam monitores de vídeo
-                        monocromático. A fim de melhorar a acessibilidade, evite o uso de
-                        imagens como plano de fundo, pois isso pode dificultar a leitura
-                        e distrair o usuário.
+                        {t('changeSiteContrastPage.firstSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -96,13 +96,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        A relação de contraste pode ser calculada dividindo-se o valor da
-                        luminosidade relativa da cor mais clara de um dos planos pelo valor
-                        da luminosidade relativa da cor mais escura do outro plano. A norma
-                        ISO-9241-3 recomenda uma relação de contraste mínimo de 3:1 entre
-                        plano de fundo e primeiro plano. No entanto, devido à perda de
-                        percepção do contraste resultante de baixa acuidade visual,
-                        cromodeficiência ou envelhecimento, é recomendado um mínimo de 4,5:1
+                        {t('changeSiteContrastPage.firstSubtitle.secondParagraph')}
                     </Text>
 
                     <Heading
@@ -115,12 +109,12 @@ const PageAboutChangeWebsiteContrast = () => {
                         flexDirection={['column', 'column', 'row', 'row']}
                         alignItems={['start', 'start', 'center', 'center']}
                     >
-                        Contraste Aprimorado
+                        {t('changeSiteContrastPage.secondSubtitle.title')}
 
                         <BadgeWCAGInfoNumber
                             bgColor='#276749'
-                            textWCAG='Critério 1.4.6'
-                            tooltipText='Ver Critério WCAG de Sucesso 1.4.6 (inglês)'
+                            textWCAG={t('changeSiteContrastPage.secondSubtitle.badgeTextWCAG')}
+                            tooltipText={t('changeSiteContrastPage.secondSubtitle.badgeTooltipText')}
                             linkWCAG='https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced'
                         />
                     </Heading>
@@ -131,12 +125,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O critério 1.4.6 da WCAG estabelece que os elementos visuais de uma
-                        página web devem apresentar um contraste adequado para facilitar a
-                        leitura e compreensão de pessoas com deficiência visual ou dificuldades
-                        de leitura. Para atender a esse critério, é importante garantir que
-                        o contraste padrão do site esteja em conformidade com as normas de
-                        acessibilidade.
+                        {t('changeSiteContrastPage.secondSubtitle.firstParagraph')}
                     </Text>
 
                     <Text
@@ -145,11 +134,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        O contraste adequado é medido pelo índice de contraste (IC), que varia
-                        de 1:1 (sem contraste) a 21:1 (alto contraste). Para texto normal, o
-                        índice de contraste mínimo recomendado é de 4,5:1. Para texto grande
-                        (18 pontos ou mais) e texto em negrito, o índice mínimo recomendado
-                        é de 3:1.
+                        {t('changeSiteContrastPage.secondSubtitle.secondParagraph')}
                     </Text>
 
                     <Text
@@ -158,9 +143,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Portanto, é fundamental que os desenvolvedores de sites estejam
-                        atentos ao contraste adequado dos elementos visuais, garantindo
-                        a acessibilidade para todas as pessoas.
+                        {t('changeSiteContrastPage.secondSubtitle.thirdParagraph')}
                     </Text>
 
                     <Text
@@ -169,8 +152,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Aqui está um exemplo de código que pode ser usado para
-                        mudar o contraste do site através de um botão:
+                        {t('changeSiteContrastPage.secondSubtitle.fourthParagraph')}
                     </Text>
 
                     <PostComponent article_name={'alterar-contraste_01'} />
@@ -181,8 +163,7 @@ const PageAboutChangeWebsiteContrast = () => {
                         fontSize='1.2rem'
                         fontFamily='Inter'
                     >
-                        Lembre-se de que esse código é apenas uma sugestão e pode ser
-                        adaptado de acordo com as necessidades específicas do seu projeto.
+                        {t('changeSiteContrastPage.secondSubtitle.fifthParagraph')}
                     </Text>
 
                 </Flex>
