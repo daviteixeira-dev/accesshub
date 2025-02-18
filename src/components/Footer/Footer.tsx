@@ -117,16 +117,16 @@ const Footer = () => {
                 style={{listStyle: 'none'}}
             >
                 
-                <ListItem
+                {/*<ListItem
                     fontWeight='600' 
                     fontSize='1.1rem'
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
                 >
                     {t('footer.community')}
-                </ListItem>
+                </ListItem>*/}
 
-                <ListItem
+                {/*<ListItem
                     mt='.5rem'
                     fontFamily='Inter'
                     color='whiteAlpha.900'
@@ -138,7 +138,7 @@ const Footer = () => {
                     >
                         GitHub
                     </Link>
-                </ListItem>
+                </ListItem>*/}
             </UnorderedList>
 
         </Flex>
@@ -181,7 +181,7 @@ const Footer = () => {
                     fontFamily='Inter' 
                     color='whiteAlpha.900' 
                 >
-                    {t('footer.copyright')} <Link href='https://github.com/daviteixeira-dev' textDecor='underline' isExternal>{t('footer.developedBy')}</Link>{t('footer.developedText')} <Link _hover={{ textDecoration: 'none' }} isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>{t('footer.mit')}</Link>
+                    {/*{t('footer.copyright')} <Link href='https://github.com/daviteixeira-dev' textDecor='underline' isExternal>{t('footer.developedBy')}</Link>{t('footer.developedText')} <Link _hover={{ textDecoration: 'none' }} isExternal fontWeight='bold' href='https://choosealicense.com/licenses/mit/'>{t('footer.mit')}</Link>*/}
                 </Text>
             </Flex>
         </Flex>

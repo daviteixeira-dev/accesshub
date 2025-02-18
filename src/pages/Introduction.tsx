@@ -148,7 +148,7 @@ const Introduction = () => {
             </ListItem>
           </UnorderedList>
 
-          <Flex
+          {/*<Flex
             p='1rem'
             my='2rem'
             textAlign='center'
@@ -186,9 +186,9 @@ const Introduction = () => {
               {t('introductionPage.howToContribute.firstParagraphPartOne')} <Link color='blue.900' textDecor='underline' href='https://github.com/daviteixeira-dev/accesshub/pulls' isExternal >{t('introductionPage.howToContribute.firstParagraphTextLink')}</Link> {t('introductionPage.howToContribute.firstParagraphPartTwo')}
             </Text>
 
-          </Flex>
+          </Flex>*/}
 
-          <Heading
+          {/*<Heading
             as='h4'
             mb='1rem'
             fontWeight='600'
@@ -214,7 +214,7 @@ const Introduction = () => {
             fontFamily='Inter'
           >
             <Text as='span' fontWeight='bold' >{t('introductionPage.references.quote')}</Text>{t('introductionPage.references.author')}<Text as='b'>{t('introductionPage.references.projectName')}</Text> {t('introductionPage.references.academicWorkInformation')}
-          </Text>
+          </Text>*/}
 
         </Flex>
 
