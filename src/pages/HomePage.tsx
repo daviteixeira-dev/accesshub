@@ -133,7 +133,7 @@ const HomePage = () => {
           </Flex>
         </NavLink>
 
-        <Link
+        {/*<Link
           isExternal
           _hover={{ textDecor: 'none' }}
           href='https://github.com/daviteixeira-btm/acesshub'
@@ -156,7 +156,7 @@ const HomePage = () => {
             <Icon as={FaGithub} mr='.5rem' />
             GitHub
           </Flex>
-        </Link>
+        </Link>*/}
 
       </Flex>
 
